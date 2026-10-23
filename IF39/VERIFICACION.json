@@ -139,7 +139,25 @@
   "original_user_logs_packaged": false,
   "minecraft_graphics_tested": false,
   "live_server_tested": false,
-  "download_verification": "Pending root-agent upload and independent HTTP GET/hash check",
+  "download_verification": {
+    "public_url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF39/ViaFabricPlus-Bedrock-IF39.jar",
+    "public_endpoint": {
+      "http_status": 302,
+      "redirect_hostname": "media.githubusercontent.com"
+    },
+    "full_file_download": {
+      "batch_http_status": 200,
+      "download_hostname": "github-cloud.githubusercontent.com",
+      "object_http_status": 200,
+      "bytes": 214788748,
+      "sha256": "f96a6af25c60e7651efb1c12079421fb24ab5cb19c09ff3e66c44fd6387befe2",
+      "jar_magic": true,
+      "lfs_pointer": false,
+      "verified_full_lfs_object": true,
+      "public_direct_full_get": "blocked_by_environment_proxy_on_media.githubusercontent.com"
+    },
+    "temporary_download_credentials_saved_or_shared": false
+  },
   "limits": [
     "The new harness replaces network output and item-display mapping; recipe/item IDs are synthetic.",
     "Local verification does not demonstrate the result on the user server or in a graphical Minecraft session.",
