@@ -1,0 +1,149 @@
+{
+  "delivery": "Full IF39 mod JAR via Git LFS; no updater or delta",
+  "artifact": "ViaFabricPlus-Bedrock-IF39.jar",
+  "sha256": "f96a6af25c60e7651efb1c12079421fb24ab5cb19c09ff3e66c44fd6387befe2",
+  "size_bytes": 214788748,
+  "version": "1.1.1-StackAnvil-InteractionFix39.1",
+  "new_if39_behavioral_checks": {
+    "new_checks_passed": 26,
+    "baseline": "Delivered IF38 core; one Shift-click stops after the first acknowledged 64-stick batch.",
+    "main_case": "Both 3x3 table and player 2x2:128 planks ->256 sticks through four64-stick requests, one Shift gesture and four responses.",
+    "request_ids": [
+      -3,
+      -5,
+      -7,
+      -9
+    ],
+    "checks": [
+      "One pending request at a time; every new request uses last acknowledged input/output IDs",
+      "Independent consumption/output replay, client prediction equality and2*planks+sticks conservation",
+      "Full/partial inventory capacity and ordinary cursor pickup",
+      "First/second rejection rolls back only rejected batch and stops",
+      "Closing, changed recipe ID with identical output, inventory/cursor/grid semantic changes cancel continuation",
+      "Queued manual ordinary click supersedes bulk action",
+      "32 user actions fit after removing automatic continuation",
+      "Actual timeout recovery clears continuation and late acknowledgement cannot restart it"
+    ],
+    "runtime": "Java25 -Xverify:all; real handlers, queue, successful/rejected response and recovery paths; serialization/send replaced by the existing IF38 fixture boundary.",
+    "classes": {
+      "net/raphimc/viabedrock/api/model/container/block/CraftingTableContainer.class": "680a1cc8a30be5cf7a396a3e515353837d655c7eccb5b38379d0a4a7d8f57cc3",
+      "net/raphimc/viabedrock/api/model/container/player/InventoryContainer.class": "13be2ebf8a1b89d1e785d2e09d20011d0b49a17810fb1252e98446b193a76107",
+      "net/raphimc/viabedrock/protocol/storage/BulkCraftContinuation$Continuation.class": "9086970e1047464293b350f370171aae8f6d55b767e80d25aadd8fb6920d948b",
+      "net/raphimc/viabedrock/protocol/storage/BulkCraftContinuation.class": "0d79ef06f700bdf91b9899437e25813d199dc140c49bac1306ba800da8f01efc",
+      "net/raphimc/viabedrock/protocol/storage/InventoryRequestTracker.class": "386b060f0ef42d4a666cd519bd95c2aa06eec2a58ea3e9fdfcbb745faa33cf85"
+    },
+    "test_source_sha256": "59c385f81a5cbe37bccaef68e1d7d3e9d3ac2a38b2ef376043ae717c3a8e47d5",
+    "live_server_tested": false,
+    "minecraft_graphics_tested": false,
+    "production_modified_by_test_agent": false
+  },
+  "full_mod_package_verification": {
+    "delivery": "Complete mod JAR, not an updater or delta",
+    "input_sha256": "289bcfbcb4229703e72ea1ace3f784f30fcd3c598ecc7ba9983343ae9ee84681",
+    "output_sha256": "f96a6af25c60e7651efb1c12079421fb24ab5cb19c09ff3e66c44fd6387befe2",
+    "size_bytes": 214788748,
+    "version": "1.1.1-StackAnvil-InteractionFix39.1",
+    "root_entry_count": 1206,
+    "package": {
+      "unchanged_entries": 1203,
+      "changed_entries": [
+        "META-INF/jars/ViaBedrock-0.0.31-StackAnvil.jar",
+        "fabric.mod.json"
+      ],
+      "added_entries": [
+        "META-INF/stackanvil-if39-changes.zip"
+      ],
+      "all_other_entry_contents_identical": true,
+      "no_duplicate_entries": true,
+      "crc_ok": true
+    },
+    "core": {
+      "unchanged_entries": 1516,
+      "changed_entries": [
+        "net/raphimc/viabedrock/api/model/container/block/CraftingTableContainer.class",
+        "net/raphimc/viabedrock/api/model/container/player/InventoryContainer.class",
+        "net/raphimc/viabedrock/protocol/storage/InventoryRequestTracker.class"
+      ],
+      "added_entries": [
+        "net/raphimc/viabedrock/protocol/storage/BulkCraftContinuation$Continuation.class",
+        "net/raphimc/viabedrock/protocol/storage/BulkCraftContinuation.class"
+      ],
+      "all_other_entry_contents_identical": true,
+      "no_duplicate_entries": true,
+      "crc_ok": true
+    },
+    "replacement_inputs": {
+      "net/raphimc/viabedrock/api/model/container/block/CraftingTableContainer.class": {
+        "file": "/workspace/minecraft/analysis/bulk-craft-fix-if39/classes/net/raphimc/viabedrock/api/model/container/block/CraftingTableContainer.class",
+        "sha256": "680a1cc8a30be5cf7a396a3e515353837d655c7eccb5b38379d0a4a7d8f57cc3"
+      },
+      "net/raphimc/viabedrock/api/model/container/player/InventoryContainer.class": {
+        "file": "/workspace/minecraft/analysis/bulk-craft-fix-if39/classes/net/raphimc/viabedrock/api/model/container/player/InventoryContainer.class",
+        "sha256": "13be2ebf8a1b89d1e785d2e09d20011d0b49a17810fb1252e98446b193a76107"
+      },
+      "net/raphimc/viabedrock/protocol/storage/InventoryRequestTracker.class": {
+        "file": "/workspace/minecraft/analysis/bulk-craft-fix-if39/classes/net/raphimc/viabedrock/protocol/storage/InventoryRequestTracker.class",
+        "sha256": "386b060f0ef42d4a666cd519bd95c2aa06eec2a58ea3e9fdfcbb745faa33cf85"
+      }
+    },
+    "addition_inputs": {
+      "net/raphimc/viabedrock/protocol/storage/BulkCraftContinuation.class": {
+        "file": "/workspace/minecraft/analysis/bulk-craft-fix-if39/classes/net/raphimc/viabedrock/protocol/storage/BulkCraftContinuation.class",
+        "sha256": "0d79ef06f700bdf91b9899437e25813d199dc140c49bac1306ba800da8f01efc"
+      },
+      "net/raphimc/viabedrock/protocol/storage/BulkCraftContinuation$Continuation.class": {
+        "file": "/workspace/minecraft/analysis/bulk-craft-fix-if39/classes/net/raphimc/viabedrock/protocol/storage/BulkCraftContinuation$Continuation.class",
+        "sha256": "9086970e1047464293b350f370171aae8f6d55b767e80d25aadd8fb6920d948b"
+      }
+    },
+    "original_if38_unchanged": true,
+    "earlier_source_bundles_and_shield_classes_identical": true,
+    "no_user_logs_added": true,
+    "minecraft_graphical_tested": false,
+    "server_functional_tested": false,
+    "limits": [
+      "Package content verification does not test Minecraft GUI or a live server."
+    ]
+  },
+  "packaged_class_hashes_equal_independently_tested_classes": true,
+  "new_test_execution_for_packaging": false,
+  "source_and_evidence_in_mod": "META-INF/stackanvil-if39-changes.zip",
+  "new_evidence_files": [
+    "/workspace/minecraft/analysis/if39/build_final.py",
+    "/workspace/minecraft/analysis/if39/build-inputs.json",
+    "/workspace/minecraft/analysis/bulk-craft-fix-if39/src/PatchBulkCraftIF39.java",
+    "/workspace/minecraft/analysis/bulk-craft-fix-if39/src/net/raphimc/viabedrock/protocol/storage/BulkCraftContinuation.java",
+    "/workspace/minecraft/analysis/bulk-craft-fix-if39/asm-verification.txt",
+    "/workspace/minecraft/analysis/bulk-craft-fix-if39/root-review.md",
+    "/workspace/minecraft/analysis/bulk-craft-check-if39/src/BulkCraftIndependentIF39.java",
+    "/workspace/minecraft/analysis/bulk-craft-check-if39/baseline-IF38.txt",
+    "/workspace/minecraft/analysis/bulk-craft-check-if39/patched-IF39.txt",
+    "/workspace/minecraft/analysis/bulk-craft-check-if39/verification.json",
+    "/workspace/minecraft/analysis/bulk-craft-check-if39/README.md",
+    "/workspace/minecraft/analysis/rapid-craft-check-if38/src/RapidCraftOutputIF38Regression.java"
+  ],
+  "historical_evidence": [
+    {
+      "version": "IF36",
+      "status": "Retained in earlier source bundle; not rerun for IF39"
+    },
+    {
+      "version": "IF37",
+      "status": "Retained in earlier source bundle; not rerun for IF39"
+    },
+    {
+      "version": "IF38",
+      "status": "Earlier fixes/source bundles retained; prior regression suite not rerun for IF39. IF38 was exercised only as the baseline for the new bulk-crafting case."
+    }
+  ],
+  "original_user_logs_packaged": false,
+  "minecraft_graphics_tested": false,
+  "live_server_tested": false,
+  "download_verification": "Pending root-agent upload and independent HTTP GET/hash check",
+  "limits": [
+    "The new harness replaces network output and item-display mapping; recipe/item IDs are synthetic.",
+    "Local verification does not demonstrate the result on the user server or in a graphical Minecraft session.",
+    "Existing output placement rules remain; distributing one batch over several partially occupied slots was not added.",
+    "The previously reported map image issue remains pending; IF39 does not modify maps."
+  ]
+}
