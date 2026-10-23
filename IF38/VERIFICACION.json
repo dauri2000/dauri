@@ -1,0 +1,222 @@
+{
+  "updater_bytes": 22073055,
+  "updater_sha256": "f2c8be33253ba62c08313cee11f5c6f0c33660668546da31e3f7ddd971d9a562",
+  "java_compilation_release": 17,
+  "tested_runtime": "openjdk version \"21.0.12.1\" 2026-08-18; -Xverify:all",
+  "updater_class_major_versions": {
+    "ActualizarIF38$EntrySpec.class": 61,
+    "ActualizarIF38.class": 61
+  },
+  "reference_if38_sha256": "289bcfbcb4229703e72ea1ace3f784f30fcd3c598ecc7ba9983343ae9ee84681",
+  "root_entry_count": 1205,
+  "positive_paths": [
+    {
+      "input": "IF35 prepared",
+      "input_sha256": "3e9762a1ca8491dc11f1275fcfd550aeb997d3bc451c7d5103fb32f08e309360",
+      "all_target_entries_match": true,
+      "entry_count": 1205
+    },
+    {
+      "input": "IF35 identical contents, different ZIP compression",
+      "input_sha256": "66d9bd419fc643f5b667e31f8ebdc3fc4d7fc80ea03e77d681d232ade0d5bb0d",
+      "all_target_entries_match": true,
+      "entry_count": 1205
+    },
+    {
+      "input": "IF36 identical contents, different ZIP compression",
+      "input_sha256": "00d096e60071dde761f1b13380c2c2661b66b43099759688b033ef7bf55151ac",
+      "all_target_entries_match": true,
+      "entry_count": 1205
+    },
+    {
+      "input": "IF34 original",
+      "input_sha256": "4b87fdb65e88a9683d6c6c88721a7d2678ef94fac715f0828fd20c4bac3c2140",
+      "all_target_entries_match": true,
+      "entry_count": 1205
+    },
+    {
+      "input": "IF37 exact prepared local QA input",
+      "input_sha256": "8007c25851e5e1d01f69b951fa32a5bfbc29304307759ff02b498b83e987e922",
+      "all_target_entries_match": true,
+      "entry_count": 1205
+    }
+  ],
+  "rejects_existing_output_without_overwrite": true,
+  "rejects_modified_if35_and_if36_with_same_names_but_wrong_content": true,
+  "original_inputs_unchanged": true,
+  "gui_tested": false,
+  "minecraft_gameplay_tested": false,
+  "historical_if36_if37_evidence": [
+    {
+      "file": "evidencia/IF36-paquete-verificacion.json",
+      "status": "Historical evidence retained; not rerun for IF38 packaging"
+    },
+    {
+      "file": "evidencia/IF36-recetas-verificacion.json",
+      "status": "Historical evidence retained; not rerun for IF38 packaging"
+    },
+    {
+      "file": "evidencia/IF37-paquete-verificacion.json",
+      "status": "Historical evidence retained; not rerun for IF38 packaging"
+    },
+    {
+      "file": "evidencia/IF37-grid-verificacion.json",
+      "status": "Historical evidence retained; not rerun for IF38 packaging"
+    }
+  ],
+  "current_fix_verification_reports": [
+    {
+      "file": "evidencia/anvil-book-fix-if38-verification.json",
+      "source_sha256": "e79decc05f57c537bc28d454ec118323d659ef8c34d0734df9cb9ce5988bcddc",
+      "recorded_report": {
+        "status": "passed",
+        "checks": 12,
+        "jdk": "25.0.5.0.2",
+        "jvm_verification": "-Xverify:all",
+        "confirmed_case": "diamond axe EfficiencyII + enchanted book MendingI",
+        "original_anvil_algorithm": "unchanged; test replaces only external Minecraft durability lookup",
+        "production_original_maxDamage": "unchanged",
+        "live_server_or_game": false,
+        "supported_enchantment_ids": "0..37; unsupported or unknown fail closed",
+        "files": {
+          "src/net/raphimc/viabedrock/api/model/container/block/AnvilBookRules.java": "b9de82b02e5afd1aa54d87ba3c1db8cfaaaa2490dc35ca50c17919dad2bcb88b",
+          "classes/net/raphimc/viabedrock/api/model/container/block/AnvilBookRules.class": "f7745babc4d4ce8efeb81065e35f6974bebec7d58a6d45b155add681513556f0",
+          "src/AnvilBookIF38Regression.java": "097cea6765f7f4288b0ab2d573359b5cd2bac87bdb701bb0735ae2143e0348a4",
+          "src/PrepareAnvilDurabilityBoundary.java": "e2c18d74a847d9211eb4dc337a6376f4846e5b68d9c8e66594ebe13e96c95051",
+          "baseline-original.txt": "808b5614f1625df8e4acb03e170b29663ea83aaa7c0310f832166dda7097771f",
+          "baseline-rename-conflict.txt": "0016b68b8ca54fd695d89668abba11c2c629e09ce3bb29d539a6efe5f9cceaeb",
+          "patched-IF38.txt": "dd9c8185715eb42e44b05547fb077d8986dd230917929635727dc2ea74a0c932",
+          "durability-boundary-verification.txt": "0727da828f057eeafa42f0bf885e1483d29decf4e07354a04c0e35fc232e9a28"
+        },
+        "rename_only_contract": "Nukkit RepairItemTransaction345\u2013360 and Dragonfly handler_anvil100\u2013146: rename cost must equal total action cost"
+      },
+      "rerun_for_packaging": false
+    },
+    {
+      "file": "evidencia/rapid-craft-check-if38-verification.json",
+      "source_sha256": "44969af5daac8e6551ab2e2774d274cec1e31ff0bb4bb89b299be854bf01e275",
+      "recorded_report": {
+        "checks": 18,
+        "status": "passed",
+        "jdk": "25.0.5.0.2",
+        "jvm_verification": "-Xverify:all",
+        "server_or_client_started": false,
+        "network_boundary": "in-memory proxies, no external packets",
+        "limits": "real local methods and simulated responses do not establish permanent item loss or live server acceptance",
+        "evidence": {
+          "tested-class-sha256.txt": "8b5aca0e5037739d4c18329c95cacf6f45181150a9bd38bcc2e130d13abbcfc9",
+          "patched-IF38.txt": "90e130d8aecc510041c2103987dd72cc987a11412bc0f44183e184310c4c1422",
+          "baseline-IF37.txt": "1f01b8b4f99c1ce7d5c20730b1ad5846ff07ff28be48cf37011eee4f39f74336"
+        }
+      },
+      "rerun_for_packaging": false
+    },
+    {
+      "file": "evidencia/trade-audit-if38-verification.json",
+      "source_sha256": "9f994fcb52e63f48aa0241fd741ce31b3289a38ff6c455f012e7f756c7189a28",
+      "recorded_report": {
+        "original_failures": [
+          "Repeated source slot reuses old positive ID after a split",
+          "Merchant autofill emits INTERACT/MOB_EQUIPMENT before ITEM_STACK_REQUEST when using selected hotbar",
+          "Quick trade result emits INTERACT/MOB_EQUIPMENT before ITEM_STACK_REQUEST when filling selected hotbar"
+        ],
+        "patched_cases_passed": 7,
+        "classes": {
+          "net/raphimc/viabedrock/api/model/container/MerchantPlacementReferences$SlotKey.class": "01504901f2377e283e24ba7d3c181ca32439d93074c1827bf506eedcbc247b33",
+          "net/raphimc/viabedrock/api/model/container/InventoryPrediction.class": "b0985379a4a7b50248ec6c9e11f0bd740ee06e66589e55811a12651244dd3dea",
+          "net/raphimc/viabedrock/api/model/container/MerchantPlacementReferences.class": "4b7af53d205c5426b90d4fa91f855027ed9e51ab5230df8814da3758b786ad13",
+          "net/raphimc/viabedrock/api/model/container/entity/MerchantContainer.class": "b98132b244133efe25b11cb499e9f5957043c05a28fc8072e1fce3aacd533c3e"
+        },
+        "jvm_verification": "Java25 -Xverify:all; actual MerchantContainer handleButtonClick and takeResult invoked",
+        "bytecode_scope": "Normalize only merchant placement references using the existing ID; guard only two speculative player inventory writes. Quantities, prices, result actions, offers, use accounting and queues unchanged.",
+        "server_reference_commit": "1793369709ceed934675d69e86ff6c828e4216c8",
+        "minecraft_graphics_tested": false,
+        "live_bedrock_trade_tested": false
+      },
+      "rerun_for_packaging": false
+    },
+    {
+      "file": "evidencia/anvil-output-check-if38-verification.json",
+      "source_sha256": "4f6167ca52a01486de68057d79bfa2e36ecd36894dbf0a71f49e000c10d004e1",
+      "recorded_report": {
+        "checks": 1,
+        "status": "passed",
+        "jdk": "25.0.5.0.2",
+        "jvm_verification": "-Xverify:all",
+        "server_or_client_started": false,
+        "network_boundary": "in-memory proxies, no external packets",
+        "limits": "real local methods and simulated responses do not establish permanent item loss or live server acceptance",
+        "evidence": {
+          "patched.txt": "c37dbd765c8119c71812bd03794300d7e49fad447542ea94367bfb931b95347b",
+          "baseline.txt": "7f7a0436339ca5a8d2e45fa48d9936212bfcc770eaec0959d0e9cf0f2e069508"
+        },
+        "preview": "Known result at boundary; book preview checked separately in twelve anvil rule tests",
+        "test_durability_boundary_only": true
+      },
+      "rerun_for_packaging": false
+    }
+  ],
+  "current_fix_execution_evidence": [],
+  "current_package_verification": {
+    "input_sha256": "8007c25851e5e1d01f69b951fa32a5bfbc29304307759ff02b498b83e987e922",
+    "output_sha256": "289bcfbcb4229703e72ea1ace3f784f30fcd3c598ecc7ba9983343ae9ee84681",
+    "size_bytes": 214759398,
+    "version": "1.1.1-StackAnvil-InteractionFix38.1",
+    "package": {
+      "unchanged_entries": 1202,
+      "changed_entries": [
+        "META-INF/jars/ViaBedrock-0.0.31-StackAnvil.jar",
+        "fabric.mod.json"
+      ],
+      "added_entries": [
+        "META-INF/stackanvil-if38-changes.zip"
+      ],
+      "crc_ok": true
+    },
+    "core": {
+      "unchanged_entries": 1510,
+      "changed_entries": [
+        "net/raphimc/viabedrock/api/model/container/block/AnvilContainer.class",
+        "net/raphimc/viabedrock/api/model/container/block/CraftingTableContainer.class",
+        "net/raphimc/viabedrock/api/model/container/entity/MerchantContainer.class",
+        "net/raphimc/viabedrock/api/model/container/player/InventoryContainer.class"
+      ],
+      "added_entries": [
+        "net/raphimc/viabedrock/api/model/container/CraftingOutputPrediction.class",
+        "net/raphimc/viabedrock/api/model/container/InventoryPrediction.class",
+        "net/raphimc/viabedrock/api/model/container/MerchantPlacementReferences$SlotKey.class",
+        "net/raphimc/viabedrock/api/model/container/MerchantPlacementReferences.class",
+        "net/raphimc/viabedrock/api/model/container/block/AnvilBookRules.class"
+      ],
+      "crc_ok": true
+    },
+    "shield_if35_preserved": true,
+    "if36_recipe_planner_preserved": true,
+    "if37_shared_grid_fix_preserved": true,
+    "workstation_results_original_preserved": true,
+    "existing_inventory_guards_preserved": true,
+    "changes": [
+      "Predict compatible enchanted-book combinations, including Efficiency II axe plus Mending I, preserving input metadata and server validation.",
+      "Suppress equipment notifications during speculative crafting, merchant and anvil output changes.",
+      "Normalize merchant auto-fill references after a stack has changed within its request."
+    ],
+    "limits": [
+      "Live server and Minecraft graphical behavior not tested here.",
+      "Anvil book IDs 0-37 have verified rules; newer unverified IDs are rejected by the preview.",
+      "Reported map image problem remains pending a screenshot in hand; no speculative map rendering change.",
+      "Local rapid-crafting checks do not prove permanent inventory loss or complete causality of the user symptom."
+    ],
+    "minecraft_graphical_tested": false,
+    "server_functional_tested": false
+  },
+  "additional_evidence": [
+    {
+      "file": "evidencia/rapid-craft-check-if38-anvil-secondary-review.md",
+      "sha256": "e739d05ad899c0ff9c7d10f9847550e72d25df625581168bca8fe04d8af7d7fc"
+    },
+    {
+      "file": "evidencia/rapid-craft-check-if38-anvil-final-delta.txt",
+      "sha256": "0a15aeb9f1188f5c11046581c1b1c73614c5de010977b7779a769a296dbec381"
+    }
+  ]
+}
