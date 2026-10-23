@@ -1,0 +1,22 @@
+{
+  "updater_jar_bytes": 21827561,
+  "updater_jar_sha256": "76d4eedb10c71f651ce78daeaaf7c1089c6881d2949183076414cf6e71accc9a",
+  "java_compilation_release": 17,
+  "actual_runtime_for_cli_test": "OpenJDK 21.0.12.1, -Xverify:all",
+  "updater_class_major_versions": {
+    "ActualizarIF35$EntrySpec.class": 61,
+    "ActualizarIF35.class": 61
+  },
+  "exact_input_sha256": "4b87fdb65e88a9683d6c6c88721a7d2678ef94fac715f0828fd20c4bac3c2140",
+  "reference_if35_sha256": "3e9762a1ca8491dc11f1275fcfd550aeb997d3bc451c7d5103fb32f08e309360",
+  "generated_if35_sha256": "879fe069b80ac6f5d4c4e0929226a0bcc126e39be6a9a8671bda75a0453347fa",
+  "root_entry_count": 1202,
+  "all_root_entry_contents_equal_to_reference": true,
+  "generated_jar_crc_ok": true,
+  "rejects_existing_output_without_modifying_it": true,
+  "rejects_wrong_input_without_creating_if35": true,
+  "original_if34_unchanged": true,
+  "gui_tested": false,
+  "minecraft_gameplay_tested": false,
+  "note": "ZIP compression/timestamps may differ; all entry names, directories, sizes and SHA256 contents match the prepared IF35."
+}
