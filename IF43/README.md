@@ -23,6 +23,8 @@ Se conserva el límite anterior de un segundo para liberar predicciones sin resp
 
 Pasaron 18 comprobaciones dirigidas y dos independientes sobre los mismos cinco hashes finales. La reproducción original falla con IF42 y pasa con la corrección. La revisión ASM verifica los métodos y recupera canónicamente las clases IF42 al retirar únicamente las inserciones aprobadas. Las pruebas históricas se conservan como evidencia y no se repitieron.
 
+`DESCARGA-VERIFICADA.json` registra la subida, la ruta pública, el puntero LFS y la descarga íntegra del objeto por SHA256. El JAR completo tiene 215.035.442 bytes. Este entorno bloquea el host final de la redirección pública; se verificaron por separado la ruta y el puntero públicos y la descarga completa del objeto LFS correspondiente.
+
 Las pruebas ejecutan handlers, modelos, cola y envío de confirmaciones reales de ViaBedrock con límites de red y mundo en memoria. No se simula un servidor que rechace los intentos para fabricar una reproducción. La referencia Java 26.3 disponible confirma conservación y restauración de estados de predicción, pero no incluye todos los cuerpos del manejador. No se ejecutó Minecraft gráfico ni un servidor real; falta comprobar el resultado en el servidor del usuario.
 
 La auditoría también encontró descripciones de cantidad y runtime que pueden quedarse antiguas entre respuestas, sin demostrar que causen rechazos de colocación. Esos campos no forman parte de este parche. Litematica no quedó identificada como causa necesaria del fallo manual. No se incluyen mundos, vídeos ni logs privados del usuario.
