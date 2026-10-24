@@ -1,0 +1,196 @@
+{
+  "delivery": "Complete mod JAR, not an updater or delta",
+  "input_sha256": "d417b1d30d862ba01337d38b2878c44a7514463000683a0d7d78c4d1c7fce35d",
+  "input_version": "1.1.1-StackAnvil-InteractionFix43.1",
+  "output_sha256": "4492dc0b0ac3027de0a79246b646bfdf60d028ac253fbcaf709178e8ccca5e6f",
+  "size_bytes": 215089131,
+  "version": "1.1.1-StackAnvil-InteractionFix44.1",
+  "root_entry_count": 1216,
+  "package": {
+    "unchanged_entries": 1213,
+    "changed_entries": [
+      "META-INF/jars/ViaBedrock-0.0.31-StackAnvil.jar",
+      "fabric.mod.json"
+    ],
+    "added_entries": [
+      "META-INF/stackanvil-if44-changes.zip"
+    ],
+    "all_other_entry_contents_identical": true,
+    "no_duplicate_entries": true,
+    "crc_ok": true
+  },
+  "core": {
+    "unchanged_entries": 1523,
+    "changed_entries": [
+      "net/raphimc/viabedrock/protocol/packet/FluidInteractionTarget.class"
+    ],
+    "added_entries": [
+      "net/raphimc/viabedrock/protocol/packet/NativeWaterloggedBucketPickup.class"
+    ],
+    "all_other_entry_contents_identical": true,
+    "no_duplicate_entries": true,
+    "crc_ok": true
+  },
+  "replacement_inputs": {
+    "net/raphimc/viabedrock/protocol/packet/FluidInteractionTarget.class": {
+      "file": "/workspace/minecraft/analysis/waterlogging-if44/world/fix/classes/net/raphimc/viabedrock/protocol/packet/FluidInteractionTarget.class",
+      "sha256": "08ae3a64a981d8c51c06ee109562d53236717db86c7409e601eac215b36973a2"
+    }
+  },
+  "addition_inputs": {
+    "net/raphimc/viabedrock/protocol/packet/NativeWaterloggedBucketPickup.class": {
+      "file": "/workspace/minecraft/analysis/waterlogging-if44/world/fix/classes/net/raphimc/viabedrock/protocol/packet/NativeWaterloggedBucketPickup.class",
+      "sha256": "955318e19396ccba8ff98939093a22f902fe43fe5cfaf1cd3ea96b0c6945afa2"
+    }
+  },
+  "protected_core_class_sha256s": {
+    "net/raphimc/viabedrock/api/model/entity/HappyGhastEntity.class": "b5204b4e9e25a8b43d12cc83dda60a5362610807348b112669bbf38c77fcb2d2",
+    "net/raphimc/viabedrock/api/model/entity/ClientPlayerEntity.class": "6f2af94bb54b4abb5a9496de00744ab098a3ad846c1e489c3de2536be5c3b9c0",
+    "net/raphimc/viabedrock/protocol/packet/MultiStatePackets.class": "dab6764382d31f4f453f82a86937360369cb7e69b60223817564e1104fb9985c",
+    "net/raphimc/viabedrock/protocol/storage/PlayerPredictionStorage.class": "ac6173e5ec86cea0d88e90007fd9b6035c0b0483741ffe98f7c0b907426eb1c0",
+    "net/raphimc/viabedrock/protocol/storage/HappyGhastRiderPrediction.class": "078ed736dd03e5953982a52497dc533382cb4b8a67af09839ed92fb61aa28f76",
+    "net/raphimc/viabedrock/api/util/BedrockMaterialComparisonPolicy.class": "9b800936db7d144b433468a69235f20b59d38707ad1a7ce670697f7f748331e8",
+    "net/raphimc/viabedrock/protocol/packet/InteractionPackets.class": "9e034e04098b40fed717016dd24c1b9ec17c4ff18b7a36a235fa851bf03d3e88",
+    "net/raphimc/viabedrock/api/util/PacketFactory.class": "79a972185313b0be91232a5b41f222b85c4fb458e3510f3d0392009f26b5acdc",
+    "net/raphimc/viabedrock/protocol/storage/ChunkTracker.class": "895fecc8385d893cc511b1d5eb49f234b7940838d36957c581302d568ceff3fb",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue.class": "709569553a5913a9cf3543091c0d00b0fe1ad23e39649951904745f31495da18",
+    "net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.class": "f542731a02481d7c6f9e17f85c7966745b8d73ba7c0d9eed8db93df80fffe6df"
+  },
+  "protected_root_entry_sha256s": {
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparison.class": "0488976c5f4a3eb3fdc6bdf3f8e0907e518b7e2a85fd01164273f70242db80b2",
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparisonBytes.class": "0bcf48cc1afd2cbe85ef768de97cca71a302ec46e68af3ac137e21f7a6815cf1",
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockUseEffectsComparison.class": "4004b9ad6a88172756a7e2ae5c9db3beaca26dac03924437d1fc32e8072f0967",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/litematica/MixinLitematicaMaterialSearch.class": "52790a09691bd7773c9b60bf0a4aa587026ec2359b92ae87baf09acb5f24f021",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/malilib/MixinMaLiLibMaterialComparisons.class": "84d7dbdf71fd91a0f4403a71b4d4bd152f1053d3503087c85940f78b91960b08",
+    "viafabricplus-bedrock.mixins.json": "05036158dd163e7be25e79c627be2de124eecd3979272fa89d0567286d437edd"
+  },
+  "original_source_unchanged": true,
+  "earlier_source_bundles_and_shield_classes_identical": true,
+  "no_user_logs_added": true,
+  "minecraft_graphical_tested": false,
+  "server_functional_tested": false,
+  "limits": [
+    "Package content verification does not test Minecraft GUI or a live server."
+  ],
+  "new_checks": {
+    "state": "Root TARGETREADY and TESTSPASS; final two production classes frozen",
+    "new_checks_passed": 36,
+    "classes": {
+      "net/raphimc/viabedrock/protocol/packet/FluidInteractionTarget.class": "08ae3a64a981d8c51c06ee109562d53236717db86c7409e601eac215b36973a2",
+      "net/raphimc/viabedrock/protocol/packet/NativeWaterloggedBucketPickup.class": "955318e19396ccba8ff98939093a22f902fe43fe5cfaf1cd3ea96b0c6945afa2"
+    },
+    "functional_checks": {
+      "total": 36,
+      "owner_target_and_helper": 29,
+      "independent_real_USE_ITEM_path": 7
+    },
+    "owner_verification": {
+      "frozen": true,
+      "production_classes": {
+        "net/raphimc/viabedrock/protocol/packet/FluidInteractionTarget.class": "08ae3a64a981d8c51c06ee109562d53236717db86c7409e601eac215b36973a2",
+        "net/raphimc/viabedrock/protocol/packet/NativeWaterloggedBucketPickup.class": "955318e19396ccba8ff98939093a22f902fe43fe5cfaf1cd3ea96b0c6945afa2"
+      },
+      "replacement_classes": [
+        "net/raphimc/viabedrock/protocol/packet/FluidInteractionTarget.class"
+      ],
+      "added_classes": [
+        "net/raphimc/viabedrock/protocol/packet/NativeWaterloggedBucketPickup.class"
+      ],
+      "input_outer_jar_sha256": "d417b1d30d862ba01337d38b2878c44a7514463000683a0d7d78c4d1c7fce35d",
+      "input_target_class_sha256": "aa944f21fa0d93ca16dda08d84aca13dece8936118a4888aefbcc9f1e0d08f93",
+      "target_helper_checks_passed": 29,
+      "independent_packet_path_checks_passed": 7,
+      "candidate_directed_checks_total": 36,
+      "earlier_diagnostic_checks_not_added_again": 14,
+      "ack_comparison_audit_checks_not_counted_as_new_fix_checks": 10,
+      "all_method_BasicVerifier": true,
+      "exact_canonical_reversal": true,
+      "redirected_invocations": 2,
+      "inserted_cell_loads": 2,
+      "derived_cell_local": 23,
+      "derived_shape_local": 24,
+      "minecraft_game_executed": false,
+      "actual_mixin_engine_executed": false,
+      "live_bedrock_server_executed": false,
+      "native_reference": {
+        "repository": "PowerNukkitX/PowerNukkitX",
+        "commit": "37caa9e66690f2d327b33d8a72e7621377ab96c5",
+        "manifest": "../native-reference/manifest.json",
+        "third_party_server_not_vanilla_BDS": true
+      },
+      "fixture_boundaries": [
+        "synthetic native world cells",
+        "minimal spectator entity state",
+        "independent connection/display/world/network boundaries"
+      ],
+      "limits": [
+        "User exact screenshot block is unidentified.",
+        "Fix targets native secondary source pickup, not universal visual waterlogging.",
+        "No server acceptance/rejection or graphical client was executed."
+      ],
+      "no_addon_ACK_palette_resource_change": true,
+      "independent_integration_report": "/workspace/minecraft/analysis/waterlogging-if44/client/integration/tested-class-hashes.json"
+    },
+    "independent_verification": {
+      "status": "FINAL FROZEN; independent review PASS without blockers",
+      "candidate_class_sha256": {
+        "net/raphimc/viabedrock/protocol/packet/FluidInteractionTarget.class": "08ae3a64a981d8c51c06ee109562d53236717db86c7409e601eac215b36973a2",
+        "net/raphimc/viabedrock/protocol/packet/NativeWaterloggedBucketPickup.class": "955318e19396ccba8ff98939093a22f902fe43fe5cfaf1cd3ea96b0c6945afa2"
+      },
+      "checks_passed": 7,
+      "runtime": "Java25 -Xverify:all",
+      "baseline": "baseline-IF43.txt (three unsupported-native source cases route to Use)",
+      "patched": "patched-IF44.txt (same cases route to one Place transaction; controls preserved)",
+      "canonical_scope": "independent-canonical-review.txt: exact reversal to delivered IF43; exactly two same-Cell predicate calls; all methods BasicVerifier",
+      "source_sha256": {
+        "/workspace/minecraft/analysis/waterlogging-if44/client/integration/WaterloggedUseItemIntegration.java": "02627ed327f2e2fbb7a39e4620cf8365d15766078cbc75c494de4a81564e9589",
+        "/workspace/minecraft/analysis/waterlogging-if44/client/integration/VerifyWaterPickupScopeIndependent.java": "51899d8a0671a808df2eb1fb38524b3afcfb14b01847544dfdca4bafc019416e",
+        "/workspace/minecraft/analysis/bulk-placement-if43/core/RapidBlockPlacementBaseline.java": "92774f96e6b87df53c02ec83822632278ffcfd18a119f32b26a4105c782fb1dd"
+      },
+      "production_source_reviewed": [
+        "/workspace/minecraft/analysis/waterlogging-if44/world/fix/src/net/raphimc/viabedrock/protocol/packet/NativeWaterloggedBucketPickup.java",
+        "/workspace/minecraft/analysis/waterlogging-if44/world/fix/PatchNativeWaterloggedBucketPickupIF44.java"
+      ],
+      "baseline_full_if43_sha256": "d417b1d30d862ba01337d38b2878c44a7514463000683a0d7d78c4d1c7fce35d",
+      "shared_fixture_source": "/workspace/minecraft/analysis/bulk-placement-if43/core/RapidBlockPlacementBaseline.java",
+      "classes_unchanged_after_tests": true,
+      "native_inventory_originals_unchanged": true,
+      "synthetic_world_loaded_sections_display_and_network_boundaries": true,
+      "actual_minecraft_classes_replaced": false,
+      "minecraft_graphics_executed": false,
+      "live_bedrock_server_executed": false,
+      "server_acceptance_or_rejection_simulated": false,
+      "production_modified_by_reviewer": false,
+      "scope": "One existing core class retargets two pickup predicates to one new pure helper; no addon/ACK/palette/inventory/packet-format changes",
+      "limitation": "Does not add unsupported Java waterlogged rendering; exact screenshot block unidentified; native server remains authoritative"
+    },
+    "initial_diagnostic_checks": {
+      "count": 14,
+      "included_in_new_total": false,
+      "status": "Earlier read-only diagnosis, not added again or rerun for packaging"
+    },
+    "supporting_ack_comparison": {
+      "count": 10,
+      "included_in_new_total": false,
+      "report": "../ack/verification.json",
+      "status": "Supporting IF42/IF43 comparison; not new fix checks or rerun for packaging"
+    },
+    "separate_scope_review": {
+      "source": "../client/integration/VerifyWaterPickupScopeIndependent.java",
+      "report": "../client/integration/independent-canonical-review.txt",
+      "kind": "Exact reversal and ASM checks, not extra functional cases"
+    },
+    "app_tests_rerun_for_packaging": false,
+    "historical_regressions_rerun": false,
+    "minecraft_graphics_tested": false,
+    "mixin_engine_tested": false,
+    "live_server_tested": false,
+    "user_exact_screenshot_block_identified": false
+  },
+  "parent_review": {
+    "prior_addon_classes_and_mixin_configuration_identical": true,
+    "no_added_or_modified_minecraft_or_optional_target_classes": true,
+    "native_source_guard_and_two_call_site_scope_reviewed": true,
+    "in_game_confirmation_pending": true
+  }
+}

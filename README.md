@@ -1,7 +1,7 @@
 # ViaFabricPlus Bedrock
 
-[Descargar el mod completo IF43](https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF43/ViaFabricPlus-Bedrock-IF43.jar)
+[Descargar el mod completo IF44](https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF44/ViaFabricPlus-Bedrock-IF44.jar)
 
-Corrección de confirmaciones adelantadas al colocar bloques seguidos, conservando la compatibilidad de materiales de IF42 y las correcciones anteriores. Es el JAR completo, listo para instalar.
+Corrección de la selección de fuentes de agua dentro de bloques de Bedrock, conservando las correcciones de colocación de IF43 y las anteriores. Es el JAR completo, listo para instalar.
 
-[Instalación, cambios y comprobaciones](IF43/README.md)
+[Instalación, cambios y comprobaciones](IF44/README.md)
