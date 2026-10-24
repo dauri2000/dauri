@@ -158,7 +158,35 @@
   "user_media_or_private_logs_added": false,
   "minecraft_graphics_tested": false,
   "live_server_tested": false,
-  "download_verification": "Pending root-agent LFS upload and independent HTTP GET/hash check",
+  "download_verification": {
+    "public_url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF40/ViaFabricPlus-Bedrock-IF40.jar",
+    "public_route": {
+      "public_raw_route": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF40/ViaFabricPlus-Bedrock-IF40.jar",
+      "published_commit": "d086958",
+      "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com",
+      "raw_route_status": 302,
+      "raw_route_destination_hostname": "media.githubusercontent.com",
+      "pointer_route_status": 200,
+      "published_pointer": true,
+      "pointer_oid": "sha256:a62650d6decaf06bca237857b166edc736389892716c2526d9b06563cfcdc2a5",
+      "pointer_size": 214818407,
+      "pointer_matches_verified_object": true,
+      "expected_public_raw_redirect": true,
+      "public_pointer_and_route_verified": true
+    },
+    "full_file_download": {
+      "batch_http_status": 200,
+      "download_hostname": "github-cloud.githubusercontent.com",
+      "object_http_status": 200,
+      "bytes": 214818407,
+      "sha256": "a62650d6decaf06bca237857b166edc736389892716c2526d9b06563cfcdc2a5",
+      "jar_magic": true,
+      "lfs_pointer": false,
+      "verified_full_lfs_object": true,
+      "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com"
+    },
+    "temporary_download_credentials_saved_or_shared": false
+  },
   "pending_issues": {
     "xp": "Awaiting a video that shows the XP problem; not changed by IF40.",
     "map_image_in_hand": "Previously reported image issue remains pending; not changed by IF40."

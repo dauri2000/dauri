@@ -11,7 +11,7 @@ IF40 evita que el desmontaje del Happy Ghast recupere una posición antigua desp
 
 La entrega es el JAR completo, sin actualizador ni versiones intermedias. Minecraft Java 26.3 y estos mods requieren Java 25 o superior.
 
-La reproducción local demostró el origen antiguo de desmontaje en IF39 y una segunda carrera entre la solicitud de bajar y una corrección del vehículo. Pasaron **nueve comprobaciones independientes** con la misma clase final y Java 25, usando los enlaces, el desmontaje y el manejador de movimiento reales. Cubren predicción, correcciones de teleport/force, movimiento sin control local, ciclos de montar y las dos órdenes de corrección durante un desmontaje pendiente. La entrada pendiente de Shift se prepara por reflexión en esas pruebas.
+La reproducción local demostró el origen antiguo de desmontaje en IF39 y una segunda carrera entre la solicitud de bajar y una corrección del vehículo. Pasaron **nueve comprobaciones independientes** con la misma clase final y Java 25, usando los enlaces, el desmontaje y el manejador de movimiento reales. Cubren predicción, correcciones de teleport/force, movimiento sin control local, ciclos de montar y el desmontaje pendiente cuando llega una corrección del vehículo, seguida o no por una posición nueva del jugador. La entrada pendiente de Shift se prepara por reflexión en esas pruebas.
 
 La revisión ASM verifica que el resto de los métodos conserva su contenido anterior. El JAR contiene las fuentes y los informes nuevos en `META-INF/stackanvil-if40-changes.zip`; `VERIFICACION.json` detalla hashes y límites. La evidencia histórica de IF39 y anteriores se conserva sin repetir sus regresiones.
 
