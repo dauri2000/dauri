@@ -27,6 +27,8 @@ Los recuentos normales de la lista de materiales de Litematica 0.29.1 ya ignoran
 
 Pasaron 54 comprobaciones de política nativa, nueve de efectos y límites, ocho del adaptador y 17 comprobaciones estáticas independientes de ABI y anotaciones. La última ejecución del adaptador usó exactamente los hashes finales del cliente y de la política. Las comprobaciones de versiones anteriores se conservan como evidencia y no se repitieron.
 
+`DESCARGA-VERIFICADA.json` registra la subida, la ruta pública, el puntero LFS y la descarga íntegra del objeto por SHA256. El JAR completo tiene 214.961.870 bytes. Este entorno bloquea el host final de la redirección pública; se verificaron por separado la ruta y el puntero públicos y la descarga completa del objeto LFS correspondiente.
+
 Las comprobaciones locales de la política usan las clases reales de ViaBedrock, sus mappings y NBT. Las pruebas del adaptador usan límites simulados de Minecraft explícitos: verifican copias, componentes y búsqueda, pero no equivalen a iniciar el juego. La inspección ASM comprueba bytecode, descriptores y anotaciones; no se ejecutó el motor Mixin con los binarios reales de Minecraft y los mods opcionales. La reflexión del efecto de uso falla de forma conservadora si el constructor esperado no está disponible. No se inició un cliente gráfico ni un servidor real. Falta confirmar el resultado en el servidor del usuario.
 
 El ghast conserva el parche de IF41; esta entrega no añade una nueva corrección de vuelo. La orientación de observadores, la recogida de experiencia y el mapa al sostenerlo siguen pendientes. No se incluyen vídeos, logs ni el mundo del usuario.

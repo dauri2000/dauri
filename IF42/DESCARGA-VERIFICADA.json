@@ -1,0 +1,70 @@
+{
+  "artifact": "ViaFabricPlus-Bedrock-IF42.jar",
+  "artifact_commit": "98e1770",
+  "branch": "codex/if35-download",
+  "sha256": "b68792fae9319c2e82ef09c387243fd019cf2f4b2929320ba7e22188f4f0f144",
+  "bytes": 214961870,
+  "public_url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF42/ViaFabricPlus-Bedrock-IF42.jar",
+  "upload": [
+    {
+      "stage": "local_object",
+      "sha256": "b68792fae9319c2e82ef09c387243fd019cf2f4b2929320ba7e22188f4f0f144",
+      "bytes": 214961870
+    },
+    {
+      "stage": "batch",
+      "hostname": "github.com",
+      "http_status": 200
+    },
+    {
+      "stage": "upload",
+      "hostname": "github-cloud.s3.amazonaws.com",
+      "http_status": 200
+    },
+    {
+      "stage": "verify",
+      "hostname": "lfs.github.com",
+      "http_status": 200
+    },
+    {
+      "stage": "complete",
+      "status": "lfs_object_uploaded_or_already_present",
+      "sha256": "b68792fae9319c2e82ef09c387243fd019cf2f4b2929320ba7e22188f4f0f144",
+      "bytes": 214961870
+    }
+  ],
+  "full_lfs_object": {
+    "batch_http_status": 200,
+    "download_hostname": "github-cloud.githubusercontent.com",
+    "object_http_status": 200,
+    "bytes": 214961870,
+    "sha256": "b68792fae9319c2e82ef09c387243fd019cf2f4b2929320ba7e22188f4f0f144",
+    "jar_magic": true,
+    "lfs_pointer": false,
+    "verified_full_lfs_object": true,
+    "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com"
+  },
+  "public_route_and_pointer": {
+    "public_raw_route": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF42/ViaFabricPlus-Bedrock-IF42.jar",
+    "published_commit": "98e1770",
+    "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com",
+    "raw_route_status": 302,
+    "raw_route_destination_hostname": "media.githubusercontent.com",
+    "pointer_route_status": 200,
+    "published_pointer": true,
+    "pointer_oid": "sha256:b68792fae9319c2e82ef09c387243fd019cf2f4b2929320ba7e22188f4f0f144",
+    "pointer_size": 214961870,
+    "pointer_matches_verified_object": true,
+    "expected_public_raw_redirect": true,
+    "public_pointer_and_route_verified": true
+  },
+  "verification_complete": true,
+  "limitations": {
+    "public_media_full_get_executed": false,
+    "public_media_full_get_reason": "media.githubusercontent.com is blocked by the known environment proxy policy; not retried. Public GitHub redirect, raw pointer and complete canonical LFS object verified separately.",
+    "minecraft_game_executed": false,
+    "actual_mixin_engine_executed": false,
+    "live_bedrock_server_test_executed": false,
+    "runtime_check_scope": "54 core policy checks, 9 pure reflection/bounded-I/O checks, 8 actual emitted-client helper checks using explicit synthetic Minecraft/Fabric API boundaries; source/ASM/ABI reviews. No graphical-game claim."
+  }
+}
