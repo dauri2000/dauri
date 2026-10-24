@@ -203,7 +203,71 @@
   "live_server_tested": false,
   "user_previously_loaded_version_confirmed": false,
   "installation_requirement": "Close Minecraft fully, install only one Bedrock addon and restart; check ViaFabricPlus Bedrock - IF41 / InteractionFix41.1 in Mods before testing.",
-  "download_verification": "Pending root-agent Git LFS upload and HTTP GET/hash verification of the complete JAR",
+  "download_verification": {
+    "artifact": "ViaFabricPlus-Bedrock-IF41.jar",
+    "published_commit": "a4573f8",
+    "verified_at_utc": "2026-10-24T17:18:01.121143+00:00",
+    "sha256": "05de30c2956f5b590cdc8ae1ed5c0f66141eae85a8ffb21a312160c83e9ba93a",
+    "bytes": 214866159,
+    "public_download_url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF41/ViaFabricPlus-Bedrock-IF41.jar",
+    "public_route": {
+      "public_raw_route": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF41/ViaFabricPlus-Bedrock-IF41.jar",
+      "published_commit": "a4573f8",
+      "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com",
+      "raw_route_status": 302,
+      "raw_route_destination_hostname": "media.githubusercontent.com",
+      "pointer_route_status": 200,
+      "published_pointer": true,
+      "pointer_oid": "sha256:05de30c2956f5b590cdc8ae1ed5c0f66141eae85a8ffb21a312160c83e9ba93a",
+      "pointer_size": 214866159,
+      "pointer_matches_verified_object": true,
+      "expected_public_raw_redirect": true,
+      "public_pointer_and_route_verified": true
+    },
+    "full_lfs_object_download": {
+      "batch_http_status": 200,
+      "download_hostname": "github-cloud.githubusercontent.com",
+      "object_http_status": 200,
+      "bytes": 214866159,
+      "sha256": "05de30c2956f5b590cdc8ae1ed5c0f66141eae85a8ffb21a312160c83e9ba93a",
+      "jar_magic": true,
+      "lfs_pointer": false,
+      "verified_full_lfs_object": true,
+      "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com"
+    },
+    "upload_verification": [
+      {
+        "stage": "local_object",
+        "sha256": "05de30c2956f5b590cdc8ae1ed5c0f66141eae85a8ffb21a312160c83e9ba93a",
+        "bytes": 214866159
+      },
+      {
+        "stage": "batch",
+        "hostname": "github.com",
+        "http_status": 200
+      },
+      {
+        "stage": "upload",
+        "hostname": "github-cloud.s3.amazonaws.com",
+        "http_status": 200
+      },
+      {
+        "stage": "verify",
+        "hostname": "lfs.github.com",
+        "http_status": 200
+      },
+      {
+        "stage": "complete",
+        "status": "lfs_object_uploaded_or_already_present",
+        "sha256": "05de30c2956f5b590cdc8ae1ed5c0f66141eae85a8ffb21a312160c83e9ba93a",
+        "bytes": 214866159
+      }
+    ],
+    "limitations": [
+      "Full public media-host GET was not attempted because of a known environment proxy restriction; public route/pointer and complete LFS object were verified separately.",
+      "File delivery validation does not constitute a game or Bedrock-server flight/dismount test."
+    ]
+  },
   "pending_issues": {
     "block_orientation_and_downward_observer": "No block patch; manual placement/height behavior still requires confirmation.",
     "xp": "Pending its specific video; not changed by IF41.",

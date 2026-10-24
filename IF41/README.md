@@ -11,7 +11,7 @@ IF41 corrige dos rutas locales del Happy Ghast: la posición interna del jinete 
 
 La entrega es el JAR completo, sin actualizador ni versiones intermedias. Minecraft Java 26.3 y estos mods requieren Java 25 o superior.
 
-Pasaron **15 comprobaciones dirigidas y cuatro independientes**, con los mismos cuatro hashes finales. Las independientes ejecutan el manejador completo de entrada: conserva posición actual, velocidad nativa y frame; mantiene la autoridad de correcciones de vehículo y jugador, rechaza epochs antiguos y conserva las dos órdenes de desmontaje pendiente de IF40. La revisión ASM conserva los métodos originales fuera de las inserciones aprobadas.
+Pasaron **15 comprobaciones dirigidas y cuatro independientes**, con los mismos cuatro hashes finales. Las independientes ejecutan el manejador completo de entrada: conserva posición actual, velocidad nativa y frame; mantiene la autoridad de correcciones de vehículo y jugador, rechaza epochs antiguos y conserva el destino pendiente al recibir una corrección del vehículo y la prioridad de una posición posterior del jugador. La revisión ASM conserva los métodos originales fuera de las inserciones aprobadas.
 
 Solo se modifican tres clases y se añade un helper. `HappyGhastEntity` de IF40 permanece idéntico por SHA256, igual que el resto de entradas no autorizadas. Fuentes, reproducciones, revisiones y resultados están en `META-INF/stackanvil-if41-changes.zip`; `VERIFICACION.json` detalla los hashes y separa las 15 y cuatro comprobaciones. Las suites históricas se conservan como evidencia y no se repitieron.
 
