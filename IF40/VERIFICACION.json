@@ -1,0 +1,172 @@
+{
+  "delivery": "Full IF40 mod JAR via Git LFS; no updater or delta",
+  "artifact": "ViaFabricPlus-Bedrock-IF40.jar",
+  "sha256": "a62650d6decaf06bca237857b166edc736389892716c2526d9b06563cfcdc2a5",
+  "size_bytes": 214818407,
+  "version": "1.1.1-StackAnvil-InteractionFix40.1",
+  "full_mod_package_verification": {
+    "delivery": "Complete mod JAR, not an updater or delta",
+    "input_sha256": "f96a6af25c60e7651efb1c12079421fb24ab5cb19c09ff3e66c44fd6387befe2",
+    "input_version": "1.1.1-StackAnvil-InteractionFix39.1",
+    "output_sha256": "a62650d6decaf06bca237857b166edc736389892716c2526d9b06563cfcdc2a5",
+    "size_bytes": 214818407,
+    "version": "1.1.1-StackAnvil-InteractionFix40.1",
+    "root_entry_count": 1207,
+    "package": {
+      "unchanged_entries": 1204,
+      "changed_entries": [
+        "META-INF/jars/ViaBedrock-0.0.31-StackAnvil.jar",
+        "fabric.mod.json"
+      ],
+      "added_entries": [
+        "META-INF/stackanvil-if40-changes.zip"
+      ],
+      "all_other_entry_contents_identical": true,
+      "no_duplicate_entries": true,
+      "crc_ok": true
+    },
+    "core": {
+      "unchanged_entries": 1520,
+      "changed_entries": [
+        "net/raphimc/viabedrock/api/model/entity/HappyGhastEntity.class"
+      ],
+      "added_entries": [],
+      "all_other_entry_contents_identical": true,
+      "no_duplicate_entries": true,
+      "crc_ok": true
+    },
+    "replacement_inputs": {
+      "net/raphimc/viabedrock/api/model/entity/HappyGhastEntity.class": {
+        "file": "/workspace/minecraft/analysis/happy-ghast-if40/classes/net/raphimc/viabedrock/api/model/entity/HappyGhastEntity.class",
+        "sha256": "b5204b4e9e25a8b43d12cc83dda60a5362610807348b112669bbf38c77fcb2d2"
+      }
+    },
+    "addition_inputs": {},
+    "original_source_unchanged": true,
+    "earlier_source_bundles_and_shield_classes_identical": true,
+    "no_user_logs_added": true,
+    "minecraft_graphical_tested": false,
+    "server_functional_tested": false,
+    "limits": [
+      "Package content verification does not test Minecraft GUI or a live server."
+    ]
+  },
+  "new_if40_independent_checks": {
+    "status": "passed final same-class run",
+    "independent_checks": 9,
+    "runtime": "Java25 -Xverify:all",
+    "tested_happy_ghast_class_sha256": "b5204b4e9e25a8b43d12cc83dda60a5362610807348b112669bbf38c77fcb2d2",
+    "earlier_pending_race_baseline_class_sha256": "57bcb8c902a569f0b04ae1b8fbc6f3b7f5031845aeef304c8d7e08563f1617d3",
+    "real_paths": [
+      "EntityTracker.applyEntityLink",
+      "ClientPlayerEntity.dismountVehicle",
+      "EntityPackets.lambda$register$3 MOVE_ENTITY_ABSOLUTE"
+    ],
+    "input_fixture": "Reflection emulates the pre-existing pending exit cache created by Shift/tick; all following movement/link/dismount logic is real",
+    "production_modified": false,
+    "game_or_server_started": false,
+    "files": {
+      "README.md": "4e31257e522cb1ace146333895a00f896b5137f860ea9e5fe186dc31defc3bb2",
+      "src/HappyGhastAuthorityIndependent.java": "265b4fffdd38d945e8eb263631f979bda80907a90740a2b3f407329a8136e238",
+      "baseline-IF39.txt": "2c9a4f84932d523ad25983a07b97397f250f074fdaaec2bcf0910fa4fbf918c3",
+      "baseline-pending-race-candidate57.txt": "287c8c681231c2c0cc9aaa3741dd9b051396f92b64514f6b357d26b04ee0c706",
+      "patched-IF40.txt": "50ff1605f6d11bdb5076c4b6a41d2ba7585078b0bb031b6c1abad1d94deb9161"
+    },
+    "new_checks_passed": 9,
+    "classes": {
+      "net/raphimc/viabedrock/api/model/entity/HappyGhastEntity.class": "b5204b4e9e25a8b43d12cc83dda60a5362610807348b112669bbf38c77fcb2d2"
+    }
+  },
+  "new_if40_model_and_asm_verification": {
+    "baseline_failure": "Actual entity position advances to(500,100,-300), retained server delta base stays(1,64,2), and original dismountOrigin incorrectly selects the older base.",
+    "patched_model_check": "dismountOrigin selects active locally predicted position; reconcileDismount does not reapply the older cache; retained delta base remains unchanged.",
+    "class_sha256": "b5204b4e9e25a8b43d12cc83dda60a5362610807348b112669bbf38c77fcb2d2",
+    "original_class_sha256": "c584969f3f51693030425fa0de90e3eda9326a8d5e485b3deac4defe677c2d35",
+    "scope": "HappyGhastEntity only: one ownership boolean, one predicted-position override, one guarded pending-target helper, and targeted hooks in three original methods. All original authority paths preserved.",
+    "bytecode_checks": [
+      "ASM BasicVerifier every method",
+      "Removing one field, two added methods and four insertions in three original methods reproduces IF39 canonical class exactly",
+      "Java25 -Xverify:all actual entity model execution"
+    ],
+    "server_authority_note": "Explicit corrections and ordinary non-predicted updates still execute setPosition, clearing local ownership; retainServerMovement still keeps the server delta merge base.",
+    "independent_packet_authority_checks": {
+      "checks_passed": 9,
+      "class_sha256": "b5204b4e9e25a8b43d12cc83dda60a5362610807348b112669bbf38c77fcb2d2",
+      "output": "../happy-ghast-input-if40/independent-check/patched-IF40.txt",
+      "baseline_pending_race": "../happy-ghast-input-if40/independent-check/baseline-pending-race-candidate57.txt",
+      "coverage": [
+        "Real rider mount/remove links and ClientPlayerEntity dismount",
+        "Ordinary cached movement does not override local prediction",
+        "Real MOVE_ENTITY_ABSOLUTE teleport and force flags retain position, rotation and ground authority",
+        "No-cache and remote/server-owned movement",
+        "Repeated mount cycles",
+        "Pending dismount target is refreshed by a later forced vehicle correction",
+        "A subsequent explicit player correction wins"
+      ]
+    },
+    "live_server_tested": false,
+    "minecraft_graphics_tested": false,
+    "pending_request_race": "A real vehicle force correction arriving between the dismount request and unlink now refreshes the already pending player target through the existing ClientPlayerEntity.setPosition path. A later explicit player position still takes priority.",
+    "production_class_frozen": true
+  },
+  "packaged_class_sha256_equals_independently_tested_class": true,
+  "new_test_execution_for_packaging": false,
+  "runtime_scope": {
+    "changed_classes": [
+      "net/raphimc/viabedrock/api/model/entity/HappyGhastEntity.class"
+    ],
+    "added_classes": [],
+    "private_flags_added": 1,
+    "methods_added": 2,
+    "original_methods_with_insertions": 3,
+    "insertions": 4,
+    "pending_dismount_target_correction_race_protected": true
+  },
+  "source_and_evidence_in_mod": "META-INF/stackanvil-if40-changes.zip",
+  "new_evidence_files": [
+    "/workspace/minecraft/analysis/if40/build_final.py",
+    "/workspace/minecraft/analysis/if40/build-inputs.json",
+    "/workspace/minecraft/analysis/happy-ghast-if40/PatchHappyGhastDismountIF40.java",
+    "/workspace/minecraft/analysis/happy-ghast-if40/src/HappyGhastOriginRegression.java",
+    "/workspace/minecraft/analysis/happy-ghast-if40/baseline-IF39.txt",
+    "/workspace/minecraft/analysis/happy-ghast-if40/patched-origin-IF40.txt",
+    "/workspace/minecraft/analysis/happy-ghast-if40/README.md",
+    "/workspace/minecraft/analysis/happy-ghast-if40/verification.json",
+    "/workspace/minecraft/analysis/happy-ghast-if40/asm-verification.txt",
+    "/workspace/minecraft/analysis/happy-ghast-if40/root-review.md",
+    "/workspace/minecraft/analysis/happy-ghast-input-if40/input-review.md",
+    "/workspace/minecraft/analysis/happy-ghast-input-if40/class-comparison.json",
+    "/workspace/minecraft/analysis/happy-ghast-input-if40/independent-check/README.md",
+    "/workspace/minecraft/analysis/happy-ghast-input-if40/independent-check/verification.json",
+    "/workspace/minecraft/analysis/happy-ghast-input-if40/independent-check/src/HappyGhastAuthorityIndependent.java",
+    "/workspace/minecraft/analysis/happy-ghast-input-if40/independent-check/baseline-IF39.txt",
+    "/workspace/minecraft/analysis/happy-ghast-input-if40/independent-check/baseline-pending-race-candidate57.txt",
+    "/workspace/minecraft/analysis/happy-ghast-input-if40/independent-check/patched-IF40.txt",
+    "/workspace/minecraft/analysis/happy-ghast-reference-if40/findings.md",
+    "/workspace/minecraft/analysis/happy-ghast-reference-if40/protocol/findings.md"
+  ],
+  "historical_evidence": [
+    {
+      "version": "IF39",
+      "status": "All core entries other than HappyGhastEntity and all prior root evidence retained; 26 bulk-crafting checks not rerun for IF40."
+    },
+    {
+      "versions": "IF36–IF38",
+      "status": "Previous source/evidence bundles preserved byte-for-byte; prior regression suites not rerun."
+    }
+  ],
+  "user_media_or_private_logs_added": false,
+  "minecraft_graphics_tested": false,
+  "live_server_tested": false,
+  "download_verification": "Pending root-agent LFS upload and independent HTTP GET/hash check",
+  "pending_issues": {
+    "xp": "Awaiting a video that shows the XP problem; not changed by IF40.",
+    "map_image_in_hand": "Previously reported image issue remains pending; not changed by IF40."
+  },
+  "limits": [
+    "The reviewed user clip shows flight but does not visually reproduce the reported dismount jump; the defect and pending-target race were reproduced locally.",
+    "The independent fixture supplies in-memory connection/output boundaries and reflects the pending Shift input; subsequent movement, links and dismount use real methods.",
+    "Local checks preserve explicit teleport/force corrections and later player corrections, but do not prove live-server acceptance of an entire predicted flight path.",
+    "No graphical Minecraft session or live Bedrock server was started."
+  ]
+}
