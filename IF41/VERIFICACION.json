@@ -1,0 +1,220 @@
+{
+  "delivery": "Full IF41 mod JAR via Git LFS; no updater or delta",
+  "artifact": "ViaFabricPlus-Bedrock-IF41.jar",
+  "sha256": "05de30c2956f5b590cdc8ae1ed5c0f66141eae85a8ffb21a312160c83e9ba93a",
+  "size_bytes": 214866159,
+  "version": "1.1.1-StackAnvil-InteractionFix41.1",
+  "full_mod_package_verification": {
+    "delivery": "Complete mod JAR, not an updater or delta",
+    "input_sha256": "a62650d6decaf06bca237857b166edc736389892716c2526d9b06563cfcdc2a5",
+    "input_version": "1.1.1-StackAnvil-InteractionFix40.1",
+    "output_sha256": "05de30c2956f5b590cdc8ae1ed5c0f66141eae85a8ffb21a312160c83e9ba93a",
+    "size_bytes": 214866159,
+    "version": "1.1.1-StackAnvil-InteractionFix41.1",
+    "root_entry_count": 1208,
+    "package": {
+      "unchanged_entries": 1205,
+      "changed_entries": [
+        "META-INF/jars/ViaBedrock-0.0.31-StackAnvil.jar",
+        "fabric.mod.json"
+      ],
+      "added_entries": [
+        "META-INF/stackanvil-if41-changes.zip"
+      ],
+      "all_other_entry_contents_identical": true,
+      "no_duplicate_entries": true,
+      "crc_ok": true
+    },
+    "core": {
+      "unchanged_entries": 1518,
+      "changed_entries": [
+        "net/raphimc/viabedrock/api/model/entity/ClientPlayerEntity.class",
+        "net/raphimc/viabedrock/protocol/packet/MultiStatePackets.class",
+        "net/raphimc/viabedrock/protocol/storage/PlayerPredictionStorage.class"
+      ],
+      "added_entries": [
+        "net/raphimc/viabedrock/protocol/storage/HappyGhastRiderPrediction.class"
+      ],
+      "all_other_entry_contents_identical": true,
+      "no_duplicate_entries": true,
+      "crc_ok": true
+    },
+    "replacement_inputs": {
+      "net/raphimc/viabedrock/api/model/entity/ClientPlayerEntity.class": {
+        "file": "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/classes/net/raphimc/viabedrock/api/model/entity/ClientPlayerEntity.class",
+        "sha256": "6f2af94bb54b4abb5a9496de00744ab098a3ad846c1e489c3de2536be5c3b9c0"
+      },
+      "net/raphimc/viabedrock/protocol/packet/MultiStatePackets.class": {
+        "file": "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/classes/net/raphimc/viabedrock/protocol/packet/MultiStatePackets.class",
+        "sha256": "dab6764382d31f4f453f82a86937360369cb7e69b60223817564e1104fb9985c"
+      },
+      "net/raphimc/viabedrock/protocol/storage/PlayerPredictionStorage.class": {
+        "file": "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/classes/net/raphimc/viabedrock/protocol/storage/PlayerPredictionStorage.class",
+        "sha256": "ac6173e5ec86cea0d88e90007fd9b6035c0b0483741ffe98f7c0b907426eb1c0"
+      }
+    },
+    "addition_inputs": {
+      "net/raphimc/viabedrock/protocol/storage/HappyGhastRiderPrediction.class": {
+        "file": "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/classes/net/raphimc/viabedrock/protocol/storage/HappyGhastRiderPrediction.class",
+        "sha256": "078ed736dd03e5953982a52497dc533382cb4b8a67af09839ed92fb61aa28f76"
+      }
+    },
+    "protected_core_class_sha256s": {
+      "net/raphimc/viabedrock/api/model/entity/HappyGhastEntity.class": "b5204b4e9e25a8b43d12cc83dda60a5362610807348b112669bbf38c77fcb2d2"
+    },
+    "original_source_unchanged": true,
+    "earlier_source_bundles_and_shield_classes_identical": true,
+    "no_user_logs_added": true,
+    "minecraft_graphical_tested": false,
+    "server_functional_tested": false,
+    "limits": [
+      "Package content verification does not test Minecraft GUI or a live server."
+    ]
+  },
+  "approved_new_if41_checks": {
+    "state": "Root TARGETREADY and TESTSPASS; final four production classes frozen",
+    "new_checks_passed": 19,
+    "classes": {
+      "net/raphimc/viabedrock/api/model/entity/ClientPlayerEntity.class": "6f2af94bb54b4abb5a9496de00744ab098a3ad846c1e489c3de2536be5c3b9c0",
+      "net/raphimc/viabedrock/protocol/packet/MultiStatePackets.class": "dab6764382d31f4f453f82a86937360369cb7e69b60223817564e1104fb9985c",
+      "net/raphimc/viabedrock/protocol/storage/HappyGhastRiderPrediction.class": "078ed736dd03e5953982a52497dc533382cb4b8a67af09839ed92fb61aa28f76",
+      "net/raphimc/viabedrock/protocol/storage/PlayerPredictionStorage.class": "ac6173e5ec86cea0d88e90007fd9b6035c0b0483741ffe98f7c0b907426eb1c0"
+    },
+    "directed_checks": {
+      "checks_passed": 15,
+      "source": "../ghast-full-audit-if41/vehicle/verification.json.candidate",
+      "recorded_report": {
+        "classes": {
+          "net/raphimc/viabedrock/api/model/entity/ClientPlayerEntity.class": "6f2af94bb54b4abb5a9496de00744ab098a3ad846c1e489c3de2536be5c3b9c0",
+          "net/raphimc/viabedrock/protocol/packet/MultiStatePackets.class": "dab6764382d31f4f453f82a86937360369cb7e69b60223817564e1104fb9985c",
+          "net/raphimc/viabedrock/protocol/storage/HappyGhastRiderPrediction.class": "078ed736dd03e5953982a52497dc533382cb4b8a67af09839ed92fb61aa28f76",
+          "net/raphimc/viabedrock/protocol/storage/PlayerPredictionStorage.class": "ac6173e5ec86cea0d88e90007fd9b6035c0b0483741ffe98f7c0b907426eb1c0"
+        },
+        "source_sha256": {
+          "src/net/raphimc/viabedrock/protocol/storage/HappyGhastRiderPrediction.java": "877623deed72590518d313e2eb36a448d3fd791618fa678396481f8e6fb51619",
+          "PatchHappyGhastRiderIF41.java": "2c3acd2ea158537be935ab07b8c11a5b4df13fbdafd318433874f954739c8b93",
+          "HappyGhastRiderRegression.java": "1bf771e02aa9a9fff6983dade7487fa01254e60dcc69442b2f4d0bbc4392469f"
+        },
+        "checks_passed": 15,
+        "baseline": "baseline-IF40-rider-positive.txt (expected failure against delivered IF40)",
+        "patched": "patched-IF41-rider.txt",
+        "bytecode": "asm-verification.txt: all original methods BasicVerifier; exact canonical reversal for all three modified original classes",
+        "channel_direction": "Positive fixture contains only S2C receivers (context, actor_state_v3, input_permissions); no player_prediction_v7 C2S receiver invented",
+        "scope": "Three original classes + one helper; HappyGhastEntity IF40 b520 unchanged; VehiclePredictionStorage and PlayerPredictionStorage.take unchanged",
+        "independent_review": {
+          "checks_passed": 4,
+          "output": "../independent/patched-IF41.txt",
+          "helper_sha256": "078ed736dd03e5953982a52497dc533382cb4b8a67af09839ed92fb61aa28f76",
+          "scope": "Actual full CLIENT_TICK_END PAI native motion/current ghast position; real forced vehicle correction/old epoch; real player correction/waiting; both pending-exit orders"
+        },
+        "delivered_jar_modified": false,
+        "live_server_tested": false,
+        "frozen": true
+      }
+    },
+    "independent_checks": {
+      "checks_passed": 4,
+      "source": "../ghast-full-audit-if41/independent/verification.json",
+      "recorded_report": {
+        "status": "passed corrected candidate",
+        "new_checks_passed": 4,
+        "runtime": "Java25 -Xverify:all",
+        "classes": {
+          "net/raphimc/viabedrock/api/model/entity/ClientPlayerEntity.class": "6f2af94bb54b4abb5a9496de00744ab098a3ad846c1e489c3de2536be5c3b9c0",
+          "net/raphimc/viabedrock/protocol/packet/MultiStatePackets.class": "dab6764382d31f4f453f82a86937360369cb7e69b60223817564e1104fb9985c",
+          "net/raphimc/viabedrock/protocol/storage/HappyGhastRiderPrediction.class": "078ed736dd03e5953982a52497dc533382cb4b8a67af09839ed92fb61aa28f76",
+          "net/raphimc/viabedrock/protocol/storage/PlayerPredictionStorage.class": "ac6173e5ec86cea0d88e90007fd9b6035c0b0483741ffe98f7c0b907426eb1c0"
+        },
+        "unchanged_if40_happy_ghast_sha256": "b5204b4e9e25a8b43d12cc83dda60a5362610807348b112669bbf38c77fcb2d2",
+        "full_PAI_handler_executed": true,
+        "native_motion_in_PAI": [
+          0.35,
+          0.02,
+          0.2
+        ],
+        "only_actual_S2C_receivers": true,
+        "player_C2S_channel_advertised_as_receiver": false,
+        "production_modified": false,
+        "live_server_tested": false,
+        "game_started": false,
+        "boundary": "I/O and loaded chunk availability only; Shift pending cache prepared by reflection",
+        "files": {
+          "README.md": "97bba9faef1b279db566002c0a22ee5fdfa5e8c4545594528c698877f6c32705",
+          "src/HappyGhastRiderAuthorityIndependent.java": "1a727ce501ae636e896a392dae53cd9faa650e30825d677ccef348f869902dce",
+          "patched-IF41.txt": "2d397eca0ff7e9c563a662c95ddb67f2b5c8ff0b21d3cae8b1cc91032dabe25f"
+        }
+      }
+    },
+    "class_hash_source": "vehicle/candidate-class-hashes.json and vehicle/verification.json.candidate.classes, cross-checked against independent classes; native top-level classes are baseline IF40",
+    "app_tests_rerun_for_packaging": false,
+    "live_server_tested": false,
+    "minecraft_graphics_tested": false,
+    "user_active_if40_confirmed": false
+  },
+  "packaged_four_class_hashes_equal_directed_and_independent_tested_classes": true,
+  "runtime_scope": {
+    "replaced_class_count": 3,
+    "new_helper_count": 1,
+    "happy_ghast_entity_if40_sha256": "b5204b4e9e25a8b43d12cc83dda60a5362610807348b112669bbf38c77fcb2d2",
+    "if40_dismount_implementation_preserved": true,
+    "block_orientation_changed": false
+  },
+  "source_and_evidence_in_mod": "META-INF/stackanvil-if41-changes.zip",
+  "new_evidence_files": [
+    "/workspace/minecraft/analysis/if41/build_final.py",
+    "/workspace/minecraft/analysis/if41/build-inputs.json",
+    "/workspace/minecraft/analysis/if41/approved-checks.json",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/src/net/raphimc/viabedrock/protocol/storage/HappyGhastRiderPrediction.java",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/PatchHappyGhastRiderIF41.java",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/HappyGhastRiderRegression.java",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/VehicleFrameCorrelationRegression.java",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/README.md",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/findings.md",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/root-review.md",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/asm-verification.txt",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/candidate-class-hashes.json",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/verification.json",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/baseline-IF40-rider-positive.txt",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/patched-IF41-rider.txt",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/baseline-frame-and-unload-IF40.txt",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/vehicle/baseline-frame-correlation-IF40.txt",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/independent/src/HappyGhastRiderAuthorityIndependent.java",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/independent/README.md",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/independent/patched-IF41.txt",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/independent/verification.json",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/references/findings.md",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/references/upstream-viabedrock/findings.md",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/references/upstream-viabedrock/sources.json",
+    "/workspace/minecraft/analysis/ghast-full-audit-if41/references/geyser/manifest.json"
+  ],
+  "historical_evidence": [
+    {
+      "version": "IF40",
+      "status": "Dismount class and all prior source bundles preserved; earlier nine-check suite not rerun. New IF41 independent checks also exercise the two pending-exit orders."
+    },
+    {
+      "versions": "IF36–IF39",
+      "status": "Earlier source/evidence bundles retained byte-for-byte; historical regression suites not rerun for IF41."
+    }
+  ],
+  "app_tests_rerun_for_packaging": false,
+  "user_media_or_private_logs_added": false,
+  "minecraft_graphics_tested": false,
+  "live_server_tested": false,
+  "user_previously_loaded_version_confirmed": false,
+  "installation_requirement": "Close Minecraft fully, install only one Bedrock addon and restart; check ViaFabricPlus Bedrock - IF41 / InteractionFix41.1 in Mods before testing.",
+  "download_verification": "Pending root-agent Git LFS upload and HTTP GET/hash verification of the complete JAR",
+  "pending_issues": {
+    "block_orientation_and_downward_observer": "No block patch; manual placement/height behavior still requires confirmation.",
+    "xp": "Pending its specific video; not changed by IF41.",
+    "map_image_in_hand": "Previously reported image problem remains pending; not changed by IF41."
+  },
+  "limits": [
+    "Nineteen new checks are fifteen directed plus four independent cases, kept separate in the recorded reports.",
+    "The native report top-level classes describe baseline IF40. Final production hashes use candidate.classes and are cross-checked with the independent four-class report.",
+    "The independent test executes the full CLIENT_TICK_END PAI handler and captures typed packet writes at an I/O boundary; it does not prove transport or live Bedrock server acceptance.",
+    "World chunk availability and connection/output are controlled in memory; the pending Shift cache is prepared by reflection.",
+    "The helper seat envelope is a broad sanity bound, not exact Bedrock seating physics or a server acknowledgment.",
+    "No graphical Minecraft session or live server was started, and the version loaded during the earlier user report remains unconfirmed."
+  ]
+}
