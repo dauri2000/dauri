@@ -1,0 +1,196 @@
+{
+  "delivery": "Complete mod JAR, not an updater or delta",
+  "input_sha256": "b68792fae9319c2e82ef09c387243fd019cf2f4b2929320ba7e22188f4f0f144",
+  "input_version": "1.1.1-StackAnvil-InteractionFix42.1",
+  "output_sha256": "d417b1d30d862ba01337d38b2878c44a7514463000683a0d7d78c4d1c7fce35d",
+  "size_bytes": 215035442,
+  "version": "1.1.1-StackAnvil-InteractionFix43.1",
+  "root_entry_count": 1215,
+  "package": {
+    "unchanged_entries": 1212,
+    "changed_entries": [
+      "META-INF/jars/ViaBedrock-0.0.31-StackAnvil.jar",
+      "fabric.mod.json"
+    ],
+    "added_entries": [
+      "META-INF/stackanvil-if43-changes.zip"
+    ],
+    "all_other_entry_contents_identical": true,
+    "no_duplicate_entries": true,
+    "crc_ok": true
+  },
+  "core": {
+    "unchanged_entries": 1519,
+    "changed_entries": [
+      "net/raphimc/viabedrock/api/util/PacketFactory.class",
+      "net/raphimc/viabedrock/protocol/packet/InteractionPackets.class",
+      "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue.class",
+      "net/raphimc/viabedrock/protocol/storage/ChunkTracker.class"
+    ],
+    "added_entries": [
+      "net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.class"
+    ],
+    "all_other_entry_contents_identical": true,
+    "no_duplicate_entries": true,
+    "crc_ok": true
+  },
+  "replacement_inputs": {
+    "net/raphimc/viabedrock/protocol/packet/InteractionPackets.class": {
+      "file": "/workspace/minecraft/analysis/bulk-placement-if43/core/fix/classes/net/raphimc/viabedrock/protocol/packet/InteractionPackets.class",
+      "sha256": "9e034e04098b40fed717016dd24c1b9ec17c4ff18b7a36a235fa851bf03d3e88"
+    },
+    "net/raphimc/viabedrock/api/util/PacketFactory.class": {
+      "file": "/workspace/minecraft/analysis/bulk-placement-if43/core/fix/classes/net/raphimc/viabedrock/api/util/PacketFactory.class",
+      "sha256": "79a972185313b0be91232a5b41f222b85c4fb458e3510f3d0392009f26b5acdc"
+    },
+    "net/raphimc/viabedrock/protocol/storage/ChunkTracker.class": {
+      "file": "/workspace/minecraft/analysis/bulk-placement-if43/core/fix/classes/net/raphimc/viabedrock/protocol/storage/ChunkTracker.class",
+      "sha256": "895fecc8385d893cc511b1d5eb49f234b7940838d36957c581302d568ceff3fb"
+    },
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue.class": {
+      "file": "/workspace/minecraft/analysis/bulk-placement-if43/core/fix/classes/net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue.class",
+      "sha256": "709569553a5913a9cf3543091c0d00b0fe1ad23e39649951904745f31495da18"
+    }
+  },
+  "addition_inputs": {
+    "net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.class": {
+      "file": "/workspace/minecraft/analysis/bulk-placement-if43/core/fix/classes/net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.class",
+      "sha256": "f542731a02481d7c6f9e17f85c7966745b8d73ba7c0d9eed8db93df80fffe6df"
+    }
+  },
+  "protected_core_class_sha256s": {
+    "net/raphimc/viabedrock/api/model/entity/HappyGhastEntity.class": "b5204b4e9e25a8b43d12cc83dda60a5362610807348b112669bbf38c77fcb2d2",
+    "net/raphimc/viabedrock/api/model/entity/ClientPlayerEntity.class": "6f2af94bb54b4abb5a9496de00744ab098a3ad846c1e489c3de2536be5c3b9c0",
+    "net/raphimc/viabedrock/protocol/packet/MultiStatePackets.class": "dab6764382d31f4f453f82a86937360369cb7e69b60223817564e1104fb9985c",
+    "net/raphimc/viabedrock/protocol/storage/PlayerPredictionStorage.class": "ac6173e5ec86cea0d88e90007fd9b6035c0b0483741ffe98f7c0b907426eb1c0",
+    "net/raphimc/viabedrock/protocol/storage/HappyGhastRiderPrediction.class": "078ed736dd03e5953982a52497dc533382cb4b8a67af09839ed92fb61aa28f76",
+    "net/raphimc/viabedrock/api/util/BedrockMaterialComparisonPolicy.class": "9b800936db7d144b433468a69235f20b59d38707ad1a7ce670697f7f748331e8"
+  },
+  "protected_root_entry_sha256s": {
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparison.class": "0488976c5f4a3eb3fdc6bdf3f8e0907e518b7e2a85fd01164273f70242db80b2",
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparisonBytes.class": "0bcf48cc1afd2cbe85ef768de97cca71a302ec46e68af3ac137e21f7a6815cf1",
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockUseEffectsComparison.class": "4004b9ad6a88172756a7e2ae5c9db3beaca26dac03924437d1fc32e8072f0967",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/litematica/MixinLitematicaMaterialSearch.class": "52790a09691bd7773c9b60bf0a4aa587026ec2359b92ae87baf09acb5f24f021",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/malilib/MixinMaLiLibMaterialComparisons.class": "84d7dbdf71fd91a0f4403a71b4d4bd152f1053d3503087c85940f78b91960b08",
+    "viafabricplus-bedrock.mixins.json": "05036158dd163e7be25e79c627be2de124eecd3979272fa89d0567286d437edd"
+  },
+  "original_source_unchanged": true,
+  "earlier_source_bundles_and_shield_classes_identical": true,
+  "no_user_logs_added": true,
+  "minecraft_graphical_tested": false,
+  "server_functional_tested": false,
+  "limits": [
+    "Package content verification does not test Minecraft GUI or a live server."
+  ],
+  "new_checks": {
+    "state": "Root TARGETREADY and TESTSPASS; final five production classes frozen",
+    "new_checks_passed": 20,
+    "classes": {
+      "net/raphimc/viabedrock/api/util/PacketFactory.class": "79a972185313b0be91232a5b41f222b85c4fb458e3510f3d0392009f26b5acdc",
+      "net/raphimc/viabedrock/protocol/packet/InteractionPackets.class": "9e034e04098b40fed717016dd24c1b9ec17c4ff18b7a36a235fa851bf03d3e88",
+      "net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.class": "f542731a02481d7c6f9e17f85c7966745b8d73ba7c0d9eed8db93df80fffe6df",
+      "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue.class": "709569553a5913a9cf3543091c0d00b0fe1ad23e39649951904745f31495da18",
+      "net/raphimc/viabedrock/protocol/storage/ChunkTracker.class": "895fecc8385d893cc511b1d5eb49f234b7940838d36957c581302d568ceff3fb"
+    },
+    "functional_checks": {
+      "total": 20,
+      "owner_targeted": 18,
+      "independent_real_handler": 2
+    },
+    "owner_verification": {
+      "status": "passed",
+      "frozen": true,
+      "checks_passed": 18,
+      "independent_checks_passed": 2,
+      "new_checks_passed": 20,
+      "classes": {
+        "net/raphimc/viabedrock/api/util/PacketFactory.class": "79a972185313b0be91232a5b41f222b85c4fb458e3510f3d0392009f26b5acdc",
+        "net/raphimc/viabedrock/protocol/packet/InteractionPackets.class": "9e034e04098b40fed717016dd24c1b9ec17c4ff18b7a36a235fa851bf03d3e88",
+        "net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.class": "f542731a02481d7c6f9e17f85c7966745b8d73ba7c0d9eed8db93df80fffe6df",
+        "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue.class": "709569553a5913a9cf3543091c0d00b0fe1ad23e39649951904745f31495da18",
+        "net/raphimc/viabedrock/protocol/storage/ChunkTracker.class": "895fecc8385d893cc511b1d5eb49f234b7940838d36957c581302d568ceff3fb"
+      },
+      "base_jar_sha256": "b68792fae9319c2e82ef09c387243fd019cf2f4b2929320ba7e22188f4f0f144",
+      "base_core_sha256": "6032f97e39eebf58b8056af63c104a91020b500326f2bbfcb5924a46f361932a",
+      "runtime": "JDK25.0.5.0.2 -Xverify:all",
+      "source_sha256": {
+        "src/net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.java": "b5fbf77ae56153c7230b547a90cb76ec6bb93fc11101cbee2127565323f2e775",
+        "PatchBlockPlacementPredictionIF43.java": "fbd5635a3405cd58da5cd99890da11005f9ea10c57996fb96811e8005f44af48",
+        "PatchBlockAcknowledgementFenceIF43.java": "c8b78a621d531d48675b91c3cbc26637abce5fa6581f1418d37029420f7d987d",
+        "BlockPlacementPredictionRegression.java": "27d39953fd3b280cd1d5723f55773ec9d6b3c40e432f4853ca12cb4eb21770a8",
+        "../RapidBlockPlacementBaseline.java": "92774f96e6b87df53c02ec83822632278ffcfd18a119f32b26a4105c782fb1dd",
+        "../../client/DirectAckPrefixRegression.java": "7c81dac665f3fc6eac01a8c3856fce3d97020ed6953c203872a590318dd68bc4"
+      },
+      "evidence": {
+        "baseline-IF42.txt": "057a491e6fbbdcc77c5a699dd328714db71ea80d87336ced0e4cb2538df3ed2c",
+        "patched-IF43.txt": "e530db659ae5682962f883eb72a2c4629d930dfca19cd75176e0c44330cd5d9b",
+        "patch-verification.txt": "3de5f7685dfb88dab6333c40a26249b8bf5cdeea25473254b47fc34c45c136de",
+        "fence-patch-verification.txt": "8b37f3d9e739869ea49a206836f2d970d6f33c0efaee61feadd0c58107466998",
+        "../../client/baseline-direct-ack-prefix-IF42.txt": "309afcb7561c784d11fb61217dd6b5435d17a142190d27836bc4f6b94779ceba",
+        "../../client/patched-direct-ack-prefix-IF43.txt": "bffca4b4376ad146fd0cdea24274631da78cef1ee71593409863c3d0cf4d3f01",
+        "../../client/direct-ack-prefix-verification.json": "093180a76493238b63a25bfa537c2af02608e2eff05593c471d509038c9d9279"
+      },
+      "reproduce_command": "python3 /workspace/minecraft/analysis/bulk-placement-if43/core/fix/reproduce.py",
+      "original_preservation": "Single InteractionPackets invocation redirected; three additions to BlockPredictionQueue/ChunkTracker/PacketFactory. Every method BasicVerifier passes and canonical reversal recovers the corresponding delivered IF42 class exactly. No ClientPlayerPackets or ClientPlayerEntity changes.",
+      "baseline": "Two actual USE_ITEM_ON handlers chain A->B->C: updateB alone emitsACK2 beforeC updated. Baseline regression fails expectedACK1 gotACK2. Independent offhand and player-action handlers also bypassed pending prediction through direct ACK2.",
+      "scope": [
+        "Only correlate held-block placement to computed result position and fence direct higher ACKs behind earlier pending predictions",
+        "No placement/inventory actions delayed, retried or resent; no count/runtime/orientation/cooldown changes",
+        "Original queue methods, timeout1s, settle50ms, ordered prefixes and bucket follow-up behavior retained"
+      ],
+      "limitations": [
+        "Java client prediction GUI not executed; server acceptance/rejection not simulated",
+        "Transport/world block lookup/Java item display are headless boundaries; test-only Unsafe skips unrelated world construction",
+        "Clicked-result replaceable/slab cases can conservatively wait until original bounded timeout if result differs from computed adjacent target",
+        "Does not claim to fix all server-side rejection causes or every source of missing blocks"
+      ]
+    },
+    "independent_verification": {
+      "checks_passed": 2,
+      "runtime": "Java25 -Xverify:all",
+      "class_sha256": {
+        "net/raphimc/viabedrock/api/util/PacketFactory.class": "79a972185313b0be91232a5b41f222b85c4fb458e3510f3d0392009f26b5acdc",
+        "net/raphimc/viabedrock/protocol/packet/InteractionPackets.class": "9e034e04098b40fed717016dd24c1b9ec17c4ff18b7a36a235fa851bf03d3e88",
+        "net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.class": "f542731a02481d7c6f9e17f85c7966745b8d73ba7c0d9eed8db93df80fffe6df",
+        "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue.class": "709569553a5913a9cf3543091c0d00b0fe1ad23e39649951904745f31495da18",
+        "net/raphimc/viabedrock/protocol/storage/ChunkTracker.class": "895fecc8385d893cc511b1d5eb49f234b7940838d36957c581302d568ceff3fb"
+      },
+      "production_hashes_unchanged": true,
+      "source_sha256": "7c81dac665f3fc6eac01a8c3856fce3d97020ed6953c203872a590318dd68bc4",
+      "baseline": "baseline-direct-ack-prefix-IF42.txt",
+      "patched": "patched-direct-ack-prefix-IF43.txt",
+      "scope": [
+        "Actual MAIN_HAND placement1 then OFF_HAND use2: no early ACK; local correction packets retained but do not act as native observation; destination update releases ACK2",
+        "Actual MAIN_HAND placement1 then STOP_DESTROY_BLOCK2: no early ACK; destination update releases ACK2",
+        "Queue is empty after actual tick; no recursive marker re-add"
+      ],
+      "boundaries": "Real handlers/models/queue/tick/network packet factories; world lookup/display/network I/O fixtures; immutable-world configuration set in an actual GameSessionStorage model",
+      "minecraft_gui_executed": false,
+      "bedrock_server_validation_simulated": false,
+      "production_modified": false
+    },
+    "separate_scope_review": {
+      "files": [
+        "../client/VerifyPlacementScopeIndependent.java",
+        "../client/independent-canonical-review.txt"
+      ],
+      "type": "Exact canonical reversal and ASM method verification; not added to functional total"
+    },
+    "initial_baseline_diagnostics": {
+      "count": 3,
+      "included_in_new_total": false,
+      "status": "Earlier read-only audit evidence; not rerun or added to the 20 new checks"
+    },
+    "historical_regressions_rerun": false,
+    "app_tests_rerun_for_packaging": false,
+    "minecraft_graphics_tested": false,
+    "bedrock_server_validation_simulated": false,
+    "live_server_tested": false
+  },
+  "parent_review": {
+    "all_prior_addon_classes_and_mixin_configuration_identical": true,
+    "no_added_or_modified_minecraft_or_optional_target_classes": true,
+    "targeted_prefix_fence_reviewed": true,
+    "in_game_confirmation_pending": true
+  }
+}
