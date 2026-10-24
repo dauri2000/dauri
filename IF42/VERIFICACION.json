@@ -1,0 +1,285 @@
+{
+  "delivery": "Complete mod JAR, not an updater or delta",
+  "input_sha256": "05de30c2956f5b590cdc8ae1ed5c0f66141eae85a8ffb21a312160c83e9ba93a",
+  "input_version": "1.1.1-StackAnvil-InteractionFix41.1",
+  "output_sha256": "b68792fae9319c2e82ef09c387243fd019cf2f4b2929320ba7e22188f4f0f144",
+  "size_bytes": 214961870,
+  "version": "1.1.1-StackAnvil-InteractionFix42.1",
+  "root_entry_count": 1214,
+  "package": {
+    "unchanged_entries": 1205,
+    "changed_entries": [
+      "META-INF/jars/ViaBedrock-0.0.31-StackAnvil.jar",
+      "fabric.mod.json",
+      "viafabricplus-bedrock.mixins.json"
+    ],
+    "added_entries": [
+      "META-INF/stackanvil-if42-changes.zip",
+      "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparison.class",
+      "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparisonBytes.class",
+      "com/viaversion/viafabricplus/bedrock/compat/BedrockUseEffectsComparison.class",
+      "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/litematica/MixinLitematicaMaterialSearch.class",
+      "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/malilib/MixinMaLiLibMaterialComparisons.class"
+    ],
+    "all_other_entry_contents_identical": true,
+    "no_duplicate_entries": true,
+    "crc_ok": true
+  },
+  "core": {
+    "unchanged_entries": 1522,
+    "changed_entries": [],
+    "added_entries": [
+      "net/raphimc/viabedrock/api/util/BedrockMaterialComparisonPolicy.class"
+    ],
+    "all_other_entry_contents_identical": true,
+    "no_duplicate_entries": true,
+    "crc_ok": true
+  },
+  "replacement_inputs": {},
+  "addition_inputs": {
+    "net/raphimc/viabedrock/api/util/BedrockMaterialComparisonPolicy.class": {
+      "file": "/workspace/minecraft/analysis/material-compat-if42/policy/classes/net/raphimc/viabedrock/api/util/BedrockMaterialComparisonPolicy.class",
+      "sha256": "9b800936db7d144b433468a69235f20b59d38707ad1a7ce670697f7f748331e8"
+    }
+  },
+  "root_addition_inputs": {
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparison.class": {
+      "file": "/workspace/minecraft/analysis/material-compat-if42/integration/classes/com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparison.class",
+      "sha256": "0488976c5f4a3eb3fdc6bdf3f8e0907e518b7e2a85fd01164273f70242db80b2"
+    },
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparisonBytes.class": {
+      "file": "/workspace/minecraft/analysis/material-compat-if42/integration/classes/com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparisonBytes.class",
+      "sha256": "0bcf48cc1afd2cbe85ef768de97cca71a302ec46e68af3ac137e21f7a6815cf1"
+    },
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockUseEffectsComparison.class": {
+      "file": "/workspace/minecraft/analysis/material-compat-if42/integration/classes/com/viaversion/viafabricplus/bedrock/compat/BedrockUseEffectsComparison.class",
+      "sha256": "4004b9ad6a88172756a7e2ae5c9db3beaca26dac03924437d1fc32e8072f0967"
+    },
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/litematica/MixinLitematicaMaterialSearch.class": {
+      "file": "/workspace/minecraft/analysis/material-compat-if42/integration/classes/com/viaversion/viafabricplus/bedrock/injection/mixin/compat/litematica/MixinLitematicaMaterialSearch.class",
+      "sha256": "52790a09691bd7773c9b60bf0a4aa587026ec2359b92ae87baf09acb5f24f021"
+    },
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/malilib/MixinMaLiLibMaterialComparisons.class": {
+      "file": "/workspace/minecraft/analysis/material-compat-if42/integration/classes/com/viaversion/viafabricplus/bedrock/injection/mixin/compat/malilib/MixinMaLiLibMaterialComparisons.class",
+      "sha256": "84d7dbdf71fd91a0f4403a71b4d4bd152f1053d3503087c85940f78b91960b08"
+    }
+  },
+  "mixin_config_change": {
+    "entry": "viafabricplus-bedrock.mixins.json",
+    "appended_client_mixins": [
+      "compat.malilib.MixinMaLiLibMaterialComparisons",
+      "compat.litematica.MixinLitematicaMaterialSearch"
+    ],
+    "new_mixin_class_entries": [
+      "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/malilib/MixinMaLiLibMaterialComparisons.class",
+      "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/litematica/MixinLitematicaMaterialSearch.class"
+    ],
+    "original_client_prefix_preserved": true,
+    "other_json_fields_and_types_unchanged": true
+  },
+  "protected_core_class_sha256s": {
+    "net/raphimc/viabedrock/api/model/entity/HappyGhastEntity.class": "b5204b4e9e25a8b43d12cc83dda60a5362610807348b112669bbf38c77fcb2d2",
+    "net/raphimc/viabedrock/api/model/entity/ClientPlayerEntity.class": "6f2af94bb54b4abb5a9496de00744ab098a3ad846c1e489c3de2536be5c3b9c0",
+    "net/raphimc/viabedrock/protocol/packet/MultiStatePackets.class": "dab6764382d31f4f453f82a86937360369cb7e69b60223817564e1104fb9985c",
+    "net/raphimc/viabedrock/protocol/storage/PlayerPredictionStorage.class": "ac6173e5ec86cea0d88e90007fd9b6035c0b0483741ffe98f7c0b907426eb1c0",
+    "net/raphimc/viabedrock/protocol/storage/HappyGhastRiderPrediction.class": "078ed736dd03e5953982a52497dc533382cb4b8a67af09839ed92fb61aa28f76"
+  },
+  "original_source_unchanged": true,
+  "earlier_source_bundles_and_shield_classes_identical": true,
+  "no_user_logs_added": true,
+  "minecraft_graphical_tested": false,
+  "server_functional_tested": false,
+  "limits": [
+    "Package content verification does not test Minecraft GUI or a live server."
+  ],
+  "new_checks": {
+    "state": "Root authorized final IF42 packaging after all final reports agree",
+    "new_checks_passed": 71,
+    "new_checks_kind": "Semantic policy and explicit boundary checks; not an actual Minecraft/Mixin execution",
+    "classes": {
+      "net/raphimc/viabedrock/api/util/BedrockMaterialComparisonPolicy.class": "9b800936db7d144b433468a69235f20b59d38707ad1a7ce670697f7f748331e8",
+      "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparison.class": "0488976c5f4a3eb3fdc6bdf3f8e0907e518b7e2a85fd01164273f70242db80b2",
+      "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparisonBytes.class": "0bcf48cc1afd2cbe85ef768de97cca71a302ec46e68af3ac137e21f7a6815cf1",
+      "com/viaversion/viafabricplus/bedrock/compat/BedrockUseEffectsComparison.class": "4004b9ad6a88172756a7e2ae5c9db3beaca26dac03924437d1fc32e8072f0967",
+      "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/litematica/MixinLitematicaMaterialSearch.class": "52790a09691bd7773c9b60bf0a4aa587026ec2359b92ae87baf09acb5f24f021",
+      "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/malilib/MixinMaLiLibMaterialComparisons.class": "84d7dbdf71fd91a0f4403a71b4d4bd152f1053d3503087c85940f78b91960b08"
+    },
+    "mixin_config_sha256": "05036158dd163e7be25e79c627be2de124eecd3979272fa89d0567286d437edd",
+    "semantic_and_boundary_checks": {
+      "total": 71,
+      "core_policy": 54,
+      "pure_jdk_boundaries": 9,
+      "emitted_adapter_with_synthetic_mc_boundaries": 8
+    },
+    "static_checks": {
+      "count": 17,
+      "kind": "Read-only ABI/annotation inspection; separate from 71 semantic/boundary cases",
+      "source": "../review/abi-review.txt"
+    },
+    "policy_verification": {
+      "status": "passed",
+      "frozen": true,
+      "checks_passed": 54,
+      "new_checks_passed": 54,
+      "classes": {
+        "net/raphimc/viabedrock/api/util/BedrockMaterialComparisonPolicy.class": "9b800936db7d144b433468a69235f20b59d38707ad1a7ce670697f7f748331e8"
+      },
+      "source_sha256": {
+        "src/net/raphimc/viabedrock/api/util/BedrockMaterialComparisonPolicy.java": "543fb3af251002fb7b3d89a540a6f2824431a90219657fa102afd7710ee499bd",
+        "src/BedrockMaterialPolicyRegression.java": "ad250c41f6c8f3dc61e02e8d7dd3b72ad4fc6ab09b1f487463942cf6e2b0f18a"
+      },
+      "runtime": "JDK 25.0.5.0.2, -Xverify:all",
+      "reproduce_command": "bash /workspace/minecraft/analysis/material-compat-if42/policy/reproduce-checks.sh",
+      "evidence": {
+        "policy-checks.txt": "2a49fbac4a6845e0b884fd5514771833f7119b44d68b04289c003407732a187d",
+        "baseline-photo-fallback.txt": "9009f8ebd16d2538b37b920733cc54414f7c9f149a281e2a7e2542445a3ca68c",
+        "alias-mapping-scan.json": "2f76b9b6cc65d88fe3c190a70bd3e8a7f5a3e76a876762b3159e7964e095208f"
+      },
+      "production_scope": "Add one pure core comparison-policy class. No mutation of original items, native data, mappings, ItemRewriter, inventory packets or global ItemStack equality.",
+      "baseline": "Actual original ItemDataRewriter.withBedrockItemData produces nonempty CUSTOM_DATA for plain observer, differing from plain schematic data. Early policy candidate also accepted photo_item as paper; final regression rejects it.",
+      "boundaries": [
+        "Actual NativeItemStackData/BedrockItem/NBT/ItemEntry codec/JavaItemMapping/ItemRewriter native augmentation/UseModifiers and shipped mappings/upgrader schemas run.",
+        "Registry contents and runtime-state lookup context are fixtures; current-map resolution uses actual methods.",
+        "UserConnection/network are headless boundaries; BlockStateRewriter bypasses unrelated world constructor with test-only Unsafe.",
+        "No Minecraft/game/server/Litematica runtime was launched; client adapter integration has separate checks.",
+        "Unknown or semantically rich retained native data deliberately remains strict."
+      ],
+      "api": [
+        "canNormalize(com.viaversion.viaversion.api.connection.UserConnection,java.lang.String,com.viaversion.nbt.tag.CompoundTag):boolean",
+        "bridgeUseEffects(com.viaversion.viaversion.api.connection.UserConnection,com.viaversion.nbt.tag.CompoundTag):com.viaversion.viaversion.api.minecraft.item.data.UseEffects"
+      ]
+    },
+    "integration_verification": {
+      "status": "FINAL FROZEN; all scoped checks passed",
+      "runtime_class_count": 5,
+      "runtime_classes": {
+        "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparison.class": "0488976c5f4a3eb3fdc6bdf3f8e0907e518b7e2a85fd01164273f70242db80b2",
+        "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparisonBytes.class": "0bcf48cc1afd2cbe85ef768de97cca71a302ec46e68af3ac137e21f7a6815cf1",
+        "com/viaversion/viafabricplus/bedrock/compat/BedrockUseEffectsComparison.class": "4004b9ad6a88172756a7e2ae5c9db3beaca26dac03924437d1fc32e8072f0967",
+        "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/litematica/MixinLitematicaMaterialSearch.class": "52790a09691bd7773c9b60bf0a4aa587026ec2359b92ae87baf09acb5f24f021",
+        "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/malilib/MixinMaLiLibMaterialComparisons.class": "84d7dbdf71fd91a0f4403a71b4d4bd152f1053d3503087c85940f78b91960b08"
+      },
+      "runtime_resources": {
+        "viafabricplus-bedrock.mixins.json": "05036158dd163e7be25e79c627be2de124eecd3979272fa89d0567286d437edd"
+      },
+      "overlay_roots": {
+        "addon_classes": "/workspace/minecraft/analysis/material-compat-if42/integration/classes",
+        "addon_resources": "/workspace/minecraft/analysis/material-compat-if42/integration/resources"
+      },
+      "core_api": {
+        "class": "net.raphimc.viabedrock.api.util.BedrockMaterialComparisonPolicy",
+        "methods": [
+          "canNormalize(UserConnection,String,ViaCompoundTag)boolean",
+          "bridgeUseEffects(UserConnection,ViaCompoundTag)ViaUseEffects"
+        ],
+        "final_class_sha256": "9b800936db7d144b433468a69235f20b59d38707ad1a7ce670697f7f748331e8"
+      },
+      "authored_source_files": {
+        "src/com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparison.java": "6de99ef8ebbcce9c6e05d8bbfbe2c3fb1b86bea5344a46800d27bd8e9845496b",
+        "src/com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparisonBytes.java": "4b74a2587823388678531540dcfc1bac56f616e92ad5d7ae452d65f980cfc045",
+        "src/com/viaversion/viafabricplus/bedrock/compat/BedrockUseEffectsComparison.java": "aa3be4ae6a80518eb4515c59325be502df771afdb2720c637580af2eabe4a9c0",
+        "src/com/viaversion/viafabricplus/bedrock/injection/mixin/compat/litematica/MixinLitematicaMaterialSearch.java": "e7b65cba7ae91fb0e0ed699223d8670eca64475657ff49ca112bd8246c6806c8",
+        "src/com/viaversion/viafabricplus/bedrock/injection/mixin/compat/malilib/MixinMaLiLibMaterialComparisons.java": "79786bd54c3c7e984d6ab897769a73d2971ef5973c4d94b35c0449a711528cba"
+      },
+      "emission_and_verification_sources": {
+        "GenerateMaterialCompatibilityIF42.java": "59281c1a0294bcdc56854766bc8d9684fb0531d99a63f898c85606e7a0793c13",
+        "VerifyMaterialCompatibilityIF42.java": "9058510c29fd785b780bb1a4c7166b4bae72d7f003a6140914669873dbebeb3f",
+        "UseEffectsAndBoundsRegression.java": "1d6ea77bc9078b6abc7321b235f6e043f89f1b1946f93d10b5e6fa67c843c437"
+      },
+      "test_only_boundary_sources_root": "client-boundary-check/src",
+      "test_only_boundary_classes_excluded": [
+        "client-boundary-check/classes",
+        "client-boundary-check/test-classes",
+        "test-classes",
+        "generator-classes"
+      ],
+      "checks": {
+        "asm_all5": "abi-and-annotation-verification.txt",
+        "pure_jdk_boundaries": 9,
+        "pure_output": "asm-and-boundaries.txt",
+        "emitted_client_with_synthetic_mc_boundaries": 8,
+        "client_output": "client-boundary-check/checks.txt",
+        "client_manifest": "client-boundary-check/verification.json",
+        "final_policy_coupled_client_checks": 8,
+        "final_core_policy_checks": 54,
+        "final_core_manifest": "../policy/verification.json",
+        "final_core_policy_sha256": "9b800936db7d144b433468a69235f20b59d38707ad1a7ce670697f7f748331e8",
+        "production_hashes_unchanged_before_after_final_run": true
+      },
+      "limitations": {
+        "minecraft_game_executed": false,
+        "mixin_engine_executed": false,
+        "installed_optional_binaries_transformed": false,
+        "optional_absence_proof": "Pinned Mixin0.8.7 @Pseudo source and emitted annotations/type linkage check",
+        "inventory_abi": "Source-verified against pinned Litematica0.29.1 MC26.3; exact vanilla implementation not executed",
+        "use_effects_record_abi": "Guarded public constructor reflection (ZZF); incompatible shape stays strict"
+      },
+      "existing_addon_classes_changed": [],
+      "existing_addon_resource_changes": [
+        "Append two client mixins only; preserve existing fields and order"
+      ],
+      "delivered_jar_modified": false,
+      "frozen": true,
+      "independent_review": {
+        "source_and_abi": "../review/independent-review.md",
+        "bytecode_checks": "../review/abi-review.txt",
+        "config_diff": "../review/mixin-config-diff.json"
+      }
+    },
+    "adapter_boundary_verification": {
+      "checks_passed": 8,
+      "runtime": "Java25 -Xverify:all",
+      "output": "checks.txt",
+      "emitted_production_classes": {
+        "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparison.class": "0488976c5f4a3eb3fdc6bdf3f8e0907e518b7e2a85fd01164273f70242db80b2",
+        "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparisonBytes.class": "0bcf48cc1afd2cbe85ef768de97cca71a302ec46e68af3ac137e21f7a6815cf1",
+        "com/viaversion/viafabricplus/bedrock/compat/BedrockUseEffectsComparison.class": "4004b9ad6a88172756a7e2ae5c9db3beaca26dac03924437d1fc32e8072f0967",
+        "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/litematica/MixinLitematicaMaterialSearch.class": "52790a09691bd7773c9b60bf0a4aa587026ec2359b92ae87baf09acb5f24f021",
+        "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/malilib/MixinMaLiLibMaterialComparisons.class": "84d7dbdf71fd91a0f4403a71b4d4bd152f1053d3503087c85940f78b91960b08"
+      },
+      "real_policy_sha256": "9b800936db7d144b433468a69235f20b59d38707ad1a7ce670697f7f748331e8",
+      "real_policy_fixture_source_sha256": "ad250c41f6c8f3dc61e02e8d7dd3b72ad4fc6ab09b1f487463942cf6e2b0f18a",
+      "real_policy_fixture_class_sha256": "21ddc393a5371e85f5547605c2f10cf0334bf4a6014f1478294cd3e269056d18",
+      "boundary_source_sha256": {
+        "src/EmittedMaterialClientBoundaryCheck.java": "e98784e406ff3c0f49e6bb129fdcebf72d01e593ebadefa10378379b1089a203",
+        "src/com/viaversion/viafabricplus/ViaFabricPlus.java": "f0a82d5924815a1a5d46567ac0e90084348857004fe86a180f712215f37fda0d",
+        "src/com/viaversion/viafabricplus/api/ViaFabricPlusAPI.java": "6dd61db6afdf110fd8873b5c1e7a361243a390b02d63fc88eee83a8b85a3035a",
+        "src/com/viaversion/viafabricplus/bedrock/input/BedrockInputPermissions.java": "f6721682dd5da9f959d2cc90cf5735cf1f9e331e66628dd4d7a2b93674157ea4",
+        "src/net/minecraft/core/DefaultedRegistry.java": "f4d385e42ad2163136bfbcf8b711c6b236e972c2553ea3992729c00377879acc",
+        "src/net/minecraft/core/component/DataComponentType.java": "b69e24bcfff9fef7279cb4c43d5f2e3a7b3bb4a1fec687098907686456baada4",
+        "src/net/minecraft/core/component/DataComponents.java": "536c914b8a641b5362fc1f9888d0dbf6966a0d41ea0df4f50f7acea27a6d7c48",
+        "src/net/minecraft/core/registries/BuiltInRegistries.java": "7303685de77b7b997e50ced3231721b044f41d2ba9850e227a563038194693e5",
+        "src/net/minecraft/nbt/CompoundTag.java": "34d125d7f53ad708c0ddeacf6377904ac50ffbc3f34e09e54f79c54158eb808c",
+        "src/net/minecraft/nbt/NbtIo.java": "94beec417c3f4dd8dee8f91a843836b99e5ccb446c285fbac2291971bc9efd6f",
+        "src/net/minecraft/nbt/Tag.java": "f9e589ff1bdeda6a0d2a860876f8caeb5f129d5c54db36a36ba10c07c8b64561",
+        "src/net/minecraft/resources/Identifier.java": "9fd676787f8a7af79a45bf3a4b6d2f0a37b3cb64f22dd0ba80dffb50ed488c8e",
+        "src/net/minecraft/world/entity/player/Inventory.java": "acc5e830eaab0329d770a0b291dd55c42db043fc9c378d47b99042bd7858a95b",
+        "src/net/minecraft/world/item/Item.java": "ef3ac59274121ba96c1d1f4527bcf83fc40cdf2e6af450ad294b292b35eddcf8",
+        "src/net/minecraft/world/item/ItemStack.java": "86159b8affbfcec88e910d2feef61b4c0cef16ace58cbb8cc5eba0179ae77a9c",
+        "src/net/minecraft/world/item/component/CustomData.java": "c4005853cfc25363fb2596f7a6123ae3be64278305f00ab50f7f2b62a31fd3c6",
+        "src/net/minecraft/world/item/component/UseEffects.java": "6e539214c9103c774ff431633ae110d5a45e4dbb055a53a6fca8b96d30761c41",
+        "src/net/minecraft/world/level/ItemLike.java": "8be1189f3c0b92739fe4897a68eb6f33489dd186de3973d9df482367e8d13d02"
+      },
+      "uses_real_policy_and_vianbt": true,
+      "minecraft_api_boundary_synthetic": true,
+      "minecraft_game_executed": false,
+      "mixin_engine_executed": false,
+      "production_modified": false,
+      "warning": "Synthetic boundary classes must never be included in the production mod.",
+      "production_hashes_equal_before_after_run": true,
+      "sentinel_check": "Original negative extension sentinel -7 preserved when normalized fallback has no match",
+      "policy_hash_equal_before_after_run": true,
+      "frozen": true,
+      "final_check": "One Java25 -Xverify:all execution: existing eight checks, final policy9b800936 + client0488976c"
+    },
+    "app_tests_rerun_for_packaging": false,
+    "minecraft_game_executed": false,
+    "mixin_engine_executed": false,
+    "live_server_tested": false
+  },
+  "parent_review": {
+    "no_added_or_modified_minecraft_or_optional_target_classes": true,
+    "all_existing_core_entries_preserved": true,
+    "in_game_confirmation_pending": true
+  }
+}
