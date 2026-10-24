@@ -21,6 +21,8 @@ El parche se limita a dos llamadas de la búsqueda de fluidos y a un helper nuev
 
 Pasaron 29 comprobaciones dirigidas y siete pruebas independientes del handler de uso del cubo, con los mismos dos hashes finales. La revisión ASM conserva todos los métodos fuera de las dos llamadas y sus cargas de celda, y recupera canónicamente IF43 al retirar el parche. Las pruebas de diagnóstico anteriores y las comparaciones IF42/IF43 se registran aparte y no se suman a esas 36 comprobaciones.
 
+`DESCARGA-VERIFICADA.json` registra la subida, la ruta pública, el puntero LFS y la descarga íntegra del objeto por SHA256. El JAR completo tiene 215.089.131 bytes. Este entorno bloquea el host final de la redirección pública; se verificaron por separado la ruta y el puntero públicos y la descarga completa del objeto LFS correspondiente.
+
 Las pruebas usan los modelos, las formas y los handlers reales de ViaBedrock con límites de mundo y transporte en memoria. No se ejecutó Minecraft gráfico ni un servidor real. No se ha confirmado el bloque exacto de la captura del usuario; falta comprobar el resultado en su servidor. La representación visual de bloques que Java no permite mojar sigue teniendo limitaciones: esta entrega corrige la selección y el envío de recogida de fuentes nativas.
 
 La comparación de cubos normales entre IF42 e IF43 no reprodujo una regresión permanente de recogida. La restricción corregida ya estaba presente en IF43 y versiones anteriores. No se incluyen mundos, vídeos ni logs privados del usuario.
