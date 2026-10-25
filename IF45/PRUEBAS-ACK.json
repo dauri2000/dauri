@@ -1,0 +1,63 @@
+{
+  "frozen": true,
+  "runtime_classes": {
+    "net/raphimc/viabedrock/protocol/packet/WorldPackets.class": "88abdc143706175bc84738cdd7edb3efab21939cd163efef4db32bf03552b3a9",
+    "net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.class": "1721375c839809fcd671b75e08f7fd4c42d4d4509344ed43ac26381c5c3ad730",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionObservations.class": "96cae1180cdcd76e132852d0cafafaa69626506ea84dcf291b26e651ec05db30",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue$Prediction.class": "bda8b58c8b1c774e7617efd25c62d10e13f82226ef4a04628b0f59a8293ad76a",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue.class": "01f126e5c4c78a572d34378c081e28c0987bb3e937a8e7099452af029ca7135e",
+    "net/raphimc/viabedrock/protocol/storage/ChunkTracker.class": "0bce3bad95b2a5f4c2e00b1cb2293bb39d20b0e40234bb676ca67151d83e42ae"
+  },
+  "replacement_classes": [
+    "net/raphimc/viabedrock/protocol/packet/WorldPackets.class",
+    "net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.class",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue$Prediction.class",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue.class",
+    "net/raphimc/viabedrock/protocol/storage/ChunkTracker.class"
+  ],
+  "added_classes": [
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionObservations.class"
+  ],
+  "input_if44_outer_sha256": "4492dc0b0ac3027de0a79246b646bfdf60d028ac253fbcaf709178e8ccca5e6f",
+  "input_core_sha256": "abd28e9a7d1e34ed788cb5b36f3e2d68c12110e26a9fc0ba3cbd309198f112f4",
+  "own_checks_passed": 9,
+  "independent_checks_passed": 7,
+  "ack_candidate_directed_checks_total": 16,
+  "diagnostic_baseline_checks_not_added_again": 4,
+  "historical_suites_rerun": false,
+  "all_method_BasicVerifier": true,
+  "exact_canonical_reversal": true,
+  "jvm_verification": "Java25 -Xverify:all",
+  "primary_only_default": false,
+  "settle_nanos": 50000000,
+  "timeout_nanos": 1000000000,
+  "original_queue_and_tracker_methods_unchanged": true,
+  "packet_factory_and_item_wire_unchanged": true,
+  "protected_core_class_sha256": {
+    "net/raphimc/viabedrock/api/util/PacketFactory.class": "79a972185313b0be91232a5b41f222b85c4fb458e3510f3d0392009f26b5acdc",
+    "net/raphimc/viabedrock/protocol/packet/InteractionPackets.class": "9e034e04098b40fed717016dd24c1b9ec17c4ff18b7a36a235fa851bf03d3e88",
+    "net/raphimc/viabedrock/protocol/packet/FluidInteractionTarget.class": "08ae3a64a981d8c51c06ee109562d53236717db86c7409e601eac215b36973a2",
+    "net/raphimc/viabedrock/protocol/packet/NativeWaterloggedBucketPickup.class": "955318e19396ccba8ff98939093a22f902fe43fe5cfaf1cd3ea96b0c6945afa2"
+  },
+  "single_packet_layer_local_derived": 4,
+  "batch_packet_arrays_local_derived": 2,
+  "batch_packet_layer_local_derived": 6,
+  "held_block_local_derived": 4,
+  "batch_observed_positions_filtered_hashset": true,
+  "independent_hashes_unchanged": true,
+  "minecraft_game_executed": false,
+  "live_bedrock_server_executed": false,
+  "server_acceptance_simulated": false,
+  "limits": [
+    "Source response packet sequence is controlled, not captured BDS traffic.",
+    "No visible graphical rollback was executed.",
+    "Absent primary responses still use the original one-second timeout.",
+    "Separate root client hit-target correction is not validated by this ACK-only report."
+  ],
+  "independent_evidence": {
+    "patched": "/workspace/minecraft/analysis/placement-disappear-if45/independent/ack-patched.txt",
+    "baseline": "/workspace/minecraft/analysis/placement-disappear-if45/independent/ack-baseline-IF44.txt",
+    "hashes_before": "/workspace/minecraft/analysis/placement-disappear-if45/independent/ack-hashes-before.json",
+    "hashes_after": "/workspace/minecraft/analysis/placement-disappear-if45/independent/ack-hashes-after.json"
+  }
+}

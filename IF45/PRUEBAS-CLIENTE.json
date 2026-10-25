@@ -1,0 +1,102 @@
+{
+  "status": "FINAL FROZEN; targeted validation PASS",
+  "base_IF44_sha256": "4492dc0b0ac3027de0a79246b646bfdf60d028ac253fbcaf709178e8ccca5e6f",
+  "base_extracted_core_sha256": "abd28e9a7d1e34ed788cb5b36f3e2d68c12110e26a9fc0ba3cbd309198f112f4",
+  "runtime_class_hashes": {
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockBlockPlacementCompatibility.class": "5aa29a30072ac77e341dbcef40db2b7b2f774da8d8016c20552cd5b743b1aa92",
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockPlacementHitPolicy.class": "616c4b46f62dae3a885f53c475dad78b024db5e17c21517463cd37fe3a77083e",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/inventory/MixinBucketInteraction.class": "317f324bc44c92a2fe09cfc2d3089d2209d4c5a534aaf1e4961e712a1d034b9b"
+  },
+  "root_replace": [
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/inventory/MixinBucketInteraction.class"
+  ],
+  "root_add": [
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockBlockPlacementCompatibility.class",
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockPlacementHitPolicy.class"
+  ],
+  "protected_original_bucket_helper": {
+    "class": "com/viaversion/viafabricplus/bedrock/inventory/BedrockBucketInteraction.class",
+    "sha256": "3f896cb39866995d2b255e77b8a2edf59cc0ba01073cc1941a17c443b1a94637"
+  },
+  "canonical_original_mixin_restoration": "PASS exact",
+  "asm_all_method_verification": "PASS",
+  "actual_emitted_client_helper_boundary_checks": 42,
+  "real_IF44_baseline_cases": 3,
+  "real_IF44_handler_client_bridge_cases": 2,
+  "combined_ACK_candidate_bridge_cases": 2,
+  "combined_ACK_primaryOnly": true,
+  "combined_core_class_hashes": {
+    "net/raphimc/viabedrock/protocol/packet/WorldPackets.class": "88abdc143706175bc84738cdd7edb3efab21939cd163efef4db32bf03552b3a9",
+    "net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.class": "1721375c839809fcd671b75e08f7fd4c42d4d4509344ed43ac26381c5c3ad730",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionObservations.class": "96cae1180cdcd76e132852d0cafafaa69626506ea84dcf291b26e651ec05db30",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue$Prediction.class": "bda8b58c8b1c774e7617efd25c62d10e13f82226ef4a04628b0f59a8293ad76a",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue.class": "01f126e5c4c78a572d34378c081e28c0987bb3e937a8e7099452af029ca7135e",
+    "net/raphimc/viabedrock/protocol/storage/ChunkTracker.class": "0bce3bad95b2a5f4c2e00b1cb2293bb39d20b0e40234bb676ca67151d83e42ae"
+  },
+  "production_compiled_against_synthetic_MC_stubs": false,
+  "synthetic_MC_API_used_only_as_explicit_test_boundaries": true,
+  "Minecraft_Mixin_transform_or_game_executed": false,
+  "BDS_server_acceptance_simulated": false,
+  "user_video_cause_exhaustively_proven": false,
+  "sources": [
+    {
+      "file": "EmitPlacementCompatibilityIF45.java",
+      "sha256": "17032500912646f218bc2823d1fc5b17754a55f4744cc8981ee4e1ceb879f2c2"
+    },
+    {
+      "file": "src/com/viaversion/viafabricplus/bedrock/compat/BedrockBlockPlacementCompatibility.java",
+      "sha256": "7a192a45c47f95b99cbbc8943a678ca183eb9eb1e03a132fe27106ddb0447596"
+    },
+    {
+      "file": "src/com/viaversion/viafabricplus/bedrock/compat/BedrockPlacementHitPolicy.java",
+      "sha256": "3714aaf3ab43e9dc56da563aea9a71072ada65a59c88ec1563b303387cef1329"
+    },
+    {
+      "file": "injection-source.txt",
+      "sha256": "778a7d66beb5668e4af580aabf50def6b95ab358ad77117bb7202c5578580cdc"
+    },
+    {
+      "file": "ClientHelperToRealCoreRegression.java",
+      "sha256": "a971ac200676f05d959952e61645b87cc6f2a51661094e69d98aa56cdec22a41"
+    },
+    {
+      "file": "client-boundary-check/src/ClientPlacementCompatibilityBoundary.java",
+      "sha256": "367118028f543880372f8518ca1c55f6b925f3ff73d88c52590a3bbce7c5c13f"
+    },
+    {
+      "file": "client-boundary-check/create_fixture_sources.py",
+      "sha256": "4c79dd7217364f4d6a3b94a59c2d69183a4ec9fa062f861ba5f4daad94f4b58a"
+    }
+  ],
+  "reports": [
+    {
+      "file": "README.md",
+      "sha256": "fd1c6022e112cd10222b5f89bd31a2f096c429eb7b86e6d03a0638d8605e6a51"
+    },
+    {
+      "file": "asm-verification.txt",
+      "sha256": "c51dee6d623b2c45247d85c69fb871c8aaf036439d69102b4e24b7bdd7587049"
+    },
+    {
+      "file": "client-boundary-check/result.txt",
+      "sha256": "a7c12944d7ae4fbddbb3449e4e782f683f6a884bc62261a219aa53ef4bc9e1dc"
+    },
+    {
+      "file": "actual-client-core-bridge.txt",
+      "sha256": "904064de47cef84813b6e093d043a0f280a2ee8bf6e80548a25b1cd777cfe646"
+    },
+    {
+      "file": "combined-client-core-bridge.txt",
+      "sha256": "afbc26642e83f2dc759e1357356faaebd484b532f52f883a79f33a489917062f"
+    }
+  ],
+  "baseline_probe": {
+    "file": "../FlexibleAirUseItemOnProbe.java",
+    "sha256": "82ee7782dfd1249c020ff57a9bf13f864b2e1c421fa0f30dbd457a3f32a23717"
+  },
+  "baseline_output": {
+    "file": "../baseline-IF44.txt",
+    "sha256": "e75c030029147db7a28ac67b40dd2dff5a5322bf4817f5b3d2753126210fd5fe"
+  },
+  "source_bundle_note": "Include all source/evidence with boundaries labeled. Never include fixture/test/generator .class files as runtime."
+}

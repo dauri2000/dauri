@@ -1,0 +1,61 @@
+{
+  "status": "FINAL independent review PASS; no blockers",
+  "checks_passed": 10,
+  "ack_real_path_checks_passed": 7,
+  "client_pure_policy_checks_passed": 3,
+  "runtime": "Java25 -Xverify:all",
+  "classes": {
+    "net/raphimc/viabedrock/protocol/packet/WorldPackets.class": "88abdc143706175bc84738cdd7edb3efab21939cd163efef4db32bf03552b3a9",
+    "net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.class": "1721375c839809fcd671b75e08f7fd4c42d4d4509344ed43ac26381c5c3ad730",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionObservations.class": "96cae1180cdcd76e132852d0cafafaa69626506ea84dcf291b26e651ec05db30",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue$Prediction.class": "bda8b58c8b1c774e7617efd25c62d10e13f82226ef4a04628b0f59a8293ad76a",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue.class": "01f126e5c4c78a572d34378c081e28c0987bb3e937a8e7099452af029ca7135e",
+    "net/raphimc/viabedrock/protocol/storage/ChunkTracker.class": "0bce3bad95b2a5f4c2e00b1cb2293bb39d20b0e40234bb676ca67151d83e42ae",
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockBlockPlacementCompatibility.class": "5aa29a30072ac77e341dbcef40db2b7b2f774da8d8016c20552cd5b743b1aa92",
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockPlacementHitPolicy.class": "616c4b46f62dae3a885f53c475dad78b024db5e17c21517463cd37fe3a77083e",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/inventory/MixinBucketInteraction.class": "317f324bc44c92a2fe09cfc2d3089d2209d4c5a534aaf1e4961e712a1d034b9b"
+  },
+  "hashes_unchanged_before_after": true,
+  "original_preservation": {
+    "core_all_method_BasicVerifier": 6,
+    "core_complete_canonical_reversal_to_IF44": 5,
+    "sole_added_core_helper": "BlockPredictionObservations",
+    "client_all_method_BasicVerifier": 3,
+    "bucket_mixin_complete_canonical_reversal_to_IF44": true
+  },
+  "sources_sha256": {
+    "src/net/raphimc/viabedrock/protocol/packet/PrimaryLayerBatchIndependent.java": "fddb880938fd7c64a268549bcd01001c40d4ab24458f1244527fd8bb76566c40",
+    "VerifyAckDeltaIndependent.java": "a40db0012b8b4c711f7a18ccb4b1a4fcbec6230be61d001a48b61e6980179127",
+    "VerifyClientPlacementIndependent.java": "b671c4fe1b40d290fc2213f7c8ee3841a610fd4fb25ad84757272e273a7916b5",
+    "PlacementPolicyIndependent.java": "4af1c89f3b92c36a61abfe63e13bef0053d42017d62a4e413bacc654f5b3dd2c",
+    "../ack/src/net/raphimc/viabedrock/protocol/packet/LayerOneAckProbe.java": "3fe448240de651d8640b9ad4b6c442bf2c0bbade95758efd70bf8e941468e125",
+    "../../waterlogging-general-if45/core/world-probe/src/net/raphimc/viabedrock/protocol/packet/StandardWaterloggedWorldProbe.java": "ac65e1f36372748001ef3d42d302f677addbd785b65212da702abe2d85db7634",
+    "../../bulk-placement-if43/core/RapidBlockPlacementBaseline.java": "92774f96e6b87df53c02ec83822632278ffcfd18a119f32b26a4105c782fb1dd"
+  },
+  "reviewed_production_source_sha256": {
+    "../ack/fix/PatchPrimaryBlockObservationsIF45.java": "bad1d187fc5974fdeaa89fffd137e49f1debc58aa8f32bc113cf5bedc256ac89",
+    "../ack/fix/src/net/raphimc/viabedrock/protocol/storage/BlockPredictionObservations.java": "d49432195847773bb7f062448edce4d78da9a2687229d877b4ceb70c567158f7",
+    "../client/fix/EmitPlacementCompatibilityIF45.java": "17032500912646f218bc2823d1fc5b17754a55f4744cc8981ee4e1ceb879f2c2",
+    "../client/fix/src/com/viaversion/viafabricplus/bedrock/compat/BedrockPlacementHitPolicy.java": "3714aaf3ab43e9dc56da563aea9a71072ada65a59c88ec1563b303387cef1329"
+  },
+  "evidence": {
+    "README.md": "2ad3f8b65adcd9bf4daf27b2cde47fb08820977bcf6412784a7d09b70e321f79",
+    "ack-patched.txt": "bc44beec5b6a536753fa0f8724cdb6eef2154c81124d992ed06bc0a8e30d0700",
+    "ack-baseline-IF44.txt": "6b5a60163e8e88d7aba107c884b662ea01dbf538059acbd9f1f69e62afacce27",
+    "ack-canonical-review.txt": "b2931a4debefa12a35789a6d768f0fe6f5b8a47835a86ed90d7d16494359f1b4",
+    "ack-hashes-before.json": "e9a691958c2fae052916a548c3ac2efba878969f7f739bbc0f448e83c9b65b6f",
+    "ack-hashes-after.json": "e9a691958c2fae052916a548c3ac2efba878969f7f739bbc0f448e83c9b65b6f",
+    "client-bytecode-review.txt": "342bad3849afbe08bd434d003660ad4d41551c93d56720f884e1e0b1a8b10f60",
+    "client-policy-checks.txt": "b3b1c4c877a96283cdc574ba4e7718bf4a404bffb52589947efaab8c023cf18b",
+    "client-hashes-before.json": "a7f01fd4146b227bcfa18f2ca8f991f5257aedd9b702eb08f498e600121ee8be",
+    "client-hashes-after.json": "a7f01fd4146b227bcfa18f2ca8f991f5257aedd9b702eb08f498e600121ee8be"
+  },
+  "no_production_edits": true,
+  "limits": [
+    "Core test boundaries: connection/transport, loaded world lifecycle/light queues; actual native palettes, mappings, handlers, queue and packet factories execute.",
+    "Client typed helper reviewed as emitted bytecode; three pure policy tests load no Minecraft classes.",
+    "No actual Minecraft ABI execution, Mixin transformation, graphical gameplay or live Bedrock server test is claimed.",
+    "Existing42 client boundary checks and owner regressions were not rerun or recounted."
+  ],
+  "baseline": "Delivered IF44 fails expected ACK[] got[1] after secondary AIR noop before the primary placement update."
+}
