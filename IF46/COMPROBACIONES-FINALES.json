@@ -1,0 +1,289 @@
+{
+  "status": "Final package and evidence verification PASS",
+  "artifact": "/workspace/minecraft/entregables/ViaFabricPlus-Bedrock-IF46.jar",
+  "sha256": "a0d21a7476ccd2c4ebf5570efd8c3474ae3ea66015c84054c0040532faf57ea8",
+  "size_bytes": 215269611,
+  "package_scope_verification": {
+    "delivery": "Complete mod JAR, not an updater or delta",
+    "input_sha256": "3dff3537fd620d1d1cf1d98c3ed987e1278890419db40e935d3b12cad78d7762",
+    "input_version": "1.1.1-StackAnvil-InteractionFix45.1",
+    "output_sha256": "a0d21a7476ccd2c4ebf5570efd8c3474ae3ea66015c84054c0040532faf57ea8",
+    "size_bytes": 215269611,
+    "version": "1.1.1-StackAnvil-InteractionFix46.1",
+    "root_entry_count": 1220,
+    "package": {
+      "unchanged_entries": 1217,
+      "changed_entries": [
+        "META-INF/jars/ViaBedrock-0.0.31-StackAnvil.jar",
+        "fabric.mod.json"
+      ],
+      "added_entries": [
+        "META-INF/stackanvil-if46-changes.zip"
+      ],
+      "all_other_entry_contents_identical": true,
+      "no_duplicate_entries": true,
+      "crc_ok": true
+    },
+    "core": {
+      "unchanged_entries": 1524,
+      "changed_entries": [
+        "net/raphimc/viabedrock/api/model/container/block/AnvilContainer.class",
+        "net/raphimc/viabedrock/api/util/PacketFactory.class"
+      ],
+      "added_entries": [
+        "net/raphimc/viabedrock/api/model/container/block/AnvilCostUpdates.class"
+      ],
+      "all_other_entry_contents_identical": true,
+      "no_duplicate_entries": true,
+      "crc_ok": true
+    },
+    "replacement_inputs": {
+      "net/raphimc/viabedrock/api/model/container/block/AnvilContainer.class": {
+        "file": "/workspace/minecraft/analysis/anvil-cost-if46/core/fix/classes/net/raphimc/viabedrock/api/model/container/block/AnvilContainer.class",
+        "sha256": "517e888d6c7252c1caa35641c2c54b3f465a83861fad96781d39a0172d8b8c0b"
+      },
+      "net/raphimc/viabedrock/api/util/PacketFactory.class": {
+        "file": "/workspace/minecraft/analysis/anvil-cost-if46/core/fix/classes/net/raphimc/viabedrock/api/util/PacketFactory.class",
+        "sha256": "afb9cc707f6f7e34f83621ccaf1933c9e8e1788f06d0c397bb32d0f069d3f073"
+      }
+    },
+    "addition_inputs": {
+      "net/raphimc/viabedrock/api/model/container/block/AnvilCostUpdates.class": {
+        "file": "/workspace/minecraft/analysis/anvil-cost-if46/core/fix/classes/net/raphimc/viabedrock/api/model/container/block/AnvilCostUpdates.class",
+        "sha256": "82ab7b32e1c11bac6e1488fcf694657f842fdfd74f9a9d7e1290e2b9531b7a11"
+      }
+    },
+    "protected_core_class_sha256s": {
+      "net/raphimc/viabedrock/api/model/entity/HappyGhastEntity.class": "b5204b4e9e25a8b43d12cc83dda60a5362610807348b112669bbf38c77fcb2d2",
+      "net/raphimc/viabedrock/api/model/entity/ClientPlayerEntity.class": "6f2af94bb54b4abb5a9496de00744ab098a3ad846c1e489c3de2536be5c3b9c0",
+      "net/raphimc/viabedrock/protocol/packet/MultiStatePackets.class": "dab6764382d31f4f453f82a86937360369cb7e69b60223817564e1104fb9985c",
+      "net/raphimc/viabedrock/protocol/storage/PlayerPredictionStorage.class": "ac6173e5ec86cea0d88e90007fd9b6035c0b0483741ffe98f7c0b907426eb1c0",
+      "net/raphimc/viabedrock/protocol/storage/HappyGhastRiderPrediction.class": "078ed736dd03e5953982a52497dc533382cb4b8a67af09839ed92fb61aa28f76",
+      "net/raphimc/viabedrock/api/util/BedrockMaterialComparisonPolicy.class": "9b800936db7d144b433468a69235f20b59d38707ad1a7ce670697f7f748331e8",
+      "net/raphimc/viabedrock/protocol/packet/InteractionPackets.class": "9e034e04098b40fed717016dd24c1b9ec17c4ff18b7a36a235fa851bf03d3e88",
+      "net/raphimc/viabedrock/protocol/packet/FluidInteractionTarget.class": "08ae3a64a981d8c51c06ee109562d53236717db86c7409e601eac215b36973a2",
+      "net/raphimc/viabedrock/protocol/packet/NativeWaterloggedBucketPickup.class": "955318e19396ccba8ff98939093a22f902fe43fe5cfaf1cd3ea96b0c6945afa2",
+      "net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.class": "1721375c839809fcd671b75e08f7fd4c42d4d4509344ed43ac26381c5c3ad730",
+      "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue.class": "01f126e5c4c78a572d34378c081e28c0987bb3e937a8e7099452af029ca7135e",
+      "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue$Prediction.class": "bda8b58c8b1c774e7617efd25c62d10e13f82226ef4a04628b0f59a8293ad76a",
+      "net/raphimc/viabedrock/protocol/storage/ChunkTracker.class": "0bce3bad95b2a5f4c2e00b1cb2293bb39d20b0e40234bb676ca67151d83e42ae",
+      "net/raphimc/viabedrock/protocol/packet/WorldPackets.class": "88abdc143706175bc84738cdd7edb3efab21939cd163efef4db32bf03552b3a9",
+      "net/raphimc/viabedrock/protocol/storage/BlockPredictionObservations.class": "96cae1180cdcd76e132852d0cafafaa69626506ea84dcf291b26e651ec05db30"
+    },
+    "authorized_packet_factory_exception": {
+      "baseline_sha256": "79a972185313b0be91232a5b41f222b85c4fb458e3510f3d0392009f26b5acdc",
+      "only_changed_original_method": "writeJavaContainerSetContent",
+      "canonical_method_and_reversal_proof_required_by_manifest": true
+    },
+    "protected_root_entry_sha256s": {
+      "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparison.class": "0488976c5f4a3eb3fdc6bdf3f8e0907e518b7e2a85fd01164273f70242db80b2",
+      "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparisonBytes.class": "0bcf48cc1afd2cbe85ef768de97cca71a302ec46e68af3ac137e21f7a6815cf1",
+      "com/viaversion/viafabricplus/bedrock/compat/BedrockUseEffectsComparison.class": "4004b9ad6a88172756a7e2ae5c9db3beaca26dac03924437d1fc32e8072f0967",
+      "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/litematica/MixinLitematicaMaterialSearch.class": "52790a09691bd7773c9b60bf0a4aa587026ec2359b92ae87baf09acb5f24f021",
+      "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/malilib/MixinMaLiLibMaterialComparisons.class": "84d7dbdf71fd91a0f4403a71b4d4bd152f1053d3503087c85940f78b91960b08",
+      "viafabricplus-bedrock.mixins.json": "05036158dd163e7be25e79c627be2de124eecd3979272fa89d0567286d437edd",
+      "com/viaversion/viafabricplus/bedrock/inventory/BedrockBucketInteraction.class": "3f896cb39866995d2b255e77b8a2edf59cc0ba01073cc1941a17c443b1a94637",
+      "com/viaversion/viafabricplus/bedrock/injection/mixin/features/inventory/MixinBucketInteraction.class": "317f324bc44c92a2fe09cfc2d3089d2209d4c5a534aaf1e4961e712a1d034b9b",
+      "com/viaversion/viafabricplus/bedrock/compat/BedrockBlockPlacementCompatibility.class": "5aa29a30072ac77e341dbcef40db2b7b2f774da8d8016c20552cd5b743b1aa92",
+      "com/viaversion/viafabricplus/bedrock/compat/BedrockPlacementHitPolicy.class": "616c4b46f62dae3a885f53c475dad78b024db5e17c21517463cd37fe3a77083e"
+    },
+    "original_source_unchanged": true,
+    "earlier_source_bundles_and_shield_classes_identical": true,
+    "no_user_logs_added": true,
+    "minecraft_graphical_tested": false,
+    "server_functional_tested": false,
+    "limits": [
+      "Package content verification does not test Minecraft GUI or a live server."
+    ]
+  },
+  "approved_verification": {
+    "state": "Root conditional build approval satisfied: both owner and independent reports FINAL and consistent",
+    "root_build_authorized": true,
+    "new_checks_passed": 23,
+    "classes": {
+      "net/raphimc/viabedrock/api/model/container/block/AnvilContainer.class": "517e888d6c7252c1caa35641c2c54b3f465a83861fad96781d39a0172d8b8c0b",
+      "net/raphimc/viabedrock/api/model/container/block/AnvilCostUpdates.class": "82ab7b32e1c11bac6e1488fcf694657f842fdfd74f9a9d7e1290e2b9531b7a11",
+      "net/raphimc/viabedrock/api/util/PacketFactory.class": "afb9cc707f6f7e34f83621ccaf1933c9e8e1788f06d0c397bb32d0f069d3f073"
+    },
+    "check_groups": {
+      "owner_directed": 11,
+      "independent_lifecycle": 12,
+      "total": 23
+    },
+    "initial_baseline_cases_excluded": 4,
+    "packet_factory_canonical_proof": {
+      "complete_reversal_to_IF45": true,
+      "all_other_original_methods_unchanged": true,
+      "block_ack_fence_unchanged": true,
+      "only_changed_original_method": "writeJavaContainerSetContent",
+      "candidate_class_sha256": "afb9cc707f6f7e34f83621ccaf1933c9e8e1788f06d0c397bb32d0f069d3f073",
+      "baseline_class_sha256": "79a972185313b0be91232a5b41f222b85c4fb458e3510f3d0392009f26b5acdc",
+      "owner_report": "../core/fix/patch-verification.txt",
+      "independent_scope_note": "Source/report reviewed by independent agent; not a duplicate verifier run"
+    },
+    "owner_verification": {
+      "status": "FINAL PASS",
+      "frozen": true,
+      "checks_passed": 11,
+      "independent_checks_passed": 12,
+      "new_checks_passed": 23,
+      "classes": {
+        "net/raphimc/viabedrock/api/model/container/block/AnvilContainer.class": "517e888d6c7252c1caa35641c2c54b3f465a83861fad96781d39a0172d8b8c0b",
+        "net/raphimc/viabedrock/api/model/container/block/AnvilCostUpdates.class": "82ab7b32e1c11bac6e1488fcf694657f842fdfd74f9a9d7e1290e2b9531b7a11",
+        "net/raphimc/viabedrock/api/util/PacketFactory.class": "afb9cc707f6f7e34f83621ccaf1933c9e8e1788f06d0c397bb32d0f069d3f073"
+      },
+      "input_artifact_sha256": "3dff3537fd620d1d1cf1d98c3ed987e1278890419db40e935d3b12cad78d7762",
+      "runtime": "Java25.0.5.0.2 -Xverify:all, actual Netty EmbeddedChannel/EmbeddedEventLoop",
+      "source_sha256": {
+        "src/net/raphimc/viabedrock/api/model/container/block/AnvilCostUpdates.java": "3a4cf197df46a42e1ed121280121b2c4f32cb6e74d47218addddb987c033dc6c",
+        "PatchAnvilCostUpdatesIF46.java": "6fa1762075291309404d0ed3a7cb8f86f2c979c15f4bbc01d3a8a3c4f3020040",
+        "AnvilCostDeferredRegression.java": "38dd5fb592efdd8c29d3ae4ff36ffc62776bc71aaba3c9dc7beea5f693a618b7",
+        "../AnvilCostOrderProbe.java": "708fdc108857d5bb16697a3eeab7b11dac257e0118f6afc14bff70e0889a47db",
+        "../PrepareAnvilRegistryLinkBoundary.java": "7f8d1c5d15affc1e3fa9f2d01ecf1292a898372255572aa5813b476dd07d5524",
+        "../../independent/IndependentAnvilCostLifecycle.java": "8fe79c815f187dc31b3e2e8a863515f271322a7bfeff0cdaa8b86aa24c48f799"
+      },
+      "evidence": {
+        "patch-verification.txt": "a743b81c167357f714e00be1db29da7b6c5c9201fa32cb56be01372e1f78d35c",
+        "baseline-IF45.txt": "03d7df12e42d5f004ff6343222c1edc03f3a6bf6abfb5d97f92ee4dec88df15b",
+        "patched-IF46.txt": "72afe33037efd62a4ba71809a3f87140f6f580c34e55e696226e79840e2ead18",
+        "registry-boundary-verification.txt": "e0670e987d8dd3ea589afe8d157a08b5a6a835db35b6329c290e3ddd90fd0910",
+        "../IF45-cost-order.txt": "5f8951d0fecf832660239bccc12c7d08d54b0a455d7ccfbf552ec9849e204da0",
+        "../registry-boundary-verification.txt": "ed4e1a2900d3eed96ec945e3c62c747843026fa177186b94a5ad1bdfb0c2433e",
+        "../../independent/verification.json": "4d903901a3c3ce4199fe0191b227859e850a58d6e258a6654eba397e2d80cb71",
+        "../../independent/source-review.md": "df96b4a584dcaf67f4362e02c8175bc62cfe7440884ed2a0b5222de8e2e01cb1",
+        "../../independent/baseline-IF45.txt": "659b7452b62910db32f65c8c4a7962c03a52d090e6d72f9d4ff7aadb66382d4d",
+        "../../independent/patched-IF46.txt": "ce2d897b964e180553831ab894bac061d27024f3ff191b57390b59f4b39c2cb7",
+        "../../independent/README.md": "d7b9e6faabf3bc808345a504301ca1add73e561f6dd3168af2f8a4cfa78e380b"
+      },
+      "reproduce_command": "python3 /workspace/minecraft/analysis/anvil-cost-if46/core/fix/reproduce.py",
+      "canonical_verification": {
+        "AnvilContainer_complete_reversal_to_IF45": true,
+        "PacketFactory_complete_reversal_to_IF45": true,
+        "PacketFactory_ACK_fence_and_every_other_method_unchanged": true,
+        "all_methods_BasicVerifier_both_replaced_classes": true
+      },
+      "scope": [
+        "One AnvilContainer refreshOutput cost call redirected and a pure cost getter added",
+        "One explicit successful PacketFactory content-writer callback with actual serialized container local2",
+        "One new guarded deferred-cost helper; no renderer/addon/cost-formula/inventory/XP/backend-request changes"
+      ],
+      "ordering_observation": "Four actual IF45 paths deliver property0 positive cost2/3 before content or input/preview slots; no later property. IF46 event-loop tasks deliver calculated cost after those packets, including unchanged-content resync.",
+      "lifecycle_guards": [
+        "same InventoryTracker object",
+        "same current AnvilContainer object",
+        "same currentContainerGeneration",
+        "not closing",
+        "active connection channel"
+      ],
+      "limits": [
+        "Test-only WorkstationResults.maxDamage registry boundary supplies known vanilla book0, helmet363 and axe1561; every other method is canonically identical and no boundary class ships.",
+        "Item display/connection/packet I/O are headless boundaries; actual core calculation, handlers, properties and Netty event-loop scheduling execute.",
+        "No actual Minecraft26.3 AnvilMenu/renderer or Mixin engine is executed; no simulated client-reset or live BDS acceptance.",
+        "Exact26.3 partial sources do not establish every client-side cost overwrite/render branch. UI display requires real-client verification.",
+        "Calculated preview cost remains local bridge prediction, not a newly received authoritative BDS price."
+      ]
+    },
+    "independent_verification": {
+      "status": "FINAL independent review PASS",
+      "baseline_IF45_expected_failure": "property precedes content in actual rename path",
+      "candidate_assertions": 12,
+      "candidate_runs": 1,
+      "JVM": "25 -Xverify:all",
+      "channel_event_loop": "real Netty EmbeddedChannel",
+      "runtime_class_hashes": {
+        "net/raphimc/viabedrock/api/model/container/block/AnvilContainer.class": "517e888d6c7252c1caa35641c2c54b3f465a83861fad96781d39a0172d8b8c0b",
+        "net/raphimc/viabedrock/api/model/container/block/AnvilCostUpdates.class": "82ab7b32e1c11bac6e1488fcf694657f842fdfd74f9a9d7e1290e2b9531b7a11",
+        "net/raphimc/viabedrock/api/util/PacketFactory.class": "afb9cc707f6f7e34f83621ccaf1933c9e8e1788f06d0c397bb32d0f069d3f073"
+      },
+      "production_changed": false,
+      "Minecraft_client_menu_or_renderer_simulated": false,
+      "BDS_acceptance_simulated": false,
+      "boundaries": [
+        "UserConnection state lookup and packet I/O",
+        "Java item display",
+        "Known enchanted-book maxDamage=0 registry linkage only; every other lookup fails"
+      ],
+      "canonical_scope": "Owner complete-reversal source/report reviewed; not duplicated as a second verifier run",
+      "files": [
+        {
+          "file": "IndependentAnvilCostLifecycle.java",
+          "sha256": "8fe79c815f187dc31b3e2e8a863515f271322a7bfeff0cdaa8b86aa24c48f799"
+        },
+        {
+          "file": "baseline-IF45.txt",
+          "sha256": "659b7452b62910db32f65c8c4a7962c03a52d090e6d72f9d4ff7aadb66382d4d"
+        },
+        {
+          "file": "patched-IF46.txt",
+          "sha256": "ce2d897b964e180553831ab894bac061d27024f3ff191b57390b59f4b39c2cb7"
+        },
+        {
+          "file": "source-review.md",
+          "sha256": "df96b4a584dcaf67f4362e02c8175bc62cfe7440884ed2a0b5222de8e2e01cb1"
+        },
+        {
+          "file": "README.md",
+          "sha256": "d7b9e6faabf3bc808345a504301ca1add73e561f6dd3168af2f8a4cfa78e380b"
+        }
+      ],
+      "shared_fixture_evidence": [
+        {
+          "file": "../core/AnvilCostOrderProbe.java",
+          "sha256": "708fdc108857d5bb16697a3eeab7b11dac257e0118f6afc14bff70e0889a47db"
+        },
+        {
+          "file": "../core/PrepareAnvilRegistryLinkBoundary.java",
+          "sha256": "7f8d1c5d15affc1e3fa9f2d01ecf1292a898372255572aa5813b476dd07d5524"
+        },
+        {
+          "file": "../core/registry-boundary-verification.txt",
+          "sha256": "ed4e1a2900d3eed96ec945e3c62c747843026fa177186b94a5ad1bdfb0c2433e"
+        },
+        {
+          "file": "../core/test-registry-boundary/net/raphimc/viabedrock/api/model/container/block/WorkstationResults.class",
+          "sha256": "e02f09a89cf9e8fa2865249179df47e539531543aa03d365973a11582cfde393"
+        }
+      ],
+      "runtime_packaging_note": "Only owner candidate runtime classes belong in the mod. Independent/shared test class files are evidence only and must not be packaged as runtime."
+    },
+    "delivery_readme": {
+      "file": "/workspace/minecraft/analysis/anvil-cost-if46/delivery/README.md",
+      "sha256": "9da77f8cf0a750746dfab2ce11887bfc490581cd671990f8d26f2ddc2923604d"
+    },
+    "app_tests_rerun_for_packaging": false,
+    "historical_suites_rerun": false,
+    "actual_Minecraft_menu_or_renderer_executed": false,
+    "Mixin_engine_executed": false,
+    "live_BDS_executed": false,
+    "server_acceptance_simulated": false,
+    "known_registry_link_boundary": "Test-only WorkstationResults.maxDamage values for known book/helmet/axe; boundary class excluded from production"
+  },
+  "new_check_count": 23,
+  "check_groups": {
+    "owner_directed": 11,
+    "independent_lifecycle": 12
+  },
+  "initial_diagnostic_count_excluded": 4,
+  "all_three_runtime_hashes_match_owner_and_independent_reports": true,
+  "all_nine_IF45_runtime_classes_byte_identical": true,
+  "PacketFactory_complete_reversal_and_other_methods_ACK_fence_proof": {
+    "complete_reversal_to_IF45": true,
+    "all_other_original_methods_unchanged": true,
+    "block_ack_fence_unchanged": true,
+    "only_changed_original_method": "writeJavaContainerSetContent",
+    "candidate_class_sha256": "afb9cc707f6f7e34f83621ccaf1933c9e8e1788f06d0c397bb32d0f069d3f073",
+    "baseline_class_sha256": "79a972185313b0be91232a5b41f222b85c4fb458e3510f3d0392009f26b5acdc",
+    "owner_report": "../core/fix/patch-verification.txt",
+    "independent_scope_note": "Source/report reviewed by independent agent; not a duplicate verifier run"
+  },
+  "WorkstationResults_registry_boundary_class_not_shipped": true,
+  "source_bundle_entry_count": 45,
+  "new_source_bundle_contains_no_classes_or_user_media": true,
+  "delivery_readme_matches_final_file": true,
+  "delivery_readme_sha256": "9da77f8cf0a750746dfab2ce11887bfc490581cd671990f8d26f2ddc2923604d",
+  "no_JAR_modification_after_freeze": true,
+  "application_tests_rerun_for_packaging": false,
+  "actual_Minecraft_menu_or_renderer_executed": false,
+  "live_BDS_executed": false,
+  "download_verification": "Root handles object upload, Git delivery and public full-JAR GET/hash check"
+}
