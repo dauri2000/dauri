@@ -1,0 +1,73 @@
+{
+  "independent_decoder": "nbtlib with numpy.unpackbits(bitorder=little); no builder decoder imported",
+  "original_sha256": "d2ca5fbdc4e4196d5977fb1db7098a8f88f79c903c4f22d605dae19a7ebfff37",
+  "final_sha256": "909f4c588e7210b37b2c8f3ed4dc1bf4b6931bf1b41c8a1a1e23a81354803851",
+  "dimensions": [
+    45,
+    103,
+    45
+  ],
+  "minimum": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "packing": {
+    "bits": 6,
+    "words": 19554,
+    "count": 208575,
+    "padding_zero": true
+  },
+  "nonair": 4924,
+  "palette_entries": 42,
+  "tile_count": 44,
+  "tile_block_types": {
+    "minecraft:dispenser": 13,
+    "minecraft:comparator": 2,
+    "minecraft:hopper": 27,
+    "minecraft:chest": 2
+  },
+  "tile_ids_note": "Original Litematic entries omit id; types inferred from block state, explicit IDs checked when present",
+  "mismatched_tiles": [],
+  "dispenser_tiles": 13,
+  "water_buckets": 13,
+  "timer": {
+    "z": 20,
+    "x": 22,
+    "TransferCooldown": 0,
+    "y": 74,
+    "Items": [
+      {
+        "Slot": 0,
+        "id": "minecraft:cobblestone",
+        "Count": 16
+      }
+    ]
+  },
+  "collector_sources": 64,
+  "lower_changes": [
+    [
+      25,
+      0,
+      22
+    ],
+    [
+      26,
+      0,
+      22
+    ],
+    [
+      21,
+      32,
+      20
+    ],
+    [
+      23,
+      33,
+      22
+    ]
+  ],
+  "kill_hoppers_preserved": 25,
+  "issues": [],
+  "minecraft_or_BDS_executed": false
+}

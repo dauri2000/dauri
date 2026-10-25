@@ -1,0 +1,25 @@
+{
+  "repository": "PowerNukkitX/PowerNukkitX",
+  "commit": "37caa9e66690f2d327b33d8a72e7621377ab96c5",
+  "third_party_not_vanilla_BDS": true,
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/PowerNukkitX/PowerNukkitX/37caa9e66690f2d327b33d8a72e7621377ab96c5/src/main/java/org/powernukkitx/utils/RedstoneComponent.java",
+      "file": "RedstoneComponent.java",
+      "bytes": 3997,
+      "sha256": "0fe4f11a87ff6e06c7f32fc9eb554cfb817fd550123636f27086bd2d2aa7b4a5"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PowerNukkitX/PowerNukkitX/37caa9e66690f2d327b33d8a72e7621377ab96c5/src/main/java/org/powernukkitx/block/BlockRedstoneWire.java",
+      "file": "BlockRedstoneWire.java",
+      "bytes": 13545,
+      "sha256": "f11d7bf697f2a6b47f3e478f1697832deb5196813212b1bfd11667e9e10b3fd8"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PowerNukkitX/PowerNukkitX/37caa9e66690f2d327b33d8a72e7621377ab96c5/src/main/java/org/powernukkitx/block/BlockSolid.java",
+      "file": "BlockSolid.java",
+      "bytes": 654,
+      "sha256": "514edcbe8eb8ee968fc10ea755f03c326d0bd478d6fd4d624fb41d742c096b0d"
+    }
+  ]
+}

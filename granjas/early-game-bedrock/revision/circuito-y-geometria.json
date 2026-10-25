@@ -1,0 +1,459 @@
+{
+  "file": "/workspace/minecraft/analysis/mob-farm-bedrock/build/output/early_game_mob-farm_Bedrock_SD6.litematic",
+  "sha256": "909f4c588e7210b37b2c8f3ed4dc1bf4b6931bf1b41c8a1a1e23a81354803851",
+  "mode": "independent decoded-file geometry and standalone FIFO component model; not BDS, native fluid/redstone or mobs",
+  "dimensions": [
+    45,
+    103,
+    45
+  ],
+  "floors": [
+    {
+      "F": 34,
+      "platform_floor_cells": 111,
+      "non_dispenser_surface_cells": 110,
+      "all_remaining_surface_cells_planar_distance_le_7": true,
+      "max_distance": 7
+    },
+    {
+      "F": 37,
+      "platform_floor_cells": 111,
+      "non_dispenser_surface_cells": 110,
+      "all_remaining_surface_cells_planar_distance_le_7": true,
+      "max_distance": 7
+    },
+    {
+      "F": 40,
+      "platform_floor_cells": 111,
+      "non_dispenser_surface_cells": 110,
+      "all_remaining_surface_cells_planar_distance_le_7": true,
+      "max_distance": 7
+    },
+    {
+      "F": 43,
+      "platform_floor_cells": 111,
+      "non_dispenser_surface_cells": 110,
+      "all_remaining_surface_cells_planar_distance_le_7": true,
+      "max_distance": 7
+    },
+    {
+      "F": 46,
+      "platform_floor_cells": 111,
+      "non_dispenser_surface_cells": 110,
+      "all_remaining_surface_cells_planar_distance_le_7": true,
+      "max_distance": 7
+    },
+    {
+      "F": 49,
+      "platform_floor_cells": 111,
+      "non_dispenser_surface_cells": 110,
+      "all_remaining_surface_cells_planar_distance_le_7": true,
+      "max_distance": 7
+    },
+    {
+      "F": 52,
+      "platform_floor_cells": 111,
+      "non_dispenser_surface_cells": 110,
+      "all_remaining_surface_cells_planar_distance_le_7": true,
+      "max_distance": 7
+    },
+    {
+      "F": 55,
+      "platform_floor_cells": 111,
+      "non_dispenser_surface_cells": 110,
+      "all_remaining_surface_cells_planar_distance_le_7": true,
+      "max_distance": 7
+    },
+    {
+      "F": 58,
+      "platform_floor_cells": 111,
+      "non_dispenser_surface_cells": 110,
+      "all_remaining_surface_cells_planar_distance_le_7": true,
+      "max_distance": 7
+    },
+    {
+      "F": 61,
+      "platform_floor_cells": 111,
+      "non_dispenser_surface_cells": 110,
+      "all_remaining_surface_cells_planar_distance_le_7": true,
+      "max_distance": 7
+    },
+    {
+      "F": 64,
+      "platform_floor_cells": 111,
+      "non_dispenser_surface_cells": 110,
+      "all_remaining_surface_cells_planar_distance_le_7": true,
+      "max_distance": 7
+    },
+    {
+      "F": 67,
+      "platform_floor_cells": 111,
+      "non_dispenser_surface_cells": 110,
+      "all_remaining_surface_cells_planar_distance_le_7": true,
+      "max_distance": 7
+    },
+    {
+      "F": 70,
+      "platform_floor_cells": 111,
+      "non_dispenser_surface_cells": 110,
+      "all_remaining_surface_cells_planar_distance_le_7": true,
+      "max_distance": 7
+    }
+  ],
+  "module_and_clock_wiring": "PASS",
+  "dry_water_bucket_startup": "PASS",
+  "clock_items": "16cobblestone",
+  "shaft_gates_hoppers_storage": "PASS",
+  "afk_geometry": "PASS",
+  "roof_geometry": "PASS",
+  "fifo_models": [
+    {
+      "delay_game_ticks": 2,
+      "pulse_game_ticks": 2,
+      "edge_game_ticks": [
+        0
+      ],
+      "same_tick_fifo_scheduling": "off_first",
+      "pulses_per_stage": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "dispenses_per_dispenser": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_edge_dispenser_times_top_to_bottom": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32
+      ],
+      "queue_drained": true
+    },
+    {
+      "delay_game_ticks": 4,
+      "pulse_game_ticks": 2,
+      "edge_game_ticks": [
+        0
+      ],
+      "same_tick_fifo_scheduling": "off_first",
+      "pulses_per_stage": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "dispenses_per_dispenser": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_edge_dispenser_times_top_to_bottom": [
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60
+      ],
+      "queue_drained": true
+    },
+    {
+      "delay_game_ticks": 2,
+      "pulse_game_ticks": 2,
+      "edge_game_ticks": [
+        0,
+        128,
+        256,
+        384
+      ],
+      "same_tick_fifo_scheduling": "off_first",
+      "pulses_per_stage": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "dispenses_per_dispenser": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "first_edge_dispenser_times_top_to_bottom": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32
+      ],
+      "queue_drained": true
+    },
+    {
+      "delay_game_ticks": 4,
+      "pulse_game_ticks": 2,
+      "edge_game_ticks": [
+        0,
+        128,
+        256,
+        384
+      ],
+      "same_tick_fifo_scheduling": "off_first",
+      "pulses_per_stage": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "dispenses_per_dispenser": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "first_edge_dispenser_times_top_to_bottom": [
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60
+      ],
+      "queue_drained": true
+    },
+    {
+      "delay_game_ticks": 2,
+      "pulse_game_ticks": 2,
+      "edge_game_ticks": [
+        0,
+        128,
+        256,
+        384
+      ],
+      "same_tick_fifo_scheduling": "downstream_first",
+      "pulses_per_stage": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "dispenses_per_dispenser": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "first_edge_dispenser_times_top_to_bottom": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32
+      ],
+      "queue_drained": true
+    },
+    {
+      "delay_game_ticks": 4,
+      "pulse_game_ticks": 2,
+      "edge_game_ticks": [
+        0,
+        128,
+        256,
+        384
+      ],
+      "same_tick_fifo_scheduling": "downstream_first",
+      "pulses_per_stage": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "dispenses_per_dispenser": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "first_edge_dispenser_times_top_to_bottom": [
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60
+      ],
+      "queue_drained": true
+    }
+  ],
+  "limits": [
+    "Planar water BFS is only a necessary upper-bound distance check, not preferential fluid flow or mob transport.",
+    "FIFO model assumes instantaneous dust conduction, cited observer scheduling, no plugin changes and no server lag/chunk unload.",
+    "No BDS/native gameplay executed.",
+    "Original farm height77 is retained; added AFK pad extends schematic enclosure to103."
+  ]
+}

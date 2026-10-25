@@ -1,0 +1,47 @@
+{
+  "repository": "PowerNukkitX/PowerNukkitX",
+  "commit": "37caa9e66690f2d327b33d8a72e7621377ab96c5",
+  "third_party_not_BDS": true,
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/PowerNukkitX/PowerNukkitX/37caa9e66690f2d327b33d8a72e7621377ab96c5/src/main/java/org/powernukkitx/block/BlockLiquid.java",
+      "file": "BlockLiquid.java",
+      "bytes": 25134,
+      "sha256": "0c7249801502a95692f9101de7248b15cc77d0406e01c508a16ed388c6ffb956"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PowerNukkitX/PowerNukkitX/37caa9e66690f2d327b33d8a72e7621377ab96c5/src/main/java/org/powernukkitx/block/BlockFlowingWater.java",
+      "file": "BlockFlowingWater.java",
+      "bytes": 2963,
+      "sha256": "1426033bab3c15b6f680fb750f942af390b710038f5efbf03fd0350b34f51979"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PowerNukkitX/PowerNukkitX/37caa9e66690f2d327b33d8a72e7621377ab96c5/src/main/java/org/powernukkitx/block/BlockFenceGate.java",
+      "file": "BlockFenceGate.java",
+      "bytes": 10039,
+      "sha256": "c1b118b2962c16c07a6b9412dd3a3f2d9ddc65f88c291d523565ebe1d2285f3d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PowerNukkitX/PowerNukkitX/37caa9e66690f2d327b33d8a72e7621377ab96c5/src/main/java/org/powernukkitx/block/BlockDispenser.java",
+      "error": "HTTPError"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PowerNukkitX/PowerNukkitX/37caa9e66690f2d327b33d8a72e7621377ab96c5/src/main/java/org/powernukkitx/block/BlockObserver.java",
+      "file": "BlockObserver.java",
+      "bytes": 5318,
+      "sha256": "9d3684e70d60d1e8ace01726600e280d6cbfbc2b11d7f50a41357e74fa1e37d0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PowerNukkitX/PowerNukkitX/37caa9e66690f2d327b33d8a72e7621377ab96c5/src/main/java/org/powernukkitx/block/Block.java",
+      "file": "Block.java",
+      "bytes": 65732,
+      "sha256": "67e4ed1679395c89d7c617621e7479627b28e9c081a7b57ab41859e3e19158f1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PowerNukkitX/PowerNukkitX/37caa9e66690f2d327b33d8a72e7621377ab96c5/src/main/java/org/powernukkitx/block/dispenser/BlockDispenser.java",
+      "file": "BlockDispenser.java",
+      "bytes": 9168,
+      "sha256": "1d9f39160f2964da26921f6d11067b8b4842557ebcd6e09b1942d06d215ef404"
+    }
+  ]
+}
