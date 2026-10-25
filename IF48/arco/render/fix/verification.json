@@ -1,0 +1,23 @@
+{
+  "scope": "First-person bow rendering policy only",
+  "baseline": "ViaFabricPlus-Bedrock-IF46.jar",
+  "baselineClassSha256": "ff569c212e2456bc7abf39b310b2633859a5624b4c77d2de18748451879d0217",
+  "runtimeEntries": {
+    "com/viaversion/viafabricplus/bedrock/render/BedrockFirstPersonItemRendering.class": "912d2f1fe20fa1eeb7aceef04e01350c24349754cdd27ba195b1a346f2527215"
+  },
+  "newRuntimeClasses": 0,
+  "replacedRuntimeClasses": 1,
+  "productionCompiledAgainstMinecraftFixtures": false,
+  "asmBasicVerifierAllMethods": true,
+  "canonicalReversalToBaseline": true,
+  "decisionProbeChecks": 13,
+  "decisionMatrixCases": 216,
+  "preserved": [
+    "original map selection",
+    "original active-crossbow selection",
+    "animationFrame method",
+    "all original methods fields annotations attributes instructions after two inserted checks"
+  ],
+  "boundary": "Real original and patched method bodies executed, item API fixtures only; no actual Minecraft client, graphics, Mixin engine or Bedrock server.",
+  "diagnosticXpFixClaimed": false
+}

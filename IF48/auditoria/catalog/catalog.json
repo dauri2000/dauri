@@ -1,0 +1,3196 @@
+{
+  "catalog_only": true,
+  "not_an_addon_pass_report": true,
+  "not_server_runtime_verification": true,
+  "client_target_reported_by_root": "Java 26.3",
+  "bridge_compatibility_target_reported_by_root": {
+    "bedrock_label": "1.26.51",
+    "protocol": 2193
+  },
+  "actual_server_version": "No confirmada por esta tarea",
+  "official_sample_commit": "46ba6ea985fb5a92d79a9419198f10dda14c199d",
+  "official_sample_version": "1.26.50.4",
+  "auxiliary_city_palette_edition": "Java 26.3; no prueba de generación Bedrock",
+  "counts": {
+    "stronghold_estructura": 15,
+    "stronghold_mecanica": 16,
+    "stronghold_bloque": 27,
+    "end_estructura": 10,
+    "end_mecanica": 26,
+    "end_entidad": 15,
+    "end_bloque": 26,
+    "end_objeto_mecanica": 25,
+    "end_mecanica_compartida": 22,
+    "end_ciudad_botin": 26,
+    "stronghold_botin_pasillo": 23,
+    "stronghold_botin_cruce": 9,
+    "stronghold_botin_biblioteca": 6
+  },
+  "total_rows": 246,
+  "loot_entries": {
+    "end_city_treasure": [
+      {
+        "type": "item",
+        "name": "minecraft:diamond",
+        "weight": 5,
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 2,
+              "max": 7
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_ingot",
+        "weight": 10,
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 4,
+              "max": 8
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:gold_ingot",
+        "weight": 15,
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 2,
+              "max": 7
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:emerald",
+        "weight": 2,
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 2,
+              "max": 6
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:beetroot_seeds",
+        "weight": 5,
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 10
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:saddle",
+        "weight": 3
+      },
+      {
+        "type": "item",
+        "name": "minecraft:horsearmoriron",
+        "weight": 1
+      },
+      {
+        "type": "item",
+        "name": "minecraft:copper_horse_armor",
+        "weight": 1
+      },
+      {
+        "type": "item",
+        "name": "minecraft:horsearmorgold",
+        "weight": 1
+      },
+      {
+        "type": "item",
+        "name": "minecraft:horsearmordiamond",
+        "weight": 1
+      },
+      {
+        "type": "item",
+        "name": "minecraft:diamond_sword",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:diamond_spear",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:diamond_boots",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:diamond_chestplate",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:diamond_leggings",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:diamond_helmet",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:diamond_pickaxe",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:diamond_shovel",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_sword",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_boots",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_chestplate",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_leggings",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_helmet",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_pickaxe",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_shovel",
+        "weight": 3,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "treasure": true,
+            "levels": {
+              "min": 20,
+              "max": 39
+            }
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:spire_armor_trim_smithing_template",
+        "weight": 1
+      }
+    ],
+    "stronghold_corridor": [
+      {
+        "type": "item",
+        "name": "minecraft:ender_pearl",
+        "weight": 50
+      },
+      {
+        "type": "item",
+        "name": "minecraft:emerald",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+          }
+        ],
+        "weight": 15
+      },
+      {
+        "type": "item",
+        "name": "minecraft:diamond",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+          }
+        ],
+        "weight": 15
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_ingot",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 5
+            }
+          }
+        ],
+        "weight": 50
+      },
+      {
+        "type": "item",
+        "name": "minecraft:gold_ingot",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+          }
+        ],
+        "weight": 25
+      },
+      {
+        "type": "item",
+        "name": "minecraft:redstone",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 4,
+              "max": 9
+            }
+          }
+        ],
+        "weight": 25
+      },
+      {
+        "type": "item",
+        "name": "minecraft:bread",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+          }
+        ],
+        "weight": 75
+      },
+      {
+        "type": "item",
+        "name": "minecraft:apple",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+          }
+        ],
+        "weight": 75
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_pickaxe",
+        "weight": 25
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_sword",
+        "weight": 25
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_chestplate",
+        "weight": 25
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_helmet",
+        "weight": 25
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_leggings",
+        "weight": 25
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_boots",
+        "weight": 25
+      },
+      {
+        "type": "item",
+        "name": "minecraft:golden_apple",
+        "weight": 5
+      },
+      {
+        "type": "item",
+        "name": "minecraft:leather",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 5
+            },
+            "add": false
+          }
+        ],
+        "weight": 5
+      },
+      {
+        "type": "item",
+        "name": "minecraft:horsearmoriron",
+        "weight": 5
+      },
+      {
+        "type": "item",
+        "name": "minecraft:copper_horse_armor",
+        "weight": 5
+      },
+      {
+        "type": "item",
+        "name": "minecraft:horsearmorgold",
+        "weight": 5
+      },
+      {
+        "type": "item",
+        "name": "minecraft:horsearmordiamond",
+        "weight": 5
+      },
+      {
+        "type": "item",
+        "name": "minecraft:record_otherside",
+        "weight": 5
+      },
+      {
+        "type": "item",
+        "name": "minecraft:book",
+        "weight": 6,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "levels": 30,
+            "treasure": true
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:eye_armor_trim_smithing_template",
+        "weight": 1
+      }
+    ],
+    "stronghold_crossing": [
+      {
+        "type": "item",
+        "name": "minecraft:iron_ingot",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 5
+            }
+          }
+        ],
+        "weight": 50
+      },
+      {
+        "type": "item",
+        "name": "minecraft:gold_ingot",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+          }
+        ],
+        "weight": 25
+      },
+      {
+        "type": "item",
+        "name": "minecraft:redstone",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 4,
+              "max": 9
+            }
+          }
+        ],
+        "weight": 25
+      },
+      {
+        "type": "item",
+        "name": "minecraft:coal",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 3,
+              "max": 8
+            }
+          }
+        ],
+        "weight": 50
+      },
+      {
+        "type": "item",
+        "name": "minecraft:bread",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+          }
+        ],
+        "weight": 75
+      },
+      {
+        "type": "item",
+        "name": "minecraft:apple",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+          }
+        ],
+        "weight": 75
+      },
+      {
+        "type": "item",
+        "name": "minecraft:iron_pickaxe",
+        "weight": 5
+      },
+      {
+        "type": "item",
+        "name": "minecraft:book",
+        "weight": 6,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "levels": 30,
+            "treasure": true
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:dye",
+        "weight": 75,
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+          },
+          {
+            "function": "set_data",
+            "data": 0
+          }
+        ]
+      }
+    ],
+    "stronghold_library": [
+      {
+        "type": "item",
+        "name": "minecraft:book",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "type": "item",
+        "name": "minecraft:paper",
+        "functions": [
+          {
+            "function": "set_count",
+            "count": {
+              "min": 2,
+              "max": 7
+            }
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "type": "item",
+        "name": "minecraft:map",
+        "weight": 5
+      },
+      {
+        "type": "item",
+        "name": "minecraft:compass",
+        "weight": 5
+      },
+      {
+        "type": "item",
+        "name": "minecraft:book",
+        "weight": 60,
+        "functions": [
+          {
+            "function": "enchant_with_levels",
+            "levels": 30,
+            "treasure": true
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "name": "minecraft:eye_armor_trim_smithing_template",
+        "weight": 1
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": "stronghold_estructura-001",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Localización con ojos de ender",
+      "required_checks": "Lanzamiento, entidad señal, dirección y posición recibidas; recogida/rotura decidida por Bedrock.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-002",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Acceso y escaleras de entrada",
+      "required_checks": "Geometría, colisión, altura y conectividad de los chunks enviados.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-003",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Pasillos rectos y giros",
+      "required_checks": "Bloques sólidos, puertas y paso del jugador sin predicción a través de paredes.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-004",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Intersecciones y habitaciones de conexión",
+      "required_checks": "Carga completa y continuidad de conexiones; generación depende del servidor.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-005",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Escaleras internas y escaleras de caracol",
+      "required_checks": "Colisión de escalones, orientación y desplazamiento.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-006",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Habitación de fuente",
+      "required_checks": "Fuente, agua, colisión, cubo y actualizaciones de líquido.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-007",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Almacén con cofre",
+      "required_checks": "Plataforma, acceso, cofre, saqueo y sincronización del inventario.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-008",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Celdas",
+      "required_checks": "Barrotes, puertas, botones y colisión de bloques conectados.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-009",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Biblioteca de una o dos plantas",
+      "required_checks": "Estanterías, plataformas, barandillas, escaleras, telarañas y cofres.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-010",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Sala del portal",
+      "required_checks": "Marcos orientados, escalera, lava, barrotes y generador de silverfish.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-011",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Cofres de pasillo",
+      "required_checks": "Tabla stronghold_corridor: apertura, nombres, NBT/componentes, transferencia y cierre.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-012",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Cofres de cruce/almacén",
+      "required_checks": "Tabla stronghold_crossing: mismos controles de inventario; contenido generado por el servidor.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-013",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Cofres de biblioteca",
+      "required_checks": "Tabla stronghold_library: libros encantados, mapa, brújula y plantilla.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-014",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Intersección con cuevas, agua u otras estructuras",
+      "required_checks": "Enviar el terreno real recibido; no reconstruir un stronghold ideal en el cliente.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_estructura-015",
+      "category": "stronghold_estructura",
+      "owner": "root",
+      "element": "Variación de generación de Bedrock",
+      "required_checks": "No aplicar como requisito el patrón de anillos ni la conectividad garantizada de Java; no prometer sala del portal en toda estructura.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-001",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Ojo de ender en el aire",
+      "required_checks": "Usar ítem, consumir cuando corresponda, entidad eye_of_ender_signal, partículas y resultado de drop.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-002",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Inserción de un ojo en un marco",
+      "required_checks": "Cara/posición tocada, estado del ojo, reducción de pila y sonido.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-003",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Activación del portal completo",
+      "required_checks": "Doce marcos válidos y sus orientaciones; rellenar interior desde actualizaciones nativas.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-004",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Entrada al portal del End",
+      "required_checks": "Contacto, cambio de dimensión, posición de llegada y confirmaciones.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-005",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Rotura de bloques infestados",
+      "required_checks": "Mostrar variante correcta, enviar rotura real y aceptar aparición de silverfish.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-006",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Despertar silverfish cercanos",
+      "required_checks": "El servidor decide la infestación y las entidades; mantener bloques y entidades coherentes.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-007",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Generador de silverfish",
+      "required_checks": "Spawner, datos de bloque-entidad, aparición/desaparición, daño y eliminación del generador.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-008",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Puertas de madera",
+      "required_checks": "Abrir/cerrar, mitades, orientación y colisión.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-009",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Puertas de hierro y botones",
+      "required_checks": "Interacción, señal, sonido, estados abiertos y restauración.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-010",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Barrotes conectados",
+      "required_checks": "Conexiones y colisión al pasar o atacar a través.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-011",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Escaleras de mano",
+      "required_checks": "Adhesión, ascenso/descenso y estado de dirección.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-012",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Telarañas",
+      "required_checks": "Ralentización, colisión y rotura con herramienta.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-013",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Lava de la sala del portal",
+      "required_checks": "Renderizado, colisión/daño nativo, fuego y uso de cubos.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-014",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Agua y cubos en la fortaleza",
+      "required_checks": "Tomar/colocar fuente y sincronizar ítem y capas de fluidos; incluir agua contenida en bloques.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-015",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Cofres y saqueo rápido",
+      "required_checks": "Clic/shift-clic, apilado, encantamientos/componentes y recuentos confirmados.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_mecanica-016",
+      "category": "stronghold_mecanica",
+      "owner": "root",
+      "element": "Mobs normales del Overworld que entren",
+      "required_checks": "Ruta genérica de aparición, daño y eliminación; no son especies exclusivas del stronghold.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-001",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Ladrillos de piedra",
+      "required_checks": "Textura, solidez, rotura y drop.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-002",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Ladrillos de piedra musgosos",
+      "required_checks": "Variante y drop conservados.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-003",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Ladrillos de piedra agrietados",
+      "required_checks": "Variante y drop conservados.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-004",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Ladrillos de piedra cincelados",
+      "required_checks": "Cobertura de variante si la plantilla/versión los utiliza; no prueba de que toda fortaleza los genere.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-005",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Piedra infestada",
+      "required_checks": "Apariencia y rotura/entidad nativas.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-006",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Ladrillos de piedra infestados",
+      "required_checks": "Conservar variante infestada en la interacción y aceptar spawn nativo.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-007",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Ladrillos musgosos/agrietados/cincelados infestados",
+      "required_checks": "Cobertura de las tres variantes auxiliares; no afirmar distribución exacta sin plantilla Bedrock.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-008",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Escaleras de ladrillos de piedra",
+      "required_checks": "Direcciones, mitad, esquinas, colisión y fluido.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-009",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Losas de piedra y de ladrillos de piedra",
+      "required_checks": "Mitad inferior/superior/doble y colisión; presencia exacta depende de la plantilla.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-010",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Adoquín",
+      "required_checks": "Textura, solidez y actualización.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-011",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Tablones de roble",
+      "required_checks": "Solidez, rotura y colocación.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-012",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Vallas de roble",
+      "required_checks": "Conexiones, colisión y antorchas sobre la valla.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-013",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Puerta de roble",
+      "required_checks": "Dos mitades, bisagra, facing y open.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-014",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Puerta de hierro",
+      "required_checks": "Dos mitades, facing y señal.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-015",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Botón de piedra",
+      "required_checks": "Cara, estado pulsado, señal y restauración.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-016",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Barrotes de hierro",
+      "required_checks": "Conexión y colisión.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-017",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Antorcha de pie y en pared",
+      "required_checks": "Cara, luz y soporte.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-018",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Estantería",
+      "required_checks": "Modelo, rotura, libros y posible toque de seda.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-019",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Telaraña",
+      "required_checks": "Modelo y ralentización.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-020",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Escalera de mano",
+      "required_checks": "Facing y escalada.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-021",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Cofre simple",
+      "required_checks": "Facing, apertura, inventario y bloque-entidad.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-022",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Agua fuente/corriente",
+      "required_checks": "Renderizado, fuente real, flujo nativo y cubo.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-023",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Lava fuente/corriente",
+      "required_checks": "Renderizado, flujo nativo, daño y cubo.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-024",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Generador de criaturas (silverfish)",
+      "required_checks": "Tipo de entidad y parámetros enviados; aparición y rotura.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-025",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Marco del portal del End sin ojo/con ojo",
+      "required_checks": "Facing, eye, modelo y activación.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-026",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Bloque de portal del End",
+      "required_checks": "Plano, renderizado y transición.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_bloque-027",
+      "category": "stronghold_bloque",
+      "owner": "end_world_blocks",
+      "element": "Aire y terreno vecino recibido",
+      "required_checks": "Ausencia de colisión fantasma y carga de chunks; no limitar el catálogo de cuevas a materiales de la fortaleza.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_estructura-001",
+      "category": "end_estructura",
+      "owner": "end_world_blocks",
+      "element": "Plataforma de entrada de obsidiana",
+      "required_checks": "Posición de llegada, entorno y regeneración nativa al volver a entrar.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_estructura-002",
+      "category": "end_estructura",
+      "owner": "end_world_blocks",
+      "element": "Isla principal",
+      "required_checks": "Chunks, end stone, límites del terreno y colisión.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_estructura-003",
+      "category": "end_estructura",
+      "owner": "end_world_blocks",
+      "element": "Pilares de obsidiana",
+      "required_checks": "Geometría, cristales, fuego y bloques base.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_estructura-004",
+      "category": "end_estructura",
+      "owner": "end_world_blocks",
+      "element": "Jaulas de barrotes de los cristales",
+      "required_checks": "Conexiones/colisión y ataques a través de huecos.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_estructura-005",
+      "category": "end_estructura",
+      "owner": "end_world_blocks",
+      "element": "Fuente/portal de salida central",
+      "required_checks": "Bedrock, antorchas, portal activo/inactivo, huevo y retorno.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_estructura-006",
+      "category": "end_estructura",
+      "owner": "end_world_blocks",
+      "element": "Portales de enlace de la isla central",
+      "required_checks": "Bloque-entidad, animación/haz, contacto/perla, destino y retorno.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_estructura-007",
+      "category": "end_estructura",
+      "owner": "end_world_blocks",
+      "element": "Islas exteriores y pequeños islotes",
+      "required_checks": "Chunks, vacío entre islas, crecimiento de chorus y colisión.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_estructura-008",
+      "category": "end_estructura",
+      "owner": "end_world_blocks",
+      "element": "Ciudades del End",
+      "required_checks": "Torres, habitaciones, puentes, pasarelas, cofres, ender chests y shulkers.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_estructura-009",
+      "category": "end_estructura",
+      "owner": "end_world_blocks",
+      "element": "Barcos del End",
+      "required_checks": "Acceso, shulkers, cabeza, botín, soporte de pociones y marco de élitros.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_estructura-010",
+      "category": "end_estructura",
+      "owner": "end_world_blocks",
+      "element": "Portales de enlace en islas exteriores",
+      "required_checks": "Destino real del bloque-entidad y traslado seguro recibido; no inventar coordenadas.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-001",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: aparición y seguimiento",
+      "required_checks": "ADD/MOVE/MOTION/REMOVE, dimensiones y orientación visibles coherentes.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-002",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: vida y barra de jefe",
+      "required_checks": "Vida recibida y eventos de barra sin barra permanente o duplicada.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-003",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: partes del cuerpo y ataques",
+      "required_checks": "Resolver hitbox/ID de cada parte al actor Bedrock correcto.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-004",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: vuelo, giros y embestida",
+      "required_checks": "Movimiento interpolado y daño/impulso nativo.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-005",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: aterrizaje, posado y despegue",
+      "required_checks": "Fases y animaciones traducidas; no imponer IA Java.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-006",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: ataque cuerpo a cuerpo",
+      "required_checks": "Alcance, ID de parte, daño confirmado y feedback.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-007",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: flechas/proyectiles en vuelo o posado",
+      "required_checks": "Colisión visible y resultado nativo; inmunidades/deflexión pertenecen a Bedrock.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-008",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: bolas de fuego",
+      "required_checks": "Aparición, velocidad, trayectoria, impacto y eliminación.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-009",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: nube de aliento",
+      "required_checks": "Radio, partículas, duración, daño y fuente de pociones.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-010",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: recoger aliento con frasco",
+      "required_checks": "Interacción de objeto, resultado dragon_breath y modificación nativa de la nube.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-011",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Cristales: curación y haz",
+      "required_checks": "Beam target, posición, base visual y vida real del dragón.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-012",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Cristales: destrucción y explosión",
+      "required_checks": "Actor correcto, explosión/sonido/daño/bloques y retirada.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-013",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: rotura de bloques",
+      "required_checks": "Aceptar destrucción y excepciones nativas; no mantener fantasmas.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-014",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: muerte",
+      "required_checks": "Fase/animación, desaparición, sonidos, portal y huevo.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-015",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: experiencia de la muerte",
+      "required_checks": "XP nativa, movimiento/recogida de orbes y nivel/equipo; fallo de recogida conocido todavía pendiente.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-016",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: resurrección con cuatro cristales",
+      "required_checks": "Validación de posiciones y secuencia nativas, pilares/cristales y nuevo dragón.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-017",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Dragón: muertes posteriores y recompensas",
+      "required_checks": "Aceptar XP/huevo/gateway según reglas Bedrock; no copiar cantidades o límites de Java.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-018",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Enderman: mirada y calabaza tallada",
+      "required_checks": "Aggro del servidor, metadata/animación y casco recibido.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-019",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Enderman: combate, agua y teletransporte",
+      "required_checks": "Daño, evasión de proyectiles, traslado y bloques transportados.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-020",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Enderman: drops y experiencia",
+      "required_checks": "Perlas/pilas, recogida de ítems separada de orbes XP.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-021",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Shulker: unión a superficies, apertura y armadura",
+      "required_checks": "Cara adherida, altura/peek, colisión y daño nativo.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-022",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Shulker: teletransporte y reproducción cuando proceda",
+      "required_checks": "Movimiento/spawns confirmados; comportamiento exacto de versión/gamerules pertenece a Bedrock.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-023",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Shulker: proyectiles perseguidores",
+      "required_checks": "Trayectoria, objetivo, impacto, bloqueo/rotura y retirada.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-024",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Shulker: levitación y caída posterior",
+      "required_checks": "Efecto recibido, duración visible, movimiento y daño de caída.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-025",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Shulker: caparazones y XP",
+      "required_checks": "Botín/looting, recogida y ausencia de pérdida por desincronización.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica-026",
+      "category": "end_mecanica",
+      "owner": "end_dragon_entities",
+      "element": "Endermite surgido por perla",
+      "required_checks": "Aparición, objetivo, vida útil y desaparición recibidos.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-001",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:ender_dragon",
+      "required_checks": "Actor principal, partes, fase, vida, bossbar, muerte.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-002",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:ender_crystal",
+      "required_checks": "Actor interactuable, haz, base y explosión.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-003",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:dragon_fireball",
+      "required_checks": "Movimiento, impacto y retirada.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-004",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:area_effect_cloud",
+      "required_checks": "Radio, partículas, duración y efectos nativos.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-005",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:enderman",
+      "required_checks": "Modelo, metadata, ataque, bloque cargado y teletransporte.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-006",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:shulker",
+      "required_checks": "Cara adherida, apertura, color y teletransporte.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-007",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:shulker_bullet",
+      "required_checks": "Homing, golpe y levitación.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-008",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:endermite",
+      "required_checks": "Spawn de perla, daño y eliminación.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-009",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:xp_orb",
+      "required_checks": "Vida visual y recogida; pendiente real ya reportado por el usuario.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-010",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:item",
+      "required_checks": "Botín, cantidad y recogida nativa.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-011",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:ender_pearl",
+      "required_checks": "Proyectil y teletransporte del propietario.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-012",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:arrow",
+      "required_checks": "Flechas disparadas e impacto; distinguirlas del modelo de flecha sobre el arco.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-013",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "Minecraft:marco de objeto (representación Bedrock de bloque)",
+      "required_checks": "Élitros visibles, rotación, ataque/interacción y obtención del objeto.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-014",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:silverfish",
+      "required_checks": "Stronghold: spawn/infestación/daño y retirada.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_entidad-015",
+      "category": "end_entidad",
+      "owner": "end_dragon_entities",
+      "element": "minecraft:eye_of_ender_signal",
+      "required_checks": "Stronghold: señal, movimiento y final del lanzamiento.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-001",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Piedra del End",
+      "required_checks": "Solidez, textura y drop.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-002",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Obsidiana",
+      "required_checks": "Pilares/plataforma/barco, rotura y regeneración nativa.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-003",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Roca madre",
+      "required_checks": "Fuente, gateways y base de cristales; colisión e indestructibilidad.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-004",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Barrotes de hierro",
+      "required_checks": "Jaulas de cristales: conexiones, colisión y rotura.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-005",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Fuego",
+      "required_checks": "Plano/renderizado, interacción y daño nativo.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-006",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Antorchas de pie/en pared",
+      "required_checks": "Fuente de salida, facing, luz y soporte.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-007",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Portal del End",
+      "required_checks": "Renderizado y salida/entrada de dimensión.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-008",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Portal de enlace del End",
+      "required_checks": "Bloque-entidad, haz y destino.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-009",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Huevo de dragón",
+      "required_checks": "Modelo, soporte, caída, teletransporte y recogida confirmada.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-010",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Planta de chorus",
+      "required_checks": "Conexiones, soporte, rotura en cadena y fruto.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-011",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Flor de chorus",
+      "required_checks": "Edad, crecimiento nativo, proyectiles/rotura y drop.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-012",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Ladrillos de piedra del End",
+      "required_checks": "Ciudad/barco: textura, solidez y drop.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-013",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Bloque de purpur",
+      "required_checks": "Textura, solidez y drop.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-014",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Pilar de purpur",
+      "required_checks": "Ejes X/Y/Z y textura.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-015",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Escaleras de purpur",
+      "required_checks": "Facing, mitades, esquinas y colisión.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-016",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Losa de purpur",
+      "required_checks": "Inferior/superior/doble y colisión.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-017",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Vara del End",
+      "required_checks": "Todas las direcciones, luz y colisión.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-018",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Cristal tintado de magenta",
+      "required_checks": "Transparencia y colisión.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-019",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Estandarte magenta de pared",
+      "required_checks": "Color, facing y bloque-entidad; corroborado en paletas Java, generación Bedrock exacta pendiente.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-020",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Escalera de mano",
+      "required_checks": "Orientación y ascenso en torres/barco.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-021",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Cofre",
+      "required_checks": "Loot de ciudad/barco, apertura, transferencia y contenido.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-022",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Cofre de ender",
+      "required_checks": "Apertura e inventario privado persistente entre dimensiones.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-023",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Soporte para pociones",
+      "required_checks": "Modelo, botellas/slots y saqueo de pociones.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-024",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Cabeza de dragón de suelo/pared",
+      "required_checks": "Orientación, mandíbula por animación/señal y objeto al recoger.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-025",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Marco de objeto con élitros",
+      "required_checks": "Ítem mostrado/rotación, interacción y obtención.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_bloque-026",
+      "category": "end_bloque",
+      "owner": "end_world_blocks",
+      "element": "Aire y vacío",
+      "required_checks": "Nada sólido inventado en huecos, límite del mundo y daño/respawn nativos.",
+      "catalog_source": "VANILLA_SCOPE + JAVA26_3_CITY_PALETTE_AUXILIARY",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-001",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Arco: animación al tensar y flecha apoyada",
+      "required_checks": "Modelo de etapas y flecha visible; fallo actual reportado, auditor bow_render_audit.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-002",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Arco: disparo",
+      "required_checks": "Uso/soltado, consumo y tipo de flecha, durabilidad y proyectil nativo.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-003",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Ballesta normal/multidisparo/perforación",
+      "required_checks": "Carga, componente de proyectiles, disparo y consumo confirmados.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-004",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Flechas normales y con efecto",
+      "required_checks": "Tipo/poción, trayectoria, impacto y recogida; no inventar espectrales nativas de Bedrock.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-005",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Armas de cuerpo a cuerpo",
+      "required_checks": "Ataques al actor/parte, durabilidad, encantamientos y resultado nativo.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-006",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Escudo",
+      "required_checks": "Activación traducida, bloqueo/daño y animación; preservar corrección previa.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-007",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Armadura y encantamientos",
+      "required_checks": "Equipamiento, protección y desgaste decididos por Bedrock.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-008",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Tótem de inmortalidad",
+      "required_checks": "Mano/equipamiento, consumo y evento de resurrección.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-009",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Perla de ender",
+      "required_checks": "Uso/cooldown, trayectoria, daño de teletransporte y correcciones de posición.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-010",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Ojo de ender",
+      "required_checks": "Lanzamiento, señal y colocación en marco.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-011",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Cristal del End",
+      "required_checks": "Colocación sobre soporte permitido y actor resultante; resurrección gestionada por servidor.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-012",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Frasco de cristal y aliento de dragón",
+      "required_checks": "Conversión al recoger nube y cantidades confirmadas.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-013",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Poción de aliento/prolongada derivada",
+      "required_checks": "NBT/componentes, iconos y recetas/resultados del servidor.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-014",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Fruta de chorus",
+      "required_checks": "Comer incluso sin hambre, cooldown y teletransporte confirmado.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-015",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Fruta de chorus horneada",
+      "required_checks": "Resultado de horno y recetas de purpur/varas.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-016",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Caparazón de shulker",
+      "required_checks": "Botín, apilado y receta de caja.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-017",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Caja de shulker sin teñir y dieciséis colores",
+      "required_checks": "Inventario de 27 slots, abrir/cerrar, contenido anidado y conservación al romper; no guardar otra shulker dentro.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-018",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Élitros",
+      "required_checks": "Obtener del marco, equipar, iniciar/parar planeo, durabilidad y reparación.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-019",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Cohete de fuegos artificiales",
+      "required_checks": "Impulso durante planeo, consumo y daño cuando tiene explosiones.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-020",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Cabeza de dragón como ítem/equipo",
+      "required_checks": "Inventario, colocación, equipo y modelo.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-021",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Huevo de dragón como ítem",
+      "required_checks": "Recogida especial, transporte, colocación y recuento nativo.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-022",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Pociones del barco",
+      "required_checks": "Poción de curación/variante de la versión, botella, consumo y efecto.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-023",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Plantilla de armadura espiral (spire)",
+      "required_checks": "Ciudad: nombre/icono, apilado y conservación de NBT.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-024",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Plantilla de armadura ojo (eye)",
+      "required_checks": "Stronghold: nombre/icono, apilado y conservación de NBT.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_objeto_mecanica-025",
+      "category": "end_objeto_mecanica",
+      "owner": "end_items_travel",
+      "element": "Equipo encantado del botín",
+      "required_checks": "Conservar encantamientos, atributos/durabilidad y coste de reparación; yunque es una ruta compartida.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-001",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Cambio Overworld → End",
+      "required_checks": "Identidad de dimensión, registry, carga de chunks, posición y confirmación de teleport.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-002",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Cambio End → Overworld por salida",
+      "required_checks": "Evento de fin, créditos si corresponde y punto de reaparición recibido.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-003",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Reentrada y desconexión en el End",
+      "required_checks": "Reconexión, respawn, limpieza de actores/chunks y posición inicial.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-004",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Traslado por gateway",
+      "required_checks": "Pequeño portal, perla u otro acceso válido nativo, cooldown y chunks destino.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-005",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Muerte, inventario y reaparición",
+      "required_checks": "No inventar respawn en el End; aceptar reglas y posición del servidor.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-006",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Caída al vacío",
+      "required_checks": "Altura/daño, salud, totem si procede, muerte y pérdida de equipo según Bedrock.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-007",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Colocación rápida y puentes",
+      "required_checks": "No perder bloques ni dejar fantasmas; preservar IF45, resultado live anterior pendiente.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-008",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Rotura y recogida de bloques",
+      "required_checks": "Confirmación de estado, partículas, drops e inventario.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-009",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Agua, cubos y bloques con agua",
+      "required_checks": "Mecánica permitida en End, fuente real, capas y sincronización; preservar IF44.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-010",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Camas usadas en End",
+      "required_checks": "Explosión/sonido/bloques/daño según servidor; no establecer respawn.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-011",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Ancla de reaparición usada en End",
+      "required_checks": "Carga y explosión según reglas Bedrock; no asumir función válida de Nether.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-012",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Portales del Nether construidos en End",
+      "required_checks": "Aceptar que la dimensión no habilita la ruta normal al Nether; no crear un portal cliente ficticio.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-013",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Brújula, reloj y mapas en End",
+      "required_checks": "Presentación especial por dimensión; mapas ya tenían fallo visual reportado y no se declaran resueltos.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-014",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Iluminación, cielo, niebla y música",
+      "required_checks": "Valores y eventos de dimensión; el End no usa el ciclo visual normal del Overworld.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-015",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Lluvia y tormenta",
+      "required_checks": "No aplicar clima del Overworld a End por error; estados conservados al cambiar dimensión.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-016",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Efectos, salud, hambre y caída",
+      "required_checks": "Paquetes de atributos/efectos, duración visible y movimiento; daño autoritativo nativo.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-017",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Sonidos, partículas y eventos de nivel",
+      "required_checks": "Dragón/cristales/shulkers/portales/chorus: nombre, evento y posición.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-018",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Cofres/ender chests/shulkers con clic rápido",
+      "required_checks": "Slots, revisiones, contenido confirmado, apilado y cierre.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-019",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Experiencia y reparación Mending",
+      "required_checks": "Orbes, nivel y equipo pueden cambiar por separado; no interpretar barra fija como prueba de XP perdida.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-020",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Reglas de combate Bedrock",
+      "required_checks": "No imponer cooldown, inmunidades, mano secundaria ni IA de Java sobre resultados nativos.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-021",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Gamerules, dificultad y multijugador",
+      "required_checks": "Servidor controla mob spawning/griefing, explosiones, keep inventory y recompensas.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_mecanica_compartida-022",
+      "category": "end_mecanica_compartida",
+      "owner": "root",
+      "element": "Ítems, bloques o criaturas traídos desde fuera",
+      "required_checks": "Rutas compartidas relevantes incluidas; el catálogo no pretende enumerar todos los objetos importables del juego.",
+      "catalog_source": "VANILLA_SCOPE",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-001",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:diamond",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-002",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_ingot",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-003",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:gold_ingot",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-004",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:emerald",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-005",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:beetroot_seeds",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-006",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:saddle",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-007",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:horsearmoriron",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-008",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:copper_horse_armor",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-009",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:horsearmorgold",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-010",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:horsearmordiamond",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-011",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:diamond_sword (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-012",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:diamond_spear (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-013",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:diamond_boots (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-014",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:diamond_chestplate (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-015",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:diamond_leggings (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-016",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:diamond_helmet (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-017",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:diamond_pickaxe (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-018",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:diamond_shovel (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-019",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_sword (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-020",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_boots (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-021",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_chestplate (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-022",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_leggings (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-023",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_helmet (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-024",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_pickaxe (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-025",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_shovel (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "end_ciudad_botin-026",
+      "category": "end_ciudad_botin",
+      "owner": "end_items_travel",
+      "element": "minecraft:spire_armor_trim_smithing_template",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:end_city_treasure",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-001",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:ender_pearl",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-002",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:emerald",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-003",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:diamond",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-004",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_ingot",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-005",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:gold_ingot",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-006",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:redstone",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-007",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:bread",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-008",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:apple",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-009",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_pickaxe",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-010",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_sword",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-011",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_chestplate",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-012",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_helmet",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-013",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_leggings",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-014",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_boots",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-015",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:golden_apple",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-016",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:leather",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-017",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:horsearmoriron",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-018",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:copper_horse_armor",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-019",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:horsearmorgold",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-020",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:horsearmordiamond",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-021",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:record_otherside",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-022",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:book (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_pasillo-023",
+      "category": "stronghold_botin_pasillo",
+      "owner": "end_items_travel",
+      "element": "minecraft:eye_armor_trim_smithing_template",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_corridor",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_cruce-001",
+      "category": "stronghold_botin_cruce",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_ingot",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_crossing",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_cruce-002",
+      "category": "stronghold_botin_cruce",
+      "owner": "end_items_travel",
+      "element": "minecraft:gold_ingot",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_crossing",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_cruce-003",
+      "category": "stronghold_botin_cruce",
+      "owner": "end_items_travel",
+      "element": "minecraft:redstone",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_crossing",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_cruce-004",
+      "category": "stronghold_botin_cruce",
+      "owner": "end_items_travel",
+      "element": "minecraft:coal",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_crossing",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_cruce-005",
+      "category": "stronghold_botin_cruce",
+      "owner": "end_items_travel",
+      "element": "minecraft:bread",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_crossing",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_cruce-006",
+      "category": "stronghold_botin_cruce",
+      "owner": "end_items_travel",
+      "element": "minecraft:apple",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_crossing",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_cruce-007",
+      "category": "stronghold_botin_cruce",
+      "owner": "end_items_travel",
+      "element": "minecraft:iron_pickaxe",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_crossing",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_cruce-008",
+      "category": "stronghold_botin_cruce",
+      "owner": "end_items_travel",
+      "element": "minecraft:book (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_crossing",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_cruce-009",
+      "category": "stronghold_botin_cruce",
+      "owner": "end_items_travel",
+      "element": "minecraft:dye (data nativo=0)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_crossing",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_biblioteca-001",
+      "category": "stronghold_botin_biblioteca",
+      "owner": "end_items_travel",
+      "element": "minecraft:book",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_library",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_biblioteca-002",
+      "category": "stronghold_botin_biblioteca",
+      "owner": "end_items_travel",
+      "element": "minecraft:paper",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_library",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_biblioteca-003",
+      "category": "stronghold_botin_biblioteca",
+      "owner": "end_items_travel",
+      "element": "minecraft:map",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_library",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_biblioteca-004",
+      "category": "stronghold_botin_biblioteca",
+      "owner": "end_items_travel",
+      "element": "minecraft:compass",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_library",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_biblioteca-005",
+      "category": "stronghold_botin_biblioteca",
+      "owner": "end_items_travel",
+      "element": "minecraft:book (con encantamientos de tesoro)",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_library",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    },
+    {
+      "id": "stronghold_botin_biblioteca-006",
+      "category": "stronghold_botin_biblioteca",
+      "owner": "end_items_travel",
+      "element": "minecraft:eye_armor_trim_smithing_template",
+      "required_checks": "Mapeo del ítem y variantes; icono/nombre; cantidad; componentes/encantamientos cuando los haya; transferencia y uso de su familia.",
+      "catalog_source": "OFFICIAL_BEDROCK_1_26_50_4:stronghold_library",
+      "addon_verification": "Pendiente de cruzar con el informe del auditor asignado",
+      "live_server_verification": "No realizada"
+    }
+  ]
+}

@@ -1,0 +1,1082 @@
+{
+  "base": "IF46; audited relevant classes/resources byte-identical IF47",
+  "resource_sha256": {
+    "custom/blockstate_mappings.json": "2a81520dd9093b00d26fca4125d899db97861ce8fdbc451cfd1d7106902b36fa",
+    "java/via_mappings.json": "54f689bc3ab407c3596630d0a47955ec3d35fcd98225c2a8669104967b0c0a3e",
+    "bedrock/block_palette.nbt": "54c9bed0bef30aadc316b21c6e82b5ac407c5c6e351b9d9690aa4e9a49fec912",
+    "java/registries.nbt": "b4543d1c54082c69739d93cc0742567446cde9f58b6a4831b7499cc80c3766ed"
+  },
+  "rows": [
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:air",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:air"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:end_stone",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:end_stone"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:end_bricks",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:end_stone_bricks"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:purpur_block",
+      "native_palette_states": 3,
+      "mapping_rows": 3,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:purpur_block"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:purpur_pillar",
+      "native_palette_states": 3,
+      "mapping_rows": 3,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:purpur_pillar"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:purpur_slab",
+      "native_palette_states": 2,
+      "mapping_rows": 2,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:purpur_slab"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:purpur_double_slab",
+      "native_palette_states": 2,
+      "mapping_rows": 2,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:purpur_slab"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:purpur_stairs",
+      "native_palette_states": 40,
+      "mapping_rows": 40,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:purpur_stairs"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:chorus_plant",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:chorus_plant"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:chorus_flower",
+      "native_palette_states": 6,
+      "mapping_rows": 6,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:chorus_flower"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:obsidian",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:obsidian"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:bedrock",
+      "native_palette_states": 2,
+      "mapping_rows": 2,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:bedrock"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:iron_bars",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:iron_bars"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:end_rod",
+      "native_palette_states": 6,
+      "mapping_rows": 6,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:end_rod"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:chest",
+      "native_palette_states": 4,
+      "mapping_rows": 4,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:chest"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:ender_chest",
+      "native_palette_states": 4,
+      "mapping_rows": 4,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:ender_chest"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:dragon_egg",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:dragon_egg"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:end_gateway",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:end_gateway"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:end_portal",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:end_portal"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:dragon_head",
+      "native_palette_states": 6,
+      "mapping_rows": 6,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:dragon_head",
+        "minecraft:dragon_wall_head"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:magenta_stained_glass",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:magenta_stained_glass"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:standing_banner",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:black_banner"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:wall_banner",
+      "native_palette_states": 6,
+      "mapping_rows": 6,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:black_wall_banner"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:brewing_stand",
+      "native_palette_states": 8,
+      "mapping_rows": 8,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:brewing_stand"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:ladder",
+      "native_palette_states": 6,
+      "mapping_rows": 6,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:ladder"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:torch",
+      "native_palette_states": 6,
+      "mapping_rows": 6,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:torch",
+        "minecraft:wall_torch"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "End",
+      "bedrock_identifier": "minecraft:fire",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:fire"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:stone",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:stone"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:cobblestone",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:cobblestone"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:mossy_cobblestone",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:mossy_cobblestone"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:stone_bricks",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:stone_bricks"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:mossy_stone_bricks",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:mossy_stone_bricks"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:cracked_stone_bricks",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:cracked_stone_bricks"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:chiseled_stone_bricks",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:chiseled_stone_bricks"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:infested_stone",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:infested_stone"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:infested_cobblestone",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:infested_cobblestone"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:infested_stone_bricks",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:infested_stone_bricks"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:infested_mossy_stone_bricks",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:infested_mossy_stone_bricks"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:infested_cracked_stone_bricks",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:infested_cracked_stone_bricks"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:infested_chiseled_stone_bricks",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:infested_chiseled_stone_bricks"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:stone_brick_slab",
+      "native_palette_states": 2,
+      "mapping_rows": 2,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:stone_brick_slab"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:stone_brick_double_slab",
+      "native_palette_states": 2,
+      "mapping_rows": 2,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:stone_brick_slab"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:stone_brick_stairs",
+      "native_palette_states": 40,
+      "mapping_rows": 40,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:stone_brick_stairs"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:smooth_stone_slab",
+      "native_palette_states": 2,
+      "mapping_rows": 2,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:smooth_stone_slab"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:smooth_stone_double_slab",
+      "native_palette_states": 2,
+      "mapping_rows": 2,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:smooth_stone_slab"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:stone_slab",
+      "native_palette_states": 0,
+      "mapping_rows": 0,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [],
+      "result": "not_current_identifier",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:stone_double_slab",
+      "native_palette_states": 0,
+      "mapping_rows": 0,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [],
+      "result": "not_current_identifier",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:oak_slab",
+      "native_palette_states": 2,
+      "mapping_rows": 2,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:oak_slab"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:oak_double_slab",
+      "native_palette_states": 2,
+      "mapping_rows": 2,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:oak_slab"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:wooden_slab",
+      "native_palette_states": 0,
+      "mapping_rows": 0,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [],
+      "result": "not_current_identifier",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:double_wooden_slab",
+      "native_palette_states": 0,
+      "mapping_rows": 0,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [],
+      "result": "not_current_identifier",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:oak_stairs",
+      "native_palette_states": 40,
+      "mapping_rows": 40,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:oak_stairs"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:planks",
+      "native_palette_states": 0,
+      "mapping_rows": 0,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [],
+      "result": "not_current_identifier",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:oak_planks",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:oak_planks"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:wooden_door",
+      "native_palette_states": 32,
+      "mapping_rows": 32,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:oak_door"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:iron_door",
+      "native_palette_states": 32,
+      "mapping_rows": 32,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:iron_door"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:stone_button",
+      "native_palette_states": 12,
+      "mapping_rows": 12,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:stone_button"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:stone_pressure_plate",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:stone_pressure_plate"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:wooden_pressure_plate",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:oak_pressure_plate"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:bookshelf",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:bookshelf"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:web",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:cobweb"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:mob_spawner",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:spawner"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:water",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:water"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:flowing_water",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:water"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:lava",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:lava"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:flowing_lava",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:lava"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Stronghold",
+      "bedrock_identifier": "minecraft:end_portal_frame",
+      "native_palette_states": 8,
+      "mapping_rows": 8,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:end_portal_frame"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Carried_End_mechanics",
+      "bedrock_identifier": "minecraft:water",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:water"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Carried_End_mechanics",
+      "bedrock_identifier": "minecraft:flowing_water",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:water"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Carried_End_mechanics",
+      "bedrock_identifier": "minecraft:lava",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:lava"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Carried_End_mechanics",
+      "bedrock_identifier": "minecraft:flowing_lava",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:lava"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Carried_End_mechanics",
+      "bedrock_identifier": "minecraft:bed",
+      "native_palette_states": 16,
+      "mapping_rows": 16,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:white_bed"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Carried_End_mechanics",
+      "bedrock_identifier": "minecraft:respawn_anchor",
+      "native_palette_states": 5,
+      "mapping_rows": 5,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:respawn_anchor"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Carried_End_mechanics",
+      "bedrock_identifier": "minecraft:shulker_box",
+      "native_palette_states": 0,
+      "mapping_rows": 0,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [],
+      "result": "not_current_identifier",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Carried_End_mechanics",
+      "bedrock_identifier": "minecraft:undyed_shulker_box",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:shulker_box"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Carried_End_mechanics",
+      "bedrock_identifier": "minecraft:anvil",
+      "native_palette_states": 4,
+      "mapping_rows": 4,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:anvil"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Carried_End_mechanics",
+      "bedrock_identifier": "minecraft:crafting_table",
+      "native_palette_states": 1,
+      "mapping_rows": 1,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:crafting_table"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Carried_End_mechanics",
+      "bedrock_identifier": "minecraft:chest",
+      "native_palette_states": 4,
+      "mapping_rows": 4,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:chest"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Carried_End_mechanics",
+      "bedrock_identifier": "minecraft:ender_chest",
+      "native_palette_states": 4,
+      "mapping_rows": 4,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:ender_chest"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    },
+    {
+      "group": "Carried_End_mechanics",
+      "bedrock_identifier": "minecraft:end_portal_frame",
+      "native_palette_states": 8,
+      "mapping_rows": 8,
+      "missing_native_mappings": [],
+      "unknown_java_destinations": [],
+      "java_identifiers": [
+        "minecraft:end_portal_frame"
+      ],
+      "result": "present_all_states",
+      "limits": "Mapping resource check only. Does not execute collision, interaction, server generation or rendering."
+    }
+  ],
+  "end_dimension_registry": {
+    "default_clock": "minecraft:the_end",
+    "has_ender_dragon_fight": 1,
+    "ambient_light": 0.25,
+    "monster_spawn_block_light_limit": 0,
+    "has_fixed_time": 1,
+    "infiniburn": "#minecraft:infiniburn_end",
+    "has_skylight": 1,
+    "skybox": "end",
+    "timelines": "#minecraft:in_end",
+    "coordinate_scale": 1.0,
+    "logical_height": 256,
+    "attributes": {
+      "minecraft:audio/background_music": {
+        "default": {
+          "replace_current_music": 1,
+          "max_delay": 24000,
+          "sound": "minecraft:music.end",
+          "min_delay": 6000
+        }
+      },
+      "minecraft:visual/fog_color": "#181318",
+      "minecraft:visual/ambient_light_color": "#3f473f",
+      "minecraft:visual/sky_color": "#000000",
+      "minecraft:audio/ambient_sounds": {
+        "mood": {
+          "tick_delay": 6000,
+          "offset": 2.0,
+          "sound": "minecraft:ambient.cave",
+          "block_search_extent": 8
+        }
+      },
+      "minecraft:visual/sky_light_color": "#ac60cd",
+      "minecraft:visual/sky_light_factor": 0.0
+    },
+    "min_y": 0,
+    "monster_spawn_light_level": 15,
+    "has_ceiling": 0,
+    "height": 256
+  },
+  "limits": "No game client, live Bedrock server, portal traversal or actual chunk transmission executed by this script. All-state mapping existence does not establish whole-feature correctness."
+}

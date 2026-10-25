@@ -1,0 +1,22 @@
+[
+  {
+    "path": "mcprotocollib-EnterCreditsValue.java",
+    "url": "https://raw.githubusercontent.com/GeyserMC/MCProtocolLib/b4fa8b23064bb85d7c7966cc2cd6bf369c9c1405/protocol/src/main/java/org/geysermc/mcprotocollib/protocol/data/game/level/notify/EnterCreditsValue.java",
+    "sha256": "53db2a99ce1306e896b548ac7d5417ee007775c51ebf567b06378a077540edec"
+  },
+  {
+    "path": "mcprotocollib-GameEventPacket.java",
+    "url": "https://raw.githubusercontent.com/GeyserMC/MCProtocolLib/b4fa8b23064bb85d7c7966cc2cd6bf369c9c1405/protocol/src/main/java/org/geysermc/mcprotocollib/protocol/packet/ingame/clientbound/level/ClientboundGameEventPacket.java",
+    "sha256": "8a02b958bc95f6256e36bdc528920de4b5bef3397e46971fdeb6242e90644f03"
+  },
+  {
+    "path": "mcprotocollib-libs.versions.toml",
+    "url": "https://raw.githubusercontent.com/GeyserMC/MCProtocolLib/b4fa8b23064bb85d7c7966cc2cd6bf369c9c1405/gradle/libs.versions.toml",
+    "sha256": "0588a198afdad6caf6206f9e6a61071f7fe71dd778909c8fb3dd3325945481ac"
+  },
+  {
+    "path": "mcprotocollib-MinecraftConstants.java",
+    "url": "https://raw.githubusercontent.com/GeyserMC/MCProtocolLib/b4fa8b23064bb85d7c7966cc2cd6bf369c9c1405/protocol/src/main/java/org/geysermc/mcprotocollib/protocol/codec/MinecraftCodec.java",
+    "sha256": "8035e9b0433d19e8c35ff8eaffdf051dface02566e19bf5fbf8bae0d2f6aec3a"
+  }
+]

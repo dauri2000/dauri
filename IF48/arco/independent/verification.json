@@ -1,0 +1,23 @@
+{
+  "candidate_sha256": "912d2f1fe20fa1eeb7aceef04e01350c24349754cdd27ba195b1a346f2527215",
+  "candidate_rebuilt": false,
+  "owner_generator_executed": false,
+  "independent_checks_passed": 5,
+  "checks_type": "ASM structural verification, complete canonical reversal, exact actual caller/source route inspection",
+  "minecraft_26_3_executed": false,
+  "mixin_engine_executed": false,
+  "graphics_executed": false,
+  "server_executed": false,
+  "production_changed_by_reviewer": false,
+  "limits": [
+    "vanilla first-person bow policy; no third-person animation fix",
+    "screenshot exact render route not established",
+    "server-defined custom bow model remains unverified",
+    "XP unchanged"
+  ],
+  "files": {
+    "IndependentBowScopeCheck.java": "4553964159eda4c7490d328fe863ced37f9c581b878d9911bfa23e393597dc45",
+    "scope-checks.txt": "3e8ac600458d85b494fc0f6a20f52ed3a101edebf067ccc5af05309757a25054",
+    "README.md": "7169f62d3a0ad20e1f26d8c68c24b00eb3c63f97c3a721b2922f74e12df1286d"
+  }
+}

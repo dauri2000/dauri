@@ -1,0 +1,20 @@
+[
+  {
+    "path": "geyser-JavaGameEventTranslator.java",
+    "source": "https://raw.githubusercontent.com/GeyserMC/Geyser/036293d698b762516b2893c43a9bd1025ceabd12/core/src/main/java/org/geysermc/geyser/translator/protocol/java/level/JavaGameEventTranslator.java",
+    "sha256": "73004df1978d5bf72e5f081c96f410f5d0e7db6ddb94300464e0689e763b3696",
+    "kind": "modern_26.3_protocol_bridge_not_actual_Mojang_client"
+  },
+  {
+    "path": "geyser-BedrockShowCreditsTranslator.java",
+    "source": "https://raw.githubusercontent.com/GeyserMC/Geyser/036293d698b762516b2893c43a9bd1025ceabd12/core/src/main/java/org/geysermc/geyser/translator/protocol/bedrock/BedrockShowCreditsTranslator.java",
+    "sha256": "a4bff3b2da528330344583a51021ecaf48b90f3c8e06ff5dff29975a944f5ccb",
+    "kind": "modern_26.3_protocol_bridge_not_actual_Mojang_client"
+  },
+  {
+    "path": "geyser-libs.versions.toml",
+    "source": "https://raw.githubusercontent.com/GeyserMC/Geyser/036293d698b762516b2893c43a9bd1025ceabd12/gradle/libs.versions.toml",
+    "sha256": "0ee97e0e5c8b041e3fa357f7063465f54e755e849b3c0a1b5e0051286e62da60",
+    "kind": "modern_26.3_protocol_bridge_not_actual_Mojang_client"
+  }
+]

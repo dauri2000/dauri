@@ -1,0 +1,39 @@
+{
+  "candidate": "IF48 chorus projection",
+  "base": "delivered IF46; relevant source classes identical IF47",
+  "production_entries": {
+    "net/raphimc/viabedrock/protocol/storage/ChorusPlantConnections.class": "64b0a20b0b62837ca4021a13344f0f77499f453c2922b367955086820601f009",
+    "net/raphimc/viabedrock/protocol/storage/ConnectedBlockShapes.class": "c983eb2dd2c98867d6f0cf966dad9648aa1165961afaec57d49bebfb689f9b96"
+  },
+  "production_existing_replaced": 1,
+  "production_new_classes": 1,
+  "owner_directed_checks": 13,
+  "baseline_reproduced": true,
+  "all_methods_asm_basic_verifier": true,
+  "exact_canonical_reversal": true,
+  "actual_core_methods_executed": [
+    "ConnectedBlockShapes.isConnected",
+    "ConnectedBlockShapes.shape",
+    "ChunkTracker.getJavaBlockState",
+    "ChunkTracker.remapChunk",
+    "ChunkTracker.sendNearbyConnectedUpdates",
+    "ChunkTracker.refreshNeighboringConnectedBorders"
+  ],
+  "test_boundaries": [
+    "minimal mapping registry bootstrap from actual Java registry resource",
+    "supplied native palettes and chunks",
+    "session UserConnection/PacketWrapper transport capture",
+    "test-only Unsafe allocation"
+  ],
+  "not_executed": [
+    "Minecraft26.3 graphical rendering",
+    "Mixin engine",
+    "BDS server acceptance",
+    "native chorus growth or collision"
+  ],
+  "independent_review": "PASS; see ../independent/verification.json",
+  "source_reference_limit": "Historical Java canonical projection, not supplied Minecraft26.3 engine; native PMMP alternative differs at lateral endstone.",
+  "independent_directed_checks": 8,
+  "total_directed_fix_checks": 21,
+  "independent_nonchorus_differential_cases": 120
+}

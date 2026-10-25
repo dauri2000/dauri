@@ -1,0 +1,42 @@
+{
+  "result": "PASS_INDEPENDENT_CONTROLLED_REVIEW",
+  "frozen_candidate_sha256": {
+    "net/raphimc/viabedrock/protocol/storage/ChorusPlantConnections.class": "64b0a20b0b62837ca4021a13344f0f77499f453c2922b367955086820601f009",
+    "net/raphimc/viabedrock/protocol/storage/ConnectedBlockShapes.class": "c983eb2dd2c98867d6f0cf966dad9648aa1165961afaec57d49bebfb689f9b96"
+  },
+  "candidate_unchanged": true,
+  "baseline_connected_block_shapes_sha256": "600327a8ef825d0446cd2948955855ee123ca68e68a90c9a73f0bedd58605dbe",
+  "checks": 8,
+  "check_groups": [
+    "Independent original-argument guards and canonical reversal of whole target class to delivered IF46",
+    "Independent all-method ASM BasicVerifier of both frozen candidates",
+    "Stale full-arm projection reset, input immutability and solid-predicate nonuse",
+    "Actual ChunkTracker asymmetric connections across negative chunk boundaries; native palette immutability",
+    "Actual End min/max-height lookups keep out-of-world neighbors disconnected",
+    "Actual negative-coordinate loaded-border refresh emits current disconnection after neighbor palette removal",
+    "Diagonal flower does not create axis arm",
+    "120 nonchorus differential controls produce byte-identical text outputs against actual IF46 original"
+  ],
+  "nonchorus_differential_cases": 120,
+  "nonchorus_output_sha256": "167c5365fea7fef179c65716232029df9b1e36532ae4987129eb323067e72316",
+  "reviewed_owner_checks": {
+    "count": 13,
+    "included_in_independent_count": false,
+    "notes": "Inspected owner source and recorded execution: all64 masks target registered actual Java states; flowers6directions; endstoneDOWNonly; actual ChunkTracker initial remap/blockupdate/chunkborder-load paths."
+  },
+  "limits": [
+    "No Minecraft renderer, Mixin transformation, Fabric gameplay or Bedrock server executed",
+    "Fixture uses actual shape/helper and ChunkTracker with supplied palette/session/I/O and minimal real Java registry bootstrap",
+    "Removal edge check invokes existing border refresh after removing received palette; actual complete unloadChunk handler was not executed in this independent probe",
+    "Helper follows canonical Java chorus arm projection (stem/flower six directions, end stone DOWN). Live Bedrock lateral-endstone collision equivalence is not established",
+    "Original fence/stairs/kelp/redstone/control routes retain their pre-existing behavior; differential equivalence is not a proof those historical routes have no other bugs"
+  ],
+  "source_and_evidence_sha256": {
+    "IndependentChorusBytecodeCheck.java": "bfebe273206518a738f0f0f4a87868e820501197ee0d54ced3c561dab1ed7cf0",
+    "IndependentChorusProbe.java": "8cc3abccc0799483a804d1cf7e2e8a35fdf09bc92c5e496dc2aac5989024aff3",
+    "bytecode-checks.txt": "910d621b3a4522336ac3f72d358dfd6002d4fae3bd970d7e2b3d81ec3b0a76ed",
+    "edge-checks.txt": "29c5cb00f89403b9f1c8a81236e4c0e10fdfa43da7f16b0de0902f00702a9a82",
+    "nonchorus-baseline.txt": "167c5365fea7fef179c65716232029df9b1e36532ae4987129eb323067e72316",
+    "nonchorus-candidate.txt": "167c5365fea7fef179c65716232029df9b1e36532ae4987129eb323067e72316"
+  }
+}

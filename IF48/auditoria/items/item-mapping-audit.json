@@ -1,0 +1,1201 @@
+{
+  "kit": [
+    {
+      "identifier": "minecraft:arrow",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:arrow",
+        "minecraft:tipped_arrow"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:black_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:black_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:blue_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:blue_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:bow",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:bow"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:brown_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:brown_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:bucket",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:bucket"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:carved_pumpkin",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:carved_pumpkin"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:chest",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:chest"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:chorus_fruit",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:chorus_fruit"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:compass",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:compass"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:crossbow",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:crossbow"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:cyan_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:cyan_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:dragon_breath",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:dragon_breath"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:dragon_egg",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:dragon_egg"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:dragon_head",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:dragon_head"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:elytra",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:elytra"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:empty_map",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:map"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:enchanted_book",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:enchanted_book"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:end_crystal",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:end_crystal"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:ender_chest",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:ender_chest"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:ender_eye",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:ender_eye"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:ender_pearl",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:ender_pearl"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:filled_map",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:filled_map"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:firework_rocket",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:firework_rocket"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:firework_star",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:firework_star"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:glass_bottle",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:glass_bottle"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:gray_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:gray_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:green_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:green_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:light_blue_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:light_blue_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:light_gray_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:light_gray_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:lime_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:lime_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:lingering_potion",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:lingering_potion"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:magenta_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:magenta_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:orange_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:orange_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:pink_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:pink_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:popped_chorus_fruit",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:popped_chorus_fruit"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:potion",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:potion"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:purple_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:purple_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:red_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:red_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:shield",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:shield"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:white_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:shulker_shell",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:shulker_shell"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:splash_potion",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:splash_potion"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:totem_of_undying",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:totem_of_undying"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:trident",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:trident"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:undyed_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:water_bucket",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:water_bucket"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:white_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:white_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:yellow_shulker_box",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:yellow_shulker_box"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    }
+  ],
+  "loot_tables": {
+    "end_city_treasure.json": [
+      {
+        "identifier": "minecraft:beetroot_seeds",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:beetroot_seeds"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:copper_horse_armor",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:copper_horse_armor"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:diamond",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:diamond"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:diamond_boots",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:diamond_boots"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:diamond_chestplate",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:diamond_chestplate"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:diamond_helmet",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:diamond_helmet"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:diamond_leggings",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:diamond_leggings"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:diamond_pickaxe",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:diamond_pickaxe"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:diamond_shovel",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:diamond_shovel"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:diamond_spear",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:diamond_spear"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:diamond_sword",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:diamond_sword"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:emerald",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:emerald"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:gold_ingot",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:gold_ingot"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:horsearmordiamond",
+        "runtime_declared": false,
+        "mapping_declared": false,
+        "java_targets": [],
+        "targets_present_in_java_registry": null,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:horsearmorgold",
+        "runtime_declared": false,
+        "mapping_declared": false,
+        "java_targets": [],
+        "targets_present_in_java_registry": null,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:horsearmoriron",
+        "runtime_declared": false,
+        "mapping_declared": false,
+        "java_targets": [],
+        "targets_present_in_java_registry": null,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_boots",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_boots"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_chestplate",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_chestplate"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_helmet",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_helmet"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_ingot",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_ingot"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_leggings",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_leggings"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_pickaxe",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_pickaxe"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_shovel",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_shovel"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_sword",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_sword"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:saddle",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:saddle"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:spire_armor_trim_smithing_template",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:spire_armor_trim_smithing_template"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      }
+    ],
+    "stronghold_corridor.json": [
+      {
+        "identifier": "minecraft:apple",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:apple"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:book",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:book"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:bread",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:bread"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:copper_horse_armor",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:copper_horse_armor"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:diamond",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:diamond"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:emerald",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:emerald"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:ender_pearl",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:ender_pearl"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:eye_armor_trim_smithing_template",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:eye_armor_trim_smithing_template"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:gold_ingot",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:gold_ingot"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:golden_apple",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:golden_apple"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:horsearmordiamond",
+        "runtime_declared": false,
+        "mapping_declared": false,
+        "java_targets": [],
+        "targets_present_in_java_registry": null,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:horsearmorgold",
+        "runtime_declared": false,
+        "mapping_declared": false,
+        "java_targets": [],
+        "targets_present_in_java_registry": null,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:horsearmoriron",
+        "runtime_declared": false,
+        "mapping_declared": false,
+        "java_targets": [],
+        "targets_present_in_java_registry": null,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_boots",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_boots"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_chestplate",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_chestplate"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_helmet",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_helmet"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_ingot",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_ingot"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_leggings",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_leggings"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_pickaxe",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_pickaxe"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_sword",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_sword"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:leather",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:leather"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:record_otherside",
+        "runtime_declared": false,
+        "mapping_declared": false,
+        "java_targets": [],
+        "targets_present_in_java_registry": null,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:redstone",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:redstone"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      }
+    ],
+    "stronghold_crossing.json": [
+      {
+        "identifier": "minecraft:apple",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:apple"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:book",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:book"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:bread",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:bread"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:coal",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:coal"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:dye",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:ink_sac"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:gold_ingot",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:gold_ingot"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_ingot",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_ingot"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:iron_pickaxe",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:iron_pickaxe"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:redstone",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:redstone"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      }
+    ],
+    "stronghold_library.json": [
+      {
+        "identifier": "minecraft:book",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:book"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:compass",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:compass"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:eye_armor_trim_smithing_template",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:eye_armor_trim_smithing_template"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:map",
+        "runtime_declared": false,
+        "mapping_declared": false,
+        "java_targets": [],
+        "targets_present_in_java_registry": null,
+        "scope": "embedded data only, not server acceptance or rendering"
+      },
+      {
+        "identifier": "minecraft:paper",
+        "runtime_declared": true,
+        "mapping_declared": true,
+        "java_targets": [
+          "minecraft:paper"
+        ],
+        "targets_present_in_java_registry": true,
+        "scope": "embedded data only, not server acceptance or rendering"
+      }
+    ]
+  },
+  "note": "Official loot-table identifiers can be legacy aliases resolved by native server before network; missing runtime/mapping of a source alias does NOT prove empty paper/unsupported loot. actual named modern counterparts checked separately below.",
+  "legacy_alias_counterparts": {
+    "minecraft:map": "minecraft:empty_map",
+    "minecraft:horsearmoriron": "minecraft:iron_horse_armor",
+    "minecraft:horsearmorgold": "minecraft:golden_horse_armor",
+    "minecraft:horsearmordiamond": "minecraft:diamond_horse_armor",
+    "minecraft:record_otherside": "minecraft:music_disc_otherside",
+    "minecraft:redstone": "minecraft:redstone",
+    "minecraft:dye": "metadata-specific color dye; official crossing table aux data inspected separately"
+  },
+  "counterparts": [
+    {
+      "identifier": "minecraft:diamond_horse_armor",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:diamond_horse_armor"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:empty_map",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:map"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:glow_ink_sac",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:glow_ink_sac"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:golden_horse_armor",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:golden_horse_armor"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:ink_sac",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:ink_sac"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:iron_horse_armor",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:iron_horse_armor"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    },
+    {
+      "identifier": "minecraft:music_disc_otherside",
+      "runtime_declared": true,
+      "mapping_declared": true,
+      "java_targets": [
+        "minecraft:music_disc_otherside"
+      ],
+      "targets_present_in_java_registry": true,
+      "scope": "embedded data only, not server acceptance or rendering"
+    }
+  ]
+}

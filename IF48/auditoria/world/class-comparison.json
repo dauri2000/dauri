@@ -1,0 +1,43 @@
+{
+  "IF46": {
+    "protocol/storage/ConnectedBlockShapes.class": "600327a8ef825d0446cd2948955855ee123ca68e68a90c9a73f0bedd58605dbe",
+    "protocol/storage/ChunkTracker.class": "0bce3bad95b2a5f4c2e00b1cb2293bb39d20b0e40234bb676ca67151d83e42ae",
+    "protocol/rewriter/blockentity/EndGatewayBlockEntityRewriter.class": "eb47668f1b84a6cbd9106db90e33aeb68fce2ba273f784201bbc2e5af1695819",
+    "protocol/rewriter/blockentity/SkullBlockEntityRewriter.class": "f089f2c974f2ba7f583f1d25c5d9e05e88b9fd2f521ade97f65e780397a5b53b",
+    "protocol/data/JavaRegistries.class": "9800ea4d9f6c914e3eda267d497763f131e07aef2c81bf530484f6dfa57e4c3d",
+    "protocol/packet/WorldPackets.class": "88abdc143706175bc84738cdd7edb3efab21939cd163efef4db32bf03552b3a9",
+    "protocol/packet/ClientPlayerPackets.class": "230ed8c6feb3070c6d5a3bb919cbf14aeb5cd73258629df5ec305037a981494c",
+    "protocol/rewriter/BlockStateRewriter.class": "38cf3543be9cd80fc82975161f0adb573f9c4d3dd0635b211b29dfa4d0a074ab",
+    "protocol/packet/WorldEffectPackets.class": "88207155306deb8666ea7cfcf0cd5847b0cf5d6075e02167b236d42c6288f3e7",
+    "blockstate_mappings.json": "2a81520dd9093b00d26fca4125d899db97861ce8fdbc451cfd1d7106902b36fa"
+  },
+  "IF47": {
+    "protocol/storage/ConnectedBlockShapes.class": "600327a8ef825d0446cd2948955855ee123ca68e68a90c9a73f0bedd58605dbe",
+    "protocol/storage/ChunkTracker.class": "0bce3bad95b2a5f4c2e00b1cb2293bb39d20b0e40234bb676ca67151d83e42ae",
+    "protocol/rewriter/blockentity/EndGatewayBlockEntityRewriter.class": "eb47668f1b84a6cbd9106db90e33aeb68fce2ba273f784201bbc2e5af1695819",
+    "protocol/rewriter/blockentity/SkullBlockEntityRewriter.class": "f089f2c974f2ba7f583f1d25c5d9e05e88b9fd2f521ade97f65e780397a5b53b",
+    "protocol/data/JavaRegistries.class": "9800ea4d9f6c914e3eda267d497763f131e07aef2c81bf530484f6dfa57e4c3d",
+    "protocol/packet/WorldPackets.class": "88abdc143706175bc84738cdd7edb3efab21939cd163efef4db32bf03552b3a9",
+    "protocol/packet/ClientPlayerPackets.class": "230ed8c6feb3070c6d5a3bb919cbf14aeb5cd73258629df5ec305037a981494c",
+    "protocol/rewriter/BlockStateRewriter.class": "38cf3543be9cd80fc82975161f0adb573f9c4d3dd0635b211b29dfa4d0a074ab",
+    "protocol/packet/WorldEffectPackets.class": "88207155306deb8666ea7cfcf0cd5847b0cf5d6075e02167b236d42c6288f3e7",
+    "blockstate_mappings.json": "2a81520dd9093b00d26fca4125d899db97861ce8fdbc451cfd1d7106902b36fa"
+  },
+  "all_equal": true,
+  "IF34": {
+    "protocol/storage/ConnectedBlockShapes.class": "600327a8ef825d0446cd2948955855ee123ca68e68a90c9a73f0bedd58605dbe",
+    "protocol/storage/ChunkTracker.class": "f8143605a64b8cbb811da0a1bd14680ecceb02fcaa07b2745730e0869be02230",
+    "protocol/rewriter/blockentity/EndGatewayBlockEntityRewriter.class": "eb47668f1b84a6cbd9106db90e33aeb68fce2ba273f784201bbc2e5af1695819",
+    "protocol/rewriter/blockentity/SkullBlockEntityRewriter.class": "f089f2c974f2ba7f583f1d25c5d9e05e88b9fd2f521ade97f65e780397a5b53b",
+    "protocol/data/JavaRegistries.class": "9800ea4d9f6c914e3eda267d497763f131e07aef2c81bf530484f6dfa57e4c3d",
+    "protocol/packet/WorldPackets.class": "7d51c9cfd67ee15f9a1b92011b0283c1fc244b473a7bbcdb4cd0c4cbbee9eee7",
+    "protocol/packet/ClientPlayerPackets.class": "230ed8c6feb3070c6d5a3bb919cbf14aeb5cd73258629df5ec305037a981494c",
+    "protocol/rewriter/BlockStateRewriter.class": "38cf3543be9cd80fc82975161f0adb573f9c4d3dd0635b211b29dfa4d0a074ab",
+    "protocol/packet/WorldEffectPackets.class": "88207155306deb8666ea7cfcf0cd5847b0cf5d6075e02167b236d42c6288f3e7",
+    "blockstate_mappings.json": "2a81520dd9093b00d26fca4125d899db97861ce8fdbc451cfd1d7106902b36fa"
+  },
+  "IF34_to_IF46_changes": [
+    "protocol/storage/ChunkTracker.class",
+    "protocol/packet/WorldPackets.class"
+  ]
+}

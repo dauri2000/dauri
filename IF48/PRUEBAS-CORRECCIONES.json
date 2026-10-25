@@ -1,0 +1,42 @@
+{
+  "root_build_authorized": true,
+  "state": "All five exact classes, independent reviews and final246 report approved by root",
+  "new_checks_passed": 60,
+  "classes": {
+    "com/viaversion/viafabricplus/bedrock/render/BedrockFirstPersonItemRendering.class": "912d2f1fe20fa1eeb7aceef04e01350c24349754cdd27ba195b1a346f2527215",
+    "net/raphimc/viabedrock/protocol/storage/ConnectedBlockShapes.class": "c983eb2dd2c98867d6f0cf966dad9648aa1165961afaec57d49bebfb689f9b96",
+    "net/raphimc/viabedrock/protocol/packet/ClientPlayerPackets.class": "c833b164912b1d4cac4dc2a5f1449ce2cbfe8f353069b198023efedd63b599ae",
+    "net/raphimc/viabedrock/protocol/storage/ChorusPlantConnections.class": "64b0a20b0b62837ca4021a13344f0f77499f453c2922b367955086820601f009",
+    "net/raphimc/viabedrock/protocol/packet/EndCreditsBridge.class": "a7ae969f2b55691cfac4c46a277fd84b087c534ce9b37c47a3645f1e5389738c"
+  },
+  "known_directed_fix_checks": {
+    "bow_owner": 13,
+    "bow_independent": 5,
+    "chorus_owner": 13,
+    "chorus_independent": 8,
+    "credits_owner": 15,
+    "credits_independent": 6
+  },
+  "xp_fix_claimed": false,
+  "if47_diagnostics_preserved": true,
+  "minecraft_graphical_tested": false,
+  "server_functional_tested": false,
+  "scope_proofs": {
+    "three_canonical_reversals_approved": true,
+    "bow_firstperson_route_only": true,
+    "chorus_native_palette_unchanged": true,
+    "credits_normal_death_respawn_preserved": true,
+    "credits_duplicate_stale_callbacks_guarded": true,
+    "no_server_teleport_or_reward_fabrication": true,
+    "live_minecraft_bds_not_executed": true,
+    "xp_unresolved_and_observer_preserved": true
+  },
+  "reviews": {
+    "bow_owner": "bow-arrow-if48/render/fix/verification.json",
+    "bow_independent": "bow-arrow-if48/independent/verification.json",
+    "chorus_owner": "end-audit-if48/world/fix/verification.json",
+    "chorus_independent": "end-audit-if48/world/independent/verification.json",
+    "credits_owner": "end-audit-if48/portals/fix/verification.json",
+    "credits_independent": "end-audit-if48/portals/review/verification.json"
+  }
+}

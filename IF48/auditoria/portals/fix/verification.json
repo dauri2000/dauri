@@ -1,0 +1,25 @@
+{
+  "scope": "End credits protocol handshake only",
+  "runtime_entries": {
+    "net/raphimc/viabedrock/protocol/packet/EndCreditsBridge.class": "a7ae969f2b55691cfac4c46a277fd84b087c534ce9b37c47a3645f1e5389738c",
+    "net/raphimc/viabedrock/protocol/packet/ClientPlayerPackets.class": "c833b164912b1d4cac4dc2a5f1449ce2cbfe8f353069b198023efedd63b599ae"
+  },
+  "checks_passed": 15,
+  "independent_checks_passed": 6,
+  "base_class_identical_IF46_IF47": true,
+  "source_contract": "Mojang protocol docs + bundled enum/codecs + modern Geyser/MCProtocolLib Java26.3 inverse contract",
+  "boundary": "Actual emitted helper and original command handler with connection/transport and minimal world-identity/dimension boundaries; no Minecraft, Mixin or BDS.",
+  "normal_death_respawn_preserved": true,
+  "duplicate_and_stale_callbacks_guarded": true,
+  "server_return_coordinates_not_fabricated": true,
+  "xp_fix_claimed": false,
+  "classes_frozen": true,
+  "files": {
+    "README.md": "d6e44b14f34aaa3e4f37623b6b14bbd64c9451418c05383784dba83cbf71428d",
+    "checks.txt": "29236bc3638db022bd3b5468c9127c6d92f07c1c3a283cd3be111e7d0e4e8470",
+    "PatchEndCreditsIF48.java": "224004a9eb0fb5a676fc6968333bc7868a6c733fc0a35e11550fc77c832931b3",
+    "EndCreditsProbe.java": "b4ef7b12b252160ad83a170edfeafa83665f01d308d129f824f0ccf0ae752ed7",
+    "src/net/raphimc/viabedrock/protocol/packet/EndCreditsBridge.java": "feca5f6634a6703802882e6717a3bad59f289bba99034bbad87e5af71d463521"
+  },
+  "weak_identity_references_avoid_old_world_retention": true
+}

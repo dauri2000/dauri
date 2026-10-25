@@ -1,0 +1,42 @@
+{
+  "baseline": "IF46 stable outer/core, exact binary classes",
+  "additional_assertions": 13,
+  "appearance_assertions": 4,
+  "picking_gate_state_assertions": 9,
+  "production_modified": false,
+  "live_minecraft_or_bds": false,
+  "all_outer_classes_unchanged_from_IF34": true,
+  "entries": {
+    "com/viaversion/viafabricplus/bedrock/appearance/BedrockBuiltinAssets.class": "e597ac81c5e3e1ae7fa0328db6655e7d61acb6dca4096ea10876919136efb244",
+    "com/viaversion/viafabricplus/bedrock/appearance/BedrockResourceLibrary.class": "930ec3b50acaca1ee9a93bb7b434273db1d2f3cb5297e3fe519e12cceed8b368",
+    "com/viaversion/viafabricplus/bedrock/appearance/BedrockEntityResources.class": "e28053bf48e7c321db7a024c382775a333ef643e56445c1f56f6cd53a8df19bb",
+    "com/viaversion/viafabricplus/bedrock/appearance/BedrockActorDependencies.class": "caed7441617c2693615b7da5b1e8f985120a3192cee4b7506ac87ff740bc3525",
+    "com/viaversion/viafabricplus/bedrock/appearance/BedrockWorldActorAppearance.class": "060a224f6e0839e119f97de55434b187fe1378836813d1840d590cccc5a45d6d",
+    "com/viaversion/viafabricplus/bedrock/appearance/BedrockActorAnimation.class": "d0077b2c13de9ad124faafc5456bf78e20294aa3b286786b46142ec40ef21f7b",
+    "com/viaversion/viafabricplus/bedrock/appearance/BedrockMolang.class": "bc23b53089b4f0a24d79f9ae9619472c613f3a3c77075da0ddb508f3473a581e",
+    "com/viaversion/viafabricplus/bedrock/render/BedrockAcceptedResources.class": "111536ff3b1114fbb2f506e34768b3b0abe002d0abe88e8512bcea05a9f3b230",
+    "com/viaversion/viafabricplus/bedrock/render/BedrockActorResources.class": "2c96fa101b686392bbc3f6ce4e6cb7746949d311c883e2335e99644fe7e1e6a9",
+    "com/viaversion/viafabricplus/bedrock/render/BedrockActorFrame.class": "af477b5736d1873d52f5f9752bcc1e3cd182615e8a6ea4c120f557a5e1789f48",
+    "com/viaversion/viafabricplus/bedrock/render/BedrockWorldActorRenderer.class": "9bb61c358edb12f2298ab064cf46daf81bc6b3eb0afc949e2b28d082dde9cd97",
+    "com/viaversion/viafabricplus/bedrock/render/BedrockActorPicking.class": "35532bd3dead474392726d634df3b683b991600177bf42c1dae02f4e14f341e7",
+    "com/viaversion/viafabricplus/bedrock/render/BedrockActorPickingState.class": "d01b6af47672face16d68f838baf6927b66004f2b8f034fc4577770a0d588b09",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/render/MixinEntityRenderDispatcher.class": "82eb98fdc0a9683266b80295682c488b21083f61958586369c17160d12807c5a",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/render/MixinNativeActorPickingEntity.class": "4b881daae25b35d8e086d653623b6c1f68a03a82d84fca2ca44c71449ad8aa0e",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/render/MixinNativeActorPickingLocalPlayer.class": "5427ec1f1caa3bbaaef0a630648ba7ccd377b92b7b71f12513d995fa9b6aac9a",
+    "com/viaversion/viafabricplus/bedrock/ViaFabricPlusBedrock.class": "01f9fbbcb31af17fa8c9141c47b2a84b151f84cd40a244240da6b8e932613f34"
+  },
+  "sources": {
+    "AppearanceFallbackProbe.java": "8b1549f9f929b4dd7f01399a4a1ee65bd4758b1acdc0c06b7d7ec1b2c05bad52",
+    "appearance-output.txt": "1764aa860c82005d56c525fbd6bc9559a45bef945d70704570a4ce794cce3fe1",
+    "NativePickingAvailabilityProbe.java": "d7285eb9a099b7d1a8a55a20b15ae5bd3e4c254fa14475e8460972da4f8bb00f",
+    "picking-availability-output.txt": "dd366585e683a0780c1db916a20df7c4146c805425a64f4fb11ecfd28c0017d7",
+    "findings-segunda-pasada.md": "78a4be362eca3fbbac4348b0ccfcf207dae7611209b5421b18d0704d6c806c71"
+  },
+  "asset_files": {
+    "builtin-01.zip__library__vanilla_1.21.70__entity__enderman.entity.json": "5d13fb7ff1f219d41e66290f289e7c68a3d360abac9c274541077b4b652ccd11",
+    "builtin-01.zip__library__vanilla_1.21.70__entity__ender_dragon.entity.json": "dfa9c737f61b839c97765f4ee5b59308034d474d2482abde60b9f125c576bb93",
+    "builtin-01.zip__library__vanilla_1.19.60__entity__ender_dragon.entity.json": "1a4605cee69c1e4c3db5d7d3f141dd156fcb0d988ec039a30730743b6bc7602e",
+    "builtin-01.zip__library__vanilla__entity__enderman.entity.json": "ba7816b9d2af0f82ef20814ac810ed94075e2b9b43dbd32b02f5e1dc788706e5",
+    "builtin-01.zip__library__vanilla__entity__ender_dragon.entity.json": "10212adfc715fa57810c99faf2368af70c2d457772618aa821b21bb7cb0e6a97"
+  }
+}

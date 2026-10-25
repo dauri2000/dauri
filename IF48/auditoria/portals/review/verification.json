@@ -1,0 +1,17 @@
+{
+  "runtimeEntries": {
+    "net/raphimc/viabedrock/protocol/packet/ClientPlayerPackets.class": "c833b164912b1d4cac4dc2a5f1449ce2cbfe8f353069b198023efedd63b599ae",
+    "net/raphimc/viabedrock/protocol/packet/EndCreditsBridge.class": "a7ae969f2b55691cfac4c46a277fd84b087c534ce9b37c47a3645f1e5389738c"
+  },
+  "independentChecks": 6,
+  "asmAllMethods": true,
+  "canonicalExecutableAndDebugReversal": true,
+  "frameMaximaNormalizedForReversal": true,
+  "ownBehaviorEdgesPassed": 3,
+  "testBoundary": "Behavior edges share owner connection/transport bootstrap and dimension-only ChunkTracker boundary. Actual candidate helper and command handler run; no actual client GUI, return teleport or BDS.",
+  "modern26_3ContractSupported": true,
+  "scope": "End credits handshake only",
+  "wholeEndFixedClaimed": false,
+  "independentStructuralGroups": 3,
+  "weakContextRetentionAssertion": true
+}

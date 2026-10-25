@@ -1,0 +1,48 @@
+{
+  "release": "IF48",
+  "sha256": "cce72ee547155865c5196b0262deec9766bb9267741a755eaa72bbad74ae758a",
+  "size_bytes": 215635312,
+  "version": "1.1.1-StackAnvil-InteractionFix48.1",
+  "directed_fix_check_groups": 60,
+  "fix_check_breakdown": {
+    "bow_owner": 13,
+    "bow_independent": 5,
+    "chorus_owner": 13,
+    "chorus_independent": 8,
+    "credits_owner": 15,
+    "credits_independent": 6
+  },
+  "code_scope_proofs": {
+    "three_canonical_reversals_approved": true,
+    "bow_firstperson_route_only": true,
+    "chorus_native_palette_unchanged": true,
+    "credits_normal_death_respawn_preserved": true,
+    "credits_duplicate_stale_callbacks_guarded": true,
+    "no_server_teleport_or_reward_fabrication": true,
+    "live_minecraft_bds_not_executed": true,
+    "xp_unresolved_and_observer_preserved": true
+  },
+  "independent_package_report_sha256": "069aa3fb74c61cb4e75541556a0c0a6eaa182e32bd3de92cb61a13341f4a89fc",
+  "independent_package_verified": true,
+  "class_hashes": {
+    "com/viaversion/viafabricplus/bedrock/render/BedrockFirstPersonItemRendering.class": "912d2f1fe20fa1eeb7aceef04e01350c24349754cdd27ba195b1a346f2527215",
+    "net/raphimc/viabedrock/protocol/storage/ConnectedBlockShapes.class": "c983eb2dd2c98867d6f0cf966dad9648aa1165961afaec57d49bebfb689f9b96",
+    "net/raphimc/viabedrock/protocol/packet/ClientPlayerPackets.class": "c833b164912b1d4cac4dc2a5f1449ce2cbfe8f353069b198023efedd63b599ae",
+    "net/raphimc/viabedrock/protocol/storage/ChorusPlantConnections.class": "64b0a20b0b62837ca4021a13344f0f77499f453c2922b367955086820601f009",
+    "net/raphimc/viabedrock/protocol/packet/EndCreditsBridge.class": "a7ae969f2b55691cfac4c46a277fd84b087c534ce9b37c47a3645f1e5389738c"
+  },
+  "previous_fixes_and_if47_diagnostics_preserved": true,
+  "report_rows": 246,
+  "report_md_sha256": "c10b51fbf050ab804954df3472d422b5cad8ea644bbab41928ff2e3da75b6f12",
+  "minecraft_graphical_tested": false,
+  "server_functional_tested": false,
+  "xp_fix_claimed": false,
+  "whole_end_fixed_claimed": false,
+  "remaining": [
+    "Dragon phases/death visual projection and native renderer fallback",
+    "Exact Java26.3 dragon part IDs / native HITBOX availability in user server",
+    "Enderman anger visual projection/fallback",
+    "XP orb delay and previous map visuals",
+    "Actual server End/Stronghold travel, combat and interaction validation"
+  ]
+}

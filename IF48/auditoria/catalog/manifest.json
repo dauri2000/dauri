@@ -1,0 +1,21 @@
+{
+  "catalog_rows": 246,
+  "catalog_only": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 39528,
+      "sha256": "c9845cfc2c74276d4981fde4a810200b47733bedbc46f8de04f8c3c03ed775a6"
+    },
+    {
+      "path": "catalog.json",
+      "bytes": 131001,
+      "sha256": "381db9f2423126a766d43ef0d28b1e265842ff029846c2ba87e60074887de7b1"
+    },
+    {
+      "path": "catalog.csv",
+      "bytes": 64654,
+      "sha256": "ee3765879a3346bfa77c6f7b8f3efec0f03a681746ef474602a66eba9a0d565a"
+    }
+  ]
+}

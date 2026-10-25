@@ -1,0 +1,21 @@
+{
+  "rows": 246,
+  "no_global_gameplay_pass": true,
+  "files": [
+    {
+      "path": "REVISION-UNO-POR-UNO.md",
+      "sha256": "c10b51fbf050ab804954df3472d422b5cad8ea644bbab41928ff2e3da75b6f12",
+      "bytes": 117405
+    },
+    {
+      "path": "REVISION-UNO-POR-UNO.json",
+      "sha256": "05e4b27d2863f053c0abe0b88930610cad3b3f1a93f576fbfd2da5b31dac13ee",
+      "bytes": 264496
+    },
+    {
+      "path": "REVISION-UNO-POR-UNO.csv",
+      "sha256": "ad856703291b957c2c0d4854abfeaa187c27cfc5c3164971543a5a9ccff4079a",
+      "bytes": 181132
+    }
+  ]
+}
