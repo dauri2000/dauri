@@ -1,0 +1,159 @@
+{
+  "rows": [
+    {
+      "index": 0,
+      "java_serializer": "crafting_shaped",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 1,
+      "java_serializer": "crafting_shapeless",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 2,
+      "java_serializer": "crafting_dye",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 3,
+      "java_serializer": "crafting_imbue",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 4,
+      "java_serializer": "crafting_transmute",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 5,
+      "java_serializer": "crafting_decorated_pot",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 6,
+      "java_serializer": "crafting_special_bookcloning",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 7,
+      "java_serializer": "crafting_special_mapextending",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 8,
+      "java_serializer": "crafting_special_firework_rocket",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 9,
+      "java_serializer": "crafting_special_firework_star",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 10,
+      "java_serializer": "crafting_special_firework_star_fade",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 11,
+      "java_serializer": "crafting_special_bannerduplicate",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 12,
+      "java_serializer": "crafting_special_shielddecoration",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 13,
+      "java_serializer": "crafting_special_repairitem",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 14,
+      "java_serializer": "smelting",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 15,
+      "java_serializer": "blasting",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 16,
+      "java_serializer": "smoking",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 17,
+      "java_serializer": "campfire_cooking",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 18,
+      "java_serializer": "stonecutting",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 19,
+      "java_serializer": "smithing_transform",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 20,
+      "java_serializer": "brewing",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    },
+    {
+      "index": 21,
+      "java_serializer": "smithing_trim",
+      "registry_presence": true,
+      "scope": "Identifier in bundled Java26.3 recipe_serializers; registry presence does not mean Bedrock translation or dynamic result implementation exists.",
+      "native_counterpart_claimed": false
+    }
+  ],
+  "count": 22
+}

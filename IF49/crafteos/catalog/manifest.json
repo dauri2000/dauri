@@ -1,0 +1,291 @@
+{
+  "no_production_mutation": true,
+  "no_live_gameplay_certification": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2460,
+      "sha256": "311e5d1e2b323be5b27b5e62a40b7d52d82f028f7009b1a4814c4a88ad4a5d3e"
+    },
+    {
+      "path": "ALCANCE-Y-REPRODUCCION.md",
+      "bytes": 7679,
+      "sha256": "a3e98129d1f372fe077ab59dca134399b8439b7971ed95a6c8cb1ff6e6c13c3e"
+    },
+    {
+      "path": "RECETAS-DINAMICAS.md",
+      "bytes": 3984,
+      "sha256": "0be1fb8905ad29d540f47f7451738fcaa2f2faa3eb5aa464c80dee35e83928b8"
+    },
+    {
+      "path": "MULTI-SEMANTICS.json",
+      "bytes": 5556,
+      "sha256": "6fe9dce7f42e5a4ecc5acf7bece872130e040ebe14cff711ab522cec0738fa36"
+    },
+    {
+      "path": "SOURCE-MANIFEST.json",
+      "bytes": 293403,
+      "sha256": "2e487b2798e29b0b64e4921e4ec0c74d1e578b1d8432154b46c074509a6c5008"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 13209,
+      "sha256": "c20f09c9ea1d59b5e68876c2e856a7df89d1e680b09bdf4fe5f610802ee96acc"
+    },
+    {
+      "path": "CATALOGO-OFICIAL.md",
+      "bytes": 1352,
+      "sha256": "f6ed60d603e1c5dbf4f65718b24c2c95dd495f5eb65a0a24825d84a6bf257d20"
+    },
+    {
+      "path": "CATALOGO-OFICIAL.json",
+      "bytes": 3018793,
+      "sha256": "e08430a6f1303980eada9661b1cacecc27638c3413087e8935e1307b73baeda3"
+    },
+    {
+      "path": "CATALOGO-OFICIAL.csv",
+      "bytes": 1974716,
+      "sha256": "30b687598b656fe95685e476bdd0f1c4c78279f17ad5e3ed5170af533a59fbf1"
+    },
+    {
+      "path": "CATALOGO-NATIVO-PUBLICO.md",
+      "bytes": 1545,
+      "sha256": "3b8e2d4fa68d0509c31e9bcb1adb50a7979e93aa3dd287d8dfdc71fa71da9a22"
+    },
+    {
+      "path": "CATALOGO-NATIVO-PUBLICO.json",
+      "bytes": 8436244,
+      "sha256": "f6cb4fead753882f2923243ac7fd16d6470cc3c62378a9ffe02c506fdf2ce989"
+    },
+    {
+      "path": "CATALOGO-NATIVO-PUBLICO.csv",
+      "bytes": 5077104,
+      "sha256": "dee17c6f5e85694613b7686094fd07dbf4478b14391fdde5718f789372dec1cc"
+    },
+    {
+      "path": "MEZCLAS-NATIVAS-PUBLICAS.json",
+      "bytes": 187417,
+      "sha256": "b21d2ff23cc4504db1c33b65aefff8739b3563f69dd190a3b46cb84f01723deb"
+    },
+    {
+      "path": "MEZCLAS-NATIVAS-PUBLICAS.csv",
+      "bytes": 125569,
+      "sha256": "9cbe04733a907c0ec61ecb28ac3fb1b107aa0cbc1155a691c7d048dca7abb232"
+    },
+    {
+      "path": "RUTAS-Y-ESTACIONES.json",
+      "bytes": 7834,
+      "sha256": "857ba988d9454d4cf8b540efd49bdbf601c807382e1f33fd6f450493000714f3"
+    },
+    {
+      "path": "RUTAS-Y-ESTACIONES.csv",
+      "bytes": 4890,
+      "sha256": "1fcf5279d241db94897c6acd15d7c571ce6000a7be52946c6a54a9e8ef97498c"
+    },
+    {
+      "path": "native-item-mapping-ledger.json",
+      "bytes": 432969,
+      "sha256": "3785653ee703f03789d28963e7fb10f1cab9b9fdf61efcd76f71db63846ee0ff"
+    },
+    {
+      "path": "JAVA-SERIALIZERS.json",
+      "bytes": 7014,
+      "sha256": "8fb61fc18c5e025bd4871900392b53527b998dbb32bd74bc4ccc19cdbcf13f4d"
+    },
+    {
+      "path": "BEDROCK-RECIPE-TYPES.json",
+      "bytes": 2816,
+      "sha256": "26a2fec9eaf087bfe931fbaf5feb47ac9829fe6be0ea16e3e3bdf3280a06f841"
+    },
+    {
+      "path": "INGREDIENT-DESCRIPTORS.json",
+      "bytes": 1197,
+      "sha256": "bde63ade6db0e313bcfa65cf43fdecf268e920d48a321804008c31f7acf3b1e6"
+    },
+    {
+      "path": "matcher-results.json",
+      "bytes": 1058464,
+      "sha256": "d0cfcf62b9a5281d5a470aa521c0ef8550435bd43a484ee5b390ff233d1ee6cb"
+    },
+    {
+      "path": "native-matcher-results.json",
+      "bytes": 2343827,
+      "sha256": "6e986ebf28284d85332eacf64009b0aabc860bd2af082dedfd13e12fb5fb5035"
+    },
+    {
+      "path": "matcher-checks.txt",
+      "bytes": 115,
+      "sha256": "117f7181b03758a29a9f99fb20cd34c615feed03fc77b7849121f366ca97aeca"
+    },
+    {
+      "path": "native-matcher-checks.txt",
+      "bytes": 114,
+      "sha256": "7cfce12db24f2cf146106f3b560b3d9b38945b2dc6f5ec948f2f34854fdb65a2"
+    },
+    {
+      "path": "CraftingCatalogProbe.java",
+      "bytes": 13883,
+      "sha256": "a4f450557f2938dfb92ccf4db6400c8cf573b46fc787af01dc117def2cac1c2c"
+    },
+    {
+      "path": "prepare_catalog.py",
+      "bytes": 2337,
+      "sha256": "26e95656c8f7f643180035f3127cd060ee0c5108517c43b765743d0303f1f3d0"
+    },
+    {
+      "path": "prepare_native_reference.py",
+      "bytes": 3078,
+      "sha256": "a158632d32bccc25b4d838ebfb3e38f90de199e15e9c5261c59ccc21c759db7e"
+    },
+    {
+      "path": "build_coverage_ledger.py",
+      "bytes": 44918,
+      "sha256": "e3f7c41040807e2d75a1564b74678605c24ddcaa0011f4f627f2fe7998b8f098"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-MULTI-01.md",
+      "bytes": 2307,
+      "sha256": "5dda91500c54bf19bd922fee4d289b2fd84ce495aed8ffb870ceceda8a992bf7"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-SHAPED-01.md",
+      "bytes": 63370,
+      "sha256": "2c7fdfed74b3d300a67d08ee0382fff1a38c3c5b9a660df831fdfebc53d99183"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-SHAPED-02.md",
+      "bytes": 65150,
+      "sha256": "97de0d027d3452f70bb0cfb4906e6a9bb2254d0011ae5443039be4b7486d40a6"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-SHAPED-03.md",
+      "bytes": 65377,
+      "sha256": "46241f1648e80bddb2ef4c9ca59b2f24f163dc0e0f371eef687044f50e31b495"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-SHAPED-04.md",
+      "bytes": 31539,
+      "sha256": "a758712d1a09ecfa7c3eb4d91df5991f87cdfad896995ed3ad101d43143da755"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-SHAPELESS-01.md",
+      "bytes": 68407,
+      "sha256": "fdcefad69bc2729761894d4911b7510e4e63587954a8e6736ed9cceb640732ae"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-SHAPELESS-02.md",
+      "bytes": 65510,
+      "sha256": "11544bb1da2e4b26dcae90475c367550dfdd402983d44e35aec8b8193855a48a"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-SHAPELESS-03.md",
+      "bytes": 59827,
+      "sha256": "50fc7296a57a5aea21a41354db776432f460565bd6c9b366441d30d454c8f42c"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-SHAPELESS-04.md",
+      "bytes": 61855,
+      "sha256": "6698b521aed0c006375cc3a4d2e789c181d5836483cb3dce0e00b5b0ba0c04d7"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-SHAPELESS-05.md",
+      "bytes": 70211,
+      "sha256": "d04490118a97e34414c59ddc013bcda0b8aad93bee05539587aff417c903c990"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-SHAPELESS-06.md",
+      "bytes": 54422,
+      "sha256": "4c38e34c2e0e2892a9f82478a8d4c48c6f4b40c07bbc29de41f79c3dd7c0722c"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-SMITHING_TRANSFORM-01.md",
+      "bytes": 2454,
+      "sha256": "2291a31978f966b9af646e9899e17863dba6d854636356da9e15f38d03def7b9"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-SMITHING_TRIM-01.md",
+      "bytes": 575,
+      "sha256": "7e4d42666d19b1ff853360312d6ac29a4ce7a467cbfaf6bd565d7349c32fe039"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-USER_DATA_SHAPELESS-01.md",
+      "bytes": 58712,
+      "sha256": "af5d5ecac66ee714d72b5468f501bf3c420db50e1696d115a0415537837c1be1"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-USER_DATA_SHAPELESS-02.md",
+      "bytes": 59243,
+      "sha256": "cc6aa91c79480345ee8ac129ae6af88a2e0007ee6884344cf1ba4f928902d750"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-USER_DATA_SHAPELESS-03.md",
+      "bytes": 60004,
+      "sha256": "9ddc9695db168cac2f1242651e644ca147b3e53d79baf7c55a4ae325bd0277d6"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-USER_DATA_SHAPELESS-04.md",
+      "bytes": 67169,
+      "sha256": "a9a88b8038077e082b03731fc3c0e5c25ff12750a900f3d32b9742be5c496699"
+    },
+    {
+      "path": "pages/CATALOGO-NATIVO-PUBLICO-USER_DATA_SHAPELESS-05.md",
+      "bytes": 11390,
+      "sha256": "d9bcafc136d1d7df8cf0c1e14aea45efc5952aba271f104dd4ef4141a6656b7a"
+    },
+    {
+      "path": "pages/CATALOGO-OFICIAL-minecraft-recipe_brewing_container-01.md",
+      "bytes": 769,
+      "sha256": "4ded19e078d4310b8f0b54f07426b7212c3aafa085b66f3f49f623c204045429"
+    },
+    {
+      "path": "pages/CATALOGO-OFICIAL-minecraft-recipe_brewing_mix-01.md",
+      "bytes": 12423,
+      "sha256": "4cb3c5bff1db46c62775d44ecf3424ff15a0a78843a07f5b3b0efad02dc9229c"
+    },
+    {
+      "path": "pages/CATALOGO-OFICIAL-minecraft-recipe_furnace-01.md",
+      "bytes": 24233,
+      "sha256": "9fb14f0243ec76ac9e8e938c6dda0e94450f75780b949a417c3e1e2e7e762cf9"
+    },
+    {
+      "path": "pages/CATALOGO-OFICIAL-minecraft-recipe_shaped-01.md",
+      "bytes": 64586,
+      "sha256": "83899fea4eaa775b22637bdcd4f51818517dd9f7742989d4f614f40b2c855b34"
+    },
+    {
+      "path": "pages/CATALOGO-OFICIAL-minecraft-recipe_shaped-02.md",
+      "bytes": 63415,
+      "sha256": "4380e760dafce6a2d8fe8cbda53f8e4784869fbf5ee42e852d529779fdb0b5bb"
+    },
+    {
+      "path": "pages/CATALOGO-OFICIAL-minecraft-recipe_shaped-03.md",
+      "bytes": 64551,
+      "sha256": "cd2d52b836c989f85090db21804f168b2dd91cad5d3e495afa7b078cf9fcaf6e"
+    },
+    {
+      "path": "pages/CATALOGO-OFICIAL-minecraft-recipe_shaped-04.md",
+      "bytes": 3067,
+      "sha256": "a5478808978ee128f5ee729d5b5d5e89957e0282cf766d2f193c04d4f16c5fe6"
+    },
+    {
+      "path": "pages/CATALOGO-OFICIAL-minecraft-recipe_shapeless-01.md",
+      "bytes": 70704,
+      "sha256": "32c7eaa67381b1d712fa054f04742278deacbed575fdf57adb3a67ca4e4d1f3b"
+    },
+    {
+      "path": "pages/CATALOGO-OFICIAL-minecraft-recipe_shapeless-02.md",
+      "bytes": 49965,
+      "sha256": "cf05a5707777286f655f915c09be5f1623a37a4e17783df5ccdcb56eec6ac800"
+    },
+    {
+      "path": "pages/CATALOGO-OFICIAL-minecraft-recipe_smithing_transform-01.md",
+      "bytes": 2427,
+      "sha256": "629c44e0d46b2227b3e15653070eb564ca058b2cccbfabcac15533861ae0ea8f"
+    },
+    {
+      "path": "pages/CATALOGO-OFICIAL-minecraft-recipe_smithing_trim-01.md",
+      "bytes": 576,
+      "sha256": "20f25e1bfcd699b9128c51b1cbbb11062f7f33988b2138f5fcd3d6fc97c47bc1"
+    }
+  ]
+}

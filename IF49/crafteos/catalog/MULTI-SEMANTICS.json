@@ -1,0 +1,119 @@
+{
+  "scope": "public pinned Bedrock protocol2193 dump; not user live session",
+  "known": 13,
+  "unknown": 1,
+  "rows": [
+    {
+      "uuid": "442d85ed-8272-4543-a6f1-418f90ded05d",
+      "semantic_constant": "TYPE_MAP_CLONING_CARTOGRAPHY",
+      "source_announced_net_id_example_only": 4760,
+      "fixed_network_id": false,
+      "semantic_verified": true,
+      "semantic_source": "https://raw.githubusercontent.com/pmmp/BedrockProtocol/8eb5a390a8d913ee54b97ac71f42899ecbb5c419/src/types/recipe/MultiRecipe.php"
+    },
+    {
+      "uuid": "8b36268c-1829-483c-a0f1-993b7156a8f2",
+      "semantic_constant": "TYPE_MAP_EXTENDING_CARTOGRAPHY",
+      "source_announced_net_id_example_only": 4762,
+      "fixed_network_id": false,
+      "semantic_verified": true,
+      "semantic_source": "https://raw.githubusercontent.com/pmmp/BedrockProtocol/8eb5a390a8d913ee54b97ac71f42899ecbb5c419/src/types/recipe/MultiRecipe.php"
+    },
+    {
+      "uuid": "602234e4-cac1-4353-8bb7-b1ebff70024b",
+      "semantic_constant": "TYPE_MAP_LOCKING_CARTOGRAPHY",
+      "source_announced_net_id_example_only": 4763,
+      "fixed_network_id": false,
+      "semantic_verified": true,
+      "semantic_source": "https://raw.githubusercontent.com/pmmp/BedrockProtocol/8eb5a390a8d913ee54b97ac71f42899ecbb5c419/src/types/recipe/MultiRecipe.php"
+    },
+    {
+      "uuid": "98c84b38-1085-46bd-b1ce-dd38c159e6cc",
+      "semantic_constant": "TYPE_MAP_UPGRADING_CARTOGRAPHY",
+      "source_announced_net_id_example_only": 4765,
+      "fixed_network_id": false,
+      "semantic_verified": true,
+      "semantic_source": "https://raw.githubusercontent.com/pmmp/BedrockProtocol/8eb5a390a8d913ee54b97ac71f42899ecbb5c419/src/types/recipe/MultiRecipe.php"
+    },
+    {
+      "uuid": "d81aaeaf-e172-4440-9225-868df030d27b",
+      "semantic_constant": "TYPE_BANNER_ADD_PATTERN",
+      "source_announced_net_id_example_only": 4756,
+      "fixed_network_id": false,
+      "semantic_verified": true,
+      "semantic_source": "https://raw.githubusercontent.com/pmmp/BedrockProtocol/8eb5a390a8d913ee54b97ac71f42899ecbb5c419/src/types/recipe/MultiRecipe.php"
+    },
+    {
+      "uuid": "b5c5d105-75a2-4076-af2b-923ea2bf4bf0",
+      "semantic_constant": "TYPE_BANNER_DUPLICATE",
+      "source_announced_net_id_example_only": 4755,
+      "fixed_network_id": false,
+      "semantic_verified": true,
+      "semantic_source": "https://raw.githubusercontent.com/pmmp/BedrockProtocol/8eb5a390a8d913ee54b97ac71f42899ecbb5c419/src/types/recipe/MultiRecipe.php"
+    },
+    {
+      "uuid": "00000000-0000-0000-0000-000000000002",
+      "semantic_constant": "TYPE_FIREWORKS",
+      "source_announced_net_id_example_only": 4758,
+      "fixed_network_id": false,
+      "semantic_verified": true,
+      "semantic_source": "https://raw.githubusercontent.com/pmmp/BedrockProtocol/8eb5a390a8d913ee54b97ac71f42899ecbb5c419/src/types/recipe/MultiRecipe.php"
+    },
+    {
+      "uuid": "d1ca6b84-338e-4f2f-9c6b-76cc8b4bd98d",
+      "semantic_constant": "TYPE_BOOK_CLONING",
+      "source_announced_net_id_example_only": 4767,
+      "fixed_network_id": false,
+      "semantic_verified": true,
+      "semantic_source": "https://raw.githubusercontent.com/pmmp/BedrockProtocol/8eb5a390a8d913ee54b97ac71f42899ecbb5c419/src/types/recipe/MultiRecipe.php"
+    },
+    {
+      "uuid": "85939755-ba10-4d9d-a4cc-efb7a8e943c4",
+      "semantic_constant": "TYPE_MAP_CLONING",
+      "source_announced_net_id_example_only": 4759,
+      "fixed_network_id": false,
+      "semantic_verified": true,
+      "semantic_source": "https://raw.githubusercontent.com/pmmp/BedrockProtocol/8eb5a390a8d913ee54b97ac71f42899ecbb5c419/src/types/recipe/MultiRecipe.php"
+    },
+    {
+      "uuid": "685a742a-c42e-4a4e-88ea-5eb83fc98e5b",
+      "semantic_constant": "TYPE_DECORATED_POT_RECIPE",
+      "source_announced_net_id_example_only": 4768,
+      "fixed_network_id": false,
+      "semantic_verified": true,
+      "semantic_source": "https://raw.githubusercontent.com/PowerNukkitX/PowerNukkitX/37caa9e66690f2d327b33d8a72e7621377ab96c5/src/main/java/org/powernukkitx/recipe/special/DecoratedPotRecipe.java"
+    },
+    {
+      "uuid": "d392b075-4ba1-40ae-8789-af868d56f6ce",
+      "semantic_constant": "TYPE_MAP_EXTENDING",
+      "source_announced_net_id_example_only": 4761,
+      "fixed_network_id": false,
+      "semantic_verified": true,
+      "semantic_source": "https://raw.githubusercontent.com/pmmp/BedrockProtocol/8eb5a390a8d913ee54b97ac71f42899ecbb5c419/src/types/recipe/MultiRecipe.php"
+    },
+    {
+      "uuid": "00000000-0000-0000-0000-000000000001",
+      "semantic_constant": "TYPE_REPAIR_ITEM",
+      "source_announced_net_id_example_only": 4766,
+      "fixed_network_id": false,
+      "semantic_verified": true,
+      "semantic_source": "https://raw.githubusercontent.com/pmmp/BedrockProtocol/8eb5a390a8d913ee54b97ac71f42899ecbb5c419/src/types/recipe/MultiRecipe.php"
+    },
+    {
+      "uuid": "00000000-0000-0000-0000-0000000000c8",
+      "semantic_constant": "UNKNOWN_DO_NOT_INFER",
+      "source_announced_net_id_example_only": 4757,
+      "fixed_network_id": false,
+      "semantic_verified": false,
+      "semantic_source": null
+    },
+    {
+      "uuid": "aecd2294-4b94-434b-8667-4499bb2c9327",
+      "semantic_constant": "TYPE_MAP_UPGRADING",
+      "source_announced_net_id_example_only": 4764,
+      "fixed_network_id": false,
+      "semantic_verified": true,
+      "semantic_source": "https://raw.githubusercontent.com/pmmp/BedrockProtocol/8eb5a390a8d913ee54b97ac71f42899ecbb5c419/src/types/recipe/MultiRecipe.php"
+    }
+  ]
+}

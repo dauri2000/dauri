@@ -8,3 +8,4 @@ IF45/*.jar filter=lfs diff=lfs merge=lfs -text
 IF46/*.jar filter=lfs diff=lfs merge=lfs -text
 IF47/*.jar filter=lfs diff=lfs merge=lfs -text
 IF48/*.jar filter=lfs diff=lfs merge=lfs -text
+IF49/*.jar filter=lfs diff=lfs merge=lfs -text

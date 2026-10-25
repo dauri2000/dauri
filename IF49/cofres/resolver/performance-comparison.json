@@ -1,0 +1,38 @@
+{
+  "conditions": "Actual IF48 resolver with identity-translated bundled program and synthetic current slot values. Same JDK25 -Xverify:all. Separate JVMs, no JFR in paired runs. Timing environment-specific, not actual user frame time.",
+  "fixtures": "NativeContainerExportProbe actual builtin_ui.zip exports; menu slots/durability/locks/hover/cursor synthetic. No MC graphical code in these timing runs.",
+  "families": {
+    "small": {
+      "baseline": {
+        "warm_median_ms": 34.084,
+        "warm_median_thread_allocated_bytes": 74207280,
+        "runs": 80,
+        "warm_runs": 70
+      },
+      "candidate": {
+        "warm_median_ms": 20.35,
+        "warm_median_thread_allocated_bytes": 30173792,
+        "runs": 80,
+        "warm_runs": 70
+      },
+      "median_time_reduction_pct": 40.294566365450066,
+      "median_allocation_reduction_pct": 59.33850155941573
+    },
+    "large": {
+      "baseline": {
+        "warm_median_ms": 45.998,
+        "warm_median_thread_allocated_bytes": 103925040,
+        "runs": 80,
+        "warm_runs": 70
+      },
+      "candidate": {
+        "warm_median_ms": 30.402,
+        "warm_median_thread_allocated_bytes": 41654528,
+        "runs": 80,
+        "warm_runs": 70
+      },
+      "median_time_reduction_pct": 33.905821992260535,
+      "median_allocation_reduction_pct": 59.918679848475406
+    }
+  }
+}

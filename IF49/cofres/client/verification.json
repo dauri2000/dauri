@@ -1,0 +1,29 @@
+{
+  "baseline": "ViaFabricPlus-Bedrock-IF48.jar",
+  "baselineScreenSha256": "8ada62b5d544a9c43773817edbf3c69f357a55cc833d5bbc89571d548d3fc742",
+  "runtimeEntries": {
+    "com/viaversion/viafabricplus/bedrock/screen/container/BedrockNativeContainerScreen.class": "902b8b6b4a99ffd887bc21f8f0364e14cb5ed2494e5912842c631ca3c009e57d"
+  },
+  "replacedRuntimeClasses": 1,
+  "addedRuntimeClasses": 0,
+  "productionCompiledAgainstMinecraftStubs": false,
+  "allMethodsAsmBasicVerifier": true,
+  "originalFramesPreserved": true,
+  "exactCanonicalReversal": true,
+  "ownerControlFlowGroupsPassed": 18,
+  "runtimeFieldsAdded": 5,
+  "runtimeMethodsAdded": 1,
+  "modifiedOriginalMethods": [
+    "prepare",
+    "init",
+    "discard"
+  ],
+  "unchangedOtherMethods": true,
+  "testBoundary": "Exact prepare/init/discard/helper bytecode in a sliced host; heavy refresh/current/showTags, superclass and item/renderer/image APIs are explicit boundaries. Not whole-class MC linking/Mixin/window/GPU execution.",
+  "userFrameTimingMeasuredHere": false,
+  "performanceProfile": "Actual IF48 pure program/scene/layout/geometry with simple item/font/image boundaries, 12 calls each, first4 excluded from warm statistics.",
+  "warmProfileMediansMs": {
+    "CHEST_3_ROWS": 104.431,
+    "CHEST_6_ROWS": 80.489
+  }
+}

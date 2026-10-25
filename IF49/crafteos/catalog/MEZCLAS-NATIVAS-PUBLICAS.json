@@ -1,0 +1,4241 @@
+{
+  "scope": "210 potion mixes and2container mixes; route/data only, no brewing gameplay",
+  "rows": [
+    {
+      "id": "native-potionMixes-000",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:breeze_rod",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 43
+      },
+      "item_names_checked": [
+        "minecraft:breeze_rod",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-001",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:breeze_rod",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 43
+      },
+      "item_names_checked": [
+        "minecraft:breeze_rod",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-002",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:breeze_rod",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 43
+      },
+      "item_names_checked": [
+        "minecraft:breeze_rod",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-003",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:slime",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 45
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:slime"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-004",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:slime",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 45
+      },
+      "item_names_checked": [
+        "minecraft:slime",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-005",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:slime",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 45
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:slime"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-006",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:stone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 46
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:stone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-007",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:stone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 46
+      },
+      "item_names_checked": [
+        "minecraft:splash_potion",
+        "minecraft:stone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-008",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:stone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 46
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:stone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-009",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:web",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 44
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:web"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-010",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:web",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 44
+      },
+      "item_names_checked": [
+        "minecraft:splash_potion",
+        "minecraft:web"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-011",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:web",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 44
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:web"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-012",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:breeze_rod",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:breeze_rod",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-013",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:breeze_rod",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:breeze_rod",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-014",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:breeze_rod",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:breeze_rod",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-015",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:slime",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:slime"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-016",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:slime",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:slime",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-017",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:slime",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:slime"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-018",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:stone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:stone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-019",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:stone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:splash_potion",
+        "minecraft:stone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-020",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:stone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:stone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-021",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:web",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:web"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-022",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:web",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:splash_potion",
+        "minecraft:web"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-023",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:web",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:web"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-024",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:blaze_powder",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 31
+      },
+      "item_names_checked": [
+        "minecraft:blaze_powder",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-025",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:blaze_powder",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 31
+      },
+      "item_names_checked": [
+        "minecraft:blaze_powder",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-026",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:blaze_powder",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 31
+      },
+      "item_names_checked": [
+        "minecraft:blaze_powder",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-027",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-028",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-029",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-030",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:ghast_tear",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 28
+      },
+      "item_names_checked": [
+        "minecraft:ghast_tear",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-031",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:ghast_tear",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 28
+      },
+      "item_names_checked": [
+        "minecraft:ghast_tear",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-032",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:ghast_tear",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 28
+      },
+      "item_names_checked": [
+        "minecraft:ghast_tear",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-033",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:golden_carrot",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 5
+      },
+      "item_names_checked": [
+        "minecraft:golden_carrot",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-034",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:golden_carrot",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 5
+      },
+      "item_names_checked": [
+        "minecraft:golden_carrot",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-035",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:golden_carrot",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 5
+      },
+      "item_names_checked": [
+        "minecraft:golden_carrot",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-036",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:magma_cream",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 12
+      },
+      "item_names_checked": [
+        "minecraft:magma_cream",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-037",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:magma_cream",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 12
+      },
+      "item_names_checked": [
+        "minecraft:magma_cream",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-038",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:magma_cream",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 12
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:magma_cream"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-039",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:phantom_membrane",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 40
+      },
+      "item_names_checked": [
+        "minecraft:phantom_membrane",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-040",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:phantom_membrane",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 40
+      },
+      "item_names_checked": [
+        "minecraft:phantom_membrane",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-041",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:phantom_membrane",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 40
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:phantom_membrane"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-042",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:pufferfish",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 19
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:pufferfish"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-043",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:pufferfish",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 19
+      },
+      "item_names_checked": [
+        "minecraft:pufferfish",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-044",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:pufferfish",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 19
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:pufferfish"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-045",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:rabbit_foot",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 9
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:rabbit_foot"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-046",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:rabbit_foot",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 9
+      },
+      "item_names_checked": [
+        "minecraft:rabbit_foot",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-047",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:rabbit_foot",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 9
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:rabbit_foot"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-048",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:glistering_melon_slice",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 21
+      },
+      "item_names_checked": [
+        "minecraft:glistering_melon_slice",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-049",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:glistering_melon_slice",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 21
+      },
+      "item_names_checked": [
+        "minecraft:glistering_melon_slice",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-050",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:glistering_melon_slice",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 21
+      },
+      "item_names_checked": [
+        "minecraft:glistering_melon_slice",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-051",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 25
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:spider_eye"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-052",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 25
+      },
+      "item_names_checked": [
+        "minecraft:spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-053",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 25
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:spider_eye"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-054",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:sugar",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 14
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:sugar"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-055",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:sugar",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 14
+      },
+      "item_names_checked": [
+        "minecraft:splash_potion",
+        "minecraft:sugar"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-056",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:sugar",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 14
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:sugar"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-057",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:turtle_helmet",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 37
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:turtle_helmet"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-058",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:turtle_helmet",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 37
+      },
+      "item_names_checked": [
+        "minecraft:splash_potion",
+        "minecraft:turtle_helmet"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-059",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 4,
+        "reagentId": "minecraft:turtle_helmet",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 37
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:turtle_helmet"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-060",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 12,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 13
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-061",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 12,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 13
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-062",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 12,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 13
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-063",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 23,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 24
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-064",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 23,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 24
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-065",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 23,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 24
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-066",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 21,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 23
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-067",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 21,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 23
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-068",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 21,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 23
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-069",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 21,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 22
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-070",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 21,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 22
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-071",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 21,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 22
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-072",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 7,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 8
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-073",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 7,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 8
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-074",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 7,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 8
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-075",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 9,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 17
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-076",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 9,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 17
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-077",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 9,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 17
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-078",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 9,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 11
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-079",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 9,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 11
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-080",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 9,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 11
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-081",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 9,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 10
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-082",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 9,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 10
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-083",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 9,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 10
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-084",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 10,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 18
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-085",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 10,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 18
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-086",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 10,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 18
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-087",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 2,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 35
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-088",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 2,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 35
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-089",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 2,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 35
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-090",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 26,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 23
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-091",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 26,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 23
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-092",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 26,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 23
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-093",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 32,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 35
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-094",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 32,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 35
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-095",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 32,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 35
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-096",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 6,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 8
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-097",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 6,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 8
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-098",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 6,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 8
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-099",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 15,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 18
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-100",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 15,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 18
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-101",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 15,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 18
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-102",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 1,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-103",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 1,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-104",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 1,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-105",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 5,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 7
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-106",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 5,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 7
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-107",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 5,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 7
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-108",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 5,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 6
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-109",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 5,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 6
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-110",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 5,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 6
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-111",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 25,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 23
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-112",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 25,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 23
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-113",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 25,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 23
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-114",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 25,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 27
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-115",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 25,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 27
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-116",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 25,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 27
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-117",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 25,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 26
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-118",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 25,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 26
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-119",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 25,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 26
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-120",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 28,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 30
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-121",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 28,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 30
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-122",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 28,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 30
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-123",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 28,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 29
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-124",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 28,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 29
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-125",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 28,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 29
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-126",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 40,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 41
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-127",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 40,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 41
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-128",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 40,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 41
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-129",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 17,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 42
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-130",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 17,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 42
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-131",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 17,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 42
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-132",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 17,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 18
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-133",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 17,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 18
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-134",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 17,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 18
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-135",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 31,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-136",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 31,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-137",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 31,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-138",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 31,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 33
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-139",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 31,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 33
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-140",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 31,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 33
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-141",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 31,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 32
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-142",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 31,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 32
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-143",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 31,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 32
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-144",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 22,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 24
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-145",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 22,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 24
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-146",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 22,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 24
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-147",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 27,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 24
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-148",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 27,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 24
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-149",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 27,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 24
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-150",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 33,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-151",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 33,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-152",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 33,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-153",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 14,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 17
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-154",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 14,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 17
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-155",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 14,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 17
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-156",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 14,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 16
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-157",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 14,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 16
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-158",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 14,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 16
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-159",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 14,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 15
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-160",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 14,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 15
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-161",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 14,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 15
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-162",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 3,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-163",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 3,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-164",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 3,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-165",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 37,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 39
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-166",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 37,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 39
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-167",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 37,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 39
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-168",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 37,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 38
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-169",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 37,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 38
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-170",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 37,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 38
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-171",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:blaze_powder",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:blaze_powder",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-172",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:blaze_powder",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:blaze_powder",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-173",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:blaze_powder",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:blaze_powder",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-174",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 19,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 20
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-175",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 19,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 20
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-176",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 19,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 20
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-177",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-178",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-179",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:fermented_spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 34
+      },
+      "item_names_checked": [
+        "minecraft:fermented_spider_eye",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-180",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:ghast_tear",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:ghast_tear",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-181",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:ghast_tear",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:ghast_tear",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-182",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:ghast_tear",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:ghast_tear",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-183",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 3
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-184",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 3
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-185",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:glowstone_dust",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 3
+      },
+      "item_names_checked": [
+        "minecraft:glowstone_dust",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-186",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:magma_cream",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:magma_cream",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-187",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:magma_cream",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:magma_cream",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-188",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:magma_cream",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:magma_cream"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-189",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:nether_wart",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 4
+      },
+      "item_names_checked": [
+        "minecraft:nether_wart",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-190",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:nether_wart",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 4
+      },
+      "item_names_checked": [
+        "minecraft:nether_wart",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-191",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:nether_wart",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 4
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:nether_wart"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-192",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:rabbit_foot",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:rabbit_foot"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-193",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:rabbit_foot",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:rabbit_foot",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-194",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:rabbit_foot",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:rabbit_foot"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-195",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-196",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-197",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-198",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:glistering_melon_slice",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:glistering_melon_slice",
+        "minecraft:potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-199",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:glistering_melon_slice",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:glistering_melon_slice",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-200",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:glistering_melon_slice",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:glistering_melon_slice",
+        "minecraft:lingering_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-201",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:spider_eye"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-202",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:spider_eye",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-203",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:spider_eye",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:spider_eye"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-204",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:sugar",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:sugar"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-205",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:sugar",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:splash_potion",
+        "minecraft:sugar"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-206",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 0,
+        "reagentId": "minecraft:sugar",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 1
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:sugar"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-207",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "inputMeta": 34,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:potion",
+        "outputMeta": 35
+      },
+      "item_names_checked": [
+        "minecraft:potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-208",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "inputMeta": 34,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:splash_potion",
+        "outputMeta": 35
+      },
+      "item_names_checked": [
+        "minecraft:redstone",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-potionMixes-209",
+      "reference": {
+        "inputId": "minecraft:lingering_potion",
+        "inputMeta": 34,
+        "reagentId": "minecraft:redstone",
+        "reagentMeta": 0,
+        "outputId": "minecraft:lingering_potion",
+        "outputMeta": 35
+      },
+      "item_names_checked": [
+        "minecraft:lingering_potion",
+        "minecraft:redstone"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-containerMixes-000",
+      "reference": {
+        "inputId": "minecraft:potion",
+        "reagentId": "minecraft:gunpowder",
+        "outputId": "minecraft:splash_potion"
+      },
+      "item_names_checked": [
+        "minecraft:gunpowder",
+        "minecraft:potion",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    },
+    {
+      "id": "native-containerMixes-001",
+      "reference": {
+        "inputId": "minecraft:splash_potion",
+        "reagentId": "minecraft:dragon_breath",
+        "outputId": "minecraft:lingering_potion"
+      },
+      "item_names_checked": [
+        "minecraft:dragon_breath",
+        "minecraft:lingering_potion",
+        "minecraft:splash_potion"
+      ],
+      "mapping_data_present": true,
+      "concrete_evidence": "Entrada pública identificada por input/reagent/output y aux cuando existen; CraftingDataReader.read → BrewingPropertyStorage.add(inputID,data,reagentID,data,outputID,data).",
+      "result_scope": "DATOS Y RUTA REVISADOS; PREPARACIÓN NO EJECUTADA",
+      "live_server_pending": "Preparar mezcla real y confirmar recipientes/ingrediente/efecto/tiempo/combustible y consumo.",
+      "server_gameplay_verified": false
+    }
+  ]
+}

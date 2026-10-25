@@ -1,0 +1,65 @@
+{
+  "scope": "Numeric constants of bundled RecipeType model; not the numeric type scheme of the public JSON dump. Packet reader consumes its family-specific sections.",
+  "rows": [
+    {
+      "name": "SHAPELESS",
+      "model_value": 0,
+      "actual_path": "CraftingDataReader.readShapeless; CraftingDataTracker.matchShapeless",
+      "scope_and_limit": "Static shape fixtures executed; server packet decode/acceptance not executed."
+    },
+    {
+      "name": "SHAPED",
+      "model_value": 1,
+      "actual_path": "CraftingDataReader.readShaped; CraftingDataTracker.matchShaped",
+      "scope_and_limit": "Static shape fixtures executed; native mirror/unlock/output state not captured."
+    },
+    {
+      "name": "UNKNOWN_1",
+      "model_value": 2,
+      "actual_path": "RecipeType enum only; no explicit read or generic match branch identified",
+      "scope_and_limit": "No support claim; do not map JSON author type2 to this constant."
+    },
+    {
+      "name": "UNKNOWN_2",
+      "model_value": 3,
+      "actual_path": "RecipeType enum only; no explicit read or generic match branch identified",
+      "scope_and_limit": "No support claim; public JSON type3 means USER_DATA in its own format."
+    },
+    {
+      "name": "MULTI",
+      "model_value": 4,
+      "actual_path": "CraftingDataReader.read constructs MultiRecipe(UUID)",
+      "scope_and_limit": "No pattern/result in this model. Requires family-specific implementation."
+    },
+    {
+      "name": "USER_DATA_SHAPELESS",
+      "model_value": 5,
+      "actual_path": "CraftingDataReader.readShapeless; CraftingDataTracker.matchShapeless",
+      "scope_and_limit": "1456 public reference entries shape-tested; output metadata not certified."
+    },
+    {
+      "name": "SHAPELESS_CHEMISTRY",
+      "model_value": 6,
+      "actual_path": "CraftingDataReader.readShapeless reads family; getRecipeMatch generic switch does not select it",
+      "scope_and_limit": "Vanilla reference does not constitute Education recipe coverage."
+    },
+    {
+      "name": "SHAPED_CHEMISTRY",
+      "model_value": 7,
+      "actual_path": "CraftingDataReader.readShaped reads family; getRecipeMatch generic switch does not select it",
+      "scope_and_limit": "Vanilla reference does not constitute Education recipe coverage."
+    },
+    {
+      "name": "SMITHING_TRANSFORM",
+      "model_value": 8,
+      "actual_path": "CraftingDataReader.readSmithing(transform=true); matchesSmithing",
+      "scope_and_limit": "12 public entries inventoried, actual station transaction not executed."
+    },
+    {
+      "name": "SMITHING_TRIM",
+      "model_value": 9,
+      "actual_path": "CraftingDataReader.readSmithing(transform=false); matchesSmithing",
+      "scope_and_limit": "1 public generic trim entry inventoried; all combinations not generated/tested."
+    }
+  ]
+}

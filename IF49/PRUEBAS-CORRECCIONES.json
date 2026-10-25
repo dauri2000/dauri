@@ -1,0 +1,64 @@
+{
+  "root_build_authorized": true,
+  "selected_profile": "client_and_core",
+  "expected_scope": {
+    "root_replacements": [
+      "com/viaversion/viafabricplus/bedrock/screen/container/BedrockNativeContainerScreen.class"
+    ],
+    "core_replacements": [
+      "net/raphimc/viabedrock/api/resourcepack/ui/JsonUiProgram$Session.class",
+      "net/raphimc/viabedrock/protocol/storage/CraftingDataTracker.class"
+    ],
+    "core_additions": [
+      "net/raphimc/viabedrock/api/resourcepack/ui/UiVariableSnapshotMap$EntryIterator.class",
+      "net/raphimc/viabedrock/api/resourcepack/ui/UiVariableSnapshotMap$EntryView.class",
+      "net/raphimc/viabedrock/api/resourcepack/ui/UiVariableSnapshotMap$LiveEntry.class",
+      "net/raphimc/viabedrock/api/resourcepack/ui/UiVariableSnapshotMap.class",
+      "net/raphimc/viabedrock/protocol/storage/FireworkMultiRecipes.class"
+    ]
+  },
+  "classes": {
+    "com/viaversion/viafabricplus/bedrock/screen/container/BedrockNativeContainerScreen.class": "902b8b6b4a99ffd887bc21f8f0364e14cb5ed2494e5912842c631ca3c009e57d",
+    "net/raphimc/viabedrock/api/resourcepack/ui/JsonUiProgram$Session.class": "630a70475327fbcccd8ba4202fd047f4edf1d4d2c1463e87d30c116870191e67",
+    "net/raphimc/viabedrock/protocol/storage/CraftingDataTracker.class": "b3dee566f527d0465a853f877a368b0151a6cf3fb72d00e3f6dc722d5054d153",
+    "net/raphimc/viabedrock/api/resourcepack/ui/UiVariableSnapshotMap$EntryIterator.class": "a4d55ed8fbb1226d8518510ccd9aacfb079859634c1ef33f06cc55ca0043f5c0",
+    "net/raphimc/viabedrock/api/resourcepack/ui/UiVariableSnapshotMap$EntryView.class": "5d42566fd797f63976808874c7577632361fd1729bc6b392af91261c55aef315",
+    "net/raphimc/viabedrock/api/resourcepack/ui/UiVariableSnapshotMap$LiveEntry.class": "deb55a79bc75834dac0e12dc5de755a196bd311f5d7579ce9d0c91630f8ac858",
+    "net/raphimc/viabedrock/api/resourcepack/ui/UiVariableSnapshotMap.class": "6e45e00989950c68a3c4294901577339631001eb5671cb104788f8e10630c8ec",
+    "net/raphimc/viabedrock/protocol/storage/FireworkMultiRecipes.class": "27f6da94517f6f5a2467a60be89c10926716648186b98d607e60a0b69b9a2126"
+  },
+  "new_checks_passed": 153,
+  "groups": {
+    "client_owner_control_flow": 18,
+    "client_independent": 10,
+    "resolver_owner_scenes": 32,
+    "resolver_owner_map_contracts": 10,
+    "resolver_independent": 9,
+    "fireworks_owner_behavior_and_policy": 59,
+    "fireworks_independent": 15
+  },
+  "scope_proofs": {
+    "client_full_canonical_reversal": true,
+    "resolver_two_sites_full_canonical_reversal": true,
+    "fireworks_matcher_seven_instruction_full_canonical_reversal": true,
+    "unchanged_click_ack_rollback_and_if39_continuation_classes": true,
+    "recipe_network_id_is_current_server_advertisement": true,
+    "native_star_nbt_deep_copy": true,
+    "all_other_ui_bindings_keep_hashmap_behavior": true,
+    "old_if48_fixes_and_xp_diagnostic_preserved": true
+  },
+  "recipe_catalog": {
+    "official_files": 1892,
+    "official_static_shape_fixtures_passed": 1655,
+    "public_native_entries": 4768,
+    "public_native_static_shape_fixtures_passed": 4741,
+    "official_assertions": 38567,
+    "public_native_assertions": 97852,
+    "sources_overlap_do_not_sum_unique_recipes": true,
+    "all_recipes_fixed_claimed": false
+  },
+  "minecraft_graphical_tested": false,
+  "server_functional_tested": false,
+  "user_fps_measured": false,
+  "xp_fix_claimed": false
+}

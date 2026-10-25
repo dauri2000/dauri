@@ -1,0 +1,63 @@
+{
+  "result": "PASS_INDEPENDENT_CONTROLLED_REVIEW",
+  "classes": {
+    "net/raphimc/viabedrock/protocol/storage/FireworkMultiRecipes.class": "27f6da94517f6f5a2467a60be89c10926716648186b98d607e60a0b69b9a2126",
+    "net/raphimc/viabedrock/protocol/storage/CraftingDataTracker.class": "b3dee566f527d0465a853f877a368b0151a6cf3fb72d00e3f6dc722d5054d153"
+  },
+  "candidate_rebuilt": false,
+  "candidate_modified_by_reviewer": false,
+  "owner_generator_executed": false,
+  "independent_groups_passed": 15,
+  "handler_wire_scope_groups": 12,
+  "bytecode_isolation_groups": 3,
+  "actual_binary_request_encodings": 9,
+  "binary_encodings_counted_again": false,
+  "baseline_IF48_expected_failure_reproduced": true,
+  "actual_IF48_nested_core_bytes_verified": true,
+  "actual_methods_executed": [
+    "CraftingDataTracker.getRecipeMatch",
+    "CraftingTableContainer.handleClick",
+    "InventoryContainer.handleClick",
+    "CraftingOutputPlan",
+    "BulkCraftContinuation",
+    "PacketFactory.sendBedrockInventoryRequest",
+    "ItemStackRequestType.write",
+    "ItemStackActionType.write",
+    "ItemStackRequestResultType.write",
+    "InventoryRequestTracker.handleResponse",
+    "InventoryRequestTracker.handleAuthoritativeContent",
+    "CraftedItemSynchronization"
+  ],
+  "full_nbt_sync_gate_preserved": true,
+  "ack_alone_does_not_resume_bulk": true,
+  "native_recipe_ids_tested": [
+    64009,
+    75017
+  ],
+  "new_craft_request_slots_and_network_ids_preserved": true,
+  "original_custom_recipe_scope_guards_verified": true,
+  "ephemeral_recipe_and_nbt_immutability_verified": true,
+  "canonical_reversal_to_IF48": true,
+  "all_method_asm_basic_verifier": true,
+  "minecraft_graphical_tested": false,
+  "server_functional_tested": false,
+  "limits": [
+    "Actual binary serializers execute but no native server decoder or crafting acceptance is executed.",
+    "Controlled native inputs/recipes/acknowledgments/full-content replies, session and transport are fixture boundaries.",
+    "Display-only Java item mapping comes from the previously existing test fixture; no Minecraft classes or runtime stubs are packaged.",
+    "Partial/malformed unusual native star tags fail closed; all possible native/custom NBT formats are not certified.",
+    "This review does not establish live network timing or that a particular server emits all expected authoritative refresh contents."
+  ],
+  "source_evidence_sha256s": {
+    "IndependentFireworkWireProbe.java": "f825f53f1fd71275ccd6bab64e2d3a8d6acfa30c880b198d09182620a9edc057",
+    "IndependentFireworkBytecodeCheck.java": "371e86d7b16e058ce2594058d3bcdf0b04c739f5e6b666ed4491d12f3c76e2ef",
+    "README.md": "88d37b3e4597cfb18dd939b2ef46e95a60eb9e278098fc9dee7a269eaa3040af",
+    "source-review.md": "ba3605686311b458eab755da26a1d4621797bff1731c4a7ef7e652679d0bd659",
+    "wire-checks.txt": "50110eb615f52b49d9f7c0150697c1f3638b6e300477c681ed521d72ff78a874",
+    "bytecode-checks.txt": "efd8202021c41e90889f072ebb637de06d1a0b84c5ac2c5389afffa47993d39d",
+    "wire-baseline-IF48.txt": "7d80bf6ca01424477cd437613a3f7d720abcd00fd3bba4cc42a81ee428acabf0",
+    "pinned-class-hashes.json": "ca0953477f468db4c73021db8311b75852a241d25bc35a58b6f1227ac478395c",
+    "classpath.txt": "b0fbcb6e348214f0202fe9550cb87324a72c9055f139b1dc068967d37d0c7100",
+    "compile.txt": "dd3b7bba5df722273389c4095a87f3d19e4424028175ad1fe6be2010080caec8"
+  }
+}

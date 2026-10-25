@@ -1,0 +1,49 @@
+{
+  "result": "READ_ONLY_AUDIT_NO_CAUSE_PROVEN_IN_BOUNDED_ITEM_HOOKS",
+  "if48_full_jar_sha256": "cce72ee547155865c5196b0262deec9766bb9267741a755eaa72bbad74ae758a",
+  "if48_core_sha256": "70f2edc538a9902ad43ddb7e8043de94297da999b68b8a2120029560dc0ecad3",
+  "tested_core_exact_delivered_if48": true,
+  "outer_class_sha256": {
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/render/MixinNativeGuiItemState.class": "8b53f98e352c4e48d46d0e193d63873ff67e6626acee26ada6f87fe5546a8201",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/render/MixinNativeGuiItemExtraction.class": "827496b687ada6e028011938632f32858b253f419273dbdb2993a0d67c7981a1",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/render/MixinNativeGuiItemAtlas.class": "a87b417adaf0e652cbf34e00fb4feee5e1a030a51c4a0c896ff819f74a5524c8",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/render/MixinNativeGuiOversizedItem.class": "5ab776b79baf74670839d55168f215596e234c89a080e18a9f21ea44cc0a9e4d",
+    "com/viaversion/viafabricplus/bedrock/screen/container/NativeInventoryItemOpacity.class": "2100cd7ffe35b1e29d86b857d3f1b64b9a87232a344b142712458d574da0fd03"
+  },
+  "core_class_sha256": {
+    "net/raphimc/viabedrock/protocol/rewriter/ResourcePackRewriter.class": "0f73abc60d6fcd6ea2c3431bc356a9a46166937470d48402fb7c2e1298987fb6",
+    "net/raphimc/viabedrock/protocol/rewriter/resourcepack/CustomItemTextureResourceRewriter.class": "a30f7f1aa64dc9a0979787a478d14e2e541f3576d6a17cb42c59f7a2042a2847",
+    "net/raphimc/viabedrock/protocol/rewriter/resourcepack/ItemModelResourceRewriter.class": "c2251a60d29db1a8aa202486e36483c7432776700cfd0402e2d7156ac882b3b7",
+    "net/raphimc/viabedrock/protocol/rewriter/resourcepack/CustomAttachableResourceRewriter.class": "28fad2537eb59c9a79b83059eccdbee3072dbb25e9aa8ff89984d8c55a9c5842",
+    "net/raphimc/viabedrock/api/resourcepack/content/Content.class": "117e2fa7d5ffc7aba1f4a6b54fb624e1dd3cd2fca093dc5a0ecf5233acdb2cb4",
+    "net/raphimc/viabedrock/api/resourcepack/content/Content$LazyImage.class": "0e790c34be3807e00738a323b69a17ea4cb4e80aef7fe1bc8ae6147d24474d0f",
+    "net/raphimc/viabedrock/api/resourcepack/http/ConvertedResourcePackCache.class": "41a88d88c6247d6c58ab8419aac22b80fa66fc4d97b5631fa943b0db0afbfaf9"
+  },
+  "outer_classes_byte_identical_if34": {
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/render/MixinNativeGuiItemState.class": true,
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/render/MixinNativeGuiItemExtraction.class": true,
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/render/MixinNativeGuiItemAtlas.class": true,
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/render/MixinNativeGuiOversizedItem.class": true,
+    "com/viaversion/viafabricplus/bedrock/screen/container/NativeInventoryItemOpacity.class": true
+  },
+  "core_classes_byte_identical_if34": {
+    "net/raphimc/viabedrock/protocol/rewriter/ResourcePackRewriter.class": true,
+    "net/raphimc/viabedrock/protocol/rewriter/resourcepack/CustomItemTextureResourceRewriter.class": true,
+    "net/raphimc/viabedrock/protocol/rewriter/resourcepack/ItemModelResourceRewriter.class": true,
+    "net/raphimc/viabedrock/protocol/rewriter/resourcepack/CustomAttachableResourceRewriter.class": true,
+    "net/raphimc/viabedrock/api/resourcepack/content/Content.class": true,
+    "net/raphimc/viabedrock/api/resourcepack/content/Content$LazyImage.class": true,
+    "net/raphimc/viabedrock/api/resourcepack/http/ConvertedResourcePackCache.class": true
+  },
+  "controlled_core_checks": 3,
+  "bytecode_inspection_groups": 3,
+  "minecraft_atlas_or_gpu_executed": false,
+  "production_edits": false,
+  "source_files": {
+    "GuiItemTextureProbe.java": "4f5fb65116e9c42f341a06fd97f54faae6fa1df8e897652d8a16fd6f153ebbd1",
+    "GuiItemHookAudit.java": "1cb257df8ec3e1b810e73dbc34bf2f0a97ac9b5b963919b4ab146c2504c9bade",
+    "texture-checks.txt": "5a65613022dfe1f2037d6dc731bebbb1d409a64fa6351992c7204db794dd3e65",
+    "hook-checks.txt": "535e1e5a51d62fbe4de77af35bc2e1f80a775499541fde094e7bd1c955c798b6",
+    "hook-audit.json": "4300313bdf28a76373b9b5cb95053305ffbb4e91c5da72652b7c0875821c8bde"
+  }
+}

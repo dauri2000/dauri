@@ -1,0 +1,38 @@
+{
+  "base": "IF48",
+  "base_jar_sha256": "cce72ee547155865c5196b0262deec9766bb9267741a755eaa72bbad74ae758a",
+  "base_core_sha256": "70f2edc538a9902ad43ddb7e8043de94297da999b68b8a2120029560dc0ecad3",
+  "baseline_checks": 13,
+  "candidate_behavior_checks": 37,
+  "candidate_policy_checks": 22,
+  "candidate_runtime_checks_total": 59,
+  "bytecode_scope_checks": 2,
+  "runtime_classes": {
+    "net/raphimc/viabedrock/protocol/storage/FireworkMultiRecipes.class": "27f6da94517f6f5a2467a60be89c10926716648186b98d607e60a0b69b9a2126",
+    "net/raphimc/viabedrock/protocol/storage/CraftingDataTracker.class": "b3dee566f527d0465a853f877a368b0151a6cf3fb72d00e3f6dc722d5054d153"
+  },
+  "patched_existing_entries": [
+    "net/raphimc/viabedrock/protocol/storage/CraftingDataTracker.class"
+  ],
+  "new_entries": [
+    "net/raphimc/viabedrock/protocol/storage/FireworkMultiRecipes.class"
+  ],
+  "gameplay_tested": false,
+  "bds_started": false,
+  "invented_network_ids": false,
+  "oldest_harness_fixture_only": true,
+  "preserved_if39_sources_byte_identical": true,
+  "scope_reversal": "Remove exactly7instructions atgetRecipeMatchreturn; completecanonicalIF48classrestored",
+  "known_limits": [
+    "dynamic firework star creation and fade not implemented",
+    "strict validated native star NBT format only",
+    "NBT crafted-item authoritative inventory refresh retained",
+    "no real BDS/Minecraft graphical verification"
+  ],
+  "independent_groups": 15,
+  "independent_behavior_wire_groups": 12,
+  "independent_bytecode_groups": 3,
+  "independent_actual_binary_encodings": 9,
+  "binary_encodings_counted_again": false,
+  "independent_verification_sha256": "82d2e9eb3f57b98adef827a944e47ab8fd43bdbe2bd247280eeefcd20e1a193b"
+}

@@ -1,0 +1,159 @@
+{
+  "scope": "Actual shipped code paths reviewed; not end-to-end gameplay certification",
+  "rows": [
+    {
+      "id": "path-00",
+      "family": "Datos recibidos",
+      "actual_methods": "CraftingDataReader.read",
+      "scope_and_limit": "Lee bloques shaped/shapeless/Multi/userdata/chemistry/smithing y mezclas; readUnlocking conserva la política de desbloqueo. No captura de CRAFTING_DATA del usuario.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-01",
+      "family": "Actualización del libro",
+      "actual_methods": "InventoryPackets CRAFTING_DATA/UNLOCKED_RECIPES; CraftingDataTracker.updateCraftingDataList/sendJavaUpdateRecipes",
+      "scope_and_limit": "UUID/redID anunciados se guardan por conexión; las entradas públicas son ejemplos, no constantes para producción.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-02",
+      "family": "Libro y ghost recipe",
+      "actual_methods": "CraftingDataTracker.recipeBookDisplays/writeRecipeDisplay/sendJavaGhostRecipe",
+      "scope_and_limit": "Solo se incluyen estaciones/tipos soportados y desbloqueados; mapping/serializer presente no implementa receta especial.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-03",
+      "family": "Cuadrícula 2×2",
+      "actual_methods": "CraftingDataTracker.getRecipeMatch; InventoryContainer; SharedCraftingGrid",
+      "scope_and_limit": "Grid side2; HUD28–31. El bulk prueba el método de matching con fixtures; no la transacción completa del inventario.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-04",
+      "family": "Mesa 3×3",
+      "actual_methods": "CraftingDataTracker.getRecipeMatch; CraftingTableContainer",
+      "scope_and_limit": "Grid side3; slots nativos32–40, preview50. Preservar correcciones compartidas anteriores.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-05",
+      "family": "Con forma",
+      "actual_methods": "CraftingDataTracker.matchShaped/matchPattern",
+      "scope_and_limit": "Offsets/mirror habilitado en fixture, huecos, material ajeno y cantidades. La bandera mirror real viene del anuncio nativo y no se capturó aquí.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-06",
+      "family": "Sin forma",
+      "actual_methods": "CraftingDataTracker.matchShapeless/assignIngredient; ShapelessRecipe.expandIngredients",
+      "scope_and_limit": "Asignación de ingredientes, orden invertido, cantidades, inputs ausentes/extra y stacks64; no validación de UUID/resultNBT.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-07",
+      "family": "USER_DATA_SHAPELESS",
+      "actual_methods": "CraftingDataTracker.getRecipeMatch",
+      "scope_and_limit": "Usa matcher shapeless;1456 entradas públicas cubiertas por forma. La conservación de datos del resultado requiere auditoría específica.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-08",
+      "family": "Descriptores",
+      "actual_methods": "ItemDescriptor.InvalidDescriptor/ItemNameDescriptor/ItemTagDescriptor/MolangDescriptor; NetworkItemDescriptorType",
+      "scope_and_limit": "El predicate del bulk aisla nombre/aux/tag; no sustituye una prueba de matchesItem en conexión real. MOLANG no aparece en los fixtures de estas fuentes.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-09",
+      "family": "Autocolocación",
+      "actual_methods": "InventoryPackets.applyRecipePlacement; CraftingPlacement.plan/actions/apply",
+      "scope_and_limit": "Ruta por displayId, estación, disponibilidad, netId y solicitudes pendientes; auditoría general del agente principal.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-10",
+      "family": "Clic resultado y shift",
+      "actual_methods": "CraftingTableContainer.handleClick; CraftingOutputPlan.pickup/plan",
+      "scope_and_limit": "Pickup/QuickMove, capacidades de stack, consumo y destino se gestionan después del match; pasar forma no los certifica.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-11",
+      "family": "ACK, rechazo y cierre",
+      "actual_methods": "InventoryRequestTracker y SharedCraftingGrid",
+      "scope_and_limit": "Continuación rápida debe esperar confirmaciones y conservar slots/redIDs; auditoría general del agente principal.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-12",
+      "family": "Cortapiedras",
+      "actual_methods": "StonecutterContainer.updateRecipes/handleButtonClick/handleClick",
+      "scope_and_limit": "Un ingrediente, tag stonecutter, selección por receta recibida.354 entradas públicas frente356 fuentes oficiales; versiones/fuentes pueden diferir.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-13",
+      "family": "Hornos",
+      "actual_methods": "FurnaceContainer.acceptsRecipe/handleRecipePlacement; FurnaceRecipePlacement",
+      "scope_and_limit": "Acepta ShapelessRecipe de1ingrediente con tag de horno correcto; servidor cocina.134furnace/62blast/9smoker entradas públicas.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-14",
+      "family": "Fogatas",
+      "actual_methods": "Interacción de bloque y actualizaciones nativas",
+      "scope_and_limit": "9campfire y9soul_campfire entradas públicas; no equivalen a una UI de crafting de mesa.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-15",
+      "family": "Herrería",
+      "actual_methods": "CraftingDataReader.readSmithing; CraftingDataTracker.matchesSmithing; SmithingContainer; WorkstationItemData",
+      "scope_and_limit": "12transform+1trim públicos; template/base/addition y datos resultantes, no ensayados como transacción por el bulk.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-16",
+      "family": "Pociones",
+      "actual_methods": "CraftingDataReader.read; BrewingPropertyStorage.add/write; BrewingStandContainer",
+      "scope_and_limit": "210mezclas+2cambios de recipiente públicos; se revisan datos/ruta, no preparación en servidor.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-17",
+      "family": "Cartografía",
+      "actual_methods": "CartographyRecipes.select; CartographyContainer.resultActions",
+      "scope_and_limit": "Cuatro UUID dedicados en cartografía; código específico distinto del matching genérico y de mapas visuales.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-18",
+      "family": "Telar",
+      "actual_methods": "LoomContainer.refreshInput/resultActions; LoomPatterns.result",
+      "scope_and_limit": "Patrones/colores/NBT se tratan en ruta propia; no certificados por tener serializer Java de banner.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-19",
+      "family": "Yunque y afiladora",
+      "actual_methods": "AnvilContainer; GrindstoneContainer; WorkstationResults",
+      "scope_and_limit": "Reparación/ench/coste son rutas de estación; conservar IF46. No son todas recetas de cuadrícula.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-20",
+      "family": "Crafter automático",
+      "actual_methods": "CrafterContainer; TOGGLE_CRAFTER_SLOT_REQUEST",
+      "scope_and_limit": "Ejecución, redstone e inventario nativos; esta auditoría de matcher no hace funcionar el bloque automático.",
+      "live_gameplay_verified": false
+    },
+    {
+      "id": "path-21",
+      "family": "Dinámicas MULTI",
+      "actual_methods": "MultiRecipe; familia por UUID anunciado",
+      "scope_and_limit": "14UUID públicos,13semánticas identificadas y1desconocida. El matcher genérico no contiene patrón ni resultado para estas entradas.",
+      "live_gameplay_verified": false
+    }
+  ]
+}

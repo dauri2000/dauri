@@ -1,0 +1,39 @@
+// Review source corresponding to the emitted additions. Existing methods remain original around the hooks.
+private boolean stackanvil$preparedOnce;
+private Font stackanvil$preparedFont;
+private String stackanvil$preparedTitle;
+private int stackanvil$preparedWidth, stackanvil$preparedHeight;
+
+// At prepare entry and discard entry:
+stackanvil$preparedOnce = false;
+stackanvil$preparedFont = null;
+stackanvil$preparedTitle = null;
+
+// At prepare's sole successful return, after the original refresh and all its validations:
+stackanvil$preparedTitle = title.getString(); // evaluate the only potentially throwing new read before assigning Font
+stackanvil$preparedFont = passedFont;
+stackanvil$preparedWidth = passedWidth;
+stackanvil$preparedHeight = passedHeight;
+stackanvil$preparedOnce = true;
+
+// In init, after original super.init(), leftPos=0, topPos=0 and before renderer close/create:
+if (stackanvil$reusePrepared()) return;
+// otherwise original body follows unchanged
+
+private boolean stackanvil$reusePrepared() {
+    boolean once = stackanvil$preparedOnce;
+    Font preparedFont = stackanvil$preparedFont;
+    String preparedTitle = stackanvil$preparedTitle;
+    stackanvil$preparedOnce = false;
+    stackanvil$preparedFont = null;
+    stackanvil$preparedTitle = null;
+    if (!once || renderer == null || !current() || activated || activationPending
+        || font != preparedFont || width != stackanvil$preparedWidth || height != stackanvil$preparedHeight
+        || !Objects.equals(title.getString(), preparedTitle)
+        || previous.size() != menu.slots.size()
+        || !ItemStack.matches(previousCarried, menu.getCarried())
+        || !Objects.equals(showTags, showTags()) || images.revision() != imageRevision) return false;
+    for (int i=0; i<previous.size(); i++)
+        if (!ItemStack.matches(previous.get(i), menu.slots.get(i).getItem())) return false;
+    return true;
+}

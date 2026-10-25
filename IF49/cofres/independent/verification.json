@@ -1,0 +1,48 @@
+{
+  "result": "PASS_INDEPENDENT_CONTROLLED_REVIEW",
+  "production_entry": "com/viaversion/viafabricplus/bedrock/screen/container/BedrockNativeContainerScreen.class",
+  "frozen_candidate_sha256": "902b8b6b4a99ffd887bc21f8f0364e14cb5ed2494e5912842c631ca3c009e57d",
+  "baseline_if48_class_sha256": "8ada62b5d544a9c43773817edbf3c69f357a55cc833d5bbc89571d548d3fc742",
+  "candidate_unchanged": true,
+  "independent_check_groups": 10,
+  "bytecode_inspection_groups": 4,
+  "execution_edge_case_groups": 6,
+  "owner_checks_reviewed_but_not_recounted": 18,
+  "checks": [
+    "All-method BasicVerifier of whole frozen class; helper only clears fingerprint fields before validation",
+    "Independent exact canonical reversal to IF48 after only declared5fields/1helper/prepare-init-discard additions",
+    "Guard follows original superclass/origin init; false path retains original renderer refresh",
+    "Test-host4methodbodies identical to frozen production method bodies",
+    "No-preflight initial/repeated init takes original path",
+    "Preflight before Screen.font is assigned uses same eventual client Font correctly",
+    "Full90slot unchanged menu reuses exact preflight once",
+    "Last-slot type mismatch found across90slots; token stays consumed after restoring item",
+    "In-place carried-component mutation triggers refresh",
+    "Mismatched init whose refresh throws consumes token; recovered init uses original refresh"
+  ],
+  "explicit_boundaries": [
+    "Prepare/init/discard/new-helper execute as exact bytecode copies in a sliced host, not the full Minecraft screen class",
+    "Heavy refresh,current andshowTags are explicit instrumentation boundaries for snapshots,counts and faults; real UI parsing/layout is not executed in these control-flow probes",
+    "Test-only Minecraft superclass/font/menu/slot/item/renderer/images APIs represent required signatures and controlled value semantics",
+    "No actual Mixin transformation, full client linkage, live server, GPU or client frame-time measurement"
+  ],
+  "scope_notes": [
+    "No production candidate edits or rebuilding by independent reviewer",
+    "Canonical reversal preserves original screen lifecycle, input, network/action, inventory, animation and layout instructions outside declared insertions",
+    "Unchanged first preflight remains required; optimization eliminates only duplicate prepare-to-first-init refresh when all guard inputs match",
+    "discard clears marker/font/title before existing resource cleanup; original removed method still calls discard in its finally path"
+  ],
+  "source_and_evidence_sha256": {
+    "IndependentPreparedBytecodeCheck.java": "c479c6efcca8ebe4ae9d47c89b833d0ad2b42b4c2402ffcb797ec1fa835c1ff5",
+    "IndependentPreparedProbe.java": "4f7e19cf0ad40665543748efe280d24560b4db4e976e234427f3ba8428c220fc",
+    "bytecode-checks.txt": "3d05ab9d7732e9b404697a6dc42801d04f70293c81c9f6c3f62cd06d214d6332",
+    "edge-checks.txt": "7102949f68da2f6e4616d7d7726fcc7811b04308ab084ebe7d34ea5bf1e63fab"
+  },
+  "boundary_provenance_sha256": {
+    "EmitPreparedContainerBoundaryHost.java": "577d0765e3b95bf53726a8363d31b0c4b041e78305283cb55c6e6e0354fdb7ad",
+    "boundary-src/PreparedContainerProbe.java": "52a580a48774ec2f171badf814e196e51a05ffc0f27187182a1e158fabd0797b",
+    "boundary-src/PreparedContainerBoundaryHooks.java": "33d125eacf201a9aad57c45a0598a08e454c49ac6ad522a39e0e8a8879202f4a",
+    "boundary-src/net/minecraft/world/item/ItemStack.java": "81c9981c74a2f2816d644f800ddfe346910629a1dc479e40efd36ef8985dd47e"
+  },
+  "sliced_host_sha256": "ecf2d9f99c55840cdd4b92d37bb90e37ed74ebf07a1612e5bf9298c3ffe23f1f"
+}

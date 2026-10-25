@@ -1,0 +1,29 @@
+{
+  "scope": "Actual descriptor classes inventoried; bulk predicate boundary is not a live matchesItem test.",
+  "rows": [
+    {
+      "name": "INVALID",
+      "model_value": 0,
+      "actual_path": "InvalidDescriptor.matchesItem accepts only empty item; matrix spaces represented with this real descriptor.",
+      "live_descriptor_resolution_tested": false
+    },
+    {
+      "name": "ITEM_NAME",
+      "model_value": 1,
+      "actual_path": "ItemNameDescriptor.matchesItem reads ItemRewriter name\u2192ID and matchesAuxValue; fixture uses explicit symbolic name/aux predicate instead.",
+      "live_descriptor_resolution_tested": false
+    },
+    {
+      "name": "MOLANG",
+      "model_value": 2,
+      "actual_path": "MolangDescriptor.matchesItem uses MolangTagQuery.parse and item tags; not present in supplied static reference fixtures.",
+      "live_descriptor_resolution_tested": false
+    },
+    {
+      "name": "ITEM_TAG",
+      "model_value": 3,
+      "actual_path": "ItemTagDescriptor.matchesItem queries bundled tag membership through runtime name mapping; fixture uses supplied real membership JSON with symbolic names.",
+      "live_descriptor_resolution_tested": false
+    }
+  ]
+}

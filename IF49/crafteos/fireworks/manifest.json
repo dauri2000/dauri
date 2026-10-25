@@ -1,0 +1,32 @@
+{
+  "scope": "rocket dynamic adapter only; no whole game/server execution",
+  "runtime_classes": {
+    "net/raphimc/viabedrock/protocol/storage/FireworkMultiRecipes.class": "27f6da94517f6f5a2467a60be89c10926716648186b98d607e60a0b69b9a2126",
+    "net/raphimc/viabedrock/protocol/storage/CraftingDataTracker.class": "b3dee566f527d0465a853f877a368b0151a6cf3fb72d00e3f6dc722d5054d153"
+  },
+  "files": {
+    "README.md": "64c42f6183db0e0993492b604a875a8621661f356f824858384615b87b98e232",
+    "src/net/raphimc/viabedrock/protocol/storage/FireworkMultiRecipes.java": "1c636c5d09c2d2ce139c0e952a0afe43f87ccc8f77269fa6ad0e8a0a7e8dfaad",
+    "PatchFireworkMultiRecipes.java": "b8d344e8ab46b0833f6f308aed921d482e24c8ef87b8dfcbaf056037230d4f8d",
+    "FireworkIF48BaselineProbe.java": "e0a38de1a89fe6e70695e76449a282608471342428d3ae0f72e78a3d91da7d99",
+    "FireworkCandidateProbe.java": "305c037315e0e5add3e7ede578075913e4fcb5488fc95c75988da5336aa25b15",
+    "FireworkPolicyProbe.java": "842bc08458daa6435e9971cff38e28dea7e79f7e9e3f132433ee26961c400709",
+    "VerifyFireworkPatchScope.java": "d6058b84f96f304626b86c31be2b4d837b71d01e242c2b1cbb938d860502ab1b",
+    "baseline-output.txt": "55d521779b5f114a3eea04b4f1b53d630a2899e5823673a7a9ea38da27dba545",
+    "candidate-output.txt": "7f46b64984f8a36606c4420ae758032af05f92a0f992ffdbf714df718cb70bcf",
+    "policy-output.txt": "3a54ac4d301415ffaeb0cc3433a0316ee8f592a4979af4a7d8edf4e16f915343",
+    "scope-output.txt": "00a00b918e1b2555bea98e3356527c33ac2b29f4ceb93a89d04c3c1e8c5dee3d",
+    "baseline-classes.json": "801f810a0cb29950baad776fdd80c972abf03b440e97086547973c28be21f2a1",
+    "candidate-class-hashes.json": "ca0953477f468db4c73021db8311b75852a241d25bc35a58b6f1227ac478395c",
+    "classpath.txt": "b3e66102801d5259288c768abb2853e62e7ade9bf1e9cc3719b597e0e5a5e486",
+    "reference/native-firework-contract.md": "e9db5ca9a2d42c89fd326f8d73c80be9f07d8fd1132a39a388bf67020848841b",
+    "reference/multi-uuid-semantics.json": "6fe9dce7f42e5a4ecc5acf7bece872130e040ebe14cff711ab522cec0738fa36",
+    "reference/download-manifest.json": "7d09b3f2ec64780694b34bfb95c7083ca08725023d3f12ac2bcd42db6677a6c3",
+    "independent/verification.json": "82d2e9eb3f57b98adef827a944e47ab8fd43bdbe2bd247280eeefcd20e1a193b",
+    "independent/manifest.json": "8394f08ad99bde14f7551f14c1c399de60b54a3f8b9a888b8e924072e99040ff"
+  },
+  "reused_harness": {
+    "path": "/workspace/minecraft/analysis/rapid-craft-check-if38/src/RapidCraftOutputIF38Regression.java",
+    "sha256": "964daa0b38c6e3107608902256afa22c39bf4e60cbe0d5f5e5851481e5f12e41"
+  }
+}

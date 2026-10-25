@@ -1,0 +1,84 @@
+{
+  "status": "Root-approved frozen IF49 candidate; independent review/packaging separate",
+  "input_IF48_sha256": "cce72ee547155865c5196b0262deec9766bb9267741a755eaa72bbad74ae758a",
+  "original_session_sha256": "3e6a94c30bdb8a5f6e7c326c86ca6489d4c92e36c82581580b6bb73015665566",
+  "production_jar_changed": false,
+  "runtime_classes": {
+    "net/raphimc/viabedrock/api/resourcepack/ui/JsonUiProgram$Session.class": "630a70475327fbcccd8ba4202fd047f4edf1d4d2c1463e87d30c116870191e67",
+    "net/raphimc/viabedrock/api/resourcepack/ui/UiVariableSnapshotMap$EntryIterator.class": "a4d55ed8fbb1226d8518510ccd9aacfb079859634c1ef33f06cc55ca0043f5c0",
+    "net/raphimc/viabedrock/api/resourcepack/ui/UiVariableSnapshotMap$EntryView.class": "5d42566fd797f63976808874c7577632361fd1729bc6b392af91261c55aef315",
+    "net/raphimc/viabedrock/api/resourcepack/ui/UiVariableSnapshotMap$LiveEntry.class": "deb55a79bc75834dac0e12dc5de755a196bd311f5d7579ce9d0c91630f8ac858",
+    "net/raphimc/viabedrock/api/resourcepack/ui/UiVariableSnapshotMap.class": "6e45e00989950c68a3c4294901577339631001eb5671cb104788f8e10630c8ec"
+  },
+  "scope": "Two map-copy constructors in Session.expand only. Snapshot map activates for exact ContainerUi$Controller; all other bindings use ordinary HashMap copies.",
+  "canonical_reversal_complete": true,
+  "asm_verified_runtime_classes": 5,
+  "map_contract_groups": 10,
+  "map_random_operations": 6000,
+  "map_random_snapshot_branches": 120,
+  "actual_scene_comparison_cases": 32,
+  "all_scene_outputs_byte_identical": true,
+  "game_or_server_executed": false,
+  "no_compiled_expression_or_evaluated_binding_cache": true,
+  "unrelated_inventory_recipe_packet_mutations": false,
+  "timing_is_not_user_frame_time": true,
+  "performance": {
+    "conditions": "Actual IF48 resolver with identity-translated bundled program and synthetic current slot values. Same JDK25 -Xverify:all. Separate JVMs, no JFR in paired runs. Timing environment-specific, not actual user frame time.",
+    "fixtures": "NativeContainerExportProbe actual builtin_ui.zip exports; menu slots/durability/locks/hover/cursor synthetic. No MC graphical code in these timing runs.",
+    "families": {
+      "small": {
+        "baseline": {
+          "warm_median_ms": 34.084,
+          "warm_median_thread_allocated_bytes": 74207280,
+          "runs": 80,
+          "warm_runs": 70
+        },
+        "candidate": {
+          "warm_median_ms": 20.35,
+          "warm_median_thread_allocated_bytes": 30173792,
+          "runs": 80,
+          "warm_runs": 70
+        },
+        "median_time_reduction_pct": 40.294566365450066,
+        "median_allocation_reduction_pct": 59.33850155941573
+      },
+      "large": {
+        "baseline": {
+          "warm_median_ms": 45.998,
+          "warm_median_thread_allocated_bytes": 103925040,
+          "runs": 80,
+          "warm_runs": 70
+        },
+        "candidate": {
+          "warm_median_ms": 30.402,
+          "warm_median_thread_allocated_bytes": 41654528,
+          "runs": 80,
+          "warm_runs": 70
+        },
+        "median_time_reduction_pct": 33.905821992260535,
+        "median_allocation_reduction_pct": 59.918679848475406
+      }
+    }
+  },
+  "files": {
+    "README.md": "147edf784070ae0228772a38fd40a86eb3bc7fa80f155ee4f93ad40d305c50a8",
+    "ResolverProfile.java": "37cbfbb7b7d1777694cd1def8bf00aeb58ffac973411057e31f647663544c6f6",
+    "ResolverOutputSuite.java": "d7cb2eedd3161a11ec5d4dc6fb4647070c401297bd7adc21a8dde6b34c370546",
+    "candidate-class-hashes.json": "3ffcf79efd09b3301148540455828a10dc97346c2e709bee8857ea1f9347291a",
+    "scene-equivalence.json": "79a2bfd5fea621a23402cda47091f99ac8797225a2fae1d672f78d6dc8474f22",
+    "performance-comparison.json": "3732afc028a9147ebec8bae6bcf5b6ce6a1fc480f7b10e7ac374cf9066a05a99",
+    "baseline-hotspots.json": "877cab63110141d51868ab2a9014498ff0b246cf027867137b40ac3c580cc27f",
+    "baseline-large.txt": "6e1d4b8eb1d8216b0c41579516794955f76d0d3ec8e63555bb4eb8ae4b87da22",
+    "candidate-large.txt": "19a44c58944c1c0b021357f9c2db5bb130fc0ab737bd6acf360dff37b3f65709",
+    "baseline-small.txt": "cafedcab8a91c7eb1a7873185dd45037499b65f7adbde355324c160c1604370d",
+    "candidate-small.txt": "c93083f1b02e3747ce86c6049d76467e2ec2fcf8f5659131c467603655b526ac",
+    "experiment/PatchResolverExperiment.java": "017251a7ab426b877267944dc9968ccdd8d0b10cebc83b13540add4c99af03c2",
+    "experiment/CanonicalSnapshotPatchCheck.java": "f11f4477f914d517524a088ee4a8c5e0f3242cf3d3247eb781e2cc80eccde3ef",
+    "experiment/canonical-checks.txt": "f83df6db394a46f2d061a46ae31459df627ff39fde138b2ae198f4930e663251",
+    "experiment/SnapshotMapContracts.java": "34486e60a00b603fe742153813e3ccab13c7e1c6dadefccdb6c18e3e1803b6ba",
+    "experiment/map-contracts.txt": "1b7ee2732a8916319e18e5dee0f7e0d79eb2099187489f44c5a73117cac0351a",
+    "experiment/src/net/raphimc/viabedrock/api/resourcepack/ui/UiVariableSnapshotMap.java": "4b3dc91d5b3d1c20fd3b0266347ee5e1768e4a4505fda62c51e8a80fe3664a86"
+  },
+  "production_candidate_approved_by_root": true,
+  "runtime_classes_rebuilt_after_approval": false
+}
