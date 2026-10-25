@@ -1,0 +1,75 @@
+{
+  "release": "IF48",
+  "artifact_commit": "982c90e",
+  "sha256": "cce72ee547155865c5196b0262deec9766bb9267741a755eaa72bbad74ae758a",
+  "bytes": 215635312,
+  "public_url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF48/ViaFabricPlus-Bedrock-IF48.jar",
+  "xp_fix_claimed": false,
+  "whole_end_fixed_claimed": false,
+  "public_route_and_pointer": {
+    "public_raw_route": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF48/ViaFabricPlus-Bedrock-IF48.jar",
+    "published_commit": "982c90e",
+    "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com",
+    "raw_route_status": 302,
+    "raw_route_destination_hostname": "media.githubusercontent.com",
+    "pointer_route_status": 200,
+    "published_pointer": true,
+    "pointer_oid": "sha256:cce72ee547155865c5196b0262deec9766bb9267741a755eaa72bbad74ae758a",
+    "pointer_size": 215635312,
+    "pointer_matches_verified_object": true,
+    "expected_public_raw_redirect": true,
+    "public_pointer_and_route_verified": true
+  },
+  "full_lfs_object": {
+    "batch_http_status": 200,
+    "download_hostname": "github-cloud.githubusercontent.com",
+    "object_http_status": 200,
+    "bytes": 215635312,
+    "sha256": "cce72ee547155865c5196b0262deec9766bb9267741a755eaa72bbad74ae758a",
+    "jar_magic": true,
+    "lfs_pointer": false,
+    "verified_full_lfs_object": true,
+    "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com"
+  },
+  "public_documents": {
+    "artifact_commit": "982c90e",
+    "documents": [
+      {
+        "path": "IF48/README.md",
+        "http_status": 200,
+        "bytes": 4840,
+        "sha256": "633541c47f617110a08b541dabc1fce370dbabffaf619b0d666e7d5b74eaa735",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF48/auditoria/report/REVISION-UNO-POR-UNO.md",
+        "http_status": 200,
+        "bytes": 117405,
+        "sha256": "c10b51fbf050ab804954df3472d422b5cad8ea644bbab41928ff2e3da75b6f12",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF48/auditoria/report/REVISION-UNO-POR-UNO.json",
+        "http_status": 200,
+        "bytes": 264496,
+        "sha256": "05e4b27d2863f053c0abe0b88930610cad3b3f1a93f576fbfd2da5b31dac13ee",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF48/auditoria/report/REVISION-UNO-POR-UNO.csv",
+        "http_status": 200,
+        "bytes": 181132,
+        "sha256": "ad856703291b957c2c0d4854abfeaa187c27cfc5c3164971543a5a9ccff4079a",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF48/COMPROBACIONES-FINALES.json",
+        "http_status": 200,
+        "bytes": 2370,
+        "sha256": "f687614daac78ca5851339ca0eca5f2fac0105037fbd07036141df840c235736",
+        "published_bytes_match": true
+      }
+    ],
+    "all_passed": true
+  }
+}
