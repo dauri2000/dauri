@@ -1,0 +1,102 @@
+{
+  "delivery": "Complete mod JAR, not an updater or delta",
+  "input_sha256": "a0d21a7476ccd2c4ebf5570efd8c3474ae3ea66015c84054c0040532faf57ea8",
+  "input_version": "1.1.1-StackAnvil-InteractionFix46.1",
+  "output_sha256": "8045b1222551c574a389bc8ec6c63f84c12bba3aa7c7d616480fe1762fdac15a",
+  "size_bytes": 215327204,
+  "version": "1.1.1-StackAnvil-XPDiagnostics47.1",
+  "root_entry_count": 1221,
+  "package": {
+    "unchanged_entries": 1218,
+    "changed_entries": [
+      "META-INF/jars/ViaBedrock-0.0.31-StackAnvil.jar",
+      "fabric.mod.json"
+    ],
+    "added_entries": [
+      "META-INF/stackanvil-if47-diagnostic.zip"
+    ],
+    "all_other_entry_contents_identical": true,
+    "no_duplicate_entries": true,
+    "crc_ok": true
+  },
+  "core": {
+    "unchanged_entries": 1525,
+    "changed_entries": [
+      "net/raphimc/viabedrock/api/model/entity/Entity.class",
+      "net/raphimc/viabedrock/protocol/packet/EntityPackets.class"
+    ],
+    "added_entries": [
+      "net/raphimc/viabedrock/protocol/storage/XpOrbDiagnostics$Orb.class",
+      "net/raphimc/viabedrock/protocol/storage/XpOrbDiagnostics.class"
+    ],
+    "all_other_entry_contents_identical": true,
+    "no_duplicate_entries": true,
+    "crc_ok": true
+  },
+  "replacement_inputs": {
+    "net/raphimc/viabedrock/api/model/entity/Entity.class": {
+      "file": "/workspace/minecraft/analysis/xp-orbs-if47/diagnostic/classes/net/raphimc/viabedrock/api/model/entity/Entity.class",
+      "sha256": "baf45e77323924dbbbc5498b7c404451af15b5277e458cd3b23073b00216bc57"
+    },
+    "net/raphimc/viabedrock/protocol/packet/EntityPackets.class": {
+      "file": "/workspace/minecraft/analysis/xp-orbs-if47/diagnostic/classes/net/raphimc/viabedrock/protocol/packet/EntityPackets.class",
+      "sha256": "4f2fb74a12d763dfdddf3c7b2c9362b8662c0c70fb30fd5ba7b4326de5882f5d"
+    }
+  },
+  "addition_inputs": {
+    "net/raphimc/viabedrock/protocol/storage/XpOrbDiagnostics.class": {
+      "file": "/workspace/minecraft/analysis/xp-orbs-if47/diagnostic/classes/net/raphimc/viabedrock/protocol/storage/XpOrbDiagnostics.class",
+      "sha256": "d48304fda5c6035932c8526095913144e1c20701c28be1e97d51280e4bd4e7ac"
+    },
+    "net/raphimc/viabedrock/protocol/storage/XpOrbDiagnostics$Orb.class": {
+      "file": "/workspace/minecraft/analysis/xp-orbs-if47/diagnostic/classes/net/raphimc/viabedrock/protocol/storage/XpOrbDiagnostics$Orb.class",
+      "sha256": "8af99998eb379dc4b7716373b232a5cad6fc6f76fd9b801222e9f0ed240e28a9"
+    }
+  },
+  "protected_core_class_sha256s": {
+    "net/raphimc/viabedrock/api/model/entity/HappyGhastEntity.class": "b5204b4e9e25a8b43d12cc83dda60a5362610807348b112669bbf38c77fcb2d2",
+    "net/raphimc/viabedrock/api/model/entity/ClientPlayerEntity.class": "6f2af94bb54b4abb5a9496de00744ab098a3ad846c1e489c3de2536be5c3b9c0",
+    "net/raphimc/viabedrock/protocol/packet/MultiStatePackets.class": "dab6764382d31f4f453f82a86937360369cb7e69b60223817564e1104fb9985c",
+    "net/raphimc/viabedrock/protocol/storage/PlayerPredictionStorage.class": "ac6173e5ec86cea0d88e90007fd9b6035c0b0483741ffe98f7c0b907426eb1c0",
+    "net/raphimc/viabedrock/protocol/storage/HappyGhastRiderPrediction.class": "078ed736dd03e5953982a52497dc533382cb4b8a67af09839ed92fb61aa28f76",
+    "net/raphimc/viabedrock/api/util/BedrockMaterialComparisonPolicy.class": "9b800936db7d144b433468a69235f20b59d38707ad1a7ce670697f7f748331e8",
+    "net/raphimc/viabedrock/protocol/packet/InteractionPackets.class": "9e034e04098b40fed717016dd24c1b9ec17c4ff18b7a36a235fa851bf03d3e88",
+    "net/raphimc/viabedrock/protocol/packet/FluidInteractionTarget.class": "08ae3a64a981d8c51c06ee109562d53236717db86c7409e601eac215b36973a2",
+    "net/raphimc/viabedrock/protocol/packet/NativeWaterloggedBucketPickup.class": "955318e19396ccba8ff98939093a22f902fe43fe5cfaf1cd3ea96b0c6945afa2",
+    "net/raphimc/viabedrock/protocol/storage/BlockPlacementPrediction.class": "1721375c839809fcd671b75e08f7fd4c42d4d4509344ed43ac26381c5c3ad730",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue.class": "01f126e5c4c78a572d34378c081e28c0987bb3e937a8e7099452af029ca7135e",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionQueue$Prediction.class": "bda8b58c8b1c774e7617efd25c62d10e13f82226ef4a04628b0f59a8293ad76a",
+    "net/raphimc/viabedrock/protocol/storage/ChunkTracker.class": "0bce3bad95b2a5f4c2e00b1cb2293bb39d20b0e40234bb676ca67151d83e42ae",
+    "net/raphimc/viabedrock/protocol/packet/WorldPackets.class": "88abdc143706175bc84738cdd7edb3efab21939cd163efef4db32bf03552b3a9",
+    "net/raphimc/viabedrock/protocol/storage/BlockPredictionObservations.class": "96cae1180cdcd76e132852d0cafafaa69626506ea84dcf291b26e651ec05db30",
+    "net/raphimc/viabedrock/api/model/container/block/AnvilContainer.class": "517e888d6c7252c1caa35641c2c54b3f465a83861fad96781d39a0172d8b8c0b",
+    "net/raphimc/viabedrock/api/model/container/block/AnvilCostUpdates.class": "82ab7b32e1c11bac6e1488fcf694657f842fdfd74f9a9d7e1290e2b9531b7a11",
+    "net/raphimc/viabedrock/api/util/PacketFactory.class": "afb9cc707f6f7e34f83621ccaf1933c9e8e1788f06d0c397bb32d0f069d3f073"
+  },
+  "diagnostic_only": true,
+  "xp_fix_claimed": false,
+  "prior_packet_factory_and_anvil_fixes_byte_identical": true,
+  "no_addon_classes_or_mixin_json_changed": true,
+  "protected_root_entry_sha256s": {
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparison.class": "0488976c5f4a3eb3fdc6bdf3f8e0907e518b7e2a85fd01164273f70242db80b2",
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockMaterialComparisonBytes.class": "0bcf48cc1afd2cbe85ef768de97cca71a302ec46e68af3ac137e21f7a6815cf1",
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockUseEffectsComparison.class": "4004b9ad6a88172756a7e2ae5c9db3beaca26dac03924437d1fc32e8072f0967",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/litematica/MixinLitematicaMaterialSearch.class": "52790a09691bd7773c9b60bf0a4aa587026ec2359b92ae87baf09acb5f24f021",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/compat/malilib/MixinMaLiLibMaterialComparisons.class": "84d7dbdf71fd91a0f4403a71b4d4bd152f1053d3503087c85940f78b91960b08",
+    "viafabricplus-bedrock.mixins.json": "05036158dd163e7be25e79c627be2de124eecd3979272fa89d0567286d437edd",
+    "com/viaversion/viafabricplus/bedrock/inventory/BedrockBucketInteraction.class": "3f896cb39866995d2b255e77b8a2edf59cc0ba01073cc1941a17c443b1a94637",
+    "com/viaversion/viafabricplus/bedrock/injection/mixin/features/inventory/MixinBucketInteraction.class": "317f324bc44c92a2fe09cfc2d3089d2209d4c5a534aaf1e4961e712a1d034b9b",
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockBlockPlacementCompatibility.class": "5aa29a30072ac77e341dbcef40db2b7b2f774da8d8016c20552cd5b743b1aa92",
+    "com/viaversion/viafabricplus/bedrock/compat/BedrockPlacementHitPolicy.class": "616c4b46f62dae3a885f53c475dad78b024db5e17c21517463cd37fe3a77083e"
+  },
+  "original_source_unchanged": true,
+  "earlier_source_bundles_and_shield_classes_identical": true,
+  "no_user_logs_added": true,
+  "minecraft_graphical_tested": false,
+  "server_functional_tested": false,
+  "limits": [
+    "XP cause is unproven; bounded observations are not a correction.",
+    "Package verification does not execute Minecraft GUI or a live server.",
+    "Latest.log collected by the user must remain outside this artifact and repository."
+  ]
+}

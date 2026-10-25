@@ -1,0 +1,105 @@
+{
+  "status": "FINAL PASS",
+  "release": "IF47 diagnostic observer only",
+  "checks_passed": 7,
+  "new_checks_passed": 7,
+  "independent_functional_checks": 7,
+  "owner_checks_not_rerun": 12,
+  "classes": {
+    "net/raphimc/viabedrock/api/model/entity/Entity.class": "baf45e77323924dbbbc5498b7c404451af15b5277e458cd3b23073b00216bc57",
+    "net/raphimc/viabedrock/protocol/packet/EntityPackets.class": "4f2fb74a12d763dfdddf3c7b2c9362b8662c0c70fb30fd5ba7b4326de5882f5d",
+    "net/raphimc/viabedrock/protocol/storage/XpOrbDiagnostics$Orb.class": "8af99998eb379dc4b7716373b232a5cad6fc6f76fd9b801222e9f0ed240e28a9",
+    "net/raphimc/viabedrock/protocol/storage/XpOrbDiagnostics.class": "d48304fda5c6035932c8526095913144e1c20701c28be1e97d51280e4bd4e7ac"
+  },
+  "class_hashes_before_after_equal": true,
+  "baseline_core_sha256": "700a69f659829592e082f07044986f81fb593c1b6c1121eea931b2004e481325",
+  "baseline_full_if46_sha256": "a0d21a7476ccd2c4ebf5570efd8c3474ae3ea66015c84054c0040532faf57ea8",
+  "packet_field_equivalence": {
+    "status": "PASS",
+    "actual_handlers": [
+      "ADD_ENTITY",
+      "MOVE_ENTITY_ABSOLUTE",
+      "SET_ENTITY_MOTION",
+      "REMOVE_ENTITY"
+    ],
+    "packet_count": 6,
+    "payload_and_order_identical": true,
+    "entity_state_identical": true,
+    "normalization": "Only freshly generated Java spawn UUID is normalized; numerical identity IDs, metadata, coordinates, velocity, rotation, flags, order and removal ID are exact. Transport boundary captures typed field values, not live wire bytes.",
+    "baseline_trace_sha256": "375f59f30cdb00d1d66239f525d8395a06af209cf908168e2bdd18e12d53b76b",
+    "candidate_trace_sha256": "375f59f30cdb00d1d66239f525d8395a06af209cf908168e2bdd18e12d53b76b",
+    "classes_unchanged_before_after": {
+      "net/raphimc/viabedrock/api/model/entity/Entity.class": "baf45e77323924dbbbc5498b7c404451af15b5277e458cd3b23073b00216bc57",
+      "net/raphimc/viabedrock/protocol/packet/EntityPackets.class": "4f2fb74a12d763dfdddf3c7b2c9362b8662c0c70fb30fd5ba7b4326de5882f5d",
+      "net/raphimc/viabedrock/protocol/storage/XpOrbDiagnostics$Orb.class": "8af99998eb379dc4b7716373b232a5cad6fc6f76fd9b801222e9f0ed240e28a9",
+      "net/raphimc/viabedrock/protocol/storage/XpOrbDiagnostics.class": "d48304fda5c6035932c8526095913144e1c20701c28be1e97d51280e4bd4e7ac"
+    }
+  },
+  "canonical_whole_class_reversal_passed": 2,
+  "basic_verifier_all_methods_classes": 4,
+  "observer_network_and_setter_scan_passed": true,
+  "jvm_verification": "JDK25 -Xverify:all",
+  "source_sha256": {
+    "independent/IndependentXpDiagnostics.java": "40f4bd99dee317deb5b29f08f177589802b8439142d890338a254d9edcaf6dcf",
+    "independent/IndependentXpDiagnosticBytecode.java": "079633ac073f513274c8c43eb9ece144616141e8a939301b2da5971b3ae0327c",
+    "diagnostic/src/net/raphimc/viabedrock/protocol/storage/XpOrbDiagnostics.java": "a732d7a61dad4e201b82950c9e8610ee8a03fa0d6a0538a463668db5706dc167"
+  },
+  "limits": [
+    "Core-only handlers/models; session, registry bootstrap and transport are explicit boundaries.",
+    "Packet field comparison normalizes random Java UUID only; no live encoded-wire or Minecraft rendering claim.",
+    "Clock/logger injected into debug storage; line-cap boundary changes debug counter only.",
+    "45s expiration is lazy: checked by the next XP callback; no new timer.",
+    "Samples globally at most every500ms; up to4 concurrent actors and32 lifetime admissions,500total line attempts includingEND.",
+    "No BDS/game/client graphics launched, no pickup or XP grant simulated, no cause of20-second delay proven."
+  ],
+  "commands": [
+    {
+      "main": "IndependentXpDiagnostics wire",
+      "classpath_order": [
+        "diagnostic/classes",
+        "independent/test-classes",
+        "network/test-classes",
+        "network/classpath.txt"
+      ],
+      "jvm_args": [
+        "-Xverify:all"
+      ],
+      "comparison": "same command without diagnostic/classes for IF46 baseline"
+    },
+    {
+      "main": "IndependentXpDiagnostics",
+      "classpath_order": [
+        "diagnostic/classes",
+        "independent/test-classes",
+        "network/test-classes",
+        "network/classpath.txt"
+      ],
+      "jvm_args": [
+        "-Xverify:all"
+      ]
+    },
+    {
+      "main": "IndependentXpDiagnosticBytecode",
+      "arguments": [
+        "/workspace/minecraft/analysis/xp-orbs-if47/diagnostic/classes",
+        "/workspace/minecraft/analysis/xp-orbs-if47/network/if46-core.jar"
+      ],
+      "classpath_order": [
+        "independent/test-classes",
+        "/workspace/minecraft/analysis/asm-classpath.txt"
+      ],
+      "jvm_args": [
+        "-Xverify:all"
+      ]
+    }
+  ],
+  "evidence": {
+    "baseline-wire-IF46.txt": "375f59f30cdb00d1d66239f525d8395a06af209cf908168e2bdd18e12d53b76b",
+    "patched-wire-IF47.txt": "375f59f30cdb00d1d66239f525d8395a06af209cf908168e2bdd18e12d53b76b",
+    "patched-checks-IF47.txt": "42c5d640c66fc2c6ba7489fb90ca22318e1f3a36143e6f8aeb1a43175fe86610",
+    "bytecode-verification.txt": "c6cafd496a802543bfddf9e64da4cb5b4f949ba6acdb2127e947b3bc6627221f",
+    "packet-comparison.json": "2637da8f11b2a22d9b9c6690719adf3cb497b1862d2426fdd58cf3ab86f5e0be",
+    "source-review.md": "30fbdfa4505b9452026edc8b3618032c1a9ad5562f6bf7fcb448e45870e905b2",
+    "README.md": "eec82098f5fc6663a5d39776210d8dcf0f0b3dced34ebde79e7ee78d29e82b5e"
+  }
+}

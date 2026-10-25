@@ -7,3 +7,5 @@ Corrección de la sincronización del coste en niveles del yunque. Incluye las c
 [Instalación, cambios y comprobaciones](IF46/README.md)
 
 [Granja de mobs adaptada a Bedrock — esquema y guía](granjas/early-game-bedrock/README.md)
+
+[Diagnóstico temporal de experiencia IF47 — prueba y registro](IF47/README.md)
