@@ -1,0 +1,32 @@
+{
+  "release": "IF45",
+  "artifact_commit": "9b272fa",
+  "sha256": "3dff3537fd620d1d1cf1d98c3ed987e1278890419db40e935d3b12cad78d7762",
+  "bytes": 215208721,
+  "public_url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF45/ViaFabricPlus-Bedrock-IF45.jar",
+  "public_route_and_pointer": {
+    "public_raw_route": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF45/ViaFabricPlus-Bedrock-IF45.jar",
+    "published_commit": "9b272fa",
+    "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com",
+    "raw_route_status": 302,
+    "raw_route_destination_hostname": "media.githubusercontent.com",
+    "pointer_route_status": 200,
+    "published_pointer": true,
+    "pointer_oid": "sha256:3dff3537fd620d1d1cf1d98c3ed987e1278890419db40e935d3b12cad78d7762",
+    "pointer_size": 215208721,
+    "pointer_matches_verified_object": true,
+    "expected_public_raw_redirect": true,
+    "public_pointer_and_route_verified": true
+  },
+  "full_lfs_object": {
+    "batch_http_status": 200,
+    "download_hostname": "github-cloud.githubusercontent.com",
+    "object_http_status": 200,
+    "bytes": 215208721,
+    "sha256": "3dff3537fd620d1d1cf1d98c3ed987e1278890419db40e935d3b12cad78d7762",
+    "jar_magic": true,
+    "lfs_pointer": false,
+    "verified_full_lfs_object": true,
+    "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com"
+  }
+}
