@@ -1,0 +1,110 @@
+{
+  "release": "IF49",
+  "artifact_commit": "86dad75",
+  "sha256": "93ad74e03ef84237bd4ea376d5a2cb8837d730308e0f5305562f5652af63df5a",
+  "bytes": 216017725,
+  "public_url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF49/ViaFabricPlus-Bedrock-IF49.jar",
+  "all_recipes_fixed_claimed": false,
+  "xp_fix_claimed": false,
+  "public_route_and_pointer": {
+    "public_raw_route": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF49/ViaFabricPlus-Bedrock-IF49.jar",
+    "published_commit": "86dad75",
+    "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com",
+    "raw_route_status": 302,
+    "raw_route_destination_hostname": "media.githubusercontent.com",
+    "pointer_route_status": 200,
+    "published_pointer": true,
+    "pointer_oid": "sha256:93ad74e03ef84237bd4ea376d5a2cb8837d730308e0f5305562f5652af63df5a",
+    "pointer_size": 216017725,
+    "pointer_matches_verified_object": true,
+    "expected_public_raw_redirect": true,
+    "public_pointer_and_route_verified": true
+  },
+  "full_lfs_object": {
+    "batch_http_status": 200,
+    "download_hostname": "github-cloud.githubusercontent.com",
+    "object_http_status": 200,
+    "bytes": 216017725,
+    "sha256": "93ad74e03ef84237bd4ea376d5a2cb8837d730308e0f5305562f5652af63df5a",
+    "jar_magic": true,
+    "lfs_pointer": false,
+    "verified_full_lfs_object": true,
+    "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com"
+  },
+  "public_documents": {
+    "artifact_commit": "86dad75",
+    "documents": [
+      {
+        "path": "IF49/README.md",
+        "http_status": 200,
+        "bytes": 3924,
+        "sha256": "3d690370810ee138183d77d5f1fc1a167190f173a190a49c2698712f9f292bc2",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF49/COMPROBACIONES-FINALES.json",
+        "http_status": 200,
+        "bytes": 3300,
+        "sha256": "edb30c27597364af847094ebc9e7c7fcf0fb6198c2a5e28e0e1fbc7c84328055",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF49/crafteos/catalog/README.md",
+        "http_status": 200,
+        "bytes": 2460,
+        "sha256": "311e5d1e2b323be5b27b5e62a40b7d52d82f028f7009b1a4814c4a88ad4a5d3e",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF49/crafteos/catalog/CATALOGO-NATIVO-PUBLICO.json",
+        "http_status": 200,
+        "bytes": 8436244,
+        "sha256": "f6cb4fead753882f2923243ac7fd16d6470cc3c62378a9ffe02c506fdf2ce989",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF49/crafteos/catalog/CATALOGO-NATIVO-PUBLICO.csv",
+        "http_status": 200,
+        "bytes": 5077104,
+        "sha256": "dee17c6f5e85694613b7686094fd07dbf4478b14391fdde5718f789372dec1cc",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF49/crafteos/catalog/CATALOGO-OFICIAL.json",
+        "http_status": 200,
+        "bytes": 3018793,
+        "sha256": "e08430a6f1303980eada9661b1cacecc27638c3413087e8935e1307b73baeda3",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF49/crafteos/catalog/CATALOGO-OFICIAL.csv",
+        "http_status": 200,
+        "bytes": 1974716,
+        "sha256": "30b687598b656fe95685e476bdd0f1c4c78279f17ad5e3ed5170af533a59fbf1",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF49/crafteos/catalog/matcher-results.json",
+        "http_status": 200,
+        "bytes": 1058464,
+        "sha256": "d0cfcf62b9a5281d5a470aa521c0ef8550435bd43a484ee5b390ff233d1ee6cb",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF49/crafteos/catalog/native-matcher-results.json",
+        "http_status": 200,
+        "bytes": 2343827,
+        "sha256": "6e986ebf28284d85332eacf64009b0aabc860bd2af082dedfd13e12fb5fb5035",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF49/crafteos/catalog/pages/CATALOGO-NATIVO-PUBLICO-MULTI-01.md",
+        "http_status": 200,
+        "bytes": 2307,
+        "sha256": "5dda91500c54bf19bd922fee4d289b2fd84ce495aed8ffb870ceceda8a992bf7",
+        "published_bytes_match": true
+      }
+    ],
+    "all_passed": true
+  }
+}
