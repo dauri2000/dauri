@@ -1,0 +1,32 @@
+{
+  "artifact_commit": "ce34193",
+  "checks": [
+    {
+      "file": "early_game_mob-farm_Bedrock_SD6.litematic",
+      "url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/granjas/early-game-bedrock/early_game_mob-farm_Bedrock_SD6.litematic",
+      "status": 200,
+      "bytes": 4127,
+      "sha256": "909f4c588e7210b37b2c8f3ed4dc1bf4b6931bf1b41c8a1a1e23a81354803851",
+      "matches_local": true,
+      "final_host": "raw.githubusercontent.com"
+    },
+    {
+      "file": "granja_Bedrock_SD6.zip",
+      "url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/granjas/early-game-bedrock/granja_Bedrock_SD6.zip",
+      "status": 200,
+      "bytes": 139439,
+      "sha256": "7dc152ea961554a864156ca2df9f6e5056155ddde66e645c1e8e9545b95074ac",
+      "matches_local": true,
+      "final_host": "raw.githubusercontent.com"
+    },
+    {
+      "file": "README.md",
+      "url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/granjas/early-game-bedrock/README.md",
+      "status": 200,
+      "bytes": 7146,
+      "sha256": "2dfda6ac3b998ef6b7ab3730cdb7a7bc4d04da3438d76744b3093c7b0ebe64a1",
+      "matches_local": true,
+      "final_host": "raw.githubusercontent.com"
+    }
+  ]
+}
