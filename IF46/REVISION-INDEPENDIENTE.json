@@ -1,0 +1,63 @@
+{
+  "status": "FINAL independent review PASS",
+  "baseline_IF45_expected_failure": "property precedes content in actual rename path",
+  "candidate_assertions": 12,
+  "candidate_runs": 1,
+  "JVM": "25 -Xverify:all",
+  "channel_event_loop": "real Netty EmbeddedChannel",
+  "runtime_class_hashes": {
+    "net/raphimc/viabedrock/api/model/container/block/AnvilContainer.class": "517e888d6c7252c1caa35641c2c54b3f465a83861fad96781d39a0172d8b8c0b",
+    "net/raphimc/viabedrock/api/model/container/block/AnvilCostUpdates.class": "82ab7b32e1c11bac6e1488fcf694657f842fdfd74f9a9d7e1290e2b9531b7a11",
+    "net/raphimc/viabedrock/api/util/PacketFactory.class": "afb9cc707f6f7e34f83621ccaf1933c9e8e1788f06d0c397bb32d0f069d3f073"
+  },
+  "production_changed": false,
+  "Minecraft_client_menu_or_renderer_simulated": false,
+  "BDS_acceptance_simulated": false,
+  "boundaries": [
+    "UserConnection state lookup and packet I/O",
+    "Java item display",
+    "Known enchanted-book maxDamage=0 registry linkage only; every other lookup fails"
+  ],
+  "canonical_scope": "Owner complete-reversal source/report reviewed; not duplicated as a second verifier run",
+  "files": [
+    {
+      "file": "IndependentAnvilCostLifecycle.java",
+      "sha256": "8fe79c815f187dc31b3e2e8a863515f271322a7bfeff0cdaa8b86aa24c48f799"
+    },
+    {
+      "file": "baseline-IF45.txt",
+      "sha256": "659b7452b62910db32f65c8c4a7962c03a52d090e6d72f9d4ff7aadb66382d4d"
+    },
+    {
+      "file": "patched-IF46.txt",
+      "sha256": "ce2d897b964e180553831ab894bac061d27024f3ff191b57390b59f4b39c2cb7"
+    },
+    {
+      "file": "source-review.md",
+      "sha256": "df96b4a584dcaf67f4362e02c8175bc62cfe7440884ed2a0b5222de8e2e01cb1"
+    },
+    {
+      "file": "README.md",
+      "sha256": "d7b9e6faabf3bc808345a504301ca1add73e561f6dd3168af2f8a4cfa78e380b"
+    }
+  ],
+  "shared_fixture_evidence": [
+    {
+      "file": "../core/AnvilCostOrderProbe.java",
+      "sha256": "708fdc108857d5bb16697a3eeab7b11dac257e0118f6afc14bff70e0889a47db"
+    },
+    {
+      "file": "../core/PrepareAnvilRegistryLinkBoundary.java",
+      "sha256": "7f8d1c5d15affc1e3fa9f2d01ecf1292a898372255572aa5813b476dd07d5524"
+    },
+    {
+      "file": "../core/registry-boundary-verification.txt",
+      "sha256": "ed4e1a2900d3eed96ec945e3c62c747843026fa177186b94a5ad1bdfb0c2433e"
+    },
+    {
+      "file": "../core/test-registry-boundary/net/raphimc/viabedrock/api/model/container/block/WorkstationResults.class",
+      "sha256": "e02f09a89cf9e8fa2865249179df47e539531543aa03d365973a11582cfde393"
+    }
+  ],
+  "runtime_packaging_note": "Only owner candidate runtime classes belong in the mod. Independent/shared test class files are evidence only and must not be packaged as runtime."
+}
