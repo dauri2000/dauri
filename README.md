@@ -1,10 +1,12 @@
 # ViaFabricPlus Bedrock
 
-[Descargar el mod completo IF49](https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF49/ViaFabricPlus-Bedrock-IF49.jar)
+[Descargar el mod completo IF50](https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF50/ViaFabricPlus-Bedrock-IF50.jar)
 
-Mejoras de preparación de los cofres y corrección del crafteo de cohetes de duración 1, 2 y 3, incluidas estrellas existentes. Conserva IF48, las correcciones anteriores y el diagnóstico de XP. Es el JAR completo, sin actualizador.
+Correcciones de devolución al cerrar la mesa, recetas con sobrantes y conservación de datos de objetos y libros, además de las mejoras reunidas durante la revisión. Conserva IF49 y las versiones anteriores. Es el JAR completo, sin actualizador.
 
-[Instalación, cambios y comprobaciones](IF49/README.md)
+[Instalación, cambios, comprobaciones y pendientes](IF50/README.md)
+
+La entrega IF50 responde al nuevo plazo solicitado. La revisión de todos los crafteos, el End y el stronghold continúa; no se declara completada.
 
 [Revisión del catálogo de crafteos: entradas oficiales, catálogo Bedrock y límites](IF49/crafteos/catalog/README.md)
 
