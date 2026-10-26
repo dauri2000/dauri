@@ -1,0 +1,65 @@
+{
+  "release": "IF50",
+  "version": "1.1.1-StackAnvil-InteractionFix50.1",
+  "verified_at": "2026-10-26T18:32:39.104065-04:00",
+  "artifact_commit": "7ebbb44",
+  "sha256": "7457e2f4e3383684917e9f3add41c85387fcba351b1561eb9dced60c328ff309",
+  "bytes": 216155620,
+  "public_url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF50/ViaFabricPlus-Bedrock-IF50.jar",
+  "full_mod_not_updater": true,
+  "all_recipes_end_stronghold_complete": false,
+  "user_requested_delivery_before_usage_or_30min": true,
+  "public_route_and_pointer": {
+    "public_raw_route": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF50/ViaFabricPlus-Bedrock-IF50.jar",
+    "published_commit": "7ebbb44",
+    "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com",
+    "raw_route_status": 302,
+    "raw_route_destination_hostname": "media.githubusercontent.com",
+    "pointer_route_status": 200,
+    "published_pointer": true,
+    "pointer_oid": "sha256:7457e2f4e3383684917e9f3add41c85387fcba351b1561eb9dced60c328ff309",
+    "pointer_size": 216155620,
+    "pointer_matches_verified_object": true,
+    "expected_public_raw_redirect": true,
+    "public_pointer_and_route_verified": true
+  },
+  "full_lfs_object": {
+    "batch_http_status": 200,
+    "download_hostname": "github-cloud.githubusercontent.com",
+    "object_http_status": 200,
+    "bytes": 216155620,
+    "sha256": "7457e2f4e3383684917e9f3add41c85387fcba351b1561eb9dced60c328ff309",
+    "jar_magic": true,
+    "lfs_pointer": false,
+    "verified_full_lfs_object": true,
+    "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com"
+  },
+  "public_documents": {
+    "documents": [
+      {
+        "path": "IF50/README.md",
+        "http_status": 200,
+        "bytes": 5147,
+        "sha256": "10f4fd09c3c56ed90d89d404622c320ef862c777e157bdae72144372b487f437",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF50/COMPROBACIONES-FINALES.json",
+        "http_status": 200,
+        "bytes": 6915,
+        "sha256": "f311f4b1c0149950677bb9cdfb1e968eec5b23c36cf339fdbdab429d24949f27",
+        "published_bytes_match": true
+      },
+      {
+        "path": "IF50/SHA256SUMS",
+        "http_status": 200,
+        "bytes": 97,
+        "sha256": "cb1f084632c270e89eae951c0bb34c01e4c302ea5b045687f7430102ccdd9e78",
+        "published_bytes_match": true
+      }
+    ],
+    "all_passed": true
+  },
+  "independent_artifact_and_fabric_boot": "PASS",
+  "independent_verification_sha256": "e12ac6c95df765c3c55281932ebd95b021808302176efb15e862674abaf7f54b"
+}
