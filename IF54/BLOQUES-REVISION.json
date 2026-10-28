@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "language": "es",
+  "publication_status": "draft",
+  "native_runtime_status": "FINAL_IF54_2_PASSED_NORMAL_FIXTURES",
+  "model_validation_status": "ACTUAL_ALL_23960_ROWS_COMPLETED_23930_RECOGNIZED_30_UNAVAILABLE",
+  "resumen": "Revisión completa de los datos del registro de bloques de referencia para el protocolo Bedrock 2225. La validación visual y la ejecución de la candidata siguen pendientes.",
+  "objetivo": {
+    "bedrock_version": "1.26.60",
+    "protocol": 2225,
+    "laboratorio_version": "1.26.60.6",
+    "java_version": "26.3"
+  },
+  "procedencia": {
+    "proyecto": "GeyserMC/Geyser",
+    "tipo": "Registro de protocolo de un proyecto externo mantenido; no es una extracción completa del ejecutable oficial de Bedrock.",
+    "commit": "e963aeca854711b5ba843541f6e03ccfcadd3ef1",
+    "paleta": {
+      "url": "https://raw.githubusercontent.com/GeyserMC/Geyser/e963aeca854711b5ba843541f6e03ccfcadd3ef1/core/src/main/resources/bedrock/block_palette.26_60.nbt",
+      "sha256": "9d0feee0cd2edc1499bd7f7922615caee4dd268b598fca45dc396f4d0bdcdaa3",
+      "bytes": 293502
+    },
+    "cargador": {
+      "url": "https://raw.githubusercontent.com/GeyserMC/Geyser/e963aeca854711b5ba843541f6e03ccfcadd3ef1/core/src/main/java/org/geysermc/geyser/registry/populator/BlockRegistryPopulator.java",
+      "sha256": "c2cc64be12511d3f07fbba2845467f4281e5a6b548b40240cbebfebee9ed7794",
+      "vinculo_version": "El cargador de este commit vincula 26_60 con Bedrock_v2225 y consume la lista completa de estados de bloques."
+    },
+    "datos_normalizados_sha256": "d6d0eb657feae8d086a819191902c899096db90c4202a2d93629a80e026703c9"
+  },
+  "alcance_datos": {
+    "status": "complete_for_pinned_predefined_registry",
+    "estados_revisados": 23960,
+    "nombres_de_bloque": 1480,
+    "entradas_omitidas_en_la_lectura": 0,
+    "estados_duplicados": 0,
+    "identificadores_de_red_duplicados": 0,
+    "nota": "Un estado es una combinación de propiedades de un bloque. Estos recuentos no representan 23.960 tipos diferentes de bloque. No abarcan estados personalizados añadidos por servidores."
+  },
+  "comparacion_con_base": {
+    "base": "IF53.2",
+    "core_sha256": "0df3a2a6c7e35491380d0d5565968e32ab354b307e4f027cc0a4ad02fc75a89a",
+    "estados_base": 22091,
+    "nombres_base": 1477,
+    "estados_comunes_sin_cambios_de_datos_ni_identificadores": 22058,
+    "estados_nuevos_en_referencia": 1902,
+    "formas_antiguas_ausentes_en_referencia_actual": 33,
+    "formas_antiguas_por_familia": {
+      "minecraft:fire": 16,
+      "minecraft:redstone_wire": 16,
+      "minecraft:chorus_plant": 1
+    }
+  },
+  "candidata_de_datos": {
+    "status": "reviewed_pending_native_runtime_and_models",
+    "estados_nuevos_con_traduccion_definida": 1872,
+    "familias": [
+      {
+        "name": "minecraft:fire",
+        "nombre": "fuego",
+        "estados_nuevos": 512,
+        "propiedades": "16 edades y 32 combinaciones de cinco conexiones"
+      },
+      {
+        "name": "minecraft:redstone_wire",
+        "nombre": "polvo de redstone",
+        "estados_nuevos": 1296,
+        "propiedades": "16 intensidades y tres valores de conexión en cada una de cuatro direcciones"
+      },
+      {
+        "name": "minecraft:chorus_plant",
+        "nombre": "planta de chorus",
+        "estados_nuevos": 64,
+        "propiedades": "64 combinaciones de seis conexiones"
+      }
+    ],
+    "estados_originales_preservados": 22091,
+    "orden_y_datos_originales_preservados": true,
+    "estados_del_registro_actual_con_traduccion_de_datos": 23930,
+    "alias_antiguos_conservados": 33,
+    "entradas_totales_de_paleta_candidata": 23963,
+    "aclaracion_recuento": "23.963 entradas de la candidata = 23.930 estados de la referencia actual con traducción + 33 formas antiguas conservadas. No equivale a una validación visual de esos estados.",
+    "generador_sha256": "5edf23a6be313327d32b3b178106be46f0299eb9a0cf49a2ae1d06e848f5fc47",
+    "recursos_sha256": {
+      "block_palette.nbt": "4cc7b8fe87bef359b734e18d0684b9a8a61a095a0ea809f12713f5bb4fc28a72",
+      "blockstate_mappings.json": "92bff8fd203b9210b6fac0752f445783af94e2b963427d339eecd500d5f2a1c3"
+    }
+  },
+  "identificadores_reportados": {
+    "total": 13,
+    "coincidencias_unicas": 13,
+    "resultado": "Los trece identificadores faltantes coinciden con estados nuevos de la referencia: dos de fuego y once de polvo de redstone.",
+    "matches": [
+      {
+        "network_id_signed32": -1870339305,
+        "block": "minecraft:redstone_wire"
+      },
+      {
+        "network_id_signed32": -1847223935,
+        "block": "minecraft:fire"
+      },
+      {
+        "network_id_signed32": -1324144312,
+        "block": "minecraft:redstone_wire"
+      },
+      {
+        "network_id_signed32": -1229827331,
+        "block": "minecraft:redstone_wire"
+      },
+      {
+        "network_id_signed32": -1023367803,
+        "block": "minecraft:redstone_wire"
+      },
+      {
+        "network_id_signed32": -322462859,
+        "block": "minecraft:redstone_wire"
+      },
+      {
+        "network_id_signed32": -277486115,
+        "block": "minecraft:fire"
+      },
+      {
+        "network_id_signed32": -213468919,
+        "block": "minecraft:redstone_wire"
+      },
+      {
+        "network_id_signed32": -161133073,
+        "block": "minecraft:redstone_wire"
+      },
+      {
+        "network_id_signed32": -92894255,
+        "block": "minecraft:redstone_wire"
+      },
+      {
+        "network_id_signed32": 197930234,
+        "block": "minecraft:redstone_wire"
+      },
+      {
+        "network_id_signed32": 970102096,
+        "block": "minecraft:redstone_wire"
+      },
+      {
+        "network_id_signed32": 1157600040,
+        "block": "minecraft:redstone_wire"
+      }
+    ]
+  },
+  "entradas_sin_traduccion_nueva": {
+    "estados": 30,
+    "nombres": 3,
+    "clasificacion": "Entradas del registro del protocolo no aceptadas por el parser del servidor oficial normal probado.",
+    "familias": [
+      {
+        "name": "minecraft:icicle",
+        "estados": 20
+      },
+      {
+        "name": "minecraft:ice_crystal",
+        "estados": 6
+      },
+      {
+        "name": "minecraft:disc_press",
+        "estados": 4
+      }
+    ],
+    "comprobacion_servidor": "El servidor oficial 1.26.60.6 rechazó los tres nombres en consultas de comprobación de bloque por nombre, sin modificar bloques.",
+    "inventario_creativo_referencia": "Ninguno de los tres aparece en las 1.980 entradas del archivo creativo de la misma referencia fijada.",
+    "creative_items_url": "https://raw.githubusercontent.com/GeyserMC/Geyser/e963aeca854711b5ba843541f6e03ccfcadd3ef1/core/src/main/resources/bedrock/creative_items.26_60.json",
+    "creative_items_sha256": "2e45424df8c1b0f6bd7dadc62f96eecb503059e1d09caee663638356103ddc19",
+    "limites": "No se determina aquí si están disponibles mediante otras funciones, configuraciones o mundos. No se etiquetan como experimentales ni se inventan modelos o sustitutos."
+  },
+  "revision_independiente": {
+    "procedencia_y_registro": {
+      "comprobaciones": 28,
+      "resultado": "PASS",
+      "recibo_sha256": "7aef69c5c6123812ba2015255eb638f2cb14e72a583fb6cd98da5537e6486482"
+    },
+    "comparacion_tipificada_completa": {
+      "comprobaciones": 14,
+      "resultado": "PASS",
+      "recibo_sha256": "7f68b37561012e1665d71e69effd0c989bf36d135dab1f69ae2d924760fa9b99"
+    },
+    "generador_y_datos": {
+      "comprobaciones": 41,
+      "resultado": "PASS_WITH_30_EXPLICIT_UNSUPPORTED_STATES",
+      "recibo_sha256": "31e048d7a8b1c1903c37fa6d00771675a6f34f787718f16f4cf7fbdd1e8392b1"
+    },
+    "contenido": "Lectura completa, propiedades con sus tipos originales, identificadores, correspondencias y conservación de datos. La revisión de 41 comprobaciones incluye el contraste de los 23.960 identificadores de origen y de las 23.963 entradas de la candidata; no es una prueba de juego."
+  },
+  "pendiente_antes_de_publicar": [
+    "Resultado de ejecución de la candidata en el laboratorio.",
+    "Resultado de disponibilidad y traducción de modelos, con las exclusiones declaradas.",
+    "Verificación visual y de colocación del fuego y de la redstone en el caso reproducido."
+  ],
+  "limites": [
+    "La revisión completa se refiere a los datos finitos del registro fijado.",
+    "No certifica todas las mecánicas, colisiones, sonidos, interacciones o renderizados de todos los bloques.",
+    "Las 30 entradas declaradas no tienen una traducción nueva ni una validación visual.",
+    "Los estados personalizados de servidores no forman parte de esta revisión.",
+    "Este borrador no es una descarga ni autoriza publicar una candidata antes de terminar la validación pendiente."
+  ],
+  "artifact": {
+    "version": "1.1.1-StackAnvil-InteractionFix54.2",
+    "sha256": "ea29d43b1f76717c7dd6c03587433f41194a139e3d0eee8552fe91f9ee9980d3",
+    "bytes": 216225146
+  },
+  "user_server_type_checks": {
+    "time_utc": "2026-10-28T15:41:00..27Z",
+    "types": [
+      "icicle",
+      "ice_crystal",
+      "disc_press"
+    ],
+    "results": "All three also rejected by user server with Unexpected type syntax errors at15:41 UTC."
+  },
+  "actual_model_categories": {
+    "non_air_native_projected_to_air_review": 48,
+    "invisible_technical_or_special_review": 23,
+    "legitimate_air": 1,
+    "fluid_render_route": 66,
+    "special_or_block_entity_zero_geometry_review": 162,
+    "nonempty_sampled_baked_geometry": 23593,
+    "UNAVAILABLE_UNSUPPORTED_IN_CURRENT_BDS": 30,
+    "zero_sampled_geometry_review": 37
+  },
+  "actual_native_lookup_count": 23960
+}

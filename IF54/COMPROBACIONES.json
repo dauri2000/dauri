@@ -1,0 +1,71 @@
+{
+  "status": "FINAL_FULL_JAR_NORMAL_GAME_CHECKS_PASSED",
+  "artifact_sha256": "ea29d43b1f76717c7dd6c03587433f41194a139e3d0eee8552fe91f9ee9980d3",
+  "version": "1.1.1-StackAnvil-InteractionFix54.2",
+  "native_server": "Official BDS 1.26.60.6/protocol2225",
+  "Java": "26.3",
+  "actual_origin_entries": 122,
+  "regular_Class_PD_origins": 119,
+  "registered_Mixin_resource_origins": 3,
+  "class_descriptor_checks": 247,
+  "extra_resource_origin_checks": 4,
+  "model_catalog": {
+    "scope": "Native23960 catalog projection and four-seed current Java26.3 baked-model metadata; no world placements, textures, all-variant or behavioral proof",
+    "catalog_sha256": "d6d0eb657feae8d086a819191902c899096db90c4202a2d93629a80e026703c9",
+    "artifact_sha256": "ea29d43b1f76717c7dd6c03587433f41194a139e3d0eee8552fe91f9ee9980d3",
+    "source_rows": 23960,
+    "native_snapshotted_rows": 23960,
+    "native_lookup_calls": 23960,
+    "native_lookup_recognized": 23930,
+    "native_exact_catalog_identity": 23930,
+    "unsupported_unavailable_lookups": 30,
+    "unsupported_unexpected_recognized_lookups": 0,
+    "expected_recognized_if_candidate_scope_unchanged": 23930,
+    "expected_unsupported_unavailable_if_candidate_scope_unchanged": 30,
+    "client_inspected_rows": 23960,
+    "written_rows": 23960,
+    "completed": true,
+    "output_bytes": 25192339,
+    "categories": {
+      "non_air_native_projected_to_air_review": 48,
+      "invisible_technical_or_special_review": 23,
+      "legitimate_air": 1,
+      "fluid_render_route": 66,
+      "special_or_block_entity_zero_geometry_review": 162,
+      "nonempty_sampled_baked_geometry": 23593,
+      "UNAVAILABLE_UNSUPPORTED_IN_CURRENT_BDS": 30,
+      "zero_sampled_geometry_review": 37
+    }
+  },
+  "normal_functional": {
+    "status": "PASS_NORMAL_GAME_FUNCTIONAL_FIXTURES",
+    "artifact_sha256": "ea29d43b1f76717c7dd6c03587433f41194a139e3d0eee8552fe91f9ee9980d3",
+    "lightning_fire_visible": true,
+    "redstone_visible": true,
+    "chorus_visible": true,
+    "normal_placements": [
+      "dirt",
+      "undyed_shulker_box",
+      "spruce_log"
+    ],
+    "each_count": {
+      "dirt": "2->1 (prior stage)",
+      "undyed_shulker_box": "1->0",
+      "spruce_log": "2->1"
+    },
+    "nine_logs_roundtrip": true,
+    "no_pending_requests": true,
+    "scope": "Own isolated officialBDS normal game controls; actual screenshots captured for parent inspection; not every block placed."
+  },
+  "screenshots_parent_inspected": [
+    "fire_from_lightning_visible",
+    "powered_redstone_visible",
+    "chorus_visible"
+  ],
+  "scope": "Catalog/model availability and explicit normal-game fixtures; not every type placed or all mechanics. No missing baked model fallback observed; block entities/fluids/intentional invisible blocks use distinct render routes.",
+  "normal_exit": {
+    "client_exit": 0,
+    "private_display_stopped": true,
+    "private_cookie_deleted": true
+  }
+}

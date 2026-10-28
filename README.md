@@ -1,5 +1,9 @@
 # ViaFabricPlus Bedrock
 
+**[Descargar IF54 — mod completo para Bedrock 1.26.60.6](https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF54/ViaFabricPlus-Bedrock-IF54.jar)**
+
+IF54.2 corrige la traducción a aire del fuego, la redstone y el chorus nuevos. Conserva Java 26.3 y las mejoras anteriores, e incluye la optimización medida al abrir cofres. [Instalación, comprobaciones y límites](IF54/README.md).
+
 **[Descargar IF53 — mod completo para Bedrock Dedicated Server 1.26.60.6](https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF53/ViaFabricPlus-Bedrock-IF53.jar)**
 
 Mantiene Minecraft Java 26.3 y ViaFabricPlus base 5.1.2-SNAPSHOT. Corrige la inicialización de los pistones que podía cerrar el juego, acepta las 57 posiciones de inventario que bloqueaban su recuperación y elimina una serialización duplicada al abrir cofres. La prueba final incluye entrada al BDS, HUD57 reales, transferencia de objetos, cierre/reapertura del cofre y comprobación de cantidades en el servidor. No se promete eliminar toda pausa.
