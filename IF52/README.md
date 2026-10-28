@@ -12,6 +12,12 @@ Guardado en esta rama de GitHub. Es el addon completo, listo para sustituir el a
 
 No extraigas el JAR. Se instala en el cliente Fabric; no se instala como plugin del servidor Bedrock. Los originales y las entregas anteriores se conservan en el repositorio.
 
+## Dirección del servidor y transporte
+
+El servidor oficial 1.26.60.6 incluye `transport=nethernet` como valor predeterminado. Para un servidor que use ese transporte, escribe en la dirección de Java **`nethernet://DIRECCION:PUERTO`**, sin una barra al final, y mantén seleccionada la versión **Bedrock 1.26.60** en ViaFabricPlus.
+
+Una dirección simple `DIRECCION:PUERTO` selecciona **RakNet** en IF52. Si Bedrock de Windows entra pero Java agota el tiempo de espera en `RakClientOfflineHandler`, comprueba el transporte. En el caso comunicado por el usuario, añadir `nethernet://` permitió entrar con el mismo IF52, sin cambiar el mod ni la configuración del servidor. Si el servidor está configurado expresamente con `transport=raknet`, conserva la dirección simple.
+
 ## Cambios
 
 - Adaptación a los campos de protocolo 2225 de entrada al mundo, dimensiones, chunks, skins, lista de jugadores, animaciones e interacciones con objetos y entidades.
