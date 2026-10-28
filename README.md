@@ -1,5 +1,7 @@
 # ViaFabricPlus Bedrock
 
+[Adaptación a Bedrock v26.60 con Minecraft Java 26.3: trabajo y comprobaciones pendientes](IF52/README.md). Todavía sin descarga nueva.
+
 [IF51-TEST1: mod completo de prueba para la desconexión y el inventario al volver del End](IF51/README.md). Incluye las instrucciones de instalación y el argumento de diagnóstico para comprobar el fallo en el servidor del usuario; no se considera todavía una solución confirmada de su desconexión.
 
 [Descargar el mod completo IF50](https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF50/ViaFabricPlus-Bedrock-IF50.jar)
