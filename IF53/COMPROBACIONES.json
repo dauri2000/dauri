@@ -1,0 +1,89 @@
+{
+  "release": "IF53",
+  "version": "1.1.1-StackAnvil-InteractionFix53.2",
+  "prepared_utc": "2026-10-28T13:03:11.529452+00:00",
+  "artifact": {
+    "file": "ViaFabricPlus-Bedrock-IF53.jar",
+    "bytes": 216192193,
+    "sha256": "7b59b53df95661d725acc4219d6dd69e985074691ac24b7c155aacb3e48013d7",
+    "core_sha256": "0df3a2a6c7e35491380d0d5565968e32ab354b307e4f027cc0a4ad02fc75a89a",
+    "complete_addon_not_updater": true
+  },
+  "client_preserved": {
+    "Minecraft_Java": "26.3",
+    "Fabric": "0.19.5",
+    "Java_runtime": ">=25",
+    "ViaFabricPlus_base": "5.1.2-SNAPSHOT",
+    "other_nested_dependencies_unchanged": 44
+  },
+  "target": {
+    "BDS": "1.26.60.6",
+    "build": 52886190,
+    "native_protocol": 2225,
+    "connection": "NetherNet, own local fresh world, synthetic offline lab profile; not user server or account"
+  },
+  "changes": [
+    "Initialize moving piston direction from actual block orientation before publishing its entity; later authoritative NBT unchanged",
+    "Reuse per-call serialized scene text; no cross-opening item cache; original NativeUiScene retained",
+    "HUD storage retains all57 items; legacy54 replaces prefix while preserving opaque tail; no invented slot actions, fake ACK or altered recovery timers"
+  ],
+  "exact_final_native_validation": {
+    "status": "FINAL_NATIVE23_FUNCTIONAL_VALIDATION_PASS_NORMAL_EXIT0",
+    "jar_sha256": "7b59b53df95661d725acc4219d6dd69e985074691ac24b7c155aacb3e48013d7",
+    "actual_protocol": 2225,
+    "class_source_proof_entries": 112,
+    "class_source_proof_checks": 227,
+    "native_HUD57_packets_prefixes": 4,
+    "HUD_server_revision": 5,
+    "has_pending": false,
+    "request_count": 0,
+    "queued_interactions": 0,
+    "elapsed_after_final_inventory_close_ms": 174660,
+    "open_shift_transfer_close_reopen": "Native custom chest;8logs moved to existing1=9; source empty;64stone remains; normal Minecraft API, no manual packets",
+    "BDS_item_quantities": "5selectors Found: oak_log9,oak_planks4,rocket3,elytra chest1,diamond_chestplate1",
+    "actual_pistons": "normal north and sticky up cycled in native22 and finalnative23; final BDS block-state checks bothFound; no Sodium in lab",
+    "known_failure_logs_absent": true,
+    "limits": "Native prefix decoding only; actual client decodes items. No exact full-user-modpack/Sodium integration or zero-lag promise. Cause of original initial pending timeout not established; HUD rejection blocking recovery fixed.",
+    "normal_client_exit": 0
+  },
+  "normal_client_exit": 0,
+  "Xorg_stopped": true,
+  "private_cookie_deleted": true,
+  "read_only_observation_limit": "Some immediate per-action passive copies predate the action; final after-wait snapshot and captured native packets used for stable-state claims. Prefix field decoding is distinct from decoding every item body.",
+  "piston_controlled_reproducer": {
+    "cases": 24,
+    "baseline_failures_before_NBT": 24,
+    "candidate_failures_before_NBT": 0,
+    "actual_Java": "26.3",
+    "late_authoritative_NBT": "Same resulting direction/progress/extending/source/moved-state and collision; core producer tested",
+    "no_exact_Sodium_in_graphical_lab": true
+  },
+  "chest_controlled_performance": {
+    "scope": "Standalone real resolver/UI classes with synthetic slot/font metrics, not FPS or user-machine frame time",
+    "removed_duplicate_bridge_cpu_ms_small_large": [
+      4.95,
+      7.97
+    ],
+    "removed_duplicate_bridge_allocated_bytes_small_large": [
+      4119936,
+      4851648
+    ],
+    "replacement_getter_allocated_bytes": 16,
+    "zero_lag_claim": false
+  },
+  "source_archive": {
+    "file": "ViaFabricPlus-Bedrock-IF53-owned-sources.zip",
+    "bytes": 12105,
+    "sha256": "8a7c20b289d5782c9eb97d51d809e4af28aa36a4d27ef8a105845fd5872c744b",
+    "owned_Java_files": 5,
+    "scope": "Incremental owned patch/helper source; no Minecraft/BDS binaries or decompiled game source, worlds, raw user logs or lab controls; not a full standalone build"
+  },
+  "limits": [
+    "Cause of original initial inventory request timeout is not established; HUD rejection preventing strict recovery is corrected",
+    "Exact whole-user-modpack/Sodium integration and Tweakeroo automation remain unverified",
+    "Not all recipes, End/stronghold or earlier issues are certified complete",
+    "No promise to eliminate every chest-opening pause",
+    "No new action mappings for opaque HUD slots54..56"
+  ],
+  "publication_readback": "See DESCARGA-VERIFICADA.json"
+}
