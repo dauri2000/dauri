@@ -41,6 +41,6 @@ La revisión de **todos los crafteos, todo el End y el stronghold** sigue abiert
 
 SHA256 del mod: `be93f17052182a9658e019e77da23c26b1ec44d80a686ee40f3b2bf1adee71b8`.
 
-[Sumas SHA256](SHA256SUMS) · [Resumen de comprobaciones](COMPROBACIONES.json) · [Fuentes propias de las modificaciones](ViaFabricPlus-Bedrock-IF52-owned-sources.zip)
+[Descarga completa verificada](DESCARGA-VERIFICADA.json) · [Sumas SHA256](SHA256SUMS) · [Resumen de comprobaciones](COMPROBACIONES.json) · [Fuentes propias de las modificaciones](ViaFabricPlus-Bedrock-IF52-owned-sources.zip)
 
 El ZIP de fuentes contiene 33 archivos propios y su manifiesto; es un reproductor parcial de las modificaciones, no una distribución del código completo ni una compilación autónoma. No incluye binarios de Minecraft o BDS, mundos, registros del usuario ni herramientas privadas del laboratorio.
