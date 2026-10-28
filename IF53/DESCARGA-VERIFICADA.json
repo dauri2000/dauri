@@ -1,0 +1,63 @@
+{
+  "status": "PASS_FULL_PUBLISHED_JAR_READBACK",
+  "verified_utc": "2026-10-28T13:11:38.629968+00:00",
+  "artifact_commit": "19624e6c5840543d364e2d008cc970171f8edeaa",
+  "download_url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF53/ViaFabricPlus-Bedrock-IF53.jar",
+  "file": "ViaFabricPlus-Bedrock-IF53.jar",
+  "version": "1.1.1-StackAnvil-InteractionFix53.2",
+  "bytes": 216192193,
+  "sha256": "7b59b53df95661d725acc4219d6dd69e985074691ac24b7c155aacb3e48013d7",
+  "public_route": {
+    "http_status": 302,
+    "redirect_hostname": "media.githubusercontent.com",
+    "LFS_pointer_matches_oid_and_size": true
+  },
+  "full_object_readback": {
+    "method": "Official GitHub Git LFS batch download; full response streamed and hashed",
+    "hostname": "github-cloud.githubusercontent.com",
+    "http_status": 200,
+    "full_bytes_match": true,
+    "sha256_matches_tested_artifact": true,
+    "ZIP_JAR_signature": true,
+    "is_LFS_pointer": false,
+    "scope": "Public redirect and pointer checked separately. Known environment media redirect restriction was not bypassed; the full identical object was downloaded through the official LFS action."
+  },
+  "public_docs_source_files": [
+    {
+      "path": "README.md",
+      "http_status": 200,
+      "bytes": 2609,
+      "sha256": "fd31a91aea7e6018526a9c0df4bb5c31193ae2348bbbfac3e181235556145f47",
+      "local_equals_remote": true
+    },
+    {
+      "path": "IF53/README.md",
+      "http_status": 200,
+      "bytes": 5467,
+      "sha256": "d4ba2af7cb11a9cac2f46c211b6ad44571ded7ef4e02e1278f133253b427e04e",
+      "local_equals_remote": true
+    },
+    {
+      "path": "IF53/COMPROBACIONES.json",
+      "http_status": 200,
+      "bytes": 4468,
+      "sha256": "30b38d785fe0bed55947f95c83868d03c3e2bf08b86d41dfec31202267a77987",
+      "local_equals_remote": true
+    },
+    {
+      "path": "IF53/SHA256SUMS",
+      "http_status": 200,
+      "bytes": 208,
+      "sha256": "9a51a4544eba372fc8569bef15185f4ddb0ccf2e329b4f0a1e4fbd2d8c10939f",
+      "local_equals_remote": true
+    },
+    {
+      "path": "IF53/ViaFabricPlus-Bedrock-IF53-owned-sources.zip",
+      "http_status": 200,
+      "bytes": 12105,
+      "sha256": "8a7c20b289d5782c9eb97d51d809e4af28aa36a4d27ef8a105845fd5872c744b",
+      "local_equals_remote": true
+    }
+  ],
+  "temporary_download_credentials_persisted": false
+}

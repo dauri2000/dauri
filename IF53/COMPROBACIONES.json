@@ -85,5 +85,11 @@
     "No promise to eliminate every chest-opening pause",
     "No new action mappings for opaque HUD slots54..56"
   ],
-  "publication_readback": "See DESCARGA-VERIFICADA.json"
+  "publication_readback": "See DESCARGA-VERIFICADA.json",
+  "independent_final_runtime_review": {
+    "sha256": "e455908160b11d2591099cb84384a4c0505823f127bb75a2fcb4831d489f1646",
+    "checks": 869,
+    "independent_wire_checks": 178,
+    "scope": "Native23 source origins, captured bytes/prefixes, inventories, BDS queries, closed state and normal exit; not Sodium integration or all native-body semantics"
+  }
 }
