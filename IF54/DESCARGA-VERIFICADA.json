@@ -1,0 +1,33 @@
+{
+  "version": "1.1.1-StackAnvil-InteractionFix54.2",
+  "verified_utc": "2026-10-28T16:03:54.816977+00:00",
+  "file": "ViaFabricPlus-Bedrock-IF54.jar",
+  "published_artifact_commit": "be21ad822d3fcf4ab2814456f9cd401b6a2c6f5c",
+  "public_download_url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF54/ViaFabricPlus-Bedrock-IF54.jar",
+  "full_object_download": {
+    "batch_http_status": 200,
+    "download_hostname": "github-cloud.githubusercontent.com",
+    "object_http_status": 200,
+    "bytes": 216225146,
+    "sha256": "ea29d43b1f76717c7dd6c03587433f41194a139e3d0eee8552fe91f9ee9980d3",
+    "jar_magic": true,
+    "lfs_pointer": false,
+    "verified_full_lfs_object": true,
+    "public_direct_full_get": "public_redirect_and_pointer_checked_separately_full_object_read_via_official_GitLFS_download_action"
+  },
+  "public_route_and_pointer": {
+    "public_raw_route": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF54/ViaFabricPlus-Bedrock-IF54.jar",
+    "published_commit": "be21ad822d3fcf4ab2814456f9cd401b6a2c6f5c",
+    "public_direct_full_get": "not_attempted_known_environment_proxy_restriction_on_media.githubusercontent.com",
+    "raw_route_status": 302,
+    "raw_route_destination_hostname": "media.githubusercontent.com",
+    "pointer_route_status": 200,
+    "published_pointer": true,
+    "pointer_oid": "sha256:ea29d43b1f76717c7dd6c03587433f41194a139e3d0eee8552fe91f9ee9980d3",
+    "pointer_size": 216225146,
+    "pointer_matches_verified_object": true,
+    "expected_public_raw_redirect": true,
+    "public_pointer_and_route_verified": true
+  },
+  "installation": "Replace only the previous Bedrock addon, keep Java26.3/baseViaFabricPlus5.1.2-SNAPSHOT; full JAR, no updater."
+}
