@@ -1,0 +1,104 @@
+{
+  "release": "IF52",
+  "version": "1.1.1-StackAnvil-InteractionFix52.1",
+  "prepared_utc": "2026-10-28T03:22:00.823721+00:00",
+  "artifact": {
+    "file": "ViaFabricPlus-Bedrock-IF52.jar",
+    "bytes": 216188237,
+    "sha256": "be93f17052182a9658e019e77da23c26b1ec44d80a686ee40f3b2bf1adee71b8",
+    "nested_core_sha256": "73ca6b2dbd8150d41d58467073f9791fb8bc7ded88a90db91d282aa6c5512b97",
+    "full_standalone_addon_not_updater": true
+  },
+  "preserved_client": {
+    "Minecraft_Java": "26.3",
+    "Fabric": "0.19.5",
+    "Java_runtime": ">=25",
+    "ViaFabricPlus_base": "5.1.2-SNAPSHOT",
+    "noncore_nested_dependencies_identical": 44
+  },
+  "target": {
+    "BDS": "1.26.60.6",
+    "build": 52886190,
+    "actual_native_protocol": 2225,
+    "connection": "normal client ConnectScreen via NetherNet",
+    "fixture": "own fresh local world; synthetic offline lab profile; not user server/account/world"
+  },
+  "actual_final_artifact_validation": {
+    "loaded_class_entries": 105,
+    "registered_Mixin_resources": 2,
+    "total_selected_entries": 107,
+    "source_checks": 217,
+    "scope": "Pre-Mixin resources plus actual code-source/descriptor checks; not a hash of all transformed bytecode",
+    "manual_elytra_equip": true,
+    "double_space_plus_movement_takeoff": true,
+    "Java_native_translator_glide_states_agree_in_observations": true,
+    "rocket_count_before": 6,
+    "rocket_count_after": 3,
+    "rocket_acceleration_observed": true,
+    "natural_landing_resets_three_glide_states": true,
+    "stable_wear_first_flight": [
+      59,
+      96,
+      432
+    ],
+    "manual_chestplate_swap_and_elytra_restore": true,
+    "repeat_takeoff_after_manual_swap": true,
+    "second_return_to_ground": "administrative teleport, not a second natural landing",
+    "BDS_authoritative_item_queries": "elytra chest=1, diamond_chestplate=1, firework_rocket=3",
+    "normal_client_exit": 0,
+    "private_helpers_excluded_from_product": true
+  },
+  "other_runtime_validation": [
+    {
+      "run": "TEST1 crafting with persistent reconnect into TEST2",
+      "proof": "one oak log to four planks; one normal Shift-click to six Flight1 rockets; retained one log; BDS queries confirm after reconnect",
+      "scope": "Representative recipes, not every recipe; crafting wire capture window expired before actions"
+    },
+    {
+      "run": "TEST2 End return",
+      "production_payloads_identical_to_final": true,
+      "proof": "prepared End portal contact, credits, physical Escape, Overworld return without disconnect; same four stacks/twelve items; four BDS queries Found",
+      "scope": "slots/types/counts, not all NBT; no natural dragon victory or all-End certification"
+    }
+  ],
+  "independent_private_receipt_digests": {
+    "elytra-review/native20-independent-review/verification.json": {
+      "sha256": "2a5dcf08fc4170ce9bdaa5f0041fbca6349536feb333b4f675a736445e8abaa3",
+      "status": "PASS_INDEPENDENT_READ_ONLY_FINAL_NATIVE20_FLIGHT_REVIEW",
+      "checks": 590
+    },
+    "elytra-review/native20-additional-review/verification.json": {
+      "sha256": "830c45b85fc194d5425e837650524cea8bf5ba31981387ad46948e2e5e8aab54",
+      "status": "PASS_SEPARATE_READ_ONLY_NATIVE20_ADDITIONAL_REVIEW",
+      "checks": 42
+    },
+    "native19-end-review/verification.json": {
+      "sha256": "eff7beeab7ae2345aaf038ae1709a42f3e212c89776ce4e8eb8d5c72c3eded71",
+      "status": "PASS_NATIVE19_TEST2_END_RETURN_AND_ITEM_COUNTS_READONLY",
+      "checks": 1106
+    },
+    "native19-end-review/independent-native-bodies/verification.json": {
+      "sha256": "4b552e9f3cae940ebd070f49e99310b989f00e6d4e604075272bd7940959bb1b",
+      "status": "PASS_NATIVE19_OFFICIAL2225_SCHEMA_AND_TWO_READERS_FULL_BODY",
+      "checks": 170
+    }
+  },
+  "limits": [
+    "Exact Tweakeroo 0.30.1+viafabric.compat1 JAR and configuration unavailable: automatic chestplate swap timing not certified",
+    "User full mod/resource-pack combination unavailable",
+    "All recipes, whole End and stronghold review remains open",
+    "XP, maps, happy ghast, waterlogging and placement issues remain open without specific new validation",
+    "No all-sounds audible validation",
+    "New block-passenger pose/state/camera not fully implemented",
+    "Optional new stonecutter index prototype not integrated or runtime-certified",
+    "No last-durability, Mending or all flight conditions claim"
+  ],
+  "source_archive": {
+    "file": "ViaFabricPlus-Bedrock-IF52-owned-sources.zip",
+    "bytes": 67008,
+    "sha256": "f1287a6af51abd6722979e730fa3830cbd3e7d467438b27f7364dbdba47e10ce",
+    "owned_source_files": 33,
+    "scope": "partial owned modifications; not full source or standalone build; no Minecraft/BDS binaries, worlds, raw user logs or private lab controls"
+  },
+  "download_verification": "See DESCARGA-VERIFICADA.json after publication for full remote-object readback"
+}

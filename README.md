@@ -1,6 +1,10 @@
 # ViaFabricPlus Bedrock
 
-[Adaptación a Bedrock v26.60 con Minecraft Java 26.3: trabajo y comprobaciones pendientes](IF52/README.md). Todavía sin descarga nueva.
+**[Descargar IF52 — mod completo para Bedrock Dedicated Server 1.26.60.6](https://github.com/dauri2000/dauri/raw/refs/heads/codex/if35-download/IF52/ViaFabricPlus-Bedrock-IF52.jar)**
+
+Mantiene Minecraft Java 26.3 y ViaFabricPlus base 5.1.2-SNAPSHOT. Incluye la adaptación al protocolo 2225 y la corrección de sincronización del planeo. Probados el doble salto, los cohetes, el aterrizaje y el cambio manual de pechera con nuevo despegue. La automatización exacta de Tweakeroo sigue pendiente.
+
+[Instalación, comprobaciones y límites de IF52](IF52/README.md). El JAR completo está guardado en GitHub; no requiere actualizador. Las revisiones exhaustivas anteriores siguen abiertas según lo documentado.
 
 [IF51-TEST1: mod completo de prueba para la desconexión y el inventario al volver del End](IF51/README.md). Incluye las instrucciones de instalación y el argumento de diagnóstico para comprobar el fallo en el servidor del usuario; no se considera todavía una solución confirmada de su desconexión.
 
