@@ -39,6 +39,11 @@ trabajo pendiente; esta prueba no los da por resueltos.
 SHA256 del JAR completo:
 `9bf5ff0f9acb87d9d6601195e83777fb694f510c0b7612bcee7e6a35ce1a9d9e`.
 
+Se volvió a descargar el archivo completo desde Git LFS en un almacén nuevo:
+216.227.042 bytes y el mismo SHA256. [Recibo de descarga](DESCARGA-VERIFICADA.json).
+El acceso web directo estuvo bloqueado por el proxy del entorno; ese recibo
+verifica el objeto remoto completo y no una respuesta del enlace web.
+
 El detalle está en [VERIFICACION.json](VERIFICACION.json). Los fuentes Java de
 los dos cambios y el generador ASM están en [fuentes](fuentes). Los originales
 y sus licencias se conservan dentro del mod. No se distribuye el cliente

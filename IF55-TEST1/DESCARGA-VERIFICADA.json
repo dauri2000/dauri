@@ -1,0 +1,15 @@
+{
+  "status": "REMOTE_FULL_JAR_VERIFIED_BY_FRESH_GIT_LFS_DOWNLOAD",
+  "verified_utc": "2026-11-06T01:21:28.087852+00:00",
+  "repository": "dauri2000/dauri",
+  "branch": "codex/litematica-fixes",
+  "artifact_commit": "de2195bb130895cf36bab2104f2bb49f8d2b9bf6",
+  "filename": "IF55-TEST1/ViaFabricPlus-Bedrock-IF55-TEST1-MATERIALES.jar",
+  "bytes": 216227042,
+  "sha256": "9bf5ff0f9acb87d9d6601195e83777fb694f510c0b7612bcee7e6a35ce1a9d9e",
+  "full_zip_not_lfs_pointer": true,
+  "download_url": "https://github.com/dauri2000/dauri/raw/refs/heads/codex/litematica-fixes/IF55-TEST1/ViaFabricPlus-Bedrock-IF55-TEST1-MATERIALES.jar",
+  "transport": "Existing configured Git LFS HTTPS proxy; separate initially empty lfs.storage; no proxy or network-policy changes.",
+  "web_url_verification": "Generic HTTPS public-URL request was blocked by proxy tunnel403; direct web response not verified here.",
+  "scope": "Experimental material queries only; orientation/placement fixes not included; actual Minecraft/Mixin/gameplay unverified."
+}
