@@ -1,0 +1,10 @@
+{
+  "target": "viafabricplus-bedrock.mixins.json",
+  "operation": "append_exactly_once_to_client",
+  "entries": [
+    "compat.easyplacefix.MixinEasyPlaceFixMaterialSearch",
+    "compat.easyplacefix.MixinEasyPlaceFixMaterialRow"
+  ],
+  "plugin_added": false,
+  "existing_entries_unchanged": true
+}

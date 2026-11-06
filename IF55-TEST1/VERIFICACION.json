@@ -1,0 +1,33 @@
+{
+  "status": "EXPERIMENTAL_MATERIAL_QUERY_ONLY_RUNTIME_UNVERIFIED",
+  "filename": "ViaFabricPlus-Bedrock-IF55-TEST1-MATERIALES.jar",
+  "bytes": 216227042,
+  "sha256": "9bf5ff0f9acb87d9d6601195e83777fb694f510c0b7612bcee7e6a35ce1a9d9e",
+  "base_version": "IF54.2",
+  "base_sha256": "ea29d43b1f76717c7dd6c03587433f41194a139e3d0eee8552fe91f9ee9980d3",
+  "java_minecraft_version": "26.3",
+  "includes": [
+    "Two optional EasyPlaceFix0.6.7 material-query mixins using unchanged bounded BedrockMaterialComparison.normalizeCopy"
+  ],
+  "not_included": [
+    "Litematica orientation fixes",
+    "Placement and missing-block fixes",
+    "Queue admission/lifecycle source candidates",
+    "Complete all-block gameplay verification"
+  ],
+  "verified": [
+    "Full ZIP CRC and no duplicate entries",
+    "Two new class bytes match independently reviewed structural candidate",
+    "No entries removed; all nested JARs byte-identical to IF54.2",
+    "Complete artifact SHA256"
+  ],
+  "unverified": [
+    "Minecraft startup",
+    "Mixin transformation",
+    "Material selection/lookup in real game",
+    "Compatibility when optional EasyPlaceFix is absent",
+    "Native server gameplay"
+  ],
+  "source_compilation_note": "New classes were emitted using ASM9.9.1; genuine Minecraft-facing javac compilation remains pending. No Minecraft stubs shipped or claimed as runtime proof.",
+  "distribution": "Complete mod; no updater required. Requested JAR delivery after disclosure of outstanding runtime tests."
+}

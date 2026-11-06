@@ -14,3 +14,4 @@ IF51/*.jar filter=lfs diff=lfs merge=lfs -text
 IF52/*.jar filter=lfs diff=lfs merge=lfs -text
 IF53/*.jar filter=lfs diff=lfs merge=lfs -text
 IF54/*.jar filter=lfs diff=lfs merge=lfs -text
+IF55-TEST1/*.jar filter=lfs diff=lfs merge=lfs -text
