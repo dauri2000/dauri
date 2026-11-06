@@ -19,6 +19,8 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.CeilingHangingSignBlock;
+import net.minecraft.world.level.block.ChestBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.MultifaceBlock;
 import net.minecraft.world.level.block.VineBlock;
@@ -52,7 +54,7 @@ public final class NativePlacementAdapter {
         BlockStateProperties.DOOR_HINGE, BlockStateProperties.ORIENTATION,
         BlockStateProperties.VERTICAL_DIRECTION, BlockStateProperties.BELL_ATTACHMENT,
         BlockStateProperties.HANGING, BlockStateProperties.BED_PART,
-        BlockStateProperties.DOUBLE_BLOCK_HALF);
+        BlockStateProperties.DOUBLE_BLOCK_HALF, BlockStateProperties.CHEST_TYPE);
 
     private NativePlacementAdapter() {}
 
@@ -212,27 +214,28 @@ public final class NativePlacementAdapter {
             || NativeSupportActions.mayConsumeBlockInteraction(supportState.getBlock());
         if (sameCellReplacement && interactive
             && !NativeSupportActions.isKnownStackable(supportState.getBlock())) return Optional.empty();
-        boolean secondary=physicalSecondary || (interactive && !sameCellReplacement);
-        scope.setSecondary(secondary);
-        BlockPlaceContext initial=secondary==physicalSecondary ? physicalContext
-            : NativePlacementScope.project(new BlockPlaceContext(mc.player,hand,mc.player.getItemInHand(hand),actual));
-        if (!initial.canPlace() || !initial.getClickedPos().equals(anchor.pos)) return Optional.empty();
-        BlockPlaceContext context=NativePlacementScope.project(item.updatePlacementContext(initial));
-        if (context==null || !context.getClickedPos().equals(anchor.pos) || !context.canPlace()) return Optional.empty();
-        BlockItemPlacementChecks checks=(BlockItemPlacementChecks)(Object)item;
-        BlockState initialPreview=checks.easyplacefix$getPlacementState(context);
-        if (initialPreview==null) return Optional.empty();
-        // Vanilla's getPlacementState already decides placement permission.
-        // Its legitimate BLOCK_STATE component is applied later without a
-        // second canPlace; mirror that order for the comparison preview.
-        BlockState preview=applyItemProperties(mc.player.getItemInHand(hand),initialPreview);
-        boolean compatible=placementMatches(anchor.state,preview);
-        if (request.intent()!=Intent.PREVIEW_VALIDATED_ANY_FACE && !sameSlabBlock(anchor.state,preview))
-            return Optional.empty();
-        Hit actualWorld=MinecraftHitCanonicalizer.read(actual);
-        Assessment assessment=new Assessment(actualWorld,cell(context.getClickedPos()),true,true,true,true,
-            slabKind(preview),waterlogged(preview),compatible);
-        return Optional.of(new Checked(assessment,actual,preview,secondary));
+        boolean supportRequiresSecondary=interactive && !sameCellReplacement;
+        for (boolean secondary:NativeSecondaryUsePolicy.candidates(physicalSecondary,supportRequiresSecondary)) {
+            scope.setSecondary(secondary);
+            BlockPlaceContext initial=secondary==physicalSecondary ? physicalContext
+                : NativePlacementScope.project(new BlockPlaceContext(mc.player,hand,mc.player.getItemInHand(hand),actual));
+            if (!initial.canPlace() || !initial.getClickedPos().equals(anchor.pos)) continue;
+            BlockPlaceContext context=NativePlacementScope.project(item.updatePlacementContext(initial));
+            if (context==null || !context.getClickedPos().equals(anchor.pos) || !context.canPlace()) continue;
+            BlockItemPlacementChecks checks=(BlockItemPlacementChecks)(Object)item;
+            BlockState initialPreview=checks.easyplacefix$getPlacementState(context);
+            if (initialPreview==null) continue;
+            // Vanilla applies this component after its native permission check.
+            BlockState preview=applyItemProperties(mc.player.getItemInHand(hand),initialPreview);
+            boolean compatible=placementMatchesInContext(mc.level,anchor.pos,anchor.state,preview);
+            if (request.intent()==Intent.PREVIEW_VALIDATED_ANY_FACE && !compatible) continue;
+            if (request.intent()!=Intent.PREVIEW_VALIDATED_ANY_FACE && !sameSlabBlock(anchor.state,preview)) continue;
+            Hit actualWorld=MinecraftHitCanonicalizer.read(actual);
+            Assessment assessment=new Assessment(actualWorld,cell(context.getClickedPos()),true,true,true,true,
+                slabKind(preview),waterlogged(preview),compatible);
+            return Optional.of(new Checked(assessment,actual,preview,secondary));
+        }
+        return Optional.empty();
     }
 
     private static Optional<Anchor> anchor(BlockPos schematicPos, BlockState schematic) {
@@ -262,6 +265,9 @@ public final class NativePlacementAdapter {
 
     private static boolean placementMatches(BlockState wanted, BlockState preview) {
         if (wanted.getBlock()!=preview.getBlock()) return false;
+        if (wanted.getBlock() instanceof CeilingHangingSignBlock
+            && (!preview.hasProperty(BlockStateProperties.ATTACHED)
+                || wanted.getValue(BlockStateProperties.ATTACHED)!=preview.getValue(BlockStateProperties.ATTACHED))) return false;
         if (wanted.getBlock() instanceof MultifaceBlock || wanted.getBlock() instanceof VineBlock) {
             // A native placement may add one desired attachment at a time, but
             // must not introduce an attachment absent from the schematic.
@@ -277,6 +283,15 @@ public final class NativePlacementAdapter {
         }
         return !wanted.hasProperty(BlockStateProperties.WATERLOGGED)
             || waterlogged(wanted)==waterlogged(preview);
+    }
+
+    /** A verified first chest half is an intermediate preview, not a final match. */
+    private static boolean placementMatchesInContext(Level world, BlockPos position,
+            BlockState wanted, BlockState preview) {
+        if (placementMatches(wanted,preview)) return true;
+        if (!(wanted.getBlock() instanceof ChestBlock)) return false;
+        return NativeChestPlacement.allowsFirstSingleHalf(wanted,preview,position,
+            SchematicWorldHandler.getSchematicWorld(),world);
     }
 
     private static boolean sameSlabBlock(BlockState wanted, BlockState preview) {

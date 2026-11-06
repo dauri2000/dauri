@@ -1,40 +1,31 @@
 # Borrador de orientación y Easy Place
 
-Este directorio conserva el trabajo de orientación para Minecraft Java 26.3 y el servidor Bedrock 1.26.60.6. **No contiene un mod instalable ni una corrección certificada dentro del juego.** El TEST1 de materiales publicado anteriormente no incluye estos cambios.
+Fuente de trabajo para Minecraft Java 26.3 y BDS 1.26.60.6. **No contiene un mod instalable ni acredita que todos los bloques funcionen dentro del juego.** El TEST1 de materiales publicado antes no incluye estos cambios.
 
-La fuente modifica el fork suministrado de EasyPlaceFix 0.6.7. Conserva su licencia MIT y requiere ese binario original para las clases que no se modifican. Los binarios de Minecraft, los mundos, las grabaciones y los registros del usuario quedan fuera de este borrador.
+## Cambios
 
-## Cambios propuestos
+- Integra la ruta con `easyPlacePostRewrite` activado; conserva la elección del usuario y la ruta Java.
+- Convierte los clics relativos una sola vez, busca soportes mediante rayos reales y comprueba el resultado de colocación, orientación, ejes, mitades y agua.
+- Conserva la orientación de cada acción y serializa las colocaciones. Espera un envío normal de fin de tick posterior a la preparación antes de usar el bloque; un callback END por sí solo ya no basta.
+- Compara el tipo de cofre y la sujeción del cartel colgante. Permite la primera mitad sencilla de un cofre doble cuando su pareja esquemática es válida.
+- Coloca primero la maceta vacía y permite insertar la planta en otra activación, con una acción independiente y sus comprobaciones de contexto e inventario.
 
-- Convertir las coordenadas relativas del clic una sola vez y comprobar el soporte y el resultado real de la vista previa.
-- Comparar la orientación, el eje, la mitad de losa y el agua antes de enviar una colocación.
-- Preparar la rotación sin mover la cámara y conservarla en cada paquete.
-- Separar las colocaciones Bedrock en una cola: preparar A, esperar el intervalo normal, usar A y después preparar B.
-- Conservar las teclas físicas y retirar solo la rotación que pertenece a la acción terminada.
-- Cancelar trabajos antiguos cuando cambian el mundo, el esquema o los ajustes de Easy Place.
+## Verificación
 
-## Pruebas realizadas
+Las 35 fuentes principales compilan sin errores ni avisos con el cliente suministrado, Fabric Loader 0.19.5 y su MixinExtras 0.5.5. Se probó transformación real con Sponge/Knot en un lanzador de pruebas declarado; eso no equivale a arrancar el juego completo.
 
-Son pruebas de componentes y del traductor con entradas construidas. No equivalen a colocar todos los bloques en un servidor.
+| Prueba dirigida | Resultado y alcance |
+| --- | --- |
+| Losas, clics y contexto de orientación | 57 + 26 + 79 casos; métodos reales con los mocks indicados en cada recibo |
+| Entrada del jugador | 256 máscaras y 256 recorridos del codec; conserva los otros seis bits |
+| Cofres y carteles | 48 comprobaciones nuevas; los cuatro pares incorrectos del test anterior ya se rechazan |
+| Macetas | 39 plantas y 2 controles; método de uso real con mundo/jugador simulados explícitamente |
+| Sincronización | El traductor real reproduce la mirada antigua; el FIFO corregido espera el siguiente envío normal |
 
-| Comprobación | Resultado | Alcance |
-| --- | --- | --- |
-| Métodos de losas y contexto de Minecraft | 57 casos aprobados | Clases reales; mundo simulado explícitamente |
-| Conversión de coordenadas de clic | 26 comprobaciones aprobadas | Clics suministrados; sin raycast completo |
-| Contexto de rotación proyectado | 79 casos aprobados | Métodos reales; jugador y mundo simulados |
-| Máscara de entrada | 256 casos y 256 recorridos del codec aprobados | Solo Shift puede cambiar; Mixin sin aplicar |
-| Cola y traductor Bedrock reales | A y B usan su propia orientación | Dos intervalos normales construidos; sin servidor |
+El inventario de 1.286 tipos registra rutas y pendientes; no representa 1.286 colocaciones aprobadas. El detalle técnico está en `NOTAS-TECNICAS.md` y el estado del borrador en `estado.json`.
 
-El cliente genuino 26.3 y 40 bibliotecas se restauraron y verificaron. La compilación del conjunto sigue bloqueada por el archivo genuino `fabric-loader-0.19.5.jar`. Algunas clases nuevas se compilaron por separado contra Minecraft y Sponge; eso no acredita la aplicación de los Mixins.
+## Pendiente
 
-## Pendiente antes de una entrega
+Faltan el arranque del conjunto completo y las comprobaciones autoritativas en BDS. También siguen pendientes fases de agua, pastel con vela, calderos llenos, transiciones de plantas, cantidades e interacciones posteriores, sustituciones LOOSEN y uso manual inmediatamente posterior. Ninguna descarga de orientación se publica mientras esas comprobaciones requeridas sigan abiertas.
 
-Faltan la compilación completa, la transformación con Fabric/Mixin y las pruebas de colocación contra el estado autoritativo de BDS 1.26.60.6. También siguen pendientes los pasos intermedios de macetas con plantas, las sustituciones LOOSEN entre bloques distintos y la colocación manual inmediatamente posterior a Easy Place. No se ha completado la verificación física de todas las familias de bloques.
-
-Para el siguiente paso se necesita el Loader instalado por PrismLauncher:
-
-```text
-%APPDATA%\PrismLauncher\libraries\net\fabricmc\fabric-loader\0.19.5\fabric-loader-0.19.5.jar
-```
-
-Las necesidades adicionales de assets, bibliotecas nativas y servidor se mantienen separadas de este bloqueo de compilación. Los archivos originales no se han sustituido.
+Se conservan la licencia MIT de EasyPlaceFix y los originales. Los binarios de Minecraft, mundos, grabaciones, registros del usuario y pruebas privadas quedan fuera de este directorio. La compilación necesita el fork original EasyPlaceFix 0.6.7 para las clases no modificadas; este directorio es fuente de revisión, no un actualizador.

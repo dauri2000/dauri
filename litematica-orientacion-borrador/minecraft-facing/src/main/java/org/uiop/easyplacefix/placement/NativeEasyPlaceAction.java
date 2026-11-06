@@ -44,6 +44,7 @@ public final class NativeEasyPlaceAction {
     private final ItemStack stack;
     private final BlockPos schematicPos;
     private final BlockState schematic;
+    private final BlockState placementGoal;
     private final Block block;
     private final BlockHitResult schematicTrace;
     private final RelativeBlockHitResult requested;
@@ -52,29 +53,41 @@ public final class NativeEasyPlaceAction {
     private final float yaw;
     private final float pitch;
     private final Level schematicWorld;
+    private final boolean postRewrite;
     private NativePlacementAdapter.Prepared prepared;
 
     public NativeEasyPlaceAction(Minecraft mc, MultiPlayerGameMode gameMode, ItemStack stack,
             BlockPos schematicPos, BlockState schematic, BlockHitResult schematicTrace,
             RelativeBlockHitResult requested, int totalClicks, boolean hasRotation,
             float yaw, float pitch) {
+        this(mc,gameMode,stack,schematicPos,schematic,schematic,schematicTrace,
+            requested,totalClicks,hasRotation,yaw,pitch);
+    }
+
+    /** An intermediate placement keeps its original schematic cancellation goal. */
+    public NativeEasyPlaceAction(Minecraft mc, MultiPlayerGameMode gameMode, ItemStack stack,
+            BlockPos schematicPos, BlockState schematic, BlockState placementGoal,
+            BlockHitResult schematicTrace, RelativeBlockHitResult requested,
+            int totalClicks, boolean hasRotation, float yaw, float pitch) {
         this.mc=mc; this.gameMode=gameMode; this.stack=stack.copy();
         this.schematicPos=schematicPos.immutable(); this.schematic=schematic;
-        this.block=schematic.getBlock(); this.schematicTrace=schematicTrace;
+        this.placementGoal=placementGoal;
+        this.block=placementGoal.getBlock(); this.schematicTrace=schematicTrace;
         this.requested=requested; this.totalClicks=totalClicks;
         this.hasRotation=hasRotation; this.yaw=yaw; this.pitch=pitch;
         this.schematicWorld=SchematicWorldHandler.getSchematicWorld();
+        this.postRewrite=Generic.EASY_PLACE_POST_REWRITE.getBooleanValue();
     }
 
     public static boolean settingsEnabled() {
         return easyPlacefixConfig.ENABLE_FIX.getBooleanValue() && Generic.EASY_PLACE_MODE.getBooleanValue()
-            && !Generic.EASY_PLACE_POST_REWRITE.getBooleanValue()
             && PlacementHandler.getEffectiveProtocolVersion()==EasyPlaceProtocol.SLAB_ONLY
             && NativePlacementScope.isBedrockConnection();
     }
 
     public boolean stillRelevant() {
         return settingsEnabled() && schematicWorld!=null && SchematicWorldHandler.getSchematicWorld()==schematicWorld
+            && Generic.EASY_PLACE_POST_REWRITE.getBooleanValue()==postRewrite
             && DataManager.getRenderLayerRange().isPositionWithinRange(schematicPos)
             && EasyPlaceHandler.isSchematicBlock(schematicPos)
             && schematicWorld.getBlockState(schematicPos).equals(schematic);
@@ -90,7 +103,7 @@ public final class NativeEasyPlaceAction {
             float actionYaw=hasRotation ? yaw : mc.player.getYRot();
             float actionPitch=hasRotation ? pitch : mc.player.getXRot();
             Optional<NativePlacementAdapter.Prepared> plan=NativePlacementAdapter.prepare(mc,hand,
-                schematicPos,schematic,requested,actionYaw,actionPitch);
+                schematicPos,placementGoal,requested,actionYaw,actionPitch);
             if (plan.isEmpty()) return;
             prepared=plan.get();
             registerPreparedInputs(prepared.yaw(),prepared.pitch(),prepared.secondary());
@@ -129,7 +142,7 @@ public final class NativeEasyPlaceAction {
             NativePlacementScope placementScope=NativePlacementScope.open(plan.yaw(),plan.pitch(),plan.secondary());
             try (placementScope) {
                 started=true;
-                ((IBlock)block).firstAction(schematic,schematicTrace);
+                ((IBlock)block).firstAction(placementGoal,schematicTrace);
                 PlayerInputAction.SetShift(plan.secondary());
                 PlayerRotationAction.setServerBoundPlayerRotation(plan.yaw(),plan.pitch(),mc.player.horizontalCollision);
                 InteractionResult result=gameMode.useItemOn(mc.player,hand,plan.hit());
@@ -140,14 +153,14 @@ public final class NativeEasyPlaceAction {
                     completed=true;
                 }
                 afterCalled=true;
-                ((IBlock)block).afterAction(schematic,schematicTrace);
-                if (completed) ((IBlock)block).BlockAction(schematic,schematicTrace);
+                ((IBlock)block).afterAction(placementGoal,schematicTrace);
+                if (completed) ((IBlock)block).BlockAction(placementGoal,schematicTrace);
             }
         } catch (RuntimeException error) {
             LOGGER.debug("Native EasyPlace action failed",error);
         } finally {
             try {
-                if (started && !afterCalled) ((IBlock)block).afterAction(schematic,schematicTrace);
+                if (started && !afterCalled) ((IBlock)block).afterAction(placementGoal,schematicTrace);
             } finally {
                 finishInputs(mc,!completed);
             }

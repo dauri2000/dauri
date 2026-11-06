@@ -46,6 +46,8 @@ import org.uiop.easyplacefix.IClientPlayerInteractionManager;
 import org.uiop.easyplacefix.LookAt;
 import org.uiop.easyplacefix.placement.NativeEasyPlaceAction;
 import org.uiop.easyplacefix.placement.NativePlacementScope;
+import org.uiop.easyplacefix.placement.NativePottedPlantAction;
+import org.uiop.easyplacefix.placement.PottedPlantPlan;
 import org.uiop.easyplacefix.config.easyPlacefixConfig;
 import org.uiop.easyplacefix.data.LoosenModeData;
 import org.uiop.easyplacefix.data.RelativeBlockHitResult;
@@ -209,7 +211,27 @@ public class EasyPlaceHandler {
       }
 
       if (traceWrapper.getHitType() == HitType.SCHEMATIC_BLOCK) {
-         ItemStack stack = PlacementItemResolver.getPlacementStack(stateSchematic, pos, schematicWorld);
+         BlockState placementGoal=stateSchematic;
+         if (nativeBedrock && PottedPlantPlan.isFilledGoal(stateSchematic)) {
+            PottedPlantPlan.Stage stage=PottedPlantPlan.stage(stateSchematic,stateClient);
+            if (stage==PottedPlantPlan.Stage.COMPLETE) {
+               PlacementDiagnostics.report("easyplacefix.diagnostic.already_correct",pos.toShortString());
+               return InteractionResult.FAIL;
+            }
+            if (stage==PottedPlantPlan.Stage.BLOCKED) {
+               PlacementDiagnostics.report("easyplacefix.diagnostic.not_replaceable",pos.toShortString());
+               return InteractionResult.FAIL;
+            }
+            if (stage==PottedPlantPlan.Stage.FILL_EMPTY) {
+               boolean accepted=NativePottedPlantAction.tryStart(mc,pos,stateSchematic);
+               if (accepted) PlayerBlockAction.useItemOnAction.markGlobalPlacement();
+               return accepted ? InteractionResult.SUCCESS : InteractionResult.FAIL;
+            }
+            // Filled pots are two ordinary actions: this activation places only
+            // the empty pot; a later activation may interact with an empty cell.
+            placementGoal=PottedPlantPlan.emptyGoal();
+         }
+         ItemStack stack = PlacementItemResolver.getPlacementStack(placementGoal, pos, schematicWorld);
          if (!stack.isEmpty()) {
             BlockState currentState = mc.level.getBlockState(pos);
             if (PlacementStateMatcher.isSatisfied(stateSchematic, currentState)) {
@@ -234,7 +256,8 @@ public class EasyPlaceHandler {
                }
             }
 
-            if (nativeBedrock && TerrainAutoReplace.isEligible(pos, stateClient, stateSchematic)) {
+            if (nativeBedrock && !PottedPlantPlan.isFilledGoal(stateSchematic)
+               && TerrainAutoReplace.isEligible(pos, stateClient, stateSchematic)) {
                TerrainAutoReplace.tryClearThenRetry(mc, traceWrapper, pos, trace.getDirection());
                return InteractionResult.SUCCESS;
             }
@@ -242,7 +265,8 @@ public class EasyPlaceHandler {
                && stateSchematic.getValue(BlockStateProperties.SLAB_TYPE) == SlabType.DOUBLE
                && stateClient.getBlock() == stateSchematic.getBlock();
             if (!nativeSlabMerge && !stateClient.canBeReplaced(new BlockPlaceContext(Minecraft.getInstance().player, InteractionHand.MAIN_HAND, stack, trace))) {
-               if (TerrainAutoReplace.isEligible(pos, stateClient, stateSchematic)) {
+               if (!(nativeBedrock && PottedPlantPlan.isFilledGoal(stateSchematic))
+                  && TerrainAutoReplace.isEligible(pos, stateClient, stateSchematic)) {
                   TerrainAutoReplace.tryClearThenRetry(mc, traceWrapper, pos, trace.getDirection());
                   return InteractionResult.SUCCESS;
                }
@@ -259,14 +283,14 @@ public class EasyPlaceHandler {
                return InteractionResult.FAIL;
             }
 
-            Block block = stateSchematic.getBlock();
-            String placementBlocker = ((IBlock)block).getPlacementBlocker(stateSchematic, pos, stateClient);
+            Block block = placementGoal.getBlock();
+            String placementBlocker = ((IBlock)block).getPlacementBlocker(placementGoal, pos, stateClient);
             if (placementBlocker != null) {
                PlacementDiagnostics.report(placementBlocker, pos.toShortString());
                return InteractionResult.FAIL;
             }
 
-            Tuple<RelativeBlockHitResult, Integer> blockHitResultIntegerPair = ((IBlock)block).getHitResult(stateSchematic, trace.getBlockPos(), stateClient);
+            Tuple<RelativeBlockHitResult, Integer> blockHitResultIntegerPair = ((IBlock)block).getHitResult(placementGoal, trace.getBlockPos(), stateClient);
             if (blockHitResultIntegerPair == null) {
                PlacementDiagnostics.report("easyplacefix.diagnostic.no_hit_result", stateSchematic.getBlock().getName());
                return InteractionResult.FAIL;
@@ -275,14 +299,14 @@ public class EasyPlaceHandler {
             RelativeBlockHitResult offsetBlockHitResult = blockHitResultIntegerPair.getA();
             ItemStack finalStack = itemStack2;
             AtomicReference<InteractionHand> hand = new AtomicReference<>();
-            boolean hasSleep = ((IBlock)block).HasSleepTime(stateSchematic);
-            Tuple<LookAt, LookAt> YawAndPitch = ((IBlock)block).getYawAndPitch(stateSchematic);
+            boolean hasSleep = ((IBlock)block).HasSleepTime(placementGoal);
+            Tuple<LookAt, LookAt> YawAndPitch = ((IBlock)block).getYawAndPitch(placementGoal);
             boolean hasRotation = YawAndPitch != null;
             float rotationYaw = hasRotation ? YawAndPitch.getA().Value() : (nativeBedrock ? mc.player.getYRot() : 0.0F);
             float rotationPitch = hasRotation ? YawAndPitch.getB().Value() : (nativeBedrock ? mc.player.getXRot() : 0.0F);
             boolean lockRotation = hasRotation || nativeBedrock;
             NativeEasyPlaceAction nativeAction = nativeBedrock ? new NativeEasyPlaceAction(mc, interactionManager,
-               finalStack, pos, stateSchematic, trace, offsetBlockHitResult, blockHitResultIntegerPair.getB(),
+               finalStack, pos, stateSchematic, placementGoal, trace, offsetBlockHitResult, blockHitResultIntegerPair.getB(),
                true, rotationYaw, rotationPitch) : null;
             PlayerBlockAction.useItemOnAction.markGlobalPlacement();
             if (nativeAction != null) {

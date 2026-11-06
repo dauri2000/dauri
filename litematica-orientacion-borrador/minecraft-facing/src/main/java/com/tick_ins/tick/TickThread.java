@@ -9,6 +9,7 @@ import java.util.function.BooleanSupplier;
 import fi.dy.masa.litematica.world.SchematicWorldHandler;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.multiplayer.ClientPacketListener;
 import org.uiop.easyplacefix.EasyPlaceFix;
 import org.uiop.easyplacefix.rotation.ClientContextTracker;
 import org.uiop.easyplacefix.rotation.RotationLeaseController;
@@ -266,6 +267,15 @@ public final class TickThread {
             NoteBlockHelper.retryPending(client);
         }
         refreshLegacyLock();
+    }
+
+    /** Called after the actual tick-end packet send, independently of event order. */
+    public static void onClientAuthBoundary(Minecraft client, ClientPacketListener connection) {
+        if (client==null || !client.isSameThread()) return;
+        ClientContext context=observeContext(client);
+        if (connection!=null && client.getConnection()==connection && isUsable(client,context)) {
+            NATIVE.onAuthBoundary();
+        }
     }
 
     /** Called at packet construction, never from its network encoder. */

@@ -23,6 +23,7 @@ public final class NativeActionQueue {
         boolean cleaned;
         long dueTick;
         long preparedAtEnd;
+        long preparedAtAuth;
 
         Entry(BooleanSupplier first, Runnable second, Runnable cleanup) {
             this.first=first; this.second=second; this.cleanup=cleanup;
@@ -41,6 +42,7 @@ public final class NativeActionQueue {
     private boolean observedEnd;
     private long latestTick;
     private long endSequence;
+    private long authSequence;
 
     public NativeActionQueue(int capacity, LongSupplier currentTick,
                              Consumer<RuntimeException> errors) {
@@ -72,6 +74,13 @@ public final class NativeActionQueue {
             endSequence++;
         }
         drive();
+    }
+
+    /** Observe a genuine sent client tick boundary; never drives user callbacks. */
+    public void onAuthBoundary() {
+        synchronized (lock) {
+            authSequence++;
+        }
     }
 
     /** Accepted cancelled entries clean up once, including entries not yet started. */
@@ -121,7 +130,8 @@ public final class NativeActionQueue {
                 return new Work(active,Phase.FIRST);
             }
             if (active!=null && active.phase==Phase.PREPARED && observedEnd
-                && active.preparedAtEnd<endSequence && active.dueTick<=latestTick) {
+                && active.preparedAtEnd<endSequence && active.dueTick<=latestTick
+                && active.preparedAtAuth<authSequence) {
                 active.phase=Phase.SECOND;
                 active.running=true;
                 return new Work(active,Phase.SECOND);
@@ -182,6 +192,7 @@ public final class NativeActionQueue {
                     && !entry.cancelled && active==entry) {
                     entry.dueTick=due;
                     entry.preparedAtEnd=endSequence;
+                    entry.preparedAtAuth=authSequence;
                     entry.phase=Phase.PREPARED;
                 } else {
                     queueCleanup(entry);

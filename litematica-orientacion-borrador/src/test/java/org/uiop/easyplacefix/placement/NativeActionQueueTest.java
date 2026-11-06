@@ -12,6 +12,7 @@ public final class NativeActionQueueTest {
 
     public static void main(String[] args) {
         fifoKeepsPrepareAndUseSeparated();
+        preparationAfterAuthWaitsForAnotherRealBoundary();
         aNewEndJobCannotUseThatSameEnd();
         falseAndThrownCallbacksCleanOnce();
         clearDuringFirstPreservesReplacement();
@@ -22,13 +23,16 @@ public final class NativeActionQueueTest {
         reporterFailureDoesNotStrandWork();
         fatalCallbackStillCleansItsEntry();
         System.out.println("PASS pure-JDK native prepare/use FIFO regression: "+assertions+" assertions");
-        System.out.println("LIMIT: queue and supplied tick observations only; no Minecraft client tick, Mixin, packet codec, AUTH generation or Bedrock server executed");
+        System.out.println("LIMIT: queue and supplied tick/auth observations only; no Minecraft client tick, Mixin, packet codec, AUTH generation or Bedrock server executed");
     }
 
     private static NativeActionQueue queue(int cap, AtomicLong now, List<RuntimeException> errors) {
         return new NativeActionQueue(cap,now::get,errors::add);
     }
     private static void end(NativeActionQueue queue, AtomicLong now, long tick) {
+        // Construct the ordinary observed send-then-END order; this notification
+        // itself must never execute a callback or stand in for packet generation.
+        queue.onAuthBoundary();
         now.set(tick);
         queue.onTickEnd(tick);
     }
@@ -55,6 +59,26 @@ public final class NativeActionQueueTest {
         require(q.size()==0 && errors.isEmpty(),"FIFO drains without errors");
     }
 
+    private static void preparationAfterAuthWaitsForAnotherRealBoundary() {
+        AtomicLong now=new AtomicLong();
+        List<String> log=new ArrayList<>();
+        NativeActionQueue q=queue(512,now,new ArrayList<>());
+        q.onAuthBoundary(); // genuine send already happened before hold callback
+        add(q,log,"late");
+        now.set(1);q.onTickEnd(1);
+        require(log.equals(List.of("late.prepare")) && q.size()==1,
+            "post-AUTH/pre-END preparation must not use under the preceding AUTH");
+        now.set(2);q.onTickEnd(2);
+        require(log.equals(List.of("late.prepare")),
+            "later END observations alone cannot invent a new AUTH boundary");
+        q.onAuthBoundary();
+        require(log.equals(List.of("late.prepare")),
+            "observing the next genuine send increments sequence without driving callbacks");
+        now.set(3);q.onTickEnd(3);
+        require(log.equals(List.of("late.prepare","late.use","late.cleanup")) && q.size()==0,
+            "a later END may use only after a genuine boundary subsequent to preparation");
+    }
+
     private static void aNewEndJobCannotUseThatSameEnd() {
         AtomicLong now=new AtomicLong(5);
         List<String> log=new ArrayList<>();
@@ -70,11 +94,12 @@ public final class NativeActionQueueTest {
         NativeActionQueue guarded=queue(512,staleClock,new ArrayList<>());
         List<String> guardedLog=new ArrayList<>();
         add(guarded,guardedLog,"A"); add(guarded,guardedLog,"B");
+        guarded.onAuthBoundary();
         guarded.onTickEnd(100);
         guarded.onTickEnd(100);
         require(guardedLog.equals(List.of("A.prepare","A.use","A.cleanup","B.prepare")),
             "new B cannot use in the same END even if supplied clock is stale");
-        guarded.onTickEnd(101);
+        guarded.onAuthBoundary();guarded.onTickEnd(101);
         require(guarded.size()==0,"later real END permits B to use");
     }
 

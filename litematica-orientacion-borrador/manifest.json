@@ -1,5 +1,5 @@
 {
-  "scope": "Source-only local review draft; no installable mod",
+  "scope": "Source-only local review draft; compiled and scoped checks passed; no installable mod",
   "files": [
     {
       "path": ".gitattributes",
@@ -18,33 +18,33 @@
     },
     {
       "path": "NOTAS-TECNICAS.md",
-      "bytes": 6393,
-      "sha256": "79e2a59f3f7a7061f31557708b60f026e8984c85ea2b05945299dd7cde8ef12c"
+      "bytes": 6824,
+      "sha256": "822b265a0d876dd056386bd393a1db0afdce64c87777e7364f4bf96ad8a19bfa"
     },
     {
       "path": "README.md",
-      "bytes": 3084,
-      "sha256": "8ea2b7c23d6103c9b4d2df9c2cbe73fd108bb9e2a2f392448500a4fc1d3119d9"
+      "bytes": 2892,
+      "sha256": "9fece372e294ecba5fe90ce7dd2e183d947c914e6566313e0950e5467e697132"
     },
     {
       "path": "cambios.patch",
-      "bytes": 213789,
-      "sha256": "a2e9abc43da95b8c94dcd3bc9a87f6c113bc118e3bbdebcee68578022b421881"
+      "bytes": 240246,
+      "sha256": "8d1bef33286ebc9da5d01881b01ecc5b1f32dccc9877ade5efcc92c7655ed88d"
     },
     {
       "path": "compile-native.py",
-      "bytes": 2143,
-      "sha256": "3a34abe81bd213899694920a36146d97d766ab808a8dd3df0e4b8be07ef8ea04"
+      "bytes": 2463,
+      "sha256": "3d691f39ad71014a7bab2c4f3dfd488065b19acd1400685c8e6778303376eb77"
     },
     {
       "path": "estado.json",
-      "bytes": 1203,
-      "sha256": "8b00ab73f983271becc437557a1cb6a5204d0379b1f5d9a378d806ca38e9f29e"
+      "bytes": 1591,
+      "sha256": "5c64c6daf067b827cd81e75874cc64f730bf4e2677b07887498f47d9990e2a56"
     },
     {
       "path": "minecraft-facing/src/main/java/com/tick_ins/tick/TickThread.java",
-      "bytes": 16408,
-      "sha256": "bb6c50c33464490460fd7d5ec11ec938cfd8b13c3e0151aedd92301b48e8a6b2"
+      "bytes": 16920,
+      "sha256": "c7a3a230ce4551cd24f7849aa48ea959c2dc0dfc6760746940878124b2e5d52b"
     },
     {
       "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/mixin/MixinPistonBlock.java",
@@ -67,6 +67,11 @@
       "sha256": "375054f68adc3a56abc4e5c69c11c857044b076083ad74223eaf8ca193a2a388"
     },
     {
+      "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/mixin/placement/MixinNativeAuthBoundary.java",
+      "bytes": 1402,
+      "sha256": "3c95f55ce24abe0a3434043d47fbfb5300d882225992983409c1a4a8fe7fa481"
+    },
+    {
       "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/mixin/placement/MixinNativeBlockItemContext.java",
       "bytes": 1920,
       "sha256": "4c2b8f4a0a89274e60e57badea1e7b9545cd68c199c9929654286ea449237ef4"
@@ -75,6 +80,11 @@
       "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/mixin/placement/MixinNativeInputPacket.java",
       "bytes": 1084,
       "sha256": "4ab3c290265f06ba22ee0f2f50db35d61f2c9e03dbf1b6f2d99d12b6d8a7e813"
+    },
+    {
+      "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/mixin/placement/MixinNativePostEasyPlace.java",
+      "bytes": 3098,
+      "sha256": "0077cef513adf85309711526ebe40125dccc35ae08e170df367d495158186cab"
     },
     {
       "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/mixin/placement/MixinNativeUseContext.java",
@@ -87,14 +97,19 @@
       "sha256": "82b87c10b1b9b828cf70937c957a668c3f86f9cb96920dcb7902d60d3960401e"
     },
     {
+      "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/placement/NativeChestPlacement.java",
+      "bytes": 2053,
+      "sha256": "8cb7a8c4cc2b15863b51c4a7a3939b2389e8d084041ebfa3eff992a9079da668"
+    },
+    {
       "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/placement/NativeEasyPlaceAction.java",
-      "bytes": 10646,
-      "sha256": "357b5e9c19ee4e77d698fc3f4b50397d2835d9f4eb4fd7a3198b842d5b08444e"
+      "bytes": 11443,
+      "sha256": "ef1c47f5e0c23dcb883830ebe028aa1fdb1ec9af3fc61e146af8e9ccd04a04c3"
     },
     {
       "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/placement/NativeFollowUpAction.java",
-      "bytes": 7268,
-      "sha256": "f4cecec9c115ec915e280d864308c5347853f1509191a532bf5a5036cc3386c3"
+      "bytes": 7514,
+      "sha256": "c4db4e1f38ee6902f2507a445009acc9655077ae7ea6ceb54b420b78528befbe"
     },
     {
       "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/placement/NativeInputMask.java",
@@ -103,8 +118,8 @@
     },
     {
       "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/placement/NativePlacementAdapter.java",
-      "bytes": 20227,
-      "sha256": "a65decf48342d9d80f82dbfbdf91b4aacd2235d7ec6cbd7d942b1c1254fa3702"
+      "bytes": 21263,
+      "sha256": "be0963df33fea28033db86576e0c0c6ecbb799c9e695db3986f64ea6ea845add"
     },
     {
       "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/placement/NativePlacementScope.java",
@@ -112,9 +127,24 @@
       "sha256": "82c20a134576a2f6fd07907797b147a46fa0ed0f58a300913c89f395dabbeb68"
     },
     {
+      "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/placement/NativePottedPlantAction.java",
+      "bytes": 8796,
+      "sha256": "819a2dd5ae02bd732c5a74efdb59e5c9790fcc28a516a71f01eb25944e47f74c"
+    },
+    {
+      "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/placement/NativeSecondaryUsePolicy.java",
+      "bytes": 437,
+      "sha256": "1ec35df915e72e4ae10939b9bd49d91ac4bcdbd483181add040417f2c5a9deb6"
+    },
+    {
       "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/placement/NativeSupportActions.java",
       "bytes": 3134,
       "sha256": "9228a3b1d6107bdeb36f0690cfa4093bf082d70be4d8be5848471d0a19508cf3"
+    },
+    {
+      "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/placement/PottedPlantPlan.java",
+      "bytes": 1330,
+      "sha256": "a9f7bd6034535747ab6f3c2e09a22803003eb2c1b4eaf386a7a3affca75eccae"
     },
     {
       "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/placement/ProjectedPlacementContext.java",
@@ -123,8 +153,8 @@
     },
     {
       "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/util/EasyPlaceHandler.java",
-      "bytes": 23609,
-      "sha256": "ff0fee8e79dc69f5eb63af16a7c92a682a9bfb4d7404a09a359277433db2388e"
+      "bytes": 25116,
+      "sha256": "0531f4642819056b26e24e587407c23463687dae093876fc2733945e5a6fcda4"
     },
     {
       "path": "minecraft-facing/src/main/java/org/uiop/easyplacefix/util/ExtraInteractionRunner.java",
@@ -168,8 +198,8 @@
     },
     {
       "path": "minecraft-facing/src/main/resources/easyplacefix.mixins.json",
-      "bytes": 5438,
-      "sha256": "c5e8d3dfbba09b3f4abb62d0f5efa07d90e9948d4f50d26be68c0e2d2954cf25"
+      "bytes": 5521,
+      "sha256": "06c61a6367cace6bb52081051ac6d644e8d42e09ae5f1a4903908a1433f6742d"
     },
     {
       "path": "run-pure-tests.sh",
@@ -183,8 +213,8 @@
     },
     {
       "path": "src/main/java/org/uiop/easyplacefix/placement/NativeActionQueue.java",
-      "bytes": 7178,
-      "sha256": "cf8647d97df58002e9455f277611e2bb91e56a8cfb23e169d0cb51dc04b53748"
+      "bytes": 7542,
+      "sha256": "0594f49b8a066c8f3b6b3dc573c9a9adbf1047288f2b43fa3484bf7a4c9143fd"
     },
     {
       "path": "src/main/java/org/uiop/easyplacefix/rotation/ClientContextTracker.java",
@@ -218,8 +248,8 @@
     },
     {
       "path": "src/test/java/org/uiop/easyplacefix/placement/NativeActionQueueTest.java",
-      "bytes": 11345,
-      "sha256": "a0333086ce87463dc79b1922416bfcf5bb97cab24a292186b3b9f23a901562ee"
+      "bytes": 12754,
+      "sha256": "a8b7ae31fef502c22b9a1f3182243482e995ceb210a544a5595580c740ab7616"
     },
     {
       "path": "src/test/java/org/uiop/easyplacefix/rotation/ClientContextTrackerTest.java",

@@ -4,6 +4,7 @@ import com.tick_ins.tick.RunnableWithLast;
 import com.tick_ins.tick.TickThread;
 import fi.dy.masa.litematica.world.SchematicWorldHandler;
 import fi.dy.masa.litematica.data.DataManager;
+import fi.dy.masa.litematica.config.Configs.Generic;
 import java.util.Optional;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
@@ -39,6 +40,7 @@ public final class NativeFollowUpAction {
     private final float yaw,pitch;
     private final Level schematicWorld;
     private final BlockState expectedSchematic;
+    private final boolean postRewrite;
     private RelativeBlockHitResult requested;
     private NativePlacementAdapter.Prepared placement;
     private Item heldItem;
@@ -50,6 +52,7 @@ public final class NativeFollowUpAction {
         this.expectedBlock=block;this.target=target.immutable();this.yaw=yaw;this.pitch=pitch;
         this.schematicWorld=SchematicWorldHandler.getSchematicWorld();
         this.expectedSchematic=schematicWorld==null ? null : schematicWorld.getBlockState(target);
+        this.postRewrite=Generic.EASY_PLACE_POST_REWRITE.getBooleanValue();
     }
 
     public static void start(Minecraft mc, MultiPlayerGameMode gameMode, InteractionHand hand,
@@ -65,6 +68,7 @@ public final class NativeFollowUpAction {
 
     private boolean stillRelevant() {
         return NativeEasyPlaceAction.settingsEnabled() && schematicWorld!=null
+            && Generic.EASY_PLACE_POST_REWRITE.getBooleanValue()==postRewrite
             && SchematicWorldHandler.getSchematicWorld()==schematicWorld
             && DataManager.getRenderLayerRange().isPositionWithinRange(target)
             && EasyPlaceHandler.isSchematicBlock(target)

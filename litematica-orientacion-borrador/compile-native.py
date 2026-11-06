@@ -6,14 +6,20 @@ import json
 import os
 import subprocess
 import sys
+import zipfile
 
 root=Path(__file__).resolve().parent
 jdk=Path(os.environ.get('TASK_JAVA_HOME','/workspace/litematica-work/tools/jdk-25.0.5.0.3'))
 classpath_file=Path(os.environ.get('TASK_CLASSPATH_FILE','/workspace/litematica-work/runtime/new-inputs/compilation-classpath.txt'))
 classpath=classpath_file.read_text().strip()
-extras=Path(os.environ.get('TASK_MIXINEXTRAS_JAR','/workspace/litematica-work/runtime/new-inputs/compile-tools/mixinextras-common-0.5.0.jar'))
+extras=Path(os.environ.get('TASK_MIXINEXTRAS_JAR','/workspace/litematica-work/runtime/new-inputs/lib/mixinextras-fabric-0.5.5.jar'))
 if extras.exists():
-    classpath += os.pathsep+str(extras)
+    if str(extras) not in classpath.split(os.pathsep):
+        classpath += os.pathsep+str(extras)
+    with zipfile.ZipFile(extras) as archive:
+        extras_version=json.loads(archive.read('fabric.mod.json'))['version']
+else:
+    raise SystemExit('Missing genuine MixinExtras dependency: '+str(extras))
 sources=sorted((root/'src/main/java').rglob('*.java'))+sorted((root/'minecraft-facing/src/main/java').rglob('*.java'))
 output=root/'build/native-classes'
 output.mkdir(parents=True,exist_ok=True)
@@ -30,7 +36,8 @@ receipt={
     'command':command,
     'genuine_classpath_file':str(classpath_file),
     'genuine_classpath_file_sha256':hashlib.sha256(classpath_file.read_bytes()).hexdigest(),
-    'mixinextras_scope':'Authentic compile-only 0.5.0; actual Loader bundle not certified',
+    'mixinextras':{'file':str(extras),'version':extras_version,
+                   'sha256':hashlib.sha256(extras.read_bytes()).hexdigest()},
     'mixin_transformed':False,'game_or_BDS_tested':False,'jar_packaged':False,
     'log_file':'verification/native-compile.txt',
     'log_sha256':hashlib.sha256(log.encode()).hexdigest(),

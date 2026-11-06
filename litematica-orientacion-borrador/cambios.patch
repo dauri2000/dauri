@@ -200,7 +200,7 @@
 +}
 --- /dev/null
 +++ b/org/uiop/easyplacefix/placement/NativeActionQueue.java
-@@ -0,0 +1,214 @@
+@@ -0,0 +1,225 @@
 +package org.uiop.easyplacefix.placement;
 +
 +import java.util.ArrayDeque;
@@ -226,6 +226,7 @@
 +        boolean cleaned;
 +        long dueTick;
 +        long preparedAtEnd;
++        long preparedAtAuth;
 +
 +        Entry(BooleanSupplier first, Runnable second, Runnable cleanup) {
 +            this.first=first; this.second=second; this.cleanup=cleanup;
@@ -244,6 +245,7 @@
 +    private boolean observedEnd;
 +    private long latestTick;
 +    private long endSequence;
++    private long authSequence;
 +
 +    public NativeActionQueue(int capacity, LongSupplier currentTick,
 +                             Consumer<RuntimeException> errors) {
@@ -275,6 +277,13 @@
 +            endSequence++;
 +        }
 +        drive();
++    }
++
++    /** Observe a genuine sent client tick boundary; never drives user callbacks. */
++    public void onAuthBoundary() {
++        synchronized (lock) {
++            authSequence++;
++        }
 +    }
 +
 +    /** Accepted cancelled entries clean up once, including entries not yet started. */
@@ -324,7 +333,8 @@
 +                return new Work(active,Phase.FIRST);
 +            }
 +            if (active!=null && active.phase==Phase.PREPARED && observedEnd
-+                && active.preparedAtEnd<endSequence && active.dueTick<=latestTick) {
++                && active.preparedAtEnd<endSequence && active.dueTick<=latestTick
++                && active.preparedAtAuth<authSequence) {
 +                active.phase=Phase.SECOND;
 +                active.running=true;
 +                return new Work(active,Phase.SECOND);
@@ -385,6 +395,7 @@
 +                    && !entry.cancelled && active==entry) {
 +                    entry.dueTick=due;
 +                    entry.preparedAtEnd=endSequence;
++                    entry.preparedAtAuth=authSequence;
 +                    entry.phase=Phase.PREPARED;
 +                } else {
 +                    queueCleanup(entry);
@@ -744,7 +755,7 @@
 +}
 --- a/com/tick_ins/tick/TickThread.java
 +++ b/com/tick_ins/tick/TickThread.java
-@@ -4,182 +4,370 @@
+@@ -4,182 +4,380 @@
  import java.util.Iterator;
  import java.util.List;
  import java.util.concurrent.RejectedExecutionException;
@@ -753,6 +764,7 @@
 +import fi.dy.masa.litematica.world.SchematicWorldHandler;
  import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
  import net.minecraft.client.Minecraft;
++import net.minecraft.client.multiplayer.ClientPacketListener;
  import org.uiop.easyplacefix.EasyPlaceFix;
 +import org.uiop.easyplacefix.rotation.ClientContextTracker;
 +import org.uiop.easyplacefix.rotation.RotationLeaseController;
@@ -1177,6 +1189,15 @@
 +        refreshLegacyLock();
 +    }
 +
++    /** Called after the actual tick-end packet send, independently of event order. */
++    public static void onClientAuthBoundary(Minecraft client, ClientPacketListener connection) {
++        if (client==null || !client.isSameThread()) return;
++        ClientContext context=observeContext(client);
++        if (connection!=null && client.getConnection()==connection && isUsable(client,context)) {
++            NATIVE.onAuthBoundary();
++        }
++    }
++
 +    /** Called at packet construction, never from its network encoder. */
 +    public static RotationPacketState newRotationPacketState() {
 +        observeContext(Minecraft.getInstance());
@@ -1401,6 +1422,37 @@
 +    boolean easyplacefix$canPlace(BlockPlaceContext context, BlockState state);
 +}
 --- /dev/null
++++ b/org/uiop/easyplacefix/mixin/placement/MixinNativeAuthBoundary.java
+@@ -0,0 +1,28 @@
++package org.uiop.easyplacefix.mixin.placement;
++
++import com.llamalad7.mixinextras.sugar.Local;
++import com.tick_ins.tick.TickThread;
++import net.minecraft.client.Minecraft;
++import net.minecraft.client.multiplayer.ClientPacketListener;
++import org.objectweb.asm.Opcodes;
++import org.spongepowered.asm.mixin.Mixin;
++import org.spongepowered.asm.mixin.injection.At;
++import org.spongepowered.asm.mixin.injection.Inject;
++import org.spongepowered.asm.mixin.injection.Slice;
++import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
++
++/** Observe only the genuine tick-end send; no packet or extra tick is generated. */
++@Mixin(Minecraft.class)
++public abstract class MixinNativeAuthBoundary {
++    @Inject(method="tick",at=@At(value="INVOKE",
++        target="Lnet/minecraft/client/multiplayer/ClientPacketListener;send(Lnet/minecraft/network/protocol/Packet;)V",
++        shift=At.Shift.AFTER),
++        slice=@Slice(from=@At(value="FIELD",
++            target="Lnet/minecraft/network/protocol/game/ServerboundClientTickEndPacket;INSTANCE:Lnet/minecraft/network/protocol/game/ServerboundClientTickEndPacket;",
++            opcode=Opcodes.GETSTATIC),
++            to=@At("RETURN")),require=1,allow=1)
++    private void easyplacefix$observeAuthBoundary(CallbackInfo ci,
++        @Local(ordinal=0) ClientPacketListener connection) {
++        TickThread.onClientAuthBoundary((Minecraft)(Object)this,connection);
++    }
++}
+--- /dev/null
 +++ b/org/uiop/easyplacefix/mixin/placement/MixinNativeBlockItemContext.java
 @@ -0,0 +1,35 @@
 +package org.uiop.easyplacefix.mixin.placement;
@@ -1464,6 +1516,66 @@
 +    @Inject(method = "<init>", at = @At("RETURN"))
 +    private void easyplacefix$preservePreparedShift(CallbackInfo ci) {
 +        input=NativeInputMask.preserveShift(input,NativeEasyPlaceAction.requiresPreparedShift());
++    }
++}
+--- /dev/null
++++ b/org/uiop/easyplacefix/mixin/placement/MixinNativePostEasyPlace.java
+@@ -0,0 +1,57 @@
++package org.uiop.easyplacefix.mixin.placement;
++
++import com.llamalad7.mixinextras.sugar.Local;
++import fi.dy.masa.litematica.config.Configs.Generic;
++import fi.dy.masa.litematica.util.EasyPlaceUtils;
++import fi.dy.masa.litematica.util.RayTraceUtils.RayTraceWrapper;
++import fi.dy.masa.litematica.util.RayTraceUtils.RayTraceWrapper.HitType;
++import fi.dy.masa.litematica.world.SchematicWorldHandler;
++import net.minecraft.client.Minecraft;
++import net.minecraft.tags.BlockTags;
++import net.minecraft.world.InteractionResult;
++import net.minecraft.world.level.Level;
++import net.minecraft.world.phys.BlockHitResult;
++import org.spongepowered.asm.mixin.Mixin;
++import org.spongepowered.asm.mixin.injection.At;
++import org.spongepowered.asm.mixin.injection.Inject;
++import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
++import org.uiop.easyplacefix.entity.SchematicEntityAssist;
++import org.uiop.easyplacefix.placement.NativeEasyPlaceAction;
++import org.uiop.easyplacefix.util.EasyPlaceHandler;
++
++/** Reuse POST's resolved schematic target, before its pick/cache/direct use path. */
++@Mixin(value=EasyPlaceUtils.class,remap=false)
++public abstract class MixinNativePostEasyPlace {
++    @Inject(method="handleEasyPlace()Lnet/minecraft/world/InteractionResult;",
++        at=@At(value="INVOKE_ASSIGN",target="Lfi/dy/masa/litematica/util/EasyPlaceUtils;getTargetPosition(Lfi/dy/masa/litematica/util/RayTraceUtils$RayTraceWrapper;)Lnet/minecraft/world/phys/BlockHitResult;"),
++        cancellable=true,remap=false)
++    private static void easyplacefix$nativePostTarget(CallbackInfoReturnable<InteractionResult> cir,
++        @Local(ordinal=0) Minecraft mc, @Local(ordinal=0) RayTraceWrapper traceWrapper,
++        @Local(ordinal=0) BlockHitResult targetPosition) {
++        if (!Generic.EASY_PLACE_POST_REWRITE.getBooleanValue() || !NativeEasyPlaceAction.settingsEnabled()) return;
++        if (mc.player==null || mc.level==null || mc.gameMode==null) {
++            cir.setReturnValue(InteractionResult.FAIL);
++            return;
++        }
++        InteractionResult entityResult=SchematicEntityAssist.tryHandle(mc,traceWrapper);
++        if (entityResult!=null) {
++            cir.setReturnValue(entityResult);
++            return;
++        }
++        if (targetPosition==null) {
++            if (traceWrapper!=null && EasyPlaceHandler.shouldAllowVanillaInteraction(mc,traceWrapper)) {
++                cir.setReturnValue(InteractionResult.PASS);
++            }
++            return;
++        }
++        Level schematicWorld=SchematicWorldHandler.getSchematicWorld();
++        if (schematicWorld==null || schematicWorld.getBlockState(targetPosition.getBlockPos()).is(BlockTags.AIR)) {
++            cir.setReturnValue(InteractionResult.FAIL);
++            return;
++        }
++        // getTargetPosition also resolves the placement-position registry override.
++        RayTraceWrapper target=new RayTraceWrapper(HitType.SCHEMATIC_BLOCK,targetPosition);
++        cir.setReturnValue(EasyPlaceHandler.shouldAllowVanillaInteraction(mc,target)
++            ? InteractionResult.PASS : EasyPlaceHandler.doEasyPlace2(mc,target));
 +    }
 +}
 --- /dev/null
@@ -1531,8 +1643,45 @@
 +    }
 +}
 --- /dev/null
++++ b/org/uiop/easyplacefix/placement/NativeChestPlacement.java
+@@ -0,0 +1,34 @@
++package org.uiop.easyplacefix.placement;
++
++import net.minecraft.core.BlockPos;
++import net.minecraft.world.level.Level;
++import net.minecraft.world.level.block.ChestBlock;
++import net.minecraft.world.level.block.state.BlockState;
++import net.minecraft.world.level.block.state.properties.BlockStateProperties;
++import net.minecraft.world.level.block.state.properties.ChestType;
++
++/** The first half of a schematic double chest may be placed before its partner. */
++public final class NativeChestPlacement {
++    private NativeChestPlacement() {}
++
++    public static boolean allowsFirstSingleHalf(BlockState wanted, BlockState preview,
++            BlockPos position, Level schematic, Level world) {
++        if (schematic==null || world==null || !(wanted.getBlock() instanceof ChestBlock)
++            || wanted.getBlock()!=preview.getBlock()) return false;
++        ChestType type=wanted.getValue(BlockStateProperties.CHEST_TYPE);
++        if (type==ChestType.SINGLE
++            || !wanted.setValue(BlockStateProperties.CHEST_TYPE,ChestType.SINGLE).equals(preview)) return false;
++        BlockPos partnerPosition=ChestBlock.getConnectedBlockPos(position,wanted);
++        if (!schematic.isLoaded(position) || !schematic.isLoaded(partnerPosition)
++            || !world.isLoaded(position) || !world.isLoaded(partnerPosition)
++            || !schematic.getBlockState(position).equals(wanted)) return false;
++        BlockState partner=schematic.getBlockState(partnerPosition);
++        if (partner.getBlock()!=wanted.getBlock()
++            || partner.getValue(BlockStateProperties.HORIZONTAL_FACING)!=wanted.getValue(BlockStateProperties.HORIZONTAL_FACING)
++            || partner.getValue(BlockStateProperties.CHEST_TYPE)!=type.getOpposite()
++            || !ChestBlock.getConnectedBlockPos(partnerPosition,partner).equals(position)) return false;
++        BlockState currentPartner=world.getBlockState(partnerPosition);
++        if (currentPartner.getBlock() instanceof ChestBlock) return false;
++        return currentPartner.isAir() || currentPartner.canBeReplaced();
++    }
++}
+--- /dev/null
 +++ b/org/uiop/easyplacefix/placement/NativeEasyPlaceAction.java
-@@ -0,0 +1,205 @@
+@@ -0,0 +1,218 @@
 +package org.uiop.easyplacefix.placement;
 +
 +import com.tick_ins.tick.TickThread;
@@ -1579,6 +1728,7 @@
 +    private final ItemStack stack;
 +    private final BlockPos schematicPos;
 +    private final BlockState schematic;
++    private final BlockState placementGoal;
 +    private final Block block;
 +    private final BlockHitResult schematicTrace;
 +    private final RelativeBlockHitResult requested;
@@ -1587,29 +1737,41 @@
 +    private final float yaw;
 +    private final float pitch;
 +    private final Level schematicWorld;
++    private final boolean postRewrite;
 +    private NativePlacementAdapter.Prepared prepared;
 +
 +    public NativeEasyPlaceAction(Minecraft mc, MultiPlayerGameMode gameMode, ItemStack stack,
 +            BlockPos schematicPos, BlockState schematic, BlockHitResult schematicTrace,
 +            RelativeBlockHitResult requested, int totalClicks, boolean hasRotation,
 +            float yaw, float pitch) {
++        this(mc,gameMode,stack,schematicPos,schematic,schematic,schematicTrace,
++            requested,totalClicks,hasRotation,yaw,pitch);
++    }
++
++    /** An intermediate placement keeps its original schematic cancellation goal. */
++    public NativeEasyPlaceAction(Minecraft mc, MultiPlayerGameMode gameMode, ItemStack stack,
++            BlockPos schematicPos, BlockState schematic, BlockState placementGoal,
++            BlockHitResult schematicTrace, RelativeBlockHitResult requested,
++            int totalClicks, boolean hasRotation, float yaw, float pitch) {
 +        this.mc=mc; this.gameMode=gameMode; this.stack=stack.copy();
 +        this.schematicPos=schematicPos.immutable(); this.schematic=schematic;
-+        this.block=schematic.getBlock(); this.schematicTrace=schematicTrace;
++        this.placementGoal=placementGoal;
++        this.block=placementGoal.getBlock(); this.schematicTrace=schematicTrace;
 +        this.requested=requested; this.totalClicks=totalClicks;
 +        this.hasRotation=hasRotation; this.yaw=yaw; this.pitch=pitch;
 +        this.schematicWorld=SchematicWorldHandler.getSchematicWorld();
++        this.postRewrite=Generic.EASY_PLACE_POST_REWRITE.getBooleanValue();
 +    }
 +
 +    public static boolean settingsEnabled() {
 +        return easyPlacefixConfig.ENABLE_FIX.getBooleanValue() && Generic.EASY_PLACE_MODE.getBooleanValue()
-+            && !Generic.EASY_PLACE_POST_REWRITE.getBooleanValue()
 +            && PlacementHandler.getEffectiveProtocolVersion()==EasyPlaceProtocol.SLAB_ONLY
 +            && NativePlacementScope.isBedrockConnection();
 +    }
 +
 +    public boolean stillRelevant() {
 +        return settingsEnabled() && schematicWorld!=null && SchematicWorldHandler.getSchematicWorld()==schematicWorld
++            && Generic.EASY_PLACE_POST_REWRITE.getBooleanValue()==postRewrite
 +            && DataManager.getRenderLayerRange().isPositionWithinRange(schematicPos)
 +            && EasyPlaceHandler.isSchematicBlock(schematicPos)
 +            && schematicWorld.getBlockState(schematicPos).equals(schematic);
@@ -1625,7 +1787,7 @@
 +            float actionYaw=hasRotation ? yaw : mc.player.getYRot();
 +            float actionPitch=hasRotation ? pitch : mc.player.getXRot();
 +            Optional<NativePlacementAdapter.Prepared> plan=NativePlacementAdapter.prepare(mc,hand,
-+                schematicPos,schematic,requested,actionYaw,actionPitch);
++                schematicPos,placementGoal,requested,actionYaw,actionPitch);
 +            if (plan.isEmpty()) return;
 +            prepared=plan.get();
 +            registerPreparedInputs(prepared.yaw(),prepared.pitch(),prepared.secondary());
@@ -1664,7 +1826,7 @@
 +            NativePlacementScope placementScope=NativePlacementScope.open(plan.yaw(),plan.pitch(),plan.secondary());
 +            try (placementScope) {
 +                started=true;
-+                ((IBlock)block).firstAction(schematic,schematicTrace);
++                ((IBlock)block).firstAction(placementGoal,schematicTrace);
 +                PlayerInputAction.SetShift(plan.secondary());
 +                PlayerRotationAction.setServerBoundPlayerRotation(plan.yaw(),plan.pitch(),mc.player.horizontalCollision);
 +                InteractionResult result=gameMode.useItemOn(mc.player,hand,plan.hit());
@@ -1675,14 +1837,14 @@
 +                    completed=true;
 +                }
 +                afterCalled=true;
-+                ((IBlock)block).afterAction(schematic,schematicTrace);
-+                if (completed) ((IBlock)block).BlockAction(schematic,schematicTrace);
++                ((IBlock)block).afterAction(placementGoal,schematicTrace);
++                if (completed) ((IBlock)block).BlockAction(placementGoal,schematicTrace);
 +            }
 +        } catch (RuntimeException error) {
 +            LOGGER.debug("Native EasyPlace action failed",error);
 +        } finally {
 +            try {
-+                if (started && !afterCalled) ((IBlock)block).afterAction(schematic,schematicTrace);
++                if (started && !afterCalled) ((IBlock)block).afterAction(placementGoal,schematicTrace);
 +            } finally {
 +                finishInputs(mc,!completed);
 +            }
@@ -1740,13 +1902,14 @@
 +}
 --- /dev/null
 +++ b/org/uiop/easyplacefix/placement/NativeFollowUpAction.java
-@@ -0,0 +1,140 @@
+@@ -0,0 +1,144 @@
 +package org.uiop.easyplacefix.placement;
 +
 +import com.tick_ins.tick.RunnableWithLast;
 +import com.tick_ins.tick.TickThread;
 +import fi.dy.masa.litematica.world.SchematicWorldHandler;
 +import fi.dy.masa.litematica.data.DataManager;
++import fi.dy.masa.litematica.config.Configs.Generic;
 +import java.util.Optional;
 +import net.minecraft.client.Minecraft;
 +import net.minecraft.client.multiplayer.MultiPlayerGameMode;
@@ -1782,6 +1945,7 @@
 +    private final float yaw,pitch;
 +    private final Level schematicWorld;
 +    private final BlockState expectedSchematic;
++    private final boolean postRewrite;
 +    private RelativeBlockHitResult requested;
 +    private NativePlacementAdapter.Prepared placement;
 +    private Item heldItem;
@@ -1793,6 +1957,7 @@
 +        this.expectedBlock=block;this.target=target.immutable();this.yaw=yaw;this.pitch=pitch;
 +        this.schematicWorld=SchematicWorldHandler.getSchematicWorld();
 +        this.expectedSchematic=schematicWorld==null ? null : schematicWorld.getBlockState(target);
++        this.postRewrite=Generic.EASY_PLACE_POST_REWRITE.getBooleanValue();
 +    }
 +
 +    public static void start(Minecraft mc, MultiPlayerGameMode gameMode, InteractionHand hand,
@@ -1808,6 +1973,7 @@
 +
 +    private boolean stillRelevant() {
 +        return NativeEasyPlaceAction.settingsEnabled() && schematicWorld!=null
++            && Generic.EASY_PLACE_POST_REWRITE.getBooleanValue()==postRewrite
 +            && SchematicWorldHandler.getSchematicWorld()==schematicWorld
 +            && DataManager.getRenderLayerRange().isPositionWithinRange(target)
 +            && EasyPlaceHandler.isSchematicBlock(target)
@@ -1902,7 +2068,7 @@
 +}
 --- /dev/null
 +++ b/org/uiop/easyplacefix/placement/NativePlacementAdapter.java
-@@ -0,0 +1,312 @@
+@@ -0,0 +1,327 @@
 +package org.uiop.easyplacefix.placement;
 +
 +import fi.dy.masa.litematica.world.SchematicWorldHandler;
@@ -1924,6 +2090,8 @@
 +import net.minecraft.world.level.ClipContext;
 +import net.minecraft.world.level.Level;
 +import net.minecraft.world.level.block.Block;
++import net.minecraft.world.level.block.CeilingHangingSignBlock;
++import net.minecraft.world.level.block.ChestBlock;
 +import net.minecraft.world.level.block.SlabBlock;
 +import net.minecraft.world.level.block.MultifaceBlock;
 +import net.minecraft.world.level.block.VineBlock;
@@ -1957,7 +2125,7 @@
 +        BlockStateProperties.DOOR_HINGE, BlockStateProperties.ORIENTATION,
 +        BlockStateProperties.VERTICAL_DIRECTION, BlockStateProperties.BELL_ATTACHMENT,
 +        BlockStateProperties.HANGING, BlockStateProperties.BED_PART,
-+        BlockStateProperties.DOUBLE_BLOCK_HALF);
++        BlockStateProperties.DOUBLE_BLOCK_HALF, BlockStateProperties.CHEST_TYPE);
 +
 +    private NativePlacementAdapter() {}
 +
@@ -2117,27 +2285,28 @@
 +            || NativeSupportActions.mayConsumeBlockInteraction(supportState.getBlock());
 +        if (sameCellReplacement && interactive
 +            && !NativeSupportActions.isKnownStackable(supportState.getBlock())) return Optional.empty();
-+        boolean secondary=physicalSecondary || (interactive && !sameCellReplacement);
-+        scope.setSecondary(secondary);
-+        BlockPlaceContext initial=secondary==physicalSecondary ? physicalContext
-+            : NativePlacementScope.project(new BlockPlaceContext(mc.player,hand,mc.player.getItemInHand(hand),actual));
-+        if (!initial.canPlace() || !initial.getClickedPos().equals(anchor.pos)) return Optional.empty();
-+        BlockPlaceContext context=NativePlacementScope.project(item.updatePlacementContext(initial));
-+        if (context==null || !context.getClickedPos().equals(anchor.pos) || !context.canPlace()) return Optional.empty();
-+        BlockItemPlacementChecks checks=(BlockItemPlacementChecks)(Object)item;
-+        BlockState initialPreview=checks.easyplacefix$getPlacementState(context);
-+        if (initialPreview==null) return Optional.empty();
-+        // Vanilla's getPlacementState already decides placement permission.
-+        // Its legitimate BLOCK_STATE component is applied later without a
-+        // second canPlace; mirror that order for the comparison preview.
-+        BlockState preview=applyItemProperties(mc.player.getItemInHand(hand),initialPreview);
-+        boolean compatible=placementMatches(anchor.state,preview);
-+        if (request.intent()!=Intent.PREVIEW_VALIDATED_ANY_FACE && !sameSlabBlock(anchor.state,preview))
-+            return Optional.empty();
-+        Hit actualWorld=MinecraftHitCanonicalizer.read(actual);
-+        Assessment assessment=new Assessment(actualWorld,cell(context.getClickedPos()),true,true,true,true,
-+            slabKind(preview),waterlogged(preview),compatible);
-+        return Optional.of(new Checked(assessment,actual,preview,secondary));
++        boolean supportRequiresSecondary=interactive && !sameCellReplacement;
++        for (boolean secondary:NativeSecondaryUsePolicy.candidates(physicalSecondary,supportRequiresSecondary)) {
++            scope.setSecondary(secondary);
++            BlockPlaceContext initial=secondary==physicalSecondary ? physicalContext
++                : NativePlacementScope.project(new BlockPlaceContext(mc.player,hand,mc.player.getItemInHand(hand),actual));
++            if (!initial.canPlace() || !initial.getClickedPos().equals(anchor.pos)) continue;
++            BlockPlaceContext context=NativePlacementScope.project(item.updatePlacementContext(initial));
++            if (context==null || !context.getClickedPos().equals(anchor.pos) || !context.canPlace()) continue;
++            BlockItemPlacementChecks checks=(BlockItemPlacementChecks)(Object)item;
++            BlockState initialPreview=checks.easyplacefix$getPlacementState(context);
++            if (initialPreview==null) continue;
++            // Vanilla applies this component after its native permission check.
++            BlockState preview=applyItemProperties(mc.player.getItemInHand(hand),initialPreview);
++            boolean compatible=placementMatchesInContext(mc.level,anchor.pos,anchor.state,preview);
++            if (request.intent()==Intent.PREVIEW_VALIDATED_ANY_FACE && !compatible) continue;
++            if (request.intent()!=Intent.PREVIEW_VALIDATED_ANY_FACE && !sameSlabBlock(anchor.state,preview)) continue;
++            Hit actualWorld=MinecraftHitCanonicalizer.read(actual);
++            Assessment assessment=new Assessment(actualWorld,cell(context.getClickedPos()),true,true,true,true,
++                slabKind(preview),waterlogged(preview),compatible);
++            return Optional.of(new Checked(assessment,actual,preview,secondary));
++        }
++        return Optional.empty();
 +    }
 +
 +    private static Optional<Anchor> anchor(BlockPos schematicPos, BlockState schematic) {
@@ -2167,6 +2336,9 @@
 +
 +    private static boolean placementMatches(BlockState wanted, BlockState preview) {
 +        if (wanted.getBlock()!=preview.getBlock()) return false;
++        if (wanted.getBlock() instanceof CeilingHangingSignBlock
++            && (!preview.hasProperty(BlockStateProperties.ATTACHED)
++                || wanted.getValue(BlockStateProperties.ATTACHED)!=preview.getValue(BlockStateProperties.ATTACHED))) return false;
 +        if (wanted.getBlock() instanceof MultifaceBlock || wanted.getBlock() instanceof VineBlock) {
 +            // A native placement may add one desired attachment at a time, but
 +            // must not introduce an attachment absent from the schematic.
@@ -2182,6 +2354,15 @@
 +        }
 +        return !wanted.hasProperty(BlockStateProperties.WATERLOGGED)
 +            || waterlogged(wanted)==waterlogged(preview);
++    }
++
++    /** A verified first chest half is an intermediate preview, not a final match. */
++    private static boolean placementMatchesInContext(Level world, BlockPos position,
++            BlockState wanted, BlockState preview) {
++        if (placementMatches(wanted,preview)) return true;
++        if (!(wanted.getBlock() instanceof ChestBlock)) return false;
++        return NativeChestPlacement.allowsFirstSingleHalf(wanted,preview,position,
++            SchematicWorldHandler.getSchematicWorld(),world);
 +    }
 +
 +    private static boolean sameSlabBlock(BlockState wanted, BlockState preview) {
@@ -2294,6 +2475,187 @@
 +    }
 +}
 --- /dev/null
++++ b/org/uiop/easyplacefix/placement/NativePottedPlantAction.java
+@@ -0,0 +1,165 @@
++package org.uiop.easyplacefix.placement;
++
++import com.tick_ins.tick.RunnableWithLast;
++import com.tick_ins.tick.TickThread;
++import fi.dy.masa.litematica.config.Configs.Generic;
++import fi.dy.masa.litematica.data.DataManager;
++import fi.dy.masa.litematica.util.EntityUtils;
++import fi.dy.masa.litematica.world.SchematicWorldHandler;
++import java.util.Optional;
++import net.minecraft.client.Minecraft;
++import net.minecraft.client.multiplayer.MultiPlayerGameMode;
++import net.minecraft.client.player.LocalPlayer;
++import net.minecraft.core.BlockPos;
++import net.minecraft.core.Direction;
++import net.minecraft.world.InteractionHand;
++import net.minecraft.world.InteractionResult;
++import net.minecraft.world.item.BlockItem;
++import net.minecraft.world.item.ItemStack;
++import net.minecraft.world.level.Level;
++import net.minecraft.world.level.block.Blocks;
++import net.minecraft.world.level.block.FlowerPotBlock;
++import net.minecraft.world.level.block.state.BlockState;
++import net.minecraft.world.phys.AABB;
++import net.minecraft.world.phys.BlockHitResult;
++import net.minecraft.world.phys.Vec3;
++import net.minecraft.world.phys.shapes.VoxelShape;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.uiop.easyplacefix.IClientPlayerInteractionManager;
++import org.uiop.easyplacefix.util.EasyPlaceHandler;
++import org.uiop.easyplacefix.util.PlacementDiagnostics;
++import org.uiop.easyplacefix.util.PlacementInventory;
++import org.uiop.easyplacefix.util.PlayerInputAction;
++import org.uiop.easyplacefix.util.PlayerRotationAction;
++import oshi.util.tuples.Pair;
++
++/** A later activation fills an observed empty pot through the ordinary block use. */
++public final class NativePottedPlantAction {
++    private static final Logger LOGGER=LoggerFactory.getLogger("easyplacefix");
++    private static final Direction[] FACES={Direction.UP,Direction.NORTH,Direction.SOUTH,
++        Direction.EAST,Direction.WEST,Direction.DOWN};
++    private final Minecraft mc;
++    private final MultiPlayerGameMode gameMode;
++    private final LocalPlayer player;
++    private final Level level;
++    private final Object connection;
++    private final Level schematicWorld;
++    private final BlockPos target;
++    private final BlockState originalGoal;
++    private final ItemStack wantedStack;
++    private final boolean postRewrite;
++    private final float yaw,pitch;
++    private InteractionHand hand;
++    private ItemStack preparedStack;
++    private boolean ready;
++
++    private NativePottedPlantAction(Minecraft mc, BlockPos target, BlockState originalGoal, ItemStack stack) {
++        this.mc=mc;this.gameMode=mc.gameMode;this.player=mc.player;this.level=mc.level;
++        this.connection=mc.getConnection();this.schematicWorld=SchematicWorldHandler.getSchematicWorld();
++        this.target=target.immutable();this.originalGoal=originalGoal;this.wantedStack=stack.copy();
++        this.postRewrite=Generic.EASY_PLACE_POST_REWRITE.getBooleanValue();
++        this.yaw=mc.player.getYRot();this.pitch=mc.player.getXRot();
++    }
++
++    public static boolean tryStart(Minecraft mc, BlockPos target, BlockState originalGoal) {
++        if (mc.player==null || mc.level==null || mc.gameMode==null || mc.getConnection()==null
++            || !NativeEasyPlaceAction.settingsEnabled() || !mc.level.isLoaded(target)
++            || PottedPlantPlan.stage(originalGoal,mc.level.getBlockState(target))!=PottedPlantPlan.Stage.FILL_EMPTY
++            || mc.player.isSecondaryUseActive() || mc.player.input.keyPresses.shift()) return false;
++        ItemStack requested=new ItemStack(PottedPlantPlan.plantItem(originalGoal));
++        ItemStack found=PlacementInventory.searchItem(mc,requested);
++        if (found==null || found.isEmpty()) {
++            PlacementDiagnostics.report("easyplacefix.diagnostic.missing_item",requested.getHoverName());
++            return false;
++        }
++        NativePottedPlantAction action=new NativePottedPlantAction(mc,target,originalGoal,found);
++        if (!action.isDesiredPlant(found)) return false;
++        return TickThread.tryAddNativeTask(new RunnableWithLast.Builder().setTask(action::prepare)
++            .setYawAndPitch(new Pair<>(action.yaw,action.pitch)).build(),
++            new RunnableWithLast.Builder().setTask(action::use).build(),action::stillRelevant);
++    }
++
++    private boolean stillRelevant() {
++        return NativeEasyPlaceAction.settingsEnabled() && schematicWorld!=null
++            && Generic.EASY_PLACE_POST_REWRITE.getBooleanValue()==postRewrite
++            && SchematicWorldHandler.getSchematicWorld()==schematicWorld
++            && DataManager.getRenderLayerRange().isPositionWithinRange(target)
++            && EasyPlaceHandler.isSchematicBlock(target)
++            && schematicWorld.getBlockState(target).equals(originalGoal);
++    }
++
++    private boolean usable() {
++        return mc.player==player && mc.level==level && mc.gameMode==gameMode && mc.getConnection()==connection
++            && connection!=null && level.isLoaded(target) && !player.isSecondaryUseActive()
++            && !player.input.keyPresses.shift()
++            && PottedPlantPlan.stage(originalGoal,level.getBlockState(target))==PottedPlantPlan.Stage.FILL_EMPTY;
++    }
++
++    private boolean isDesiredPlant(ItemStack stack) {
++        return !stack.isEmpty() && stack.getItem() instanceof BlockItem item
++            && item.getBlock()==((FlowerPotBlock)originalGoal.getBlock()).getPotted();
++    }
++
++    /** Aim at the current pot's actual shape; every returned hit is ray validated. */
++    private Optional<BlockHitResult> interactionHit() {
++        BlockState current=level.getBlockState(target);
++        if (!current.is(Blocks.FLOWER_POT)) return Optional.empty();
++        VoxelShape shape=current.getShape(level,target);
++        if (shape.isEmpty()) return Optional.empty();
++        AABB bounds=shape.bounds();
++        for (Direction face:FACES) {
++            double x=face==Direction.WEST ? bounds.minX : face==Direction.EAST ? bounds.maxX : (bounds.minX+bounds.maxX)/2;
++            double y=face==Direction.DOWN ? bounds.minY : face==Direction.UP ? bounds.maxY : (bounds.minY+bounds.maxY)/2;
++            double z=face==Direction.NORTH ? bounds.minZ : face==Direction.SOUTH ? bounds.maxZ : (bounds.minZ+bounds.maxZ)/2;
++            BlockHitResult request=new BlockHitResult(new Vec3(target.getX()+x,target.getY()+y,target.getZ()+z),face,target,false);
++            Optional<BlockHitResult> actual=NativePlacementAdapter.interactionHit(mc,target,request);
++            if (actual.isPresent()) return actual;
++        }
++        return Optional.empty();
++    }
++
++    private void prepare() {
++        try {
++            if (!usable() || !stillRelevant()) return;
++            PlacementInventory.pickItem(mc,wantedStack);
++            hand=EntityUtils.getUsedHandForItem(player,wantedStack);
++            ((IClientPlayerInteractionManager)gameMode).syn();
++            if (hand==null || !isDesiredPlant(player.getItemInHand(hand)) || interactionHit().isEmpty()) return;
++            preparedStack=player.getItemInHand(hand).copy();
++            NativeEasyPlaceAction.registerPreparedInputs(yaw,pitch,false);
++            PlayerInputAction.SetShift(false);
++            PlayerRotationAction.setServerBoundPlayerRotation(yaw,pitch,player.horizontalCollision);
++            ready=true;
++        } catch (RuntimeException error) {
++            LOGGER.debug("Native potted plant preparation failed",error);
++        } finally {
++            if (!ready) NativeEasyPlaceAction.finishInputs(mc,true);
++        }
++    }
++
++    private void use() {
++        boolean consumed=false;
++        try {
++            if (!ready || !usable() || !stillRelevant() || !isDesiredPlant(player.getItemInHand(hand))
++                || !ItemStack.isSameItemSameComponents(preparedStack,player.getItemInHand(hand))) return;
++            ((IClientPlayerInteractionManager)gameMode).syn();
++            Optional<BlockHitResult> hit=interactionHit();
++            if (hit.isEmpty()) return;
++            NativePlacementScope placementScope=NativePlacementScope.open(yaw,pitch,false);
++            try (placementScope) {
++                PlayerInputAction.SetShift(false);
++                PlayerRotationAction.setServerBoundPlayerRotation(yaw,pitch,player.horizontalCollision);
++                InteractionResult result=gameMode.useItemOn(player,hand,hit.get());
++                consumed=result.consumesAction();
++                if (consumed) player.swing(hand,player.getItemInHand(hand).getInteractAnimation(),false);
++                // No completion/ACK is fabricated from this local result. A later
++                // activation re-reads the actual translated block state.
++            }
++        } catch (RuntimeException error) {
++            LOGGER.debug("Native potted plant interaction failed",error);
++        } finally {
++            NativeEasyPlaceAction.finishInputs(mc,!consumed);
++        }
++    }
++}
+--- /dev/null
++++ b/org/uiop/easyplacefix/placement/NativeSecondaryUsePolicy.java
+@@ -0,0 +1,10 @@
++package org.uiop.easyplacefix.placement;
++
++/** Secondary use is selected before preview and preserves required input masks. */
++public final class NativeSecondaryUsePolicy {
++    private NativeSecondaryUsePolicy() {}
++
++    public static boolean[] candidates(boolean physicalSecondary, boolean supportRequiresSecondary) {
++        return physicalSecondary || supportRequiresSecondary ? new boolean[]{true} : new boolean[]{false,true};
++    }
++}
+--- /dev/null
 +++ b/org/uiop/easyplacefix/placement/NativeSupportActions.java
 @@ -0,0 +1,76 @@
 +package org.uiop.easyplacefix.placement;
@@ -2371,6 +2733,41 @@
 +            return false;
 +        }
 +    }
++}
+--- /dev/null
++++ b/org/uiop/easyplacefix/placement/PottedPlantPlan.java
+@@ -0,0 +1,32 @@
++package org.uiop.easyplacefix.placement;
++
++import net.minecraft.world.item.Item;
++import net.minecraft.world.item.Items;
++import net.minecraft.world.level.block.Blocks;
++import net.minecraft.world.level.block.FlowerPotBlock;
++import net.minecraft.world.level.block.state.BlockState;
++
++/** Classifies a real current cell; it never treats a consumed click as an ACK. */
++public final class PottedPlantPlan {
++    public enum Stage { NOT_POTTED, COMPLETE, PLACE_EMPTY, FILL_EMPTY, BLOCKED }
++
++    private PottedPlantPlan() {}
++
++    public static boolean isFilledGoal(BlockState goal) {
++        return goal.getBlock() instanceof FlowerPotBlock pot && pot.getPotted()!=Blocks.AIR;
++    }
++
++    public static Item plantItem(BlockState goal) {
++        return isFilledGoal(goal) ? ((FlowerPotBlock)goal.getBlock()).getPotted().asItem() : Items.AIR;
++    }
++
++    public static Stage stage(BlockState goal, BlockState current) {
++        if (!isFilledGoal(goal)) return Stage.NOT_POTTED;
++        if (current.equals(goal)) return Stage.COMPLETE;
++        if (current.is(Blocks.FLOWER_POT)) return Stage.FILL_EMPTY;
++        if (current.getBlock() instanceof FlowerPotBlock || !current.canBeReplaced()) return Stage.BLOCKED;
++        return Stage.PLACE_EMPTY;
++    }
++
++    public static BlockState emptyGoal() { return Blocks.FLOWER_POT.defaultBlockState(); }
 +}
 --- /dev/null
 +++ b/org/uiop/easyplacefix/placement/ProjectedPlacementContext.java
@@ -2491,16 +2888,18 @@
  import net.minecraft.world.level.block.TrapDoorBlock;
  import net.minecraft.world.level.block.WallBlock;
  import net.minecraft.world.level.block.piston.PistonBaseBlock;
-@@ -42,6 +44,8 @@
+@@ -42,6 +44,10 @@
  import org.uiop.easyplacefix.IBlock;
  import org.uiop.easyplacefix.IClientPlayerInteractionManager;
  import org.uiop.easyplacefix.LookAt;
 +import org.uiop.easyplacefix.placement.NativeEasyPlaceAction;
 +import org.uiop.easyplacefix.placement.NativePlacementScope;
++import org.uiop.easyplacefix.placement.NativePottedPlantAction;
++import org.uiop.easyplacefix.placement.PottedPlantPlan;
  import org.uiop.easyplacefix.config.easyPlacefixConfig;
  import org.uiop.easyplacefix.data.LoosenModeData;
  import org.uiop.easyplacefix.data.RelativeBlockHitResult;
-@@ -185,6 +189,7 @@
+@@ -185,6 +191,7 @@
  
        BlockState stateClient = mc.level.getBlockState(pos);
        BlockState stateSchematic = schematicWorld.getBlockState(pos);
@@ -2508,7 +2907,36 @@
        InteractionResult isTermination = ((IBlock)stateClient.getBlock()).isWorldTermination(pos, stateSchematic, stateClient);
        if (isTermination != null) {
           PlacementDiagnostics.report("easyplacefix.diagnostic.world_termination", pos.toShortString());
-@@ -217,8 +222,8 @@
+@@ -204,7 +211,27 @@
+       }
+ 
+       if (traceWrapper.getHitType() == HitType.SCHEMATIC_BLOCK) {
+-         ItemStack stack = PlacementItemResolver.getPlacementStack(stateSchematic, pos, schematicWorld);
++         BlockState placementGoal=stateSchematic;
++         if (nativeBedrock && PottedPlantPlan.isFilledGoal(stateSchematic)) {
++            PottedPlantPlan.Stage stage=PottedPlantPlan.stage(stateSchematic,stateClient);
++            if (stage==PottedPlantPlan.Stage.COMPLETE) {
++               PlacementDiagnostics.report("easyplacefix.diagnostic.already_correct",pos.toShortString());
++               return InteractionResult.FAIL;
++            }
++            if (stage==PottedPlantPlan.Stage.BLOCKED) {
++               PlacementDiagnostics.report("easyplacefix.diagnostic.not_replaceable",pos.toShortString());
++               return InteractionResult.FAIL;
++            }
++            if (stage==PottedPlantPlan.Stage.FILL_EMPTY) {
++               boolean accepted=NativePottedPlantAction.tryStart(mc,pos,stateSchematic);
++               if (accepted) PlayerBlockAction.useItemOnAction.markGlobalPlacement();
++               return accepted ? InteractionResult.SUCCESS : InteractionResult.FAIL;
++            }
++            // Filled pots are two ordinary actions: this activation places only
++            // the empty pot; a later activation may interact with an empty cell.
++            placementGoal=PottedPlantPlan.emptyGoal();
++         }
++         ItemStack stack = PlacementItemResolver.getPlacementStack(placementGoal, pos, schematicWorld);
+          if (!stack.isEmpty()) {
+             BlockState currentState = mc.level.getBlockState(pos);
+             if (PlacementStateMatcher.isSatisfied(stateSchematic, currentState)) {
+@@ -217,8 +244,8 @@
              }
  
              if (stateSchematic.getBlock() instanceof NoteBlock && currentState.getBlock() instanceof NoteBlock) {
@@ -2519,12 +2947,14 @@
                 if (currentNote != targetNote) {
                    if (!NoteBlockHelper.isTuning(pos)) {
                       NoteBlockHelper.tune(mc, pos, targetNote);
-@@ -229,7 +234,14 @@
+@@ -229,8 +256,17 @@
                 }
              }
  
 -            if (!stateClient.canBeReplaced(new BlockPlaceContext(Minecraft.getInstance().player, InteractionHand.MAIN_HAND, stack, trace))) {
-+            if (nativeBedrock && TerrainAutoReplace.isEligible(pos, stateClient, stateSchematic)) {
+-               if (TerrainAutoReplace.isEligible(pos, stateClient, stateSchematic)) {
++            if (nativeBedrock && !PottedPlantPlan.isFilledGoal(stateSchematic)
++               && TerrainAutoReplace.isEligible(pos, stateClient, stateSchematic)) {
 +               TerrainAutoReplace.tryClearThenRetry(mc, traceWrapper, pos, trace.getDirection());
 +               return InteractionResult.SUCCESS;
 +            }
@@ -2532,12 +2962,37 @@
 +               && stateSchematic.getValue(BlockStateProperties.SLAB_TYPE) == SlabType.DOUBLE
 +               && stateClient.getBlock() == stateSchematic.getBlock();
 +            if (!nativeSlabMerge && !stateClient.canBeReplaced(new BlockPlaceContext(Minecraft.getInstance().player, InteractionHand.MAIN_HAND, stack, trace))) {
-                if (TerrainAutoReplace.isEligible(pos, stateClient, stateSchematic)) {
++               if (!(nativeBedrock && PottedPlantPlan.isFilledGoal(stateSchematic))
++                  && TerrainAutoReplace.isEligible(pos, stateClient, stateSchematic)) {
                    TerrainAutoReplace.tryClearThenRetry(mc, traceWrapper, pos, trace.getDirection());
                    return InteractionResult.SUCCESS;
-@@ -266,9 +278,21 @@
-             boolean hasSleep = ((IBlock)block).HasSleepTime(stateSchematic);
-             Tuple<LookAt, LookAt> YawAndPitch = ((IBlock)block).getYawAndPitch(stateSchematic);
+                }
+@@ -247,14 +283,14 @@
+                return InteractionResult.FAIL;
+             }
+ 
+-            Block block = stateSchematic.getBlock();
+-            String placementBlocker = ((IBlock)block).getPlacementBlocker(stateSchematic, pos, stateClient);
++            Block block = placementGoal.getBlock();
++            String placementBlocker = ((IBlock)block).getPlacementBlocker(placementGoal, pos, stateClient);
+             if (placementBlocker != null) {
+                PlacementDiagnostics.report(placementBlocker, pos.toShortString());
+                return InteractionResult.FAIL;
+             }
+ 
+-            Tuple<RelativeBlockHitResult, Integer> blockHitResultIntegerPair = ((IBlock)block).getHitResult(stateSchematic, trace.getBlockPos(), stateClient);
++            Tuple<RelativeBlockHitResult, Integer> blockHitResultIntegerPair = ((IBlock)block).getHitResult(placementGoal, trace.getBlockPos(), stateClient);
+             if (blockHitResultIntegerPair == null) {
+                PlacementDiagnostics.report("easyplacefix.diagnostic.no_hit_result", stateSchematic.getBlock().getName());
+                return InteractionResult.FAIL;
+@@ -263,12 +299,24 @@
+             RelativeBlockHitResult offsetBlockHitResult = blockHitResultIntegerPair.getA();
+             ItemStack finalStack = itemStack2;
+             AtomicReference<InteractionHand> hand = new AtomicReference<>();
+-            boolean hasSleep = ((IBlock)block).HasSleepTime(stateSchematic);
+-            Tuple<LookAt, LookAt> YawAndPitch = ((IBlock)block).getYawAndPitch(stateSchematic);
++            boolean hasSleep = ((IBlock)block).HasSleepTime(placementGoal);
++            Tuple<LookAt, LookAt> YawAndPitch = ((IBlock)block).getYawAndPitch(placementGoal);
              boolean hasRotation = YawAndPitch != null;
 -            float rotationYaw = hasRotation ? YawAndPitch.getA().Value() : 0.0F;
 -            float rotationPitch = hasRotation ? YawAndPitch.getB().Value() : 0.0F;
@@ -2545,7 +3000,7 @@
 +            float rotationPitch = hasRotation ? YawAndPitch.getB().Value() : (nativeBedrock ? mc.player.getXRot() : 0.0F);
 +            boolean lockRotation = hasRotation || nativeBedrock;
 +            NativeEasyPlaceAction nativeAction = nativeBedrock ? new NativeEasyPlaceAction(mc, interactionManager,
-+               finalStack, pos, stateSchematic, trace, offsetBlockHitResult, blockHitResultIntegerPair.getB(),
++               finalStack, pos, stateSchematic, placementGoal, trace, offsetBlockHitResult, blockHitResultIntegerPair.getB(),
 +               true, rotationYaw, rotationPitch) : null;
              PlayerBlockAction.useItemOnAction.markGlobalPlacement();
 +            if (nativeAction != null) {
@@ -2559,7 +3014,7 @@
              if (hasSleep) {
                 TickThread.addLastTask(
                    new RunnableWithLast.Builder()
-@@ -281,7 +305,7 @@
+@@ -281,7 +329,7 @@
                          hand.set(EntityUtils.getUsedHandForItem(mc.player, finalStack));
                          ((IClientPlayerInteractionManager)interactionManager).syn();
                       })
@@ -2568,7 +3023,7 @@
                       .cache(
                          () -> {
                             pickItem(mc, finalStack);
-@@ -340,7 +364,7 @@
+@@ -340,7 +388,7 @@
                       pickItem(mc, finalStack);
                       hand.set(EntityUtils.getUsedHandForItem(mc.player, finalStack));
                       ((IClientPlayerInteractionManager)interactionManager).syn();
@@ -3131,7 +3586,7 @@
 +}
 --- /dev/null
 +++ b/src/test/java/org/uiop/easyplacefix/placement/NativeActionQueueTest.java
-@@ -0,0 +1,199 @@
+@@ -0,0 +1,224 @@
 +package org.uiop.easyplacefix.placement;
 +
 +import java.util.ArrayList;
@@ -3146,6 +3601,7 @@
 +
 +    public static void main(String[] args) {
 +        fifoKeepsPrepareAndUseSeparated();
++        preparationAfterAuthWaitsForAnotherRealBoundary();
 +        aNewEndJobCannotUseThatSameEnd();
 +        falseAndThrownCallbacksCleanOnce();
 +        clearDuringFirstPreservesReplacement();
@@ -3156,13 +3612,16 @@
 +        reporterFailureDoesNotStrandWork();
 +        fatalCallbackStillCleansItsEntry();
 +        System.out.println("PASS pure-JDK native prepare/use FIFO regression: "+assertions+" assertions");
-+        System.out.println("LIMIT: queue and supplied tick observations only; no Minecraft client tick, Mixin, packet codec, AUTH generation or Bedrock server executed");
++        System.out.println("LIMIT: queue and supplied tick/auth observations only; no Minecraft client tick, Mixin, packet codec, AUTH generation or Bedrock server executed");
 +    }
 +
 +    private static NativeActionQueue queue(int cap, AtomicLong now, List<RuntimeException> errors) {
 +        return new NativeActionQueue(cap,now::get,errors::add);
 +    }
 +    private static void end(NativeActionQueue queue, AtomicLong now, long tick) {
++        // Construct the ordinary observed send-then-END order; this notification
++        // itself must never execute a callback or stand in for packet generation.
++        queue.onAuthBoundary();
 +        now.set(tick);
 +        queue.onTickEnd(tick);
 +    }
@@ -3189,6 +3648,26 @@
 +        require(q.size()==0 && errors.isEmpty(),"FIFO drains without errors");
 +    }
 +
++    private static void preparationAfterAuthWaitsForAnotherRealBoundary() {
++        AtomicLong now=new AtomicLong();
++        List<String> log=new ArrayList<>();
++        NativeActionQueue q=queue(512,now,new ArrayList<>());
++        q.onAuthBoundary(); // genuine send already happened before hold callback
++        add(q,log,"late");
++        now.set(1);q.onTickEnd(1);
++        require(log.equals(List.of("late.prepare")) && q.size()==1,
++            "post-AUTH/pre-END preparation must not use under the preceding AUTH");
++        now.set(2);q.onTickEnd(2);
++        require(log.equals(List.of("late.prepare")),
++            "later END observations alone cannot invent a new AUTH boundary");
++        q.onAuthBoundary();
++        require(log.equals(List.of("late.prepare")),
++            "observing the next genuine send increments sequence without driving callbacks");
++        now.set(3);q.onTickEnd(3);
++        require(log.equals(List.of("late.prepare","late.use","late.cleanup")) && q.size()==0,
++            "a later END may use only after a genuine boundary subsequent to preparation");
++    }
++
 +    private static void aNewEndJobCannotUseThatSameEnd() {
 +        AtomicLong now=new AtomicLong(5);
 +        List<String> log=new ArrayList<>();
@@ -3204,11 +3683,12 @@
 +        NativeActionQueue guarded=queue(512,staleClock,new ArrayList<>());
 +        List<String> guardedLog=new ArrayList<>();
 +        add(guarded,guardedLog,"A"); add(guarded,guardedLog,"B");
++        guarded.onAuthBoundary();
 +        guarded.onTickEnd(100);
 +        guarded.onTickEnd(100);
 +        require(guardedLog.equals(List.of("A.prepare","A.use","A.cleanup","B.prepare")),
 +            "new B cannot use in the same END even if supplied clock is stale");
-+        guarded.onTickEnd(101);
++        guarded.onAuthBoundary();guarded.onTickEnd(101);
 +        require(guarded.size()==0,"later real END permits B to use");
 +    }
 +
@@ -4103,7 +4583,16 @@
  }
 --- a/easyplacefix.mixins.json
 +++ b/easyplacefix.mixins.json
-@@ -126,12 +126,17 @@
+@@ -1,7 +1,7 @@
+ {
+   "minVersion": "0.8",
+   "package": "org.uiop.easyplacefix.mixin",
+-  "compatibilityLevel": "JAVA_17",
++  "compatibilityLevel": "JAVA_25",
+   "mixins": [
+     "MixinConfigs",
+     "MixinHotkey",
+@@ -126,12 +126,19 @@
      "byteBuf.MixinWriteBlockHitResult",
      "packet.MixinCloseScreenS2CPacket",
      "packet.MixinInventoryS2CPacket",
@@ -4118,7 +4607,9 @@
 +    "placement.BlockItemPlacementChecks",
 +    "placement.MixinNativeBlockItemContext",
 +    "placement.MixinNativeUseContext",
-+    "placement.MixinNativeInputPacket"
++    "placement.MixinNativeInputPacket",
++    "placement.MixinNativePostEasyPlace",
++    "placement.MixinNativeAuthBoundary"
    ],
    "client": [
      "MixinClientPlayerInteractionManager",
