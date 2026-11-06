@@ -1,0 +1,32 @@
+{
+  "status": "BORRADOR_SIN_JAR_COMPILACION_COMPLETA_BLOQUEADA",
+  "base_easyplacefix_jar_sha256": "c20e5c42aaf47a260c058f8230a04b861d4266e7e8ec44713cb72da8ac1d067f",
+  "minecraft_version": "26.3",
+  "bedrock_target": "1.26.60.6",
+  "minecraft_client_sha256": "4508d006323f24fa02876310c192d739af56516eb259000ac50f0909a68c9a2d",
+  "full_compile": {
+    "source_files": 29,
+    "exit_code": 1,
+    "warnings": 0,
+    "blocker": "Missing genuine Fabric Loader 0.19.5 / net.fabricmc.api.ClientModInitializer",
+    "source_hashes_match_final_attempt": true
+  },
+  "separate_checks": {
+    "slab_methods": 57,
+    "hit_canonicalization": 26,
+    "projected_context": 79,
+    "input_masks": 256,
+    "input_codec_roundtrips": 256,
+    "real_core_fifo": "AUTH_A -> USE_A -> AUTH_B -> USE_B; exactly 2 constructed normal ticks"
+  },
+  "mixin_applied": false,
+  "gameplay_or_bds_tested": false,
+  "orientation_jar_published": false,
+  "limits": [
+    "No all-block gameplay pass",
+    "Potted intermediate actions incomplete",
+    "LOOSEN cross-block substitutions incomplete",
+    "Manual use before next normal AUTH unverified",
+    "Full-game assets/natives/libraries and exact BDS package still needed"
+  ]
+}

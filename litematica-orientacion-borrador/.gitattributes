@@ -1,0 +1,4 @@
+# Unified diff context markers are part of the saved patch format.
+cambios.patch -whitespace
+# Keep the original MIT license bytes, including its CRLF line endings.
+LICENSE_EasyPlaceFix whitespace=cr-at-eol
